@@ -1,7 +1,7 @@
 import { beforeEach, afterEach, expect, it, vi } from 'vitest';
 import record from '../../e2e/fixtures/regulatory-drug.json';
 import { db } from './db';
-import { loadCatalog } from './catalog';
+import { cachedCatalogRecord, loadCatalog, recentCatalogSearches } from './catalog';
 import { catalogRequest, fetchCatalog, type ApiCacheEntry } from '../data/adapters/medicamentsApi';
 vi.mock('../data/adapters/medicamentsApi',async(original)=>({...await original<typeof import('../data/adapters/medicamentsApi')>(),fetchCatalog:vi.fn()}));
 beforeEach(async()=>{await db.apiCache.clear();vi.mocked(fetchCatalog).mockReset();vi.spyOn(navigator,'onLine','get').mockReturnValue(true);});
@@ -43,4 +43,12 @@ it('borne le cache à cinquante recherches en supprimant la plus ancienne',async
  await loadCatalog('bisoprolol 50');
  expect(await db.apiCache.count()).toBe(50);
  expect(await db.apiCache.get(entries[0].key)).toBeUndefined();
+});
+it('réutilise le CIS exact depuis une recherche, avec la provenance initiale',async()=>{
+ await db.apiCache.put(snapshot('bisoprolol'));
+ const result=await cachedCatalogRecord('60524826');
+ expect(result?.entry.key).toBe('/v1/medicaments?search=bisoprolol');
+ expect(result?.entry.records[0].cis).toBe(60524826);
+ expect(await cachedCatalogRecord('61599041')).toBeNull();
+ expect((await recentCatalogSearches())[0].term).toBe('bisoprolol');expect(fetchCatalog).not.toHaveBeenCalled();
 });

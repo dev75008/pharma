@@ -1,0 +1,19 @@
+{
+  "cis": "60524826",
+  "type": "rcp",
+  "titre": "BISOPROLOL TEVA 10 mg, comprimé pelliculé",
+  "miseAJour": "2025-10-20",
+  "source": "ANSM - Base de données publique des médicaments",
+  "sections": [
+    {
+      "id": "1",
+      "titre": "1. DENOMINATION DU MEDICAMENT",
+      "contenu": "<p>BISOPROLOL TEVA 10 mg, comprimé pelliculé</p>"
+    },
+    {
+      "id": "4.1",
+      "titre": "4.1. Indications thérapeutiques",
+      "contenu": "<p>Traitement de l&#39;hypertension artérielle.</p><p>Traitement de l&#39;angor chronique stable.</p>"
+    }
+  ]
+}

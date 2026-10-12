@@ -7,3 +7,5 @@ afterEach(cleanup);
 vi.mock('virtual:pwa-register/react',()=>({useRegisterSW:()=>({needRefresh:[false,()=>{}],offlineReady:[false,()=>{}],updateServiceWorker:async()=>{}})}));
 
 vi.spyOn(window,'scrollTo').mockImplementation(()=>{});
+
+Element.prototype.scrollIntoView=vi.fn();

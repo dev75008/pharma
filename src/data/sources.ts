@@ -1,7 +1,7 @@
-// Registre initial : liens uniquement. Aucun droit ni accès API n'est présumé.
+// Registre des sources : distinguer liens, instantanés documentaires et adaptateurs vérifiés.
 export interface ScientificSource { id: string; name: string; url: string; domain: string; accessPolicy: string; integrationStatus: 'link-only' | 'manual-summary' | 'api' ; }
 export const sources: ScientificSource[] = [
- ['giygas', 'Medicaments API — Giygas', 'https://medicaments-api.giygas.dev/', 'Données réglementaires BDPM retransmises par un service indépendant'],
+ ['giygas', 'Medicaments API — Giygas', 'https://medicaments-api.giygas.dev/', 'Données réglementaires BDPM et copies de RCP/notices ANSM via un service indépendant'],
  ['bdpm', 'Base de données publique des médicaments', 'https://base-donnees-publique.medicaments.gouv.fr/', 'Informations réglementaires françaises'],
  ['pharmacorama', 'Pharmacorama', 'https://www.pharmacorama.com/', 'Pharmacologie pédagogique'],
  ['cbip', 'CBIP', 'https://www.cbip.be/fr/chapters', 'Pharmacothérapie belge'],
@@ -27,4 +27,4 @@ pubchem.accessPolicy = 'PUG REST officiel vérifié le 12 octobre 2026 : propri�
 
 const giygas = sources.find(s => s.id === 'giygas')!;
 giygas.integrationStatus = 'api';
-giygas.accessPolicy = 'API v1 sans clé, vérifiée le 12 octobre 2026 depuis GitHub Pages. Données BDPM attribuées ; cache local limité à 50 recherches, expiration selon Cache-Control plafonnée à 1 h (nom) ou 4 h (code). Limites annoncées : 1000 tokens/IP, recharge 3/s ; recherche 50, code 10. CORS GET vérifié ; ETag non exposé, aucune requête conditionnelle forcée. Service tiers sans garantie SLA ; IP et recherche transmises.';
+giygas.accessPolicy = 'API v1 sans clé, vérifiée le 12 octobre 2026 depuis GitHub Pages. Données BDPM attribuées ; cache local limité à 50 recherches, expiration selon Cache-Control plafonnée à 1 h (nom) ou 4 h (code). Limites annoncées : 1000 tokens/IP, recharge 3/s ; recherche 50, code 10. CORS GET vérifié ; ETag non exposé, aucune requête conditionnelle forcée. RCP/notice : routes documentées vérifiées, cache local de 20 documents ; copies conservées durablement par le service, dates ANSM affichées. Service tiers sans garantie SLA ; IP et recherche transmises.';

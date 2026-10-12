@@ -3,6 +3,31 @@ import { apiCacheSchema, catalogRequest, fetchCatalog, parseCatalogResponse, Med
 
 export interface CatalogResult { entry:ApiCacheEntry; origin:'network'|'cache'; stale:boolean; warning:string; }
 const pending=new Map<string,Promise<ApiCacheEntry>>();
+export async function cachedCatalogRecord(cis:string):Promise<CatalogResult|null> {
+ if(!/^\d{8}$/.test(cis))return null;
+ try {
+  const entries=await db.apiCache.orderBy('retrievedAt').reverse().limit(50).toArray();
+  for(const entry of entries) {
+   // Valider seulement les réponses candidates, avant toute réutilisation.
+   if(!Array.isArray(entry.records)||!entry.records.some(r=>r?.cis===Number(cis)))continue;
+   const parsed=apiCacheSchema.safeParse(entry);if(!parsed.success)continue;
+   const record=parsed.data.records.find(r=>r.cis===Number(cis));if(!record)continue;
+   return {entry:{...parsed.data,records:[record]},origin:'cache',stale:entry.expiresAt<=Date.now(),warning:''};
+  }
+ }catch{/* Pas de données supposées si le cache est bloqué. */}
+ return null;
+}
+export async function recentCatalogSearches() {
+ try {
+  return (await db.apiCache.orderBy('retrievedAt').reverse().limit(50).toArray()).flatMap(entry=>{
+   const parsed=apiCacheSchema.safeParse(entry);if(!parsed.success)return [];
+   const url=new URL('https://medicaments-api.giygas.dev'+entry.key);
+   const term=url.searchParams.get('search')??url.searchParams.get('cip')??url.pathname.match(/\/(\d{8})$/)?.[1];
+   if(!term)return [];
+   return [{term,stale:entry.expiresAt<=Date.now(),count:entry.records.length,retrievedAt:entry.retrievedAt}];
+  }).slice(0,8);
+ }catch{return [];}
+}
 async function download(request:CatalogRequest) {
  const existing=pending.get(request.key);if(existing)return existing;
  const job=fetchCatalog(request);pending.set(request.key,job);

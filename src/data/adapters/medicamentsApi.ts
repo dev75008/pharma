@@ -60,26 +60,34 @@ export function retryTime(value:string|null,now:number) {
  const parsed=value?Date.parse(value):NaN;
  return Number.isFinite(parsed)&&parsed>now?parsed:now+30000;
 }
-export async function fetchCatalog(request:CatalogRequest,fetcher:typeof fetch=fetch,now=Date.now()):Promise<ApiCacheEntry> {
+export async function requestApiJson(path:string,fetcher:typeof fetch=fetch,now=Date.now()) {
  if(now<blockedUntil)throw new MedicamentsApiError('Limite de requêtes atteinte. Réessayez après le délai indiqué.','rate-limit',blockedUntil);
  const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),10000);
  try {
-  const response=await fetcher(MEDICAMENTS_API+request.key,{signal:controller.signal,credentials:'omit',cache:'no-store',headers:{Accept:'application/json'}});
+  const response=await fetcher(MEDICAMENTS_API+path,{signal:controller.signal,credentials:'omit',cache:'no-store',headers:{Accept:'application/json'}});
   if(response.status===429){blockedUntil=retryTime(response.headers.get('Retry-After'),Date.now());throw new MedicamentsApiError('L’API limite temporairement les requêtes. Aucun nouvel essai automatique.','rate-limit',blockedUntil);}
   if(response.status===404)throw new MedicamentsApiError('Aucune spécialité trouvée dans cet instantané de l’API.','not-found');
   if(!response.ok)throw new MedicamentsApiError(`API indisponible (HTTP ${response.status}).`,'server');
   if(!response.headers.get('Content-Type')?.includes('application/json'))throw new MedicamentsApiError('La réponse de l’API n’est pas un document JSON.','invalid-data');
-  let records:RegulatoryDrug[];
-  try {records=parseCatalogResponse(await response.json(),request);}catch{throw new MedicamentsApiError('Réponse de l’API incompatible ou incohérente : aucune donnée nouvelle utilisée.','invalid-data');}
-  const retrieved=Date.now();const lastModified=response.headers.get('Last-Modified');const parsed=lastModified?Date.parse(lastModified):NaN;
-  const declared=/max-age=(\d+)/i.exec(response.headers.get('Cache-Control')??'');
-  const age=Math.max(0,Number(response.headers.get('Age')??0)||0);
-  const maxSeconds=request.kind==='search'?3600:14400;
-  const seconds=declared?Math.max(0,Math.min(maxSeconds,Number(declared[1]))-age):maxSeconds;
-  return {key:request.key,schemaVersion:1,records,retrievedAt:new Date(retrieved).toISOString(),sourceSyncedAt:Number.isFinite(parsed)?new Date(parsed).toISOString():null,expiresAt:retrieved+seconds*1000};
+  let payload:unknown;
+  try {payload=await response.json();}catch{throw new MedicamentsApiError('Réponse de l’API incompatible ou incohérente : aucune donnée nouvelle utilisée.','invalid-data');}
+  return {response,payload};
  } catch(error) {
   if(error instanceof MedicamentsApiError)throw error;
   if(controller.signal.aborted)throw new MedicamentsApiError('Délai réseau dépassé (10 secondes).','timeout');
   throw new MedicamentsApiError('Connexion à l’API impossible.','network');
  } finally {clearTimeout(timeout);}
+}
+export function cacheExpiry(response:Response,maxSeconds:number,now=Date.now()) {
+ const declared=/max-age=(\d+)/i.exec(response.headers.get('Cache-Control')??'');
+ const age=Math.max(0,Number(response.headers.get('Age')??0)||0);
+ const seconds=declared?Math.max(0,Math.min(maxSeconds,Number(declared[1]))-age):maxSeconds;
+ return now+seconds*1000;
+}
+export async function fetchCatalog(request:CatalogRequest,fetcher:typeof fetch=fetch,now=Date.now()):Promise<ApiCacheEntry> {
+ const {response,payload}=await requestApiJson(request.key,fetcher,now);
+ let records:RegulatoryDrug[];
+ try {records=parseCatalogResponse(payload,request);}catch{throw new MedicamentsApiError('Réponse de l’API incompatible ou incohérente : aucune donnée nouvelle utilisée.','invalid-data');}
+ const retrieved=Date.now();const lastModified=response.headers.get('Last-Modified');const parsed=lastModified?Date.parse(lastModified):NaN;
+ return {key:request.key,schemaVersion:1,records,retrievedAt:new Date(retrieved).toISOString(),sourceSyncedAt:Number.isFinite(parsed)?new Date(parsed).toISOString():null,expiresAt:cacheExpiry(response,request.kind==='search'?3600:14400,retrieved)};
 }

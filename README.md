@@ -34,7 +34,7 @@ Les compteurs des fiches étudiées proviennent du marquage local effectué par 
 - `src/domain/spacedRepetition.ts` : validation et SM-2 adapté, calendrier local.
 - `src/data/flashcards.ts` : 20 cartes initiales, uniquement à partir de champs documentés.
 - `src/data/questions.ts` : banque originale statique de démonstration, versionnée, et objectifs pédagogiques.
-- `src/storage` : Dexie/IndexedDB, migrations v1 → v2 → v3 → v4 → v5 sans perte des préférences ; bibliothèque, copies, résultats, tentatives, cartes personnelles, échéances et historique de répétitions.
+- `src/storage` : Dexie/IndexedDB, migrations v1 → v2 → v3 → v4 → v5 → v6 sans perte des préférences ; bibliothèque, copies, résultats, tentatives, cartes personnelles, échéances et historique de répétitions.
 - `src/App.tsx` : coquille, recherche globale et pages ; `src/PwaUpdate.tsx` : avis de mise à jour.
 - `src/styles.css` : Tailwind CSS via plugin Vite et styles responsive, variables du thème.
 - `src/test`, `e2e` : tests de composants et navigation navigateur.
@@ -57,3 +57,9 @@ Bilan et procédure documentaire : `docs/bilan-phase-2.md`, `docs/bilan-phase-3.
 Le module **Catalogue BDPM** recherche les spécialités par nom, CIS ou CIP via l’API indépendante [Medicaments API / Giygas](https://medicaments-api.giygas.dev/), sans clé ni backend. Les fiches locales proposent aussi un chargement des données réglementaires correspondant au CIS exact de leur RCP. Le cache IndexedDB conserve les 50 recherches récentes, disponibles hors ligne ; les copies expirées sont signalées et actualisables. Les compositions, présentations et statuts reçus n’écrasent pas les synthèses cliniques. Indications, contre-indications, posologies et interactions restent à vérifier dans les RCP.
 
 La recherche est déclenchée explicitement : l’adresse IP et les termes sont transmis au service tiers, sans données de révision. Aucune base complète n’est téléchargée automatiquement. Voir [documentation, provenance, conditions d’accès et limites](docs/api-medicaments.md).
+
+## Navigation et lecture documentaire
+
+Les fiches et le catalogue partagent les accès **Fiches de révision / Spécialités et RCP**. La spécialité sélectionnée et sa vue sont conservées dans l’URL, avec retour aux résultats sans nouvelle recherche. La page Catalogue propose les recherches déjà téléchargées. Le complément d’une fiche réutilise une spécialité déjà en cache en conservant sa provenance.
+
+Les endpoints RCP/notice documentés dans le dépôt de Giygas sont intégrés : lecture par rubrique, attribution ANSM, date du document, contenu HTML assaini côté client et cache de 20 documents pour le hors ligne. Les documents de l’API sont conservés durablement par ce service et ne garantissent pas une relecture récente de l’ANSM : le lien vers la version BDPM courante reste disponible. Aucune synthèse clinique n’est remplacée automatiquement. Le rendu documentaire et sa sécurité HTML sont chargés à la demande, indépendamment de KaTeX.

@@ -9,6 +9,13 @@ describe('Données médicales et provenance',()=>{
  it('signale la consultation ancienne sans considérer une date RCP ancienne comme une nouvelle consultation',()=>{expect(isStale(drugs[0].fields.dci,new Date('2026-10-13'))).toBe(false);expect(isStale(drugs[0].fields.dci,new Date('2027-10-13'))).toBe(true);expect(isStale(drugs[0].fields.structure3d,new Date('2027-10-13'))).toBe(false);});
 });
 describe('Recherche et comparaison',()=>{
+ it('actualise l’index après une nouvelle version documentaire',()=>{
+  const drug=structuredClone(drugs[0]);
+  expect(searchDrugs([drug],{query:'marqueur-new'})).toHaveLength(0);
+  const field=drug.fields.mechanism;if(field.status!=='available')throw Error();
+  field.value+=' marqueur-new';drug.contentVersion+='-updated';
+  expect(searchDrugs([drug],{query:'marqueur-new'})).toHaveLength(1);
+ });
  it('cherche sans accents et combine classe, spécialité, système et favoris',()=>{expect(searchDrugs(drugs,{query:'betabloquant beta-1'}).map(d=>d.id)).toEqual(['bisoprolol']);expect(searchDrugs(drugs,{query:'angiotensine',classId:'iec-ara2',specialtyId:'cardiologie',systemId:'cardiovasculaire',favoritesOnly:true},['losartan']).map(d=>d.id)).toEqual(['losartan']);expect(searchDrugs(drugs,{query:'DFG'}).map(d=>d.id)).toContain('metformine');expect(searchDrugs(drugs,{classId:'inconnue'})).toEqual([]);});
  it('ne compare pas une valeur absente et limite à quatre identifiants uniques connus',()=>{expect(hasDocumentedDifference(drugs.slice(0,2),'mechanism')).toBe(true);expect(hasDocumentedDifference(drugs.slice(0,2),'halfLife')).toBe(true);expect(hasDocumentedDifference(drugs.slice(0,2),'structure3d')).toBe(false);expect(hasDocumentedDifference([drugs[0]],'class')).toBe(false);expect(validateComparisonIds(['absent',...drugs.map(d=>d.id),'bisoprolol'],drugs.map(d=>d.id))).toEqual(drugs.slice(0,4).map(d=>d.id));});
 });

@@ -16,11 +16,10 @@ test('catalogue par nom, détails sourcés, cache et rechargement hors ligne',as
  await expect(page.getByText('BISOPROLOL (FUMARATE ACIDE DE)',{exact:true})).toBeVisible();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
  await page.evaluate(async()=>{await navigator.serviceWorker.ready;});
- await page.reload();await expect(page.getByRole('status')).toContainText('1 spécialité(s)');
+ await page.reload();await expect(page.getByRole('status')).toContainText('1 spécialité(s)');await expect(page.getByRole('heading',{name:record.elementPharmaceutique})).toBeVisible();
  expect(calls).toBe(1);
  await context.setOffline(true);await page.reload();
  await expect(page.getByText('Consultation hors ligne de la copie téléchargée.')).toBeVisible();
- await page.getByRole('button',{name:/Voir la spécialité/}).click();
  await expect(page.getByRole('heading',{name:record.elementPharmaceutique})).toBeVisible();
 });
 
