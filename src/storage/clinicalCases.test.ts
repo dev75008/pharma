@@ -1,0 +1,9 @@
+import {beforeEach,expect,it} from 'vitest';
+import {db} from './db';
+import {clinicalCases} from '../data/clinicalCases';
+import {caseScores} from '../domain/clinicalCases';
+import {nextCaseStep,readCase,saveCaseAnswer,startCase} from './clinicalCases';
+beforeEach(async()=>{await db.caseSessions.clear();});
+it('reprend les réponses sauvegardées après réouverture d’IndexedDB',async()=>{const s=await startCase(clinicalCases[0]);const q=s.dossier.steps[0].question;await saveCaseAnswer(s.id,0,{questionId:q.id,selectedOptionIds:['a']});db.close();await db.open();const loaded=await readCase(s.id);expect(loaded.answers[q.id].selectedOptionIds).toEqual(['a']);expect(loaded.submittedSteps).toEqual([]);expect(loaded.dossier.contentVersion).toBe(clinicalCases[0].contentVersion);});
+it('empêche deux onglets d’écraser la même réponse et une correction d’être modifiée',async()=>{const s=await startCase(clinicalCases[0]);const q=s.dossier.steps[0].question;const a={questionId:q.id,selectedOptionIds:['a','c']};const results=await Promise.allSettled([saveCaseAnswer(s.id,0,a,true),saveCaseAnswer(s.id,0,a,true)]);expect(results.filter(r=>r.status==='fulfilled')).toHaveLength(1);const loaded=await readCase(s.id);expect(loaded.revision).toBe(1);await expect(saveCaseAnswer(s.id,1,a)).rejects.toThrow('verrouillée');expect(caseScores(loaded)[0].score).toBe(1);});
+it('conserve le bilan et refuse une seconde terminaison',async()=>{let s=await startCase(clinicalCases[1]);for(let i=0;i<3;i++){const q=s.dossier.steps[s.currentStep].question;s=await saveCaseAnswer(s.id,s.revision,{questionId:q.id,selectedOptionIds:['a']},true);s=await nextCaseStep(s.id,s.revision);}expect((await readCase(s.id)).status).toBe('completed');await expect(nextCaseStep(s.id,s.revision)).rejects.toThrow();expect(await db.caseSessions.count()).toBe(1);});
