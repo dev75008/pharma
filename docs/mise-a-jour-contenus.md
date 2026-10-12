@@ -7,4 +7,4 @@
 5. Exécuter npm run test, npm run build, npm run test:e2e. Vérifier la cohérence scientifique par relecture humaine avant d’attribuer une validation indépendante.
 6. Publier sur main. Les données sont des instantanés de compilation et ne sont pas actualisées automatiquement. La consultation est signalée comme ancienne après 180 jours : ce seuil technique est une alerte de relecture, pas une garantie de validité pendant six mois.
 
-Aucun adaptateur réseau n’est actif. Avant sa création, documenter API officielle, licence, quotas, CORS, politique de cache et tests ; sinon garder liens et import statique légal. Aucun secret dans le frontend.
+Un adaptateur réseau réglementaire Giygas/BDPM est actif (voir `api-medicaments.md`). Les synthèses cliniques restent des instantanés statiques, mis à jour manuellement ; les données de cet adaptateur ne les écrasent pas. Avant sa création, documenter API officielle, licence, quotas, CORS, politique de cache et tests ; sinon garder liens et import statique légal. Aucun secret dans le frontend.

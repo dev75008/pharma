@@ -2,6 +2,7 @@ export const modules = [
  { path: '/', title: 'Accueil', group: 'ESPACE PERSONNEL' },
  { path: '/tableau-de-bord', title: 'Tableau de bord', group: 'ESPACE PERSONNEL' },
  { path: '/bibliotheque', title: 'Bibliothèque', group: 'APPRENDRE', phase: 2 },
+ { path: '/catalogue', title: 'Catalogue BDPM', group: 'APPRENDRE' },
  { path: '/classes', title: 'Classes pharmacologiques', group: 'APPRENDRE', phase: 2 },
  { path: '/comparateur', title: 'Comparateur', group: 'APPRENDRE', phase: 2 },
  { path: '/qcm', title: 'QCM & entraînement', group: 'S’ENTRAÎNER', phase: 3 },

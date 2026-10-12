@@ -1,6 +1,7 @@
 // Registre initial : liens uniquement. Aucun droit ni accès API n'est présumé.
-export interface ScientificSource { id: string; name: string; url: string; domain: string; accessPolicy: string; integrationStatus: 'link-only' | 'manual-summary'; }
+export interface ScientificSource { id: string; name: string; url: string; domain: string; accessPolicy: string; integrationStatus: 'link-only' | 'manual-summary' | 'api' ; }
 export const sources: ScientificSource[] = [
+ ['giygas', 'Medicaments API — Giygas', 'https://medicaments-api.giygas.dev/', 'Données réglementaires BDPM retransmises par un service indépendant'],
  ['bdpm', 'Base de données publique des médicaments', 'https://base-donnees-publique.medicaments.gouv.fr/', 'Informations réglementaires françaises'],
  ['pharmacorama', 'Pharmacorama', 'https://www.pharmacorama.com/', 'Pharmacologie pédagogique'],
  ['cbip', 'CBIP', 'https://www.cbip.be/fr/chapters', 'Pharmacothérapie belge'],
@@ -23,3 +24,7 @@ vidal.accessPolicy = 'Module de recherche intégrable proposé officiellement pa
 const pubchem = sources.find(s => s.id === 'pubchem')!;
 pubchem.integrationStatus = 'manual-summary';
 pubchem.accessPolicy = 'PUG REST officiel vérifié le 12 octobre 2026 : propriétés structurales de 13 composés intégrées en instantané statique avec CID. Requêtes séquentielles limitées ; aucune annotation clinique tierce redistribuée. Dates de mise à jour non disponibles dans ces réponses. Pas de connecteur navigateur ni de secret.';
+
+const giygas = sources.find(s => s.id === 'giygas')!;
+giygas.integrationStatus = 'api';
+giygas.accessPolicy = 'API v1 sans clé, vérifiée le 12 octobre 2026 depuis GitHub Pages. Données BDPM attribuées ; cache local limité à 50 recherches, expiration selon Cache-Control plafonnée à 1 h (nom) ou 4 h (code). Limites annoncées : 1000 tokens/IP, recharge 3/s ; recherche 50, code 10. CORS GET vérifié ; ETag non exposé, aucune requête conditionnelle forcée. Service tiers sans garantie SLA ; IP et recherche transmises.';

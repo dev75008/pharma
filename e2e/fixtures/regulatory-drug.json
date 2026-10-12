@@ -1,0 +1,66 @@
+{
+  "cis": 60524826,
+  "elementPharmaceutique": "BISOPROLOL TEVA 10 mg, comprimé pelliculé",
+  "formePharmaceutique": "comprimé pelliculé",
+  "voiesAdministration": [
+    "orale"
+  ],
+  "statusAutorisation": "Autorisation active",
+  "typeProcedure": "Procédure de reconnaissance mutuelle",
+  "etatComercialisation": "Commercialisée",
+  "dateAMM": "29/01/2001",
+  "titulaire": "TEVA SANTE",
+  "surveillanceRenforcee": "Non",
+  "composition": [
+    {
+      "cis": 60524826,
+      "elementPharmaceutique": "comprimé",
+      "codeSubstance": 7436,
+      "denominationSubstance": "BISOPROLOL (FUMARATE ACIDE DE)",
+      "dosage": "10 mg",
+      "referenceDosage": "un comprimé",
+      "natureComposant": "SA"
+    }
+  ],
+  "generiques": [
+    {
+      "cis": 60524826,
+      "group": 82,
+      "libelle": "BISOPROLOL (HEMIFUMARATE DE) 10 mg - DETENSIEL 10 mg, comprimé pelliculé sécable - SOPROL 10 mg, comprimé pelliculé sécable.",
+      "type": "Générique"
+    }
+  ],
+  "presentation": [
+    {
+      "cis": 60524826,
+      "cip7": 3560981,
+      "libelle": "plaquette(s) thermoformée(s) PVC PVDC aluminium de 30 comprimé(s)",
+      "statusAdministratif": "Présentation active",
+      "etatComercialisation": "Déclaration de commercialisation",
+      "dateDeclaration": "27/07/2010",
+      "cip13": 3400935609816,
+      "agreement": "oui",
+      "tauxRemboursement": "65%",
+      "prix": 3.88,
+      "prixPublic": 4.9,
+      "honorairesDispensation": 1.02
+    },
+    {
+      "cis": 60524826,
+      "cip7": 3738781,
+      "libelle": "plaquette(s) thermoformée(s) PVC PVDC aluminium de 90 comprimé(s)",
+      "statusAdministratif": "Présentation active",
+      "etatComercialisation": "Déclaration de commercialisation",
+      "dateDeclaration": "21/01/2009",
+      "cip13": 3400937387811,
+      "agreement": "oui",
+      "tauxRemboursement": "65%",
+      "prix": 10.74,
+      "prixPublic": 13.5,
+      "honorairesDispensation": 2.76
+    }
+  ],
+  "conditions": [
+    "liste I"
+  ]
+}
