@@ -1,16 +1,18 @@
+import type { LiteratureCache } from '../data/adapters/europePmc';
 import type { DocumentCacheEntry } from '../data/adapters/ansmDocuments';
 import type { ApiCacheEntry } from '../data/adapters/medicamentsApi';
 import Dexie, { type EntityTable } from 'dexie';
 import { draftSchema, emptyAnswer, parseQuestions, remainingSeconds, resultFromDraft, scoreAnswer } from '../domain/assessment';
 import type { Flashcard, FlashcardSchedule, FlashcardSession, FlashcardReview, AssessmentDraft, AssessmentResult, Question, QuestionAttempt, ScoringPolicy, DrugHistory, Favorite, StudyNote, UserProgress } from '../domain/models';
 export interface Preferences { id: 'user'; theme: 'light' | 'dark'; weeklyGoal: number; }
-export const db = new Dexie('medrevision') as Dexie & { apiDocuments: EntityTable<DocumentCacheEntry,'key'>; apiCache: EntityTable<ApiCacheEntry,'key'>; preferences: EntityTable<Preferences, 'id'>; favorites: EntityTable<Favorite,'drugId'>; history: EntityTable<DrugHistory,'drugId'>; progress: EntityTable<UserProgress,'drugId'>; notes: EntityTable<StudyNote,'drugId'>; assessments: EntityTable<AssessmentDraft,'id'>; assessmentResults: EntityTable<AssessmentResult,'id'>; attempts: EntityTable<QuestionAttempt,'id'>; customCards: EntityTable<Flashcard,'id'>; cardSchedules: EntityTable<FlashcardSchedule,'cardId'>; cardSessions: EntityTable<FlashcardSession,'id'>; cardReviews: EntityTable<FlashcardReview,'id'> };
+export const db = new Dexie('medrevision') as Dexie & { literature: EntityTable<LiteratureCache,'key'>; apiDocuments: EntityTable<DocumentCacheEntry,'key'>; apiCache: EntityTable<ApiCacheEntry,'key'>; preferences: EntityTable<Preferences, 'id'>; favorites: EntityTable<Favorite,'drugId'>; history: EntityTable<DrugHistory,'drugId'>; progress: EntityTable<UserProgress,'drugId'>; notes: EntityTable<StudyNote,'drugId'>; assessments: EntityTable<AssessmentDraft,'id'>; assessmentResults: EntityTable<AssessmentResult,'id'>; attempts: EntityTable<QuestionAttempt,'id'>; customCards: EntityTable<Flashcard,'id'>; cardSchedules: EntityTable<FlashcardSchedule,'cardId'>; cardSessions: EntityTable<FlashcardSession,'id'>; cardReviews: EntityTable<FlashcardReview,'id'> };
 db.version(1).stores({ preferences: 'id' });
 db.version(2).stores({ preferences:'id',favorites:'drugId,createdAt',history:'drugId,lastViewedAt',progress:'drugId,studiedAt',notes:'drugId' });
 db.version(3).stores({assessments:'id,mode,status,startedAt',assessmentResults:'id,mode,completedAt',attempts:'id,sessionId,questionId,recordedAt'});
 db.version(4).stores({customCards:'id,*classIds,createdAt',cardSchedules:'cardId,dueDate,suspended',cardSessions:'id,status,startedAt',cardReviews:'id,sessionId,cardId,reviewedAt'});
 db.version(5).stores({apiCache:'key,retrievedAt,expiresAt'});
 db.version(6).stores({apiDocuments:'key,retrievedAt,expiresAt'});
+db.version(7).stores({literature:'key,retrievedAt,expiresAt'});
 export const defaultPreferences: Preferences = { id:'user',theme:'light',weeklyGoal:120 };
 export async function readPreferences() { return (await db.preferences.get('user')) ?? defaultPreferences; }
 export async function savePreferences(value:Preferences) { await db.preferences.put(value); }

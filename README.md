@@ -1,6 +1,11 @@
 # MEDREVISION
 Application personnelle de révision DFASM2, React/TypeScript/Vite. Dépôt cible : https://github.com/dev75008/pharma.
 
+## Publications et sources internationales
+Les fiches proposent une recherche Europe PMC volontaire, sans clé, de 10 références PubMed au maximum, avec provenance, cache IndexedDB 24 h et lecture hors ligne. Les neuf ressources scientifiques sont distinguées dans le registre ; les bases américaines ne remplacent pas les RCP français. Les autres API internationales restent accessibles par lien, sauf les propriétés PubChem déjà intégrées en instantané. Voir [les connecteurs et limites](docs/api-scientifiques.md).
+
+Validation locale de cette extension : compilation réussie, 72 tests Vitest et 50 scénarios Playwright (ordinateur/mobile). Les tests utilisent une réponse bibliographique réelle figée ; l'appel réel Europe PMC depuis l'origine GitHub Pages a retourné HTTP 200 le 12 octobre 2026. Migration IndexedDB v7 : ajout du cache bibliographique, conservation des tables existantes. Les RCP/notices et bibliographies sont téléchargés uniquement sur demande et restent accessibles hors ligne dans les limites de leurs caches. Le lecteur de RCP nettoie le HTML externe avec DOMPurify avant affichage.
+
 ## Installation
 Node.js 24 LTS et npm recommandés.
 ```powershell
@@ -18,7 +23,7 @@ npx playwright install chromium
 npm run test:e2e
 npm run preview
 ```
-Les tests E2E utilisent le build de production, y compris le service worker. Le mode hors ligne nécessite une première visite en ligne et la fin du précache ; localhost ou HTTPS requis. Les RCP externes ne sont pas téléchargés. Pour une mise à jour, fermer les onglets de l’ancienne phase 1 puis rouvrir le site ; les versions suivantes disposent d’un avis de mise à jour.
+Les tests E2E utilisent le build de production, y compris le service worker. Le mode hors ligne nécessite une première visite en ligne et la fin du précache ; localhost ou HTTPS requis. Les documents externes sont téléchargés uniquement sur demande et conservés dans les limites du cache. Pour une mise à jour, fermer les onglets de l’ancienne phase 1 puis rouvrir le site ; les versions suivantes disposent d’un avis de mise à jour.
 
 ## État actuel : phases 1 à 4
 Opérationnels : navigation des pages, recherche globale des modules et médicaments, interface responsive, mode sombre, préférences IndexedDB et objectif hebdomadaire, bibliothèque de 13 molécules / 12 familles, filtres combinables, favoris, historique des 20 dernières molécules consultées, marquage explicite des fiches étudiées, notes personnelles, fiches structurées avec provenance et statut de disponibilité par champ, comparateur de 2 à 4 molécules, impression / enregistrement PDF via le navigateur, précache PWA des contenus statiques et proposition de mise à jour.
@@ -34,11 +39,11 @@ Les compteurs des fiches étudiées proviennent du marquage local effectué par 
 - `src/domain/spacedRepetition.ts` : validation et SM-2 adapté, calendrier local.
 - `src/data/flashcards.ts` : 20 cartes initiales, uniquement à partir de champs documentés.
 - `src/data/questions.ts` : banque originale statique de démonstration, versionnée, et objectifs pédagogiques.
-- `src/storage` : Dexie/IndexedDB, migrations v1 → v2 → v3 → v4 → v5 → v6 sans perte des préférences ; bibliothèque, copies, résultats, tentatives, cartes personnelles, échéances et historique de répétitions.
+- `src/storage` : Dexie/IndexedDB, migrations v1 → v2 → v3 → v4 → v5 → v6 → v7 sans perte des préférences ; bibliothèque, copies, résultats, tentatives, cartes personnelles, échéances et historique de répétitions.
 - `src/App.tsx` : coquille, recherche globale et pages ; `src/PwaUpdate.tsx` : avis de mise à jour.
 - `src/styles.css` : Tailwind CSS via plugin Vite et styles responsive, variables du thème.
 - `src/test`, `e2e` : tests de composants et navigation navigateur.
-Les futurs adaptateurs réseau doivent rester séparés de l’interface. KaTeX affiche les équations des corrections avec trust=false et limites de rendu ; DOMPurify nettoie le HTML/MathML généré. Le module mathématique est chargé à la demande, puis reste disponible hors ligne grâce au précache. Aucun HTML externe n’est injecté. Recharts sera ajouté pour les graphiques en phase 6.
+Les futurs adaptateurs réseau doivent rester séparés de l’interface. KaTeX affiche les équations des corrections avec trust=false et limites de rendu ; DOMPurify nettoie le HTML/MathML généré. Le module mathématique est chargé à la demande, puis reste disponible hors ligne grâce au précache. Le lecteur de RCP rend le HTML externe après nettoyage DOMPurify avec une liste limitée de balises. Recharts sera ajouté pour les graphiques en phase 6.
 
 ## GitHub Pages
 Dans le dépôt `dev75008/pharma`, sélectionner Settings → Pages → Source → GitHub Actions. Le workflow vérifie puis déploie les pushes sur `main`. URL attendue après déploiement réussi : https://dev75008.github.io/pharma/.
