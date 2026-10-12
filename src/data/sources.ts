@@ -7,8 +7,15 @@ export const sources: ScientificSource[] = [
  ['pubchem', 'PubChem', 'https://pubchem.ncbi.nlm.nih.gov/', 'Structures et propriétés chimiques'],
  ['drugbank', 'DrugBank', 'https://go.drugbank.com/about', 'Médicaments et cibles'],
  ['chembl', 'ChEMBL', 'https://www.ebi.ac.uk/chembl/', 'Bioactivité moléculaire'],
+ ['theriaque', 'Thériaque — CNHIM', 'https://www.theriaque.org/', 'Monographies, interactions et informations sur les médicaments en France'],
  ['vidal', 'VIDAL', 'https://www.vidalfrance.com/fonctionnalites/monographie', 'Monographies'],
  ['sm2', 'SM-2 — Piotr Wozniak', 'https://www.super-memory.com/english/ol/sm2.htm', 'Algorithme de répétition espacée (source méthodologique)'],
  ['iupac', 'IUPAC Gold Book', 'https://goldbook.iupac.org/terms/view/L03515', 'Terminologie chimique et demi-vie'],
  ['ansm', 'ANSM', 'https://ansm.sante.fr/documents/reference/repertoire-des-medicaments', 'Répertoire et sécurité des médicaments'],
 ].map(([id, name, url, domain]) => ({ id, name, url, domain, accessPolicy: 'Conditions de réutilisation, API, quotas et CORS à vérifier avant intégration.', integrationStatus: id==='bdpm'?'manual-summary':'link-only' }));
+
+// Vérification des offres officielles le 12 octobre 2026.
+const theriaque = sources.find(s => s.id === 'theriaque')!;
+theriaque.accessPolicy = 'Consultation gratuite après inscription selon le site officiel. Intégration logicielle et extractions proposées par le CNHIM : droits, coûts et documentation à obtenir. Aucun accès API gratuit de redistribution vérifié ; aucun import automatique activé.';
+const vidal = sources.find(s => s.id === 'vidal')!;
+vidal.accessPolicy = 'Module de recherche intégrable proposé officiellement par VIDAL. Il ne fournit pas un export des monographies. Test du 12 octobre 2026 : script HTTP 404 ; iframe limitée par frame-ancestors aux domaines VIDAL. Aucun import de la base.';
