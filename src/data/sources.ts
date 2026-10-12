@@ -19,3 +19,7 @@ const theriaque = sources.find(s => s.id === 'theriaque')!;
 theriaque.accessPolicy = 'Consultation gratuite après inscription selon le site officiel. Intégration logicielle et extractions proposées par le CNHIM : droits, coûts et documentation à obtenir. Aucun accès API gratuit de redistribution vérifié ; aucun import automatique activé.';
 const vidal = sources.find(s => s.id === 'vidal')!;
 vidal.accessPolicy = 'Module de recherche intégrable proposé officiellement par VIDAL. Il ne fournit pas un export des monographies. Test du 12 octobre 2026 : script HTTP 404 ; iframe limitée par frame-ancestors aux domaines VIDAL. Aucun import de la base.';
+
+const pubchem = sources.find(s => s.id === 'pubchem')!;
+pubchem.integrationStatus = 'manual-summary';
+pubchem.accessPolicy = 'PUG REST officiel vérifié le 12 octobre 2026 : propriétés structurales de 13 composés intégrées en instantané statique avec CID. Requêtes séquentielles limitées ; aucune annotation clinique tierce redistribuée. Dates de mise à jour non disponibles dans ces réponses. Pas de connecteur navigateur ni de secret.';
