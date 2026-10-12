@@ -25,7 +25,7 @@ export interface Drug { id: StableId; classId: StableId; systemIds: string[]; sp
 export interface StudyNote { drugId: StableId; text: string; updatedAt: string; }
 export interface LearningObjective { id: StableId; title: string; specialtyIds: string[]; drugClassIds: StableId[]; }
 export interface Answer { questionId: StableId; selectedOptionIds: string[]; text?: string; associations?: Record<string,string>; }
-export interface Question { id: StableId; type: 'qcu'|'qrm'|'qroc'|'true-false'|'association'|'pharmacokinetics'; statement: string; options: { id: string; text: string; correct: boolean; explanation: string }[]; expectedConcepts?: string[][]; correction: string; difficulty: 1|2|3; classIds: StableId[]; objectiveIds: StableId[]; evidence: Provenance[]; validationStatus: 'demo'|'reviewed'; }
+export interface Question { id: StableId; type: 'qcu'|'qrm'|'qroc'|'true-false'|'association'|'pharmacokinetics'; statement: string; equation?: string; drugIds: StableId[]; associationItems?: { id: string; prompt: string; expectedChoiceId: string; explanation: string }[]; associationChoices?: { id: string; text: string }[]; expectedNumeric?: { value: number; tolerance: number; unit: string }; options: { id: string; text: string; correct: boolean; explanation: string }[]; expectedConcepts?: string[][]; correction: string; difficulty: 1|2|3; classIds: StableId[]; objectiveIds: StableId[]; evidence: Provenance[]; validationStatus: 'demo'|'reviewed'; }
 export interface ClinicalCase { id: StableId; title: string; fictional: true; specialtyIds: string[]; introduction: string; steps: { information: string; questionIds: StableId[] }[]; evidence: Provenance[]; validationStatus: 'demo'|'reviewed'; }
 export interface Flashcard { id: StableId; drugIds: StableId[]; front: string; back: string; evidence: Provenance[]; nextReviewAt: string; repetitions: number; intervalDays: number; easeFactor: number; }
 export interface RevisionSession { id: StableId; startedAt: string; endedAt: string; questionIds: StableId[]; flashcardIds: StableId[]; durationSeconds: number; }
@@ -34,3 +34,10 @@ export interface UserProgress { drugId: StableId; studiedAt: string | null; }
 export interface DrugHistory { drugId: StableId; lastViewedAt: string; visitCount: number; }
 export interface Favorite { drugId: StableId; createdAt: string; }
 export type { ScientificSource } from '../data/sources';
+
+export type ScoringPolicy = 'exact' | 'partial';
+export interface QuestionScore { questionId: string; score: number; exact: boolean; feedback: string; detectedConcepts: number[]; }
+export interface AssessmentDraft { id: string; mode: 'training' | 'exam'; status: 'active' | 'completed'; startedAt: string; deadlineAt: string | null; completedAt: string | null; questions: Question[]; contentVersion: string; policy: ScoringPolicy; answers: Record<string,Answer>; lockedQuestionIds: string[]; currentIndex: number; }
+export interface AssessmentResult { id: string; mode: 'training' | 'exam'; startedAt: string; completedAt: string; durationSeconds: number; questions: Question[]; answers: Record<string,Answer>; scores: QuestionScore[]; total: number; maximum: number; policy: ScoringPolicy; contentVersion: string; endedBy: 'user' | 'deadline'; }
+
+export interface QuestionAttempt { id:string; sessionId:string; questionId:string; mode:'training'|'exam'; recordedAt:string; answer:Answer; score:QuestionScore; classIds:string[]; }

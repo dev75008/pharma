@@ -5,3 +5,5 @@ Avant tout adaptateur : consigner la documentation officielle, la licence, les m
 Chaque futur champ médical doit conserver source, URL, consultation, mise à jour connue, niveau de vérification et disponibilité. Donnée absente : « À documenter ».
 Sources complémentaires à étudier : PubMed/NCBI, RCSB, SwissADME, SwissTargetPrediction, ChemSpider, HAS, collèges, Angers ; BANM/SFPC à identifier précisément. Pilly et Katzung : références bibliographiques, sans reproduction non autorisée.
 Les dépendances ont leurs propres licences, consultables dans leurs paquets. Le projet n’accorde aucune licence sur le contenu des sources tierces.
+
+Le registre inclut aussi [IUPAC Gold Book — lifetime](https://goldbook.iupac.org/terms/view/L03515), DOI 10.1351/goldbook.L03515, consulté le 12 octobre 2026. Le terme individuel est annoncé sous CC BY-SA 4.0 par sa page texte ; aucune collection n’est redistribuée. L’exercice original de calcul expose une conséquence mathématique de la demi-vie d’ordre 1 et conserve son attribution ; il n’est pas une copie de la définition. Les questions de démonstration référencent également les RCP des fiches, sans validation indépendante.

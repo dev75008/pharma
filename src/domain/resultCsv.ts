@@ -1,0 +1,4 @@
+import type { AssessmentResult } from './models';
+// Encodage RFC 4180 : guillemets doublés ; neutralisation des formules pour ouverture dans un tableur.
+export function csvCell(value:string|number){let text=String(value);if(/^[=+@\-\t\r]/.test(text))text="'"+text;return '"'+text.replace(/"/g,'""')+'"';}
+export function resultCsv(r:AssessmentResult){const rows:(string|number)[][]=[['session_id','date','mode','question_id','format','enonce','reponse','score','maximum','entierement_correcte','validation','bareme']];for(const [i,q] of r.questions.entries()){const a=r.answers[q.id];rows.push([r.id,r.completedAt,r.mode,q.id,q.type,q.statement,a?.text??(q.type==='association'?JSON.stringify(a?.associations??{}):(a?.selectedOptionIds??[]).join('|')),r.scores[i].score,1,r.scores[i].exact?'oui':'non',q.validationStatus,r.policy]);}return '\ufeff'+rows.map(row=>row.map(csvCell).join(',')).join('\r\n');}

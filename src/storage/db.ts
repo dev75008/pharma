@@ -1,9 +1,11 @@
 import Dexie, { type EntityTable } from 'dexie';
-import type { DrugHistory, Favorite, StudyNote, UserProgress } from '../domain/models';
+import { draftSchema, emptyAnswer, parseQuestions, remainingSeconds, resultFromDraft, scoreAnswer } from '../domain/assessment';
+import type { AssessmentDraft, AssessmentResult, Question, QuestionAttempt, ScoringPolicy, DrugHistory, Favorite, StudyNote, UserProgress } from '../domain/models';
 export interface Preferences { id: 'user'; theme: 'light' | 'dark'; weeklyGoal: number; }
-export const db = new Dexie('medrevision') as Dexie & { preferences: EntityTable<Preferences, 'id'>; favorites: EntityTable<Favorite,'drugId'>; history: EntityTable<DrugHistory,'drugId'>; progress: EntityTable<UserProgress,'drugId'>; notes: EntityTable<StudyNote,'drugId'> };
+export const db = new Dexie('medrevision') as Dexie & { preferences: EntityTable<Preferences, 'id'>; favorites: EntityTable<Favorite,'drugId'>; history: EntityTable<DrugHistory,'drugId'>; progress: EntityTable<UserProgress,'drugId'>; notes: EntityTable<StudyNote,'drugId'>; assessments: EntityTable<AssessmentDraft,'id'>; assessmentResults: EntityTable<AssessmentResult,'id'>; attempts: EntityTable<QuestionAttempt,'id'> };
 db.version(1).stores({ preferences: 'id' });
 db.version(2).stores({ preferences:'id',favorites:'drugId,createdAt',history:'drugId,lastViewedAt',progress:'drugId,studiedAt',notes:'drugId' });
+db.version(3).stores({assessments:'id,mode,status,startedAt',assessmentResults:'id,mode,completedAt',attempts:'id,sessionId,questionId,recordedAt'});
 export const defaultPreferences: Preferences = { id:'user',theme:'light',weeklyGoal:120 };
 export async function readPreferences() { return (await db.preferences.get('user')) ?? defaultPreferences; }
 export async function savePreferences(value:Preferences) { await db.preferences.put(value); }
@@ -12,3 +14,27 @@ export async function recordVisit(drugId:string) {await db.transaction('rw',db.h
 export async function setStudied(drugId:string,studied:boolean) {await db.progress.put({drugId,studiedAt:studied?new Date().toISOString():null});}
 export async function saveNote(drugId:string,text:string) {if(text.length>10000)throw new Error('Note trop longue');await db.notes.put({drugId,text,updatedAt:new Date().toISOString()});}
 export async function librarySnapshot() {return db.transaction('r',db.favorites,db.history,db.progress,db.notes,async()=>({favorites:await db.favorites.toArray(),history:await db.history.orderBy('lastViewedAt').reverse().limit(20).toArray(),progress:await db.progress.toArray(),notes:await db.notes.toArray()}));}
+
+export async function createAssessment(mode:AssessmentDraft['mode'],selected:Question[],policy:ScoringPolicy,durationMinutes:number){
+ if(!Number.isInteger(durationMinutes)||durationMinutes<1||durationMinutes>120)throw new Error('Durée invalide');
+ const bank=parseQuestions(selected);const start=Date.now();const draft:AssessmentDraft={id:crypto.randomUUID(),mode,status:'active',startedAt:new Date(start).toISOString(),deadlineAt:mode==='exam'?new Date(start+durationMinutes*60000).toISOString():null,completedAt:null,questions:bank,contentVersion:'2026-10-12.1',policy,answers:{},lockedQuestionIds:[],currentIndex:0};await db.assessments.add(draftSchema.parse(draft));return draft;
+}
+export async function saveAssessment(next:AssessmentDraft,lockId?:string){return db.transaction('rw',db.assessments,db.attempts,async()=>{
+ const old=await db.assessments.get(next.id);if(!old||old.status!=='active')throw new Error('Séance terminée ou absente');
+ if(old.deadlineAt&&remainingSeconds(old.deadlineAt)===0)throw new Error('Temps écoulé');
+ const value=draftSchema.parse(next);if(value.mode!==old.mode||value.startedAt!==old.startedAt||value.deadlineAt!==old.deadlineAt||value.policy!==old.policy||JSON.stringify(value.questions)!==JSON.stringify(old.questions))throw new Error('Configuration modifiée');
+ for(const id of old.lockedQuestionIds){value.answers[id]=old.answers[id];if(!value.lockedQuestionIds.includes(id))value.lockedQuestionIds.push(id);}
+ if(lockId){if(value.mode!=='training')throw new Error('Correction interdite avant fin d’examen');const question=value.questions.find(q=>q.id===lockId);if(!question)throw new Error('Question inconnue');const answer=value.answers[lockId]??emptyAnswer(question);value.lockedQuestionIds=[...new Set([...value.lockedQuestionIds,lockId])];await db.attempts.put({id:value.id+':'+lockId,sessionId:value.id,questionId:lockId,mode:value.mode,recordedAt:new Date().toISOString(),answer,score:scoreAnswer(question,answer,value.policy),classIds:question.classIds});}
+ await db.assessments.put(value);return value;
+ });}
+export async function finishAssessment(id:string,finalDraft?:AssessmentDraft){return db.transaction('rw',db.assessments,db.assessmentResults,db.attempts,async()=>{
+ const existing=await db.assessmentResults.get(id);if(existing)return existing;
+ const stored=await db.assessments.get(id);if(!stored)throw new Error('Séance introuvable');const expired=!!stored.deadlineAt&&remainingSeconds(stored.deadlineAt)===0;
+ // À échéance, seules les réponses déjà enregistrées sont corrigées.
+ const draft=draftSchema.parse(expired||!finalDraft?stored:finalDraft);
+ if(draft.id!==stored.id||draft.mode!==stored.mode||draft.policy!==stored.policy||draft.startedAt!==stored.startedAt||draft.deadlineAt!==stored.deadlineAt||JSON.stringify(draft.questions)!==JSON.stringify(stored.questions))throw new Error('Configuration modifiée');
+ for(const qid of stored.lockedQuestionIds)draft.answers[qid]=stored.answers[qid];
+ const result=resultFromDraft(draft,expired?'deadline':'user');await db.assessmentResults.add(result);await db.assessments.put({...draft,status:'completed',completedAt:result.completedAt});
+ for(const [index,q] of result.questions.entries()){const attemptId=id+':'+q.id;if(!await db.attempts.get(attemptId))await db.attempts.put({id:attemptId,sessionId:id,questionId:q.id,mode:result.mode,recordedAt:result.completedAt,answer:result.answers[q.id]??emptyAnswer(q),score:result.scores[index],classIds:q.classIds});}return result;
+ });}
+export async function assessmentSnapshot(){return db.transaction('r',db.assessments,db.assessmentResults,db.attempts,async()=>({drafts:(await db.assessments.toArray()).filter(d=>d.status==='active'),results:await db.assessmentResults.orderBy('completedAt').reverse().toArray(),attempts:await db.attempts.orderBy('recordedAt').toArray()}));}

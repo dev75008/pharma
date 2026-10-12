@@ -7,3 +7,5 @@ Accessibilité : langue, titres, landmarks, lien d’évitement, focus visible, 
 
 Les champs de sécurité sont très incomplets. La présence d’un seul effet ou d’une seule contre-indication ne signifie jamais que les autres sont absents. Une différence dans le comparateur est textuelle, sans interprétation de supériorité et sans correction des différences de populations.
 Le comparateur utilise l’impression du navigateur ; le choix de sauvegarder un PDF appartient à l’utilisateur. L’appel d’impression et les sources imprimables sont testés, pas tous les pilotes PDF.
+
+Phase 3 : 16 questions de démonstration non validées sont disponibles. QROC corrigées lexicalement, avec limites affichées ; pas de correction sémantique. Les barèmes et résultats sont personnels. Le temps correspond à la durée écoulée, pauses comprises. Copies et résultats sont aussi stockés localement et peuvent disparaître avec une réinitialisation du navigateur.

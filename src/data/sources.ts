@@ -8,5 +8,6 @@ export const sources: ScientificSource[] = [
  ['drugbank', 'DrugBank', 'https://go.drugbank.com/about', 'Médicaments et cibles'],
  ['chembl', 'ChEMBL', 'https://www.ebi.ac.uk/chembl/', 'Bioactivité moléculaire'],
  ['vidal', 'VIDAL', 'https://www.vidalfrance.com/fonctionnalites/monographie', 'Monographies'],
+ ['iupac', 'IUPAC Gold Book', 'https://goldbook.iupac.org/terms/view/L03515', 'Terminologie chimique et demi-vie'],
  ['ansm', 'ANSM', 'https://ansm.sante.fr/documents/reference/repertoire-des-medicaments', 'Répertoire et sécurité des médicaments'],
 ].map(([id, name, url, domain]) => ({ id, name, url, domain, accessPolicy: 'Conditions de réutilisation, API, quotas et CORS à vérifier avant intégration.', integrationStatus: id==='bdpm'?'manual-summary':'link-only' }));
