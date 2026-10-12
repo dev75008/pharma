@@ -22,3 +22,5 @@ Les premiers tests navigateur ont détecté les libellés des sélecteurs et le 
 Le contenu est volontairement incomplet : sécurité, chimie, stratégie thérapeutique et points de révision restent largement À documenter. Pas de validation DFASM2 ou médicale indépendante. Aucun connecteur API, synchronisation, sauvegarde import/export ni correction d’examen disponible. L’impression est vérifiée côté navigateur ; les pilotes et fichiers PDF de tous les systèmes ne sont pas certifiés. Safari/Firefox et audit WCAG complet restent à vérifier.
 Prochaine phase : QCU/QRM/QROC, corrections déterministes, notation configurable et examens chronométrés ; exemples marqués démonstration avant validation.
 Commit : feat: ajouter la bibliothèque pharmacologique et les fiches sourcées (phase 2).
+
+Correction complémentaire : navigation vers une fiche sans masquer l’en-tête mobile, et titre de l’onglet portant la DCI. Vérifications navigateur ajoutées.
