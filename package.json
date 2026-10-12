@@ -1,7 +1,7 @@
 {
   "name": "medrevision",
   "version": "1.0.0",
-  "description": "R\u00e9visions m\u00e9dicales personnelles DFASM2",
+  "description": "Révisions médicales personnelles DFASM2",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
@@ -19,7 +19,8 @@
     "lucide-react": "^1.55.0",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
-    "react-router-dom": "^7.18.4"
+    "react-router-dom": "^7.18.4",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@playwright/test": "^1.64.0",
@@ -31,12 +32,14 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
+    "fake-indexeddb": "^6.2.5",
     "jsdom": "^29.1.1",
     "tailwindcss": "^4.3.3",
     "typescript": "^7.0.2",
     "vite": "^8.3.4",
     "vite-plugin-pwa": "^2.0.0",
-    "vitest": "^4.1.11"
+    "vitest": "^4.1.11",
+    "workbox-window": "^7.4.1"
   },
   "private": true
 }

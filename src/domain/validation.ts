@@ -1,0 +1,9 @@
+import { z } from 'zod';
+import { fieldGroups, type Drug, type FieldKey } from './models';
+const date = z.iso.date();
+const provenanceSchema = z.object({ sourceId:z.string().min(1), url:z.url().refine(v=>v.startsWith('https://')), consultedAt:date, sourceUpdatedAt:date.nullable(), locator:z.string().min(1) }).strict();
+const common = { scope:z.enum(['molecule','specialty','context']), context:z.string() };
+export const scientificFieldSchema = z.discriminatedUnion('status', [z.object({ ...common, status:z.literal('available'), value:z.string().min(1), verification:z.enum(['source-checked','independently-reviewed']), evidence:z.array(provenanceSchema).min(1) }).strict(), z.object({ ...common, status:z.literal('missing'), value:z.null(), verification:z.literal('unverified'), evidence:z.tuple([]), reason:z.string().min(1) }).strict()]);
+const fieldsShape = Object.fromEntries(fieldGroups.flatMap(g=>g.keys.map(key=>[key,scientificFieldSchema]))) as Record<FieldKey, typeof scientificFieldSchema>;
+export const drugSchema = z.object({ id:z.string().regex(/^[a-z0-9-]+$/), classId:z.string().min(1), systemIds:z.array(z.string()).min(1), specialtyIds:z.array(z.string()).min(1), targetIds:z.array(z.string()), indicationIds:z.array(z.string()), fields:z.object(fieldsShape).strict(), contentVersion:z.string().min(1), validationStatus:z.enum(['documentary-summary','independently-reviewed']) }).strict();
+export function parseDrugs(value: unknown): Drug[] { const parsed=z.array(drugSchema).parse(value); if(new Set(parsed.map(d=>d.id)).size!==parsed.length)throw new Error('Identifiants de médicaments dupliqués'); return parsed; }

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "betabloquants",
+    "label": "Bêtabloquants",
+    "specialtyIds": [
+      "cardiologie"
+    ],
+    "systemIds": [
+      "cardiovasculaire"
+    ]
+  },
+  {
+    "id": "iec-ara2",
+    "label": "IEC et ARA2",
+    "specialtyIds": [
+      "cardiologie"
+    ],
+    "systemIds": [
+      "cardiovasculaire"
+    ]
+  },
+  {
+    "id": "diuretiques",
+    "label": "Diurétiques",
+    "specialtyIds": [
+      "nephrologie"
+    ],
+    "systemIds": [
+      "renal"
+    ]
+  },
+  {
+    "id": "anticoagulants",
+    "label": "Anticoagulants",
+    "specialtyIds": [
+      "cardiologie"
+    ],
+    "systemIds": [
+      "hemostase"
+    ]
+  },
+  {
+    "id": "antiagregants",
+    "label": "Antiagrégants",
+    "specialtyIds": [
+      "cardiologie"
+    ],
+    "systemIds": [
+      "hemostase"
+    ]
+  },
+  {
+    "id": "antibiotiques",
+    "label": "Antibiotiques",
+    "specialtyIds": [
+      "infectiologie"
+    ],
+    "systemIds": [
+      "infectieux"
+    ]
+  },
+  {
+    "id": "antidiabetiques",
+    "label": "Antidiabétiques",
+    "specialtyIds": [
+      "endocrinologie"
+    ],
+    "systemIds": [
+      "metabolique"
+    ]
+  },
+  {
+    "id": "antalgiques",
+    "label": "Antalgiques",
+    "specialtyIds": [
+      "medecine-generale"
+    ],
+    "systemIds": [
+      "douleur"
+    ]
+  },
+  {
+    "id": "ains",
+    "label": "AINS",
+    "specialtyIds": [
+      "medecine-generale"
+    ],
+    "systemIds": [
+      "douleur"
+    ]
+  },
+  {
+    "id": "corticoides",
+    "label": "Corticoïdes",
+    "specialtyIds": [
+      "medecine-generale"
+    ],
+    "systemIds": [
+      "immunitaire"
+    ]
+  },
+  {
+    "id": "antidepresseurs",
+    "label": "Antidépresseurs",
+    "specialtyIds": [
+      "psychiatrie"
+    ],
+    "systemIds": [
+      "nerveux"
+    ]
+  },
+  {
+    "id": "antiepileptiques",
+    "label": "Antiépileptiques",
+    "specialtyIds": [
+      "neurologie"
+    ],
+    "systemIds": [
+      "nerveux"
+    ]
+  }
+]
