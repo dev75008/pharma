@@ -9,3 +9,5 @@ Les champs de sécurité sont très incomplets. La présence d’un seul effet o
 Le comparateur utilise l’impression du navigateur ; le choix de sauvegarder un PDF appartient à l’utilisateur. L’appel d’impression et les sources imprimables sont testés, pas tous les pilotes PDF.
 
 Phase 3 : 16 questions de démonstration non validées sont disponibles. QROC corrigées lexicalement, avec limites affichées ; pas de correction sémantique. Les barèmes et résultats sont personnels. Le temps correspond à la durée écoulée, pauses comprises. Copies et résultats sont aussi stockés localement et peuvent disparaître avec une réinitialisation du navigateur.
+
+Phase 4 : cartes documentaires partielles et notes personnelles non vérifiées. La planification SM-2 est une aide à la révision, sans garantie de mémorisation ou de maîtrise clinique. Le mode consultation ne change pas les échéances. Les calendriers, cartes et historiques sont locaux ; les évaluations ne constituent pas une validation scientifique du contenu.

@@ -7,3 +7,5 @@ Sources complémentaires à étudier : PubMed/NCBI, RCSB, SwissADME, SwissTarget
 Les dépendances ont leurs propres licences, consultables dans leurs paquets. Le projet n’accorde aucune licence sur le contenu des sources tierces.
 
 Le registre inclut aussi [IUPAC Gold Book — lifetime](https://goldbook.iupac.org/terms/view/L03515), DOI 10.1351/goldbook.L03515, consulté le 12 octobre 2026. Le terme individuel est annoncé sous CC BY-SA 4.0 par sa page texte ; aucune collection n’est redistribuée. L’exercice original de calcul expose une conséquence mathématique de la demi-vie d’ordre 1 et conserve son attribution ; il n’est pas une copie de la définition. Les questions de démonstration référencent également les RCP des fiches, sans validation indépendante.
+
+[Algorithme SM-2 — Piotr Wozniak](https://www.super-memory.com/english/ol/sm2.htm) : source méthodologique consultée le 12 octobre 2026. Les règles mathématiques ont été implémentées en TypeScript dans ce projet ; aucun code, texte intégral ou programme SuperMemo n’est redistribué. Les cartes réutilisent les synthèses originales et leurs provenances, sans téléchargement automatique.

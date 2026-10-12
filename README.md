@@ -20,9 +20,9 @@ npm run preview
 ```
 Les tests E2E utilisent le build de production, y compris le service worker. Le mode hors ligne nécessite une première visite en ligne et la fin du précache ; localhost ou HTTPS requis. Les RCP externes ne sont pas téléchargés. Pour une mise à jour, fermer les onglets de l’ancienne phase 1 puis rouvrir le site ; les versions suivantes disposent d’un avis de mise à jour.
 
-## État actuel : phases 1 à 3
+## État actuel : phases 1 à 4
 Opérationnels : navigation des 13 pages, recherche globale des modules et médicaments, interface responsive, mode sombre, préférences IndexedDB et objectif hebdomadaire, bibliothèque de 13 molécules / 12 familles, filtres combinables, favoris, historique des 20 dernières molécules consultées, marquage explicite des fiches étudiées, notes personnelles, fiches structurées avec provenance et statut de disponibilité par champ, comparateur de 2 à 4 molécules, impression / enregistrement PDF via le navigateur, précache PWA des contenus statiques et proposition de mise à jour.
-Les contenus sont des synthèses documentaires originales partielles, issues de RCP français ; aucune validation médicale indépendante n’est revendiquée. Les champs non documentés affichent « À documenter ». Les catégories de spécialité et système sont un classement pédagogique. La phase 3 ajoute une banque statique de 16 questions de démonstration, six formats, entraînement corrigé immédiatement, examens chronométrés, reprise locale, historique, analyse des erreurs, filtres par classe/format/difficulté/dernière erreur et export CSV des résultats. Flashcards, dossiers progressifs, planning et graphiques attendent les prochaines phases.
+Les contenus sont des synthèses documentaires originales partielles, issues de RCP français ; aucune validation médicale indépendante n’est revendiquée. Les champs non documentés affichent « À documenter ». Les catégories de spécialité et système sont un classement pédagogique. La phase 3 ajoute une banque statique de 16 questions de démonstration, six formats, entraînement corrigé immédiatement, examens chronométrés, reprise locale, historique, analyse des erreurs, filtres par classe/format/difficulté/dernière erreur et export CSV des résultats. La phase 4 ajoute 20 flashcards documentaires, création de cartes personnelles, recto/verso, quatre évaluations, répétition espacée SM-2 adaptée, échéances locales, compteur de retards, séances quotidiennes reprises après rechargement, consultation sans planification et suspension/réactivation. Dossiers progressifs, planning et graphiques attendent les prochaines phases.
 Les compteurs des fiches étudiées proviennent du marquage local effectué par l’utilisateur. Consulter une fiche ne signifie pas l’avoir maîtrisée. Les compteurs de corrections proviennent des tentatives enregistrées, blancs inclus. Le taux de réussite compte les réponses entièrement correctes, distinct des points partiels. Le temps affiché correspond aux séances terminées et inclut pauses et onglets fermés ; aucun temps n’est déduit des consultations.
 
 ## Architecture
@@ -30,8 +30,11 @@ Les compteurs des fiches étudiées proviennent du marquage local effectué par 
 - `src/domain` : interfaces, schémas Zod stricts, recherche, règles de comparaison et péremption documentaire.
 - `src/features/library` : bibliothèque, fiches et comparateur.
 - `src/features/assessment` : configuration des séances, réponses, corrections, chronomètre et résultats.
+- `src/features/flashcards` : bibliothèque de cartes, création personnelle, séances et bilans.
+- `src/domain/spacedRepetition.ts` : validation et SM-2 adapté, calendrier local.
+- `src/data/flashcards.ts` : 20 cartes initiales, uniquement à partir de champs documentés.
 - `src/data/questions.ts` : banque originale statique de démonstration, versionnée, et objectifs pédagogiques.
-- `src/storage` : Dexie/IndexedDB, migrations v1 → v2 → v3 sans perte des préférences ; bibliothèque, copies, résultats et tentatives.
+- `src/storage` : Dexie/IndexedDB, migrations v1 → v2 → v3 → v4 sans perte des préférences ; bibliothèque, copies, résultats, tentatives, cartes personnelles, échéances et historique de répétitions.
 - `src/App.tsx` : coquille, recherche globale et pages ; `src/PwaUpdate.tsx` : avis de mise à jour.
 - `src/styles.css` : Tailwind CSS via plugin Vite et styles responsive, variables du thème.
 - `src/test`, `e2e` : tests de composants et navigation navigateur.
@@ -43,8 +46,8 @@ Le workflow définit `VITE_BASE_PATH=/pharma/`. Les routes par hash fonctionnent
 Aucun déploiement n’est affirmé avant retour réussi de GitHub Actions.
 
 ## Suite
-Phase 2 livrée côté fonctionnalités ; enrichissement et relecture médicale du contenu restent nécessaires. Phase 3 livrée : questions, scores et examens ; banque de démonstration à enrichir et valider. Phase 4 : SM-2. Phase 5 : cas fictifs. Phase 6 : progression, planning, statistiques, sauvegardes. Phase 7 : connecteurs autorisés. Phase 8 : validation globale et publication.
+Phase 2 livrée côté fonctionnalités ; enrichissement et relecture médicale du contenu restent nécessaires. Phase 3 livrée : questions, scores et examens ; banque de démonstration à enrichir et valider. Phase 4 livrée : flashcards et SM-2 adapté. Phase 5 : cas fictifs. Phase 6 : progression, planning, statistiques, sauvegardes. Phase 7 : connecteurs autorisés. Phase 8 : validation globale et publication.
 
 Voir `docs/sources-et-licences.md` et `docs/limites-medicales.md`.
 
-Bilan et procédure documentaire : `docs/bilan-phase-2.md`, `docs/bilan-phase-3.md`, `docs/evaluation.md` et `docs/mise-a-jour-contenus.md`.
+Bilan et procédure documentaire : `docs/bilan-phase-2.md`, `docs/bilan-phase-3.md`, `docs/bilan-phase-4.md`, `docs/repetition-espacee.md`, `docs/evaluation.md` et `docs/mise-a-jour-contenus.md`.
