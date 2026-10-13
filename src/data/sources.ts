@@ -1,5 +1,5 @@
 // Registre des sources : distinguer liens, instantanés documentaires et adaptateurs vérifiés.
-export interface ScientificSource { id: string; name: string; url: string; domain: string; accessPolicy: string; integrationStatus: 'link-only' | 'manual-summary' | 'api' ; }
+export interface ScientificSource { id: string; name: string; url: string; domain: string; accessPolicy: string; integrationStatus: 'link-only' | 'manual-summary' | 'api' | 'external-widget' ; }
 export const sources: ScientificSource[] = [
  ['giygas', 'Medicaments API — Giygas', 'https://medicaments-api.giygas.dev/', 'Données réglementaires BDPM et copies de RCP/notices ANSM via un service indépendant'],
  ['bdpm', 'Base de données publique des médicaments', 'https://base-donnees-publique.medicaments.gouv.fr/', 'Informations réglementaires françaises'],
@@ -39,3 +39,7 @@ sources.push(
  {id:'clinicaltrials',name:'ClinicalTrials.gov',url:'https://clinicaltrials.gov/data-api/api',domain:'Registre international — protocoles et résultats déclarés d’essais',integrationStatus:'link-only',accessPolicy:'API v2 officielle documentée. Un essai enregistré n’est pas une preuve d’efficacité ni une recommandation française. Aucun connecteur ni contrôle CORS/quota implémenté ; conditions de réutilisation à vérifier avant import.'},
  {id:'wikidata',name:'Wikidata SPARQL',url:'https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service',domain:'Données collaboratives internationales — identifiants et relations exploratoires',integrationStatus:'link-only',accessPolicy:'Service SPARQL public soumis aux limites du service et à une migration annoncée en 2026–2027. Données structurées CC0 ; références et fiabilité à contrôler. Aucun connecteur ou assimilation à une validation médicale ; CORS et charge des requêtes non testés.'},
 );
+
+const pharmacorama=sources.find(s=>s.id==='pharmacorama')!;
+pharmacorama.integrationStatus='external-widget';
+pharmacorama.accessPolicy='Quiz original affiché sur demande dans un cadre externe depuis la page QCM ; lien de secours vers la source. Encadrement vérifié le 13 octobre 2026 depuis GitHub Pages. Aucun import des questions, scores ou corrections. Connexion requise ; cookies et statistiques du site externe. Aucun droit de reproduction établi.';

@@ -1,0 +1,13 @@
+# Quiz Pharmacorama
+
+Intégration de la page originale https://www.pharmacorama.com/quizz/ dans un iframe chargé uniquement sur demande depuis la page QCM. Auteur affiché : Pierre Allain, d'après https://www.pharmacorama.com/qui-sommes-nous/. Le lien vers le site original reste accessible même si l'affichage embarqué ne fonctionne plus.
+
+Vérification le 13 octobre 2026 : HTTP 200, pas de X-Frame-Options ou de Content-Security-Policy interdisant l'encadrement observés sur les pages consultées. Affichage réellement testé dans Chromium depuis l'origine https://dev75008.github.io. La disponibilité future dépend du site externe. L'absence de blocage technique n'est pas une licence de copie ou une autorisation de redistribution : aucun export des questions, collecte des corrigés, miroir, scraper ou banque locale n'est créé. Aucun endpoint de quiz n'est inventé ; les éventuelles API WordPress ne sont pas utilisées pour importer le contenu.
+
+Le sandbox autorise scripts, formulaires et liens dans un nouvel onglet, mais pas de navigation automatique de la page parente. Le site conserve sa propre origine ; ses scripts ne s'exécutent pas dans l'origine MEDREVISION. Le referrer est supprimé. Internet est requis ; les requêtes, cookies et statistiques externes restent traités par Pharmacorama. MEDREVISION ne peut pas lire les réponses ou scores dans le cadre, ni vérifier automatiquement qu'une erreur d'encadrement ne s'est pas produite. Le message de chargement parle du cadre, sans prétendre valider le quiz. Le lien de secours est toujours affiché.
+
+Les questions et corrections ne sont pas intégrées aux scores locaux, aux examens blancs ou au mode hors ligne. Le module n'apparaît pas pendant la préparation des examens. Le contenu peut comporter des retards de mise à jour selon la présentation de Pharmacorama ; les RCP français actuels restent la référence clinique. Aucune validation médicale indépendante n'est revendiquée.
+
+Tests logiciels : chargement volontaire, URL/source, sandbox, fermeture, perte de connexion, navigation interne au cadre, accès externe de secours et conservation des QCM locaux. Les fixtures navigateur sont entièrement synthétiques, sans reproduction de questions Pharmacorama. Vérification distincte du site réel avant publication ; la CI ne dépend pas de sa disponibilité.
+
+Résultats locaux du 13 octobre 2026 : compilation TypeScript/Vite réussie, 81 tests Vitest et 60 scénarios Playwright (ordinateur/mobile) réussis. Site réel : question visible dans le cadre depuis GitHub Pages, formulaires GET conservant l'origine Pharmacorama, aucune erreur de console observée. Aucune réponse n'a été envoyée au site pour cette vérification. Vue mobile réelle inspectée à 390 px, sans débordement de MEDREVISION.

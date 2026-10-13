@@ -1,6 +1,9 @@
 # MEDREVISION
 Application personnelle de révision DFASM2, React/TypeScript/Vite. Dépôt cible : https://github.com/dev75008/pharma.
 
+## Quiz Pharmacorama
+Depuis **QCM & entraînement**, le bouton « Afficher le quiz Pharmacorama » charge le quiz original dans un cadre externe. Accès internet requis ; réponses et statistiques restent chez Pharmacorama, sans ajout au score local. Un lien vers le site original reste disponible. Aucun import ou copie de sa banque. Voir [l'intégration et ses limites](docs/quiz-pharmacorama.md). Validation du 13 octobre 2026 : compilation réussie, 81 tests unitaires et 60 scénarios navigateur, plus vérification réelle depuis GitHub Pages et inspection mobile.
+
 ## Publications et sources internationales
 Les fiches proposent une recherche Europe PMC volontaire, sans clé, de 10 références PubMed au maximum, avec provenance, cache IndexedDB 24 h et lecture hors ligne. Les neuf ressources scientifiques sont distinguées dans le registre ; les bases américaines ne remplacent pas les RCP français. Les autres API internationales restent accessibles par lien, sauf les propriétés PubChem déjà intégrées en instantané. Voir [les connecteurs et limites](docs/api-scientifiques.md).
 
