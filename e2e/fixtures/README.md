@@ -1,5 +1,9 @@
 # Réponse réglementaire de test
 
+`pubchem-bisoprolol.json` : réponse réelle PubChem PUG REST pour le CID 2405, propriétés chimiques consultées le 13 octobre 2026 ; attribution PubChem, voir `docs/phase-7-donnees-moleculaires.md`.
+
+`chembl-bisoprolol.json` : réponse réelle de l'API EMBL-EBI ChEMBL, recherche par InChIKey complet du CID 2405, consultée le 13 octobre 2026. Une correspondance : CHEMBL645. **Données sous CC BY-SA 3.0**, attribution EMBL-EBI ChEMBL : https://www.ebi.ac.uk/chembl/ ; licence https://creativecommons.org/licenses/by-sa/3.0/. Fixture inchangée, pas de reproduction des pages web ou de mécanisme médical ajouté. La licence de ces données est distincte de celle du code.
+
 `europe-pmc.json` : réponse bibliographique réelle, API Europe PMC 6.9, reçue le 12 octobre 2026 pour `TITLE_ABS:"bisoprolol" AND SRC:MED`, `resultType=lite`, `pageSize=10`. Références seules, aucun résumé ou texte intégral. Instantané de test non distribué dans les fiches. Droits des articles : auteurs/éditeurs ; voir `docs/api-scientifiques.md`.
 
 `regulatory-drug.json` est la réponse réelle de `GET https://medicaments-api.giygas.dev/v1/medicaments/60524826`, consultée le 12 octobre 2026 depuis Chromium sur l’origine GitHub Pages. L’en-tête Last-Modified exposé indiquait `Mon, 12 Oct 2026 18:00:01 GMT`. Producteur des données : Base de données publique des médicaments ; retransmission indépendante par Medicaments API / Giygas.

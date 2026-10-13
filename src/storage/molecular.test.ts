@@ -1,0 +1,12 @@
+import {beforeEach,afterEach,expect,it,vi} from 'vitest';
+import fixture from '../../e2e/fixtures/pubchem-bisoprolol.json';
+import {db} from './db';
+import {loadMolecular} from './molecular';
+import {fetchPubchem,parsePubchem,pubchemUrl,type MolecularCache} from '../data/adapters/molecular';
+vi.mock('../data/adapters/molecular',async(original)=>({...await original<typeof import('../data/adapters/molecular')>(),fetchPubchem:vi.fn()}));
+const entry=():MolecularCache=>({key:'pubchem:2405',schemaVersion:1,sourceId:'pubchem',url:pubchemUrl(2405),properties:parsePubchem(fixture,2405),retrievedAt:'2026-10-13T12:00:00.000Z',expiresAt:Date.now()+86400000,sourceUpdatedAt:null});
+beforeEach(async()=>{await db.molecularCache.clear();vi.mocked(fetchPubchem).mockReset();vi.spyOn(navigator,'onLine','get').mockReturnValue(true);});
+afterEach(()=>vi.restoreAllMocks());
+it('déduplique et relit le cache après réouverture hors ligne',async()=>{vi.mocked(fetchPubchem).mockResolvedValue(entry());await Promise.all([loadMolecular('pubchem',2405),loadMolecular('pubchem',2405)]);expect(fetchPubchem).toHaveBeenCalledTimes(1);db.close();await db.open();vi.spyOn(navigator,'onLine','get').mockReturnValue(false);expect((await loadMolecular('pubchem',2405)).warning).toContain('hors ligne');await expect(loadMolecular('pubchem',1983)).rejects.toThrow('pas encore');});
+it('garde la date ancienne si l’actualisation échoue',async()=>{await db.molecularCache.put({...entry(),expiresAt:0});vi.mocked(fetchPubchem).mockRejectedValue(new Error('HTTP 503'));const result=await loadMolecular('pubchem',2405,true);expect(result.stale).toBe(true);expect(result.warning).toContain('503');expect(result.entry.retrievedAt).toBe('2026-10-13T12:00:00.000Z');});
+it('ignore une entrée avec une identité incompatible',async()=>{await db.molecularCache.put({...entry(),key:'pubchem:1983'});vi.spyOn(navigator,'onLine','get').mockReturnValue(false);await expect(loadMolecular('pubchem',1983)).rejects.toThrow('pas encore');});

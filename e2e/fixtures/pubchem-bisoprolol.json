@@ -1,0 +1,15 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 2405,
+        "MolecularFormula": "C18H31NO4",
+        "MolecularWeight": "325.4",
+        "SMILES": "CC(C)NCC(COC1=CC=C(C=C1)COCCOC(C)C)O",
+        "InChIKey": "VHYCDWMUTMEGQY-UHFFFAOYSA-N",
+        "XLogP": 1.9,
+        "TPSA": 60
+      }
+    ]
+  }
+}
