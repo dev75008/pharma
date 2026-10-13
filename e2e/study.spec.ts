@@ -1,0 +1,18 @@
+import {test,expect} from '@playwright/test';
+test('planning personnel, thèmes prioritaires et reprise hors ligne',async({page,context})=>{
+ await page.goto('/#/planning');await page.getByLabel('Titre de la séance').fill('Réviser mes mécanismes');await page.getByLabel('Date',{exact:true}).fill('2026-10-13');await page.getByRole('button',{name:'Ajouter au planning'}).click();
+ const row=page.locator('.plan-row').filter({hasText:'Réviser mes mécanismes'});await expect(row).toBeVisible();await row.getByRole('checkbox').check();await page.getByRole('checkbox',{name:'Bêtabloquants',exact:true}).check();await expect(page.locator('.recommendations')).toContainText('Thème important sélectionné par vous.');
+ await page.reload();await expect(row.getByRole('checkbox')).toBeChecked();await page.evaluate(async()=>{await navigator.serviceWorker.ready;});await context.setOffline(true);await page.reload();await expect(row).toBeVisible();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});
+test('corrections réelles, graphique et export CSV',async({page})=>{
+ await page.goto('/#/qcm');await page.getByLabel('Nombre de questions').fill('1');await page.getByRole('button',{name:'Commencer l’entraînement'}).click();await page.getByRole('radio',{name:'Récepteurs bêta-1',exact:true}).check();await page.getByRole('button',{name:'Valider et corriger'}).click();await expect(page.getByText('Réponse corrigée et enregistrée',{exact:true})).toBeVisible();
+ await page.goto('/#/statistiques');await expect(page.locator('.metrics')).toContainText('100 %');await expect(page.locator('.study-chart svg').first()).toBeVisible();await page.getByText('Voir les données du graphique en tableau').click();await expect(page.getByRole('table',{name:'Corrections par jour'})).toContainText('1');
+ const download=page.waitForEvent('download');await page.getByRole('button',{name:'Exporter toutes les corrections CSV'}).click();expect((await download).suggestedFilename()).toBe('medrevision-resultats.csv');
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});
+test('sauvegarde vérifiée, import sur appareil neuf et refus d’un fichier invalide',async({page,browser})=>{
+ await page.goto('/#/planning');await page.getByLabel('Titre de la séance').fill('Sauvegarde de mon planning');await page.getByRole('button',{name:'Ajouter au planning'}).click();await expect(page.locator('.plan-row')).toContainText('Sauvegarde de mon planning');await page.goto('/#/parametres');
+ const pending=page.waitForEvent('download');await page.getByRole('button',{name:'Exporter ma sauvegarde JSON'}).click();const download=await pending;const file=await download.path();expect(file).toBeTruthy();
+ const context=await browser.newContext();const fresh=await context.newPage();await fresh.goto('/#/parametres');await fresh.getByLabel('Choisir une sauvegarde à vérifier (32 Mo maximum)').setInputFiles(file!);await expect(fresh.getByText('Sauvegarde vérifiée · version 1')).toBeVisible();await fresh.getByRole('button',{name:'Importer les données vérifiées'}).click();await expect(fresh.getByText(/donnée\(s\) ajoutée\(s\)/)).toBeVisible();await fresh.goto('/#/planning');await expect(fresh.locator('.plan-row')).toContainText('Sauvegarde de mon planning');
+ await fresh.goto('/#/parametres');await fresh.getByLabel('Choisir une sauvegarde à vérifier (32 Mo maximum)').setInputFiles({name:'invalide.json',mimeType:'application/json',buffer:Buffer.from('{"app":"MEDREVISION","version":99}')});await expect(fresh.getByRole('alert')).toContainText('Aucune donnée modifiée');await context.close();
+});

@@ -1,0 +1,34 @@
+import {z} from 'zod';
+import {answerSchema,draftSchema,emptyAnswer,questionSchema,scoreAnswer} from './assessment';
+import {flashcardSchema,flashSessionSchema,ratings,scheduleSchema} from './spacedRepetition';
+import {caseSessionSchema} from './clinicalCases';
+import {planSchema,studySettingsSchema} from './study';
+import {flashcards} from '../data/flashcards';
+const id=z.string().min(1).max(300);const date=z.iso.datetime();
+const scoreSchema=z.object({questionId:id,score:z.number().min(0).max(1),exact:z.boolean(),feedback:z.string(),detectedConcepts:z.array(z.number().int().nonnegative())}).strict();
+export const assessmentResultSchema=z.object({id,mode:z.enum(['training','exam']),startedAt:date,completedAt:date,durationSeconds:z.number().int().nonnegative(),questions:z.array(questionSchema).min(1).max(100),answers:z.record(z.string(),answerSchema),scores:z.array(scoreSchema),total:z.number().nonnegative(),maximum:z.number().int().positive(),policy:z.enum(['exact','partial']),contentVersion:id,endedBy:z.enum(['user','deadline'])}).strict().superRefine((r,ctx)=>{
+ let scores:ReturnType<typeof scoreAnswer>[];try{scores=r.questions.map(q=>scoreAnswer(q,r.answers[q.id]??emptyAnswer(q),r.policy));}catch{ctx.addIssue({code:'custom',message:'Réponse invalide'});return;}
+ if(r.scores.length!==scores.length||r.maximum!==scores.length||Math.abs(r.total-scores.reduce((sum,s)=>sum+s.score,0))>1e-8||r.scores.some((s,i)=>s.questionId!==scores[i]?.questionId||Math.abs(s.score-(scores[i]?.score??0))>1e-8||s.exact!==scores[i]?.exact))ctx.addIssue({code:'custom',message:'Score incohérent'});
+ if(Date.parse(r.completedAt)<Date.parse(r.startedAt)||r.durationSeconds!==Math.round((Date.parse(r.completedAt)-Date.parse(r.startedAt))/1000))ctx.addIssue({code:'custom',message:'Durée incohérente'});
+ if(new Set(r.questions.map(q=>q.id)).size!==r.questions.length||Object.keys(r.answers).some(id=>!r.questions.some(q=>q.id===id)))ctx.addIssue({code:'custom',message:'Questions ou réponses incohérentes'});
+});
+const attemptSchema=z.object({id,sessionId:id,questionId:id,mode:z.enum(['training','exam']),recordedAt:date,answer:answerSchema,score:scoreSchema,classIds:z.array(id)}).strict();
+const reviewSchema=z.object({id,sessionId:id,cardId:id,reviewedAt:date,rating:z.enum(['again','hard','good','easy']),grade:z.number().int().min(2).max(5),schedulingApplied:z.boolean(),mode:z.enum(['scheduled','practice']),nextDueDate:z.iso.date().nullable(),algorithmVersion:id,cardSnapshot:flashcardSchema}).strict();
+const rows=<T extends z.ZodType>(schema:T)=>z.array(schema).max(10000);
+const dataSchema=z.object({preferences:rows(z.object({id:z.literal('user'),theme:z.enum(['light','dark']),weeklyGoal:z.number().int().min(15).max(2400).refine(n=>n%15===0)}).strict()).max(1),favorites:rows(z.object({drugId:id,createdAt:date}).strict()),history:rows(z.object({drugId:id,lastViewedAt:date,visitCount:z.number().int().positive()}).strict()),progress:rows(z.object({drugId:id,studiedAt:date.nullable()}).strict()),notes:rows(z.object({drugId:id,text:z.string().max(10000),updatedAt:date}).strict()),assessments:rows(draftSchema),assessmentResults:rows(assessmentResultSchema),attempts:rows(attemptSchema),customCards:rows(flashcardSchema),cardSchedules:rows(scheduleSchema),cardSessions:rows(flashSessionSchema),cardReviews:rows(reviewSchema),caseSessions:rows(caseSessionSchema),planning:rows(planSchema),studySettings:rows(studySettingsSchema).max(1)}).strict();
+export const backupSchema=z.object({app:z.literal('MEDREVISION'),version:z.literal(1),exportedAt:date,data:dataSchema}).strict().superRefine((b,ctx)=>{
+ const fail=(message:string)=>ctx.addIssue({code:'custom',message});const d=b.data;
+ for(const [table,rows] of Object.entries(d)){const keys=rows.map(row=>'drugId' in row?row.drugId:'cardId' in row&&table==='cardSchedules'?row.cardId:'id' in row?row.id:'');if(new Set(keys).size!==keys.length)fail(`Identifiants dupliqués : ${table}`);}
+ const drafts=new Map(d.assessments.map(s=>[s.id,s]));
+ for(const r of d.assessmentResults){const draft=drafts.get(r.id);if(!draft||draft.status!=='completed'||draft.mode!==r.mode||draft.policy!==r.policy||canonicalJson(draft.questions)!==canonicalJson(r.questions)||canonicalJson(draft.answers)!==canonicalJson(r.answers))fail('Résultat sans copie cohérente');}
+ for(const draft of d.assessments)if(draft.status==='completed'&&!d.assessmentResults.some(r=>r.id===draft.id))fail('Copie terminée sans résultat');
+ for(const draft of d.assessments)for(const q of draft.questions)if((draft.status==='completed'||draft.lockedQuestionIds.includes(q.id))&&!d.attempts.some(a=>a.id===`${draft.id}:${q.id}`))fail('Correction sans tentative');
+ for(const a of d.attempts){const draft=drafts.get(a.sessionId);const q=draft?.questions.find(q=>q.id===a.questionId);if(!q||!draft||a.id!==`${a.sessionId}:${a.questionId}`||a.mode!==draft.mode||(!draft.lockedQuestionIds.includes(q.id)&&draft.status!=='completed')){fail('Tentative sans question corrigée');continue;}try{const score=scoreAnswer(q,a.answer,draft.policy);if(score.score!==a.score.score||score.exact!==a.score.exact||a.score.questionId!==q.id||canonicalJson(q.classIds)!==canonicalJson(a.classIds)||canonicalJson(draft.answers[q.id]??emptyAnswer(q))!==canonicalJson(a.answer))fail('Tentative incohérente');}catch{fail('Réponse invalide');}}
+ for(const r of d.cardReviews){const session=d.cardSessions.find(s=>s.id===r.sessionId);const cursor=Number(r.id.slice(r.sessionId.length+1));if(!session||r.id!==`${r.sessionId}:${cursor}`||!Number.isInteger(cursor)||cursor<0||cursor>=session.cursor||session.queue[cursor]!==r.cardId||r.cardSnapshot.id!==r.cardId||r.mode!==session.mode||r.grade!==ratings.find(g=>g.id===r.rating)?.grade)fail('Rappel de carte incohérent');}
+ for(const c of d.customCards)if(c.type!=='personal'||c.validationStatus!=='personal-unverified')fail('Carte personnelle attendue');
+ const knownCards=new Set([...flashcards,...d.customCards,...d.cardSessions.flatMap(s=>s.cards)].map(c=>c.id));for(const schedule of d.cardSchedules)if(!knownCards.has(schedule.cardId))fail('Échéance sans carte');
+});
+export type Backup=z.infer<typeof backupSchema>;
+export const MAX_BACKUP_BYTES=32*1024*1024;
+export function parseBackup(text:string):Backup{if(new TextEncoder().encode(text).length>MAX_BACKUP_BYTES)throw new Error('Sauvegarde trop volumineuse (maximum 32 Mo).');try{return backupSchema.parse(JSON.parse(text));}catch{throw new Error('Sauvegarde invalide, incohérente ou version non prise en charge. Aucune donnée modifiée.');}}
+export function canonicalJson(value:unknown):string{if(Array.isArray(value))return '['+value.map(canonicalJson).join(',')+']';if(value&&typeof value==='object')return '{'+Object.entries(value).sort(([a],[b])=>a.localeCompare(b)).map(([k,v])=>JSON.stringify(k)+':'+canonicalJson(v)).join(',')+'}';return JSON.stringify(value)??'null';}

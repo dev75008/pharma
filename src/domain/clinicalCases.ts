@@ -5,7 +5,7 @@ export const clinicalCaseSchema=z.object({id:z.string().min(1),title:z.string().
  if(new Set(c.steps.map(s=>s.id)).size!==c.steps.length||new Set(c.steps.map(s=>s.question.id)).size!==c.steps.length)ctx.addIssue({code:'custom',message:'Étapes ou questions dupliquées'});
 });
 export type ProgressiveCase=z.infer<typeof clinicalCaseSchema>;
-export const caseSessionSchema=z.object({id:z.string().min(1),dossier:clinicalCaseSchema,status:z.enum(['active','completed']),startedAt:z.iso.datetime(),completedAt:z.iso.datetime().nullable(),currentStep:z.number().int().nonnegative(),submittedSteps:z.array(z.number().int().nonnegative()),answers:z.record(z.string(),answerSchema),revision:z.number().int().nonnegative()}).strict().superRefine((s,ctx)=>{
+export const caseSessionSchema=z.object({id:z.string().min(1),dossier:clinicalCaseSchema,status:z.enum(['active','completed']),startedAt:z.iso.datetime(),completedAt:z.iso.datetime().nullable(),currentStep:z.number().int().nonnegative(),submittedSteps:z.array(z.number().int().nonnegative()),submittedAt:z.record(z.string(),z.iso.datetime()).optional(),answers:z.record(z.string(),answerSchema),revision:z.number().int().nonnegative()}).strict().superRefine((s,ctx)=>{
  const fail=(message:string)=>ctx.addIssue({code:'custom',message});
  if(s.currentStep>=s.dossier.steps.length)fail('Étape hors limites');
  if(s.submittedSteps.some((step,i)=>step!==i)||s.submittedSteps.length<s.currentStep||s.submittedSteps.length>s.currentStep+1)fail('Progression incohérente');
@@ -26,7 +26,7 @@ export function answerCaseStep(raw:CaseSession,answer:Answer,submit=false):CaseS
  if(session.submittedSteps.includes(session.currentStep))throw new Error('Réponse déjà verrouillée.');
  const q=session.dossier.steps[session.currentStep].question;scoreAnswer(q,answer,'exact');
  if(submit&&!hasResponse(q,answer))throw new Error('Répondez avant de valider.');
- return caseSessionSchema.parse({...session,answers:{...session.answers,[q.id]:answer},submittedSteps:submit?[...session.submittedSteps,session.currentStep]:session.submittedSteps,revision:session.revision+1});
+ return caseSessionSchema.parse({...session,answers:{...session.answers,[q.id]:answer},submittedSteps:submit?[...session.submittedSteps,session.currentStep]:session.submittedSteps,...(submit?{submittedAt:{...session.submittedAt,[q.id]:new Date().toISOString()}}:{}),revision:session.revision+1});
 }
 export function advanceCase(raw:CaseSession,now=new Date().toISOString()):CaseSession{
  const s=caseSessionSchema.parse(raw);if(s.status!=='active'||!s.submittedSteps.includes(s.currentStep))throw new Error('Validez l’étape actuelle avant de poursuivre.');

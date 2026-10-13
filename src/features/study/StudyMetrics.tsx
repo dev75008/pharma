@@ -1,0 +1,4 @@
+import {studyStats} from '../../domain/study';
+import {useStudy} from './useStudy';
+export function Metrics({stats}:{stats:ReturnType<typeof studyStats>}){return <section className="metrics" aria-label="Progression réelle">{[['Fiches étudiées',String(stats.studied),'Marquées par vous'],['Questions corrigées',String(stats.events.length),'QCM et étapes cliniques'],['Réussite',stats.rate===null?'—':`${stats.rate} %`,'Réponses entièrement correctes'],['Temps de séance',`${stats.minutes} min`,'Séances terminées, pauses incluses']].map(([label,value,note])=><div className="panel metric" key={label}><span>{label}</span><strong>{value}</strong><small>{note}</small></div>)}</section>;}
+export function StudyMetrics(){const {data,error}=useStudy();return <>{error&&<p role="alert">{error}</p>}<Metrics stats={studyStats(data)}/></>;}
