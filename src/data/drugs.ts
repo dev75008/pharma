@@ -1,10 +1,11 @@
+import { manualContent,withImported } from './manualContent';
 import rawDrugs from './drugs.json';
 import rawClasses from './classes.json';
 import { parseDrugs } from '../domain/validation';
 import type { DrugClass, MolecularTarget, Indication } from '../domain/models';
-export const drugClasses: DrugClass[] = rawClasses;
-export const drugs = parseDrugs(rawDrugs);
+export const drugClasses: DrugClass[] = withImported(rawClasses,manualContent.classes);
+export const drugs = withImported(parseDrugs(rawDrugs),manualContent.drugs);
 export const molecularTargets: MolecularTarget[] = drugs.flatMap(d=>d.targetIds.map(id=>({id,name:d.fields.target})));
 export const indications: Indication[] = drugs.flatMap(d=>d.indicationIds.map(id=>({id,description:d.fields.indications})));
-export const specialties: Record<string,string> = { cardiologie:'Cardiologie', nephrologie:'Néphrologie', infectiologie:'Infectiologie', endocrinologie:'Endocrinologie', 'medecine-generale':'Médecine générale', psychiatrie:'Psychiatrie', neurologie:'Neurologie' };
-export const systems: Record<string,string> = { cardiovasculaire:'Cardiovasculaire', renal:'Rénal', hemostase:'Hémostase', infectieux:'Infectieux', metabolique:'Métabolique', douleur:'Douleur', immunitaire:'Immunitaire', nerveux:'Nerveux' };
+export const specialties: Record<string,string> = { cardiologie:'Cardiologie', nephrologie:'Néphrologie', infectiologie:'Infectiologie', endocrinologie:'Endocrinologie', 'medecine-generale':'Médecine générale', psychiatrie:'Psychiatrie', neurologie:'Neurologie', ...manualContent.specialties };
+export const systems: Record<string,string> = { cardiovasculaire:'Cardiovasculaire', renal:'Rénal', hemostase:'Hémostase', infectieux:'Infectieux', metabolique:'Métabolique', douleur:'Douleur', immunitaire:'Immunitaire', nerveux:'Nerveux', ...manualContent.systems };

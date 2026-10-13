@@ -652,7 +652,7 @@
         "scope": "molecule",
         "context": "",
         "evidence": [],
-        "reason": "Visualisation non intégrée. La référence PubChem de cette fiche permet de consulter la structure disponible."
+        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
       },
       "physicochemical": {
         "status": "available",
@@ -767,7 +767,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.12-2",
+    "contentVersion": "2026.10.14-1",
     "validationStatus": "documentary-summary"
   },
   {
@@ -1416,7 +1416,7 @@
         "scope": "molecule",
         "context": "",
         "evidence": [],
-        "reason": "Visualisation non intégrée. La référence PubChem de cette fiche permet de consulter la structure disponible."
+        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
       },
       "physicochemical": {
         "status": "available",
@@ -1531,7 +1531,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.12-2",
+    "contentVersion": "2026.10.14-1",
     "validationStatus": "documentary-summary"
   },
   {
@@ -2194,7 +2194,7 @@
         "scope": "molecule",
         "context": "",
         "evidence": [],
-        "reason": "Visualisation non intégrée. La référence PubChem de cette fiche permet de consulter la structure disponible."
+        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
       },
       "physicochemical": {
         "status": "available",
@@ -2309,7 +2309,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.12-2",
+    "contentVersion": "2026.10.14-1",
     "validationStatus": "documentary-summary"
   },
   {
@@ -2944,7 +2944,7 @@
         "scope": "molecule",
         "context": "",
         "evidence": [],
-        "reason": "Visualisation non intégrée. La référence PubChem de cette fiche permet de consulter la structure disponible."
+        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
       },
       "physicochemical": {
         "status": "available",
@@ -3059,7 +3059,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.12-2",
+    "contentVersion": "2026.10.14-1",
     "validationStatus": "documentary-summary"
   },
   {
@@ -3715,7 +3715,7 @@
         "scope": "molecule",
         "context": "",
         "evidence": [],
-        "reason": "Visualisation non intégrée. La référence PubChem de cette fiche permet de consulter la structure disponible."
+        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
       },
       "physicochemical": {
         "status": "available",
@@ -3830,7 +3830,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.12-2",
+    "contentVersion": "2026.10.14-1",
     "validationStatus": "documentary-summary"
   },
   {
@@ -4456,7 +4456,7 @@
         "scope": "molecule",
         "context": "",
         "evidence": [],
-        "reason": "Visualisation non intégrée. La référence PubChem de cette fiche permet de consulter la structure disponible."
+        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
       },
       "physicochemical": {
         "status": "available",
@@ -4571,7 +4571,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.12-2",
+    "contentVersion": "2026.10.14-1",
     "validationStatus": "documentary-summary"
   },
   {
@@ -5213,7 +5213,7 @@
         "scope": "molecule",
         "context": "",
         "evidence": [],
-        "reason": "Visualisation non intégrée. La référence PubChem de cette fiche permet de consulter la structure disponible."
+        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
       },
       "physicochemical": {
         "status": "available",
@@ -5328,7 +5328,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.12-2",
+    "contentVersion": "2026.10.14-1",
     "validationStatus": "documentary-summary"
   },
   {
@@ -5975,7 +5975,7 @@
         "scope": "molecule",
         "context": "",
         "evidence": [],
-        "reason": "Visualisation non intégrée. La référence PubChem de cette fiche permet de consulter la structure disponible."
+        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
       },
       "physicochemical": {
         "status": "available",
@@ -6090,7 +6090,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.12-2",
+    "contentVersion": "2026.10.14-1",
     "validationStatus": "documentary-summary"
   },
   {
@@ -6714,7 +6714,7 @@
         "scope": "molecule",
         "context": "",
         "evidence": [],
-        "reason": "Visualisation non intégrée. La référence PubChem de cette fiche permet de consulter la structure disponible."
+        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
       },
       "physicochemical": {
         "status": "available",
@@ -6829,7 +6829,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.12-2",
+    "contentVersion": "2026.10.14-1",
     "validationStatus": "documentary-summary"
   },
   {
@@ -7478,7 +7478,7 @@
         "scope": "molecule",
         "context": "",
         "evidence": [],
-        "reason": "Visualisation non intégrée. La référence PubChem de cette fiche permet de consulter la structure disponible."
+        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
       },
       "physicochemical": {
         "status": "available",
@@ -7593,7 +7593,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.12-2",
+    "contentVersion": "2026.10.14-1",
     "validationStatus": "documentary-summary"
   },
   {
@@ -8182,7 +8182,7 @@
         "scope": "molecule",
         "context": "",
         "evidence": [],
-        "reason": "Visualisation non intégrée. La référence PubChem de cette fiche permet de consulter la structure disponible."
+        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
       },
       "physicochemical": {
         "status": "available",
@@ -8297,7 +8297,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.12-2",
+    "contentVersion": "2026.10.14-1",
     "validationStatus": "documentary-summary"
   },
   {
@@ -8932,7 +8932,7 @@
         "scope": "molecule",
         "context": "",
         "evidence": [],
-        "reason": "Visualisation non intégrée. La référence PubChem de cette fiche permet de consulter la structure disponible."
+        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
       },
       "physicochemical": {
         "status": "available",
@@ -9047,7 +9047,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.12-2",
+    "contentVersion": "2026.10.14-1",
     "validationStatus": "documentary-summary"
   },
   {
@@ -9696,7 +9696,7 @@
         "scope": "molecule",
         "context": "",
         "evidence": [],
-        "reason": "Visualisation non intégrée. La référence PubChem de cette fiche permet de consulter la structure disponible."
+        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
       },
       "physicochemical": {
         "status": "available",
@@ -9811,7 +9811,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.12-2",
+    "contentVersion": "2026.10.14-1",
     "validationStatus": "documentary-summary"
   }
 ]

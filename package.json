@@ -4,9 +4,14 @@
   "description": "Révisions médicales personnelles DFASM2",
   "scripts": {
     "dev": "vite",
+    "prebuild": "npm run content:validate -- src/data/manual-content.json",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "test": "vitest run",
+    "content:validate": "tsx scripts/content.ts validate",
+    "content:import": "tsx scripts/content.ts import",
+    "test:compat": "playwright test --config playwright.compat.config.ts",
+    "release:check": "tsx scripts/release-check.ts",
     "test:watch": "vitest",
     "test:e2e": "playwright test"
   },
@@ -15,6 +20,7 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "3dmol": "^2.5.5",
     "dexie": "^4.4.6",
     "dompurify": "^3.4.17",
     "katex": "^0.19.0",
@@ -26,6 +32,7 @@
     "zod": "^4.6.7"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
     "@playwright/test": "^1.64.0",
     "@tailwindcss/vite": "^4.3.3",
     "@testing-library/jest-dom": "^7.0.1",
@@ -39,6 +46,7 @@
     "fake-indexeddb": "^6.2.5",
     "jsdom": "^29.1.1",
     "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vite": "^8.3.4",
     "vite-plugin-pwa": "^2.0.0",

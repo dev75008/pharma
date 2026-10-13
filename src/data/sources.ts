@@ -1,3 +1,4 @@
+import { manualContent } from './manualContent';
 // Registre des sources : distinguer liens, instantanés documentaires et adaptateurs vérifiés.
 export interface ScientificSource { id: string; name: string; url: string; domain: string; accessPolicy: string; integrationStatus: 'link-only' | 'manual-summary' | 'api' | 'external-widget' ; }
 export const sources: ScientificSource[] = [
@@ -23,7 +24,7 @@ vidal.accessPolicy = 'Module de recherche intégrable proposé officiellement pa
 
 const pubchem = sources.find(s => s.id === 'pubchem')!;
 pubchem.integrationStatus = 'api';
-pubchem.accessPolicy = 'PUG REST sans clé : instantanés initiaux de 13 CID et connecteur navigateur de propriétés chimiques. CID contrôlé, chargement volontaire, cache 24 h / 40 réponses partagé avec ChEMBL ; cadence locale 1/s, délai 10 s, pause après 429/503. CORS GET réel vérifié depuis GitHub Pages le 13 octobre 2026. Aucune annotation clinique tierce importée ; date de mise à jour source inconnue.';
+pubchem.accessPolicy = 'PUG REST sans clé : instantanés initiaux de 13 CID et connecteur navigateur de propriétés chimiques. CID contrôlé, chargement volontaire, cache 24 h / 40 réponses partagé avec ChEMBL ; cadence locale 1/s, délai 10 s, pause après 429/503. CORS GET réel vérifié depuis GitHub Pages le 13 octobre 2026. Conformère SDF 3D sur demande : CID contrôlé, cache séparé 24 h / 20 structures, rendu WebGL 3Dmol et alternative textuelle. Aucune annotation clinique tierce importée ; date de mise à jour source inconnue.';
 
 const giygas = sources.find(s => s.id === 'giygas')!;
 giygas.integrationStatus = 'api';
@@ -44,3 +45,17 @@ sources.push(
 const pharmacorama=sources.find(s=>s.id==='pharmacorama')!;
 pharmacorama.integrationStatus='external-widget';
 pharmacorama.accessPolicy='Quiz original affiché sur demande dans un cadre externe depuis la page QCM ; lien de secours vers la source. Encadrement vérifié le 13 octobre 2026 depuis GitHub Pages. Aucun import des questions, scores ou corrections. Connexion requise ; cookies et statistiques du site externe. Aucun droit de reproduction établi.';
+
+sources.push(...manualContent.sources);
+sources.push(
+ {id:'pubmed',name:'PubMed / NCBI',url:'https://pubmed.ncbi.nlm.nih.gov/',domain:'Bibliographie biomédicale internationale',integrationStatus:'link-only',accessPolicy:'Consultation originale ; les références PubMed sont recherchées via le connecteur Europe PMC. Aucun texte intégral reproduit. Droits des auteurs et éditeurs à vérifier.'},
+ {id:'cnpm',name:'Collège national de pharmacologie médicale',url:'https://pharmacomedicale.org/',domain:'Enseignement français de pharmacologie médicale',integrationStatus:'link-only',accessPolicy:'Site pédagogique officiel vérifié le 14/10/2026. Consultation originale ; aucun droit général de reproduction ou API publique établi. Aucun cours copié.'},
+ {id:'has',name:'Haute Autorité de santé',url:'https://www.has-sante.fr/',domain:'France — recommandations et évaluations',integrationStatus:'link-only',accessPolicy:'Liens vers le site original. Aucun connecteur ou reproduction automatique ; vérifier les dates, le périmètre et les droits de chaque document.'},
+ {id:'sfpc',name:'Société française de pharmacie clinique',url:'https://sfpc.eu/',domain:'Pharmacie clinique — ressources professionnelles',integrationStatus:'link-only',accessPolicy:'Société savante et site vérifiés le 14/10/2026. Ressources publiques ou réservées selon le document ; pas de base de médicaments librement redistribuable ou API vérifiée.'},
+ {id:'angers',name:'Université d’Angers — ressources pédagogiques',url:'https://moodle.univ-angers.fr/',domain:'Enseignement universitaire',integrationStatus:'link-only',accessPolicy:'Plateforme pédagogique universitaire ; accès pouvant demander une authentification. Les enseignants conservent leurs droits selon la politique consultée. Aucun cours téléchargé ou reproduit automatiquement.'},
+ {id:'swissadme',name:'SwissADME',url:'https://www.swissadme.ch/',domain:'Propriétés ADME calculées — exploration scientifique',integrationStatus:'link-only',accessPolicy:'Outil web vérifié ; pas d’API officielle gratuite intégrée. Prédictions distinctes de mesures cliniques et recommandations. Conditions de réutilisation à vérifier avant import.'},
+ {id:'swisstargetprediction',name:'SwissTargetPrediction',url:'https://www.swisstargetprediction.ch/',domain:'Prédiction de cibles moléculaires',integrationStatus:'link-only',accessPolicy:'Outil web vérifié ; aucune API intégrée. Une cible prédite n’est pas une cible pharmacologique validée. Aucun résultat importé automatiquement.'},
+ {id:'chemspider',name:'ChemSpider — Royal Society of Chemistry',url:'https://www.chemspider.com/',domain:'Structures et identifiants chimiques',integrationStatus:'link-only',accessPolicy:'Consultation du service original uniquement ; accès automatisé, licence et éventuelle clé à vérifier avant connecteur. Aucun secret frontend ni extraction de données.'},
+ {id:'pilly',name:'PILLY — référence bibliographique',url:'https://www.infectiologie.com/fr/livres-pilly-etudiants-e-pilly.html',domain:'Infectiologie — CMIT/SPILF',integrationStatus:'link-only',accessPolicy:'Page officielle des ouvrages vérifiée le 14/10/2026. Consultation des offres et documents originaux ; droits de reproduction réservés. Aucun chapitre ou question copié.'},
+ {id:'katzung',name:'Katzung — référence bibliographique',url:'https://accessmedicine.mhmedical.com/book.aspx?bookid=3382',domain:'Pharmacologie universitaire internationale',integrationStatus:'link-only',accessPolicy:'Référence bibliographique chez McGraw Hill, accès selon abonnement. Aucun chapitre, tableau ou question reproduit ; aucun contournement d’accès.'},
+);

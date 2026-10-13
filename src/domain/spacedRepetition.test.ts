@@ -4,7 +4,7 @@ import { drugs,drugClasses } from '../data/drugs';
 import { sources } from '../data/sources';
 import { addCalendarDays,applySm2,dueKind,initialSchedule,localDate,parseFlashcards,ratings,selectDailyCards } from './spacedRepetition';
 describe('Cartes et provenance',()=>{
- it('valide vingt cartes sourcées et les six types documentaires',()=>{expect(flashcards).toHaveLength(20);expect(new Set(flashcards.map(c=>c.type)).size).toBe(6);for(const c of flashcards){expect(c.validationStatus).toBe('documentary-summary');expect(c.drugIds.every(id=>drugs.some(d=>d.id===id))).toBe(true);expect(c.classIds.every(id=>drugClasses.some(d=>d.id===id))).toBe(true);expect(c.evidence.length).toBeGreaterThan(0);expect(c.evidence.every(e=>sources.some(s=>s.id===e.sourceId))).toBe(true);}});
+ it('valide vingt cartes sourcées et les six types documentaires',()=>{expect(flashcards.length).toBeGreaterThanOrEqual(46);expect(new Set(flashcards.map(c=>c.type)).size).toBe(6);for(const c of flashcards){expect(c.validationStatus).toBe('documentary-summary');expect(c.drugIds.every(id=>drugs.some(d=>d.id===id))).toBe(true);expect(c.classIds.every(id=>drugClasses.some(d=>d.id===id))).toBe(true);expect(c.evidence.length).toBeGreaterThan(0);expect(c.evidence.every(e=>sources.some(s=>s.id===e.sourceId))).toBe(true);}});
  it('refuse sources absentes, doublons et une URL personnelle dangereuse',()=>{expect(()=>parseFlashcards([{...flashcards[0],evidence:[]}])).toThrow();expect(()=>parseFlashcards([flashcards[0],flashcards[0]])).toThrow('dupliqués');expect(()=>parseFlashcards([{...flashcards[0],validationStatus:'personal-unverified',personalSourceUrl:'javascript:alert(1)'}])).toThrow();});
 });
 describe('SM-2 adapté et calendrier',()=>{

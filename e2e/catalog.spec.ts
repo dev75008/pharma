@@ -42,10 +42,11 @@ test('complément réglementaire sur la bonne fiche, sans modifier sa synthèse 
  let calls=0;
  await page.route(api,async route=>{calls++;expect(route.request().url()).toContain('/v1/medicaments/60524826');await route.fulfill({status:200,headers,body:JSON.stringify(record)});});
  await page.goto('/#/medicaments/bisoprolol');
+ const version=await page.locator('.content-version').innerText();
  expect(calls).toBe(0);
  await page.getByRole('button',{name:'Charger les données BDPM'}).click();
  await expect(page.getByRole('heading',{name:record.elementPharmaceutique})).toBeVisible();
- await expect(page.locator('.content-version')).toContainText('2026.10.12-2');
+ await expect(page.locator('.content-version')).toHaveText(version);
  await expect(page.getByText(/Concordance documentaire/).first()).toBeVisible();
  expect(calls).toBe(1);
 });

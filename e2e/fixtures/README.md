@@ -19,3 +19,6 @@ Ces données réglementaires sont utilisées comme instantané de test pour que 
 # ClinicalTrials.gov
 
 `clinicaltrials-version.json`, `clinicaltrials-amoxicillin.json` et `clinicaltrials-amoxicillin-recruiting.json` : réponses réelles reçues le 13 octobre 2026. API v2.0.5, recherche intervention amoxicillin, première page de 10 dossiers, champs projetés listés dans docs/phase-7-essais-cliniques.md. Réponses sans modification des valeurs ; aucune pièce jointe, résumé, résultat détaillé ou coordonnée copiée. Attribution ClinicalTrials.gov, droits et conditions https://clinicaltrials.gov/about-site/terms-conditions. Aucune déclaration CC0 ou application de la licence ISC du code à ces données.
+# PubChem 3D
+
+`pubchem-bisoprolol-3d.sdf` : réponse SDF originale PubChem CID 2405, record_type=3d, reçue le 13 octobre 2026. 54 atomes et 54 liaisons ; conformère calculé, pas une conformation expérimentale ou liée à une cible. Attribution PubChem ; aucun transfert de droits supposé pour les autres annotations. Endpoint et vérifications : docs/structures-3d.md. Aucune structure synthétique publiée comme donnée source.

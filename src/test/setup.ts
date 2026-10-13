@@ -9,3 +9,4 @@ vi.mock('virtual:pwa-register/react',()=>({useRegisterSW:()=>({needRefresh:[fals
 vi.spyOn(window,'scrollTo').mockImplementation(()=>{});
 
 Element.prototype.scrollIntoView=vi.fn();
+Object.defineProperty(window,'matchMedia',{writable:true,value:vi.fn((query:string)=>({matches:false,media:query,onchange:null,addEventListener:vi.fn(),removeEventListener:vi.fn(),addListener:vi.fn(),removeListener:vi.fn(),dispatchEvent:vi.fn()}))});

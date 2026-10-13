@@ -1,6 +1,6 @@
 # Entraînement quotidien personnalisé
 
-Le tableau de bord et le planning proposent une séance de 5, 10 ou 16 questions, avec prévisualisation des énoncés et des raisons du choix. Aucune réponse ni correction n’est affichée avant de commencer et de valider une question. Banque existante de démonstration, versionnée et sourcée, sans nouvelle génération de contenu médical.
+Le tableau de bord et le planning proposent une séance de 5, 10 ou davantage de questions selon la banque (plafond 50), avec prévisualisation des énoncés et des raisons du choix. Aucune réponse ni correction n’est affichée avant de commencer et de valider une question. Banque existante de démonstration, versionnée et sourcée, sans nouvelle génération de contenu médical.
 
 ## Sélection locale
 
@@ -14,7 +14,7 @@ Pour chaque question de la banque actuelle, une seule priorité est retenue :
 4. Aucune correction enregistrée pour la question.
 5. Question dont la dernière correction était entièrement correcte, pour rappel.
 
-Dans une priorité, les corrections les plus anciennes passent d’abord ; celles sans correction précèdent les questions déjà corrigées. À égalité, le jour local et l’identifiant stable déterminent une rotation reproducible (hash FNV-1a), puis l’identifiant départage une collision. Même jour, mêmes données et même taille donnent la même sélection. Une nouvelle correction ou un changement de thème peut modifier immédiatement la proposition. Le seuil est un choix pédagogique local, pas un barème national.
+Dans une priorité, les corrections les plus anciennes passent d’abord ; celles sans correction précèdent les questions déjà corrigées. À égalité, le jour local et l’identifiant stable déterminent une rotation reproductible (hash FNV-1a), puis l’identifiant départage une collision. Même jour, mêmes données et même taille donnent la même sélection. Une nouvelle correction ou un changement de thème peut modifier immédiatement la proposition. Le seuil est un choix pédagogique local, pas un barème national.
 
 Les erreurs sur des questions qui ne figurent plus dans la banque actuelle restent visibles dans les recommandations et corrections historiques, mais ne fabriquent pas une nouvelle question. Les étapes cliniques ne sont pas extraites de leur dossier pour devenir des exercices sans contexte. Les recommandations générales conservent également leurs liens vers fiches, flashcards et dossiers ; cette extension compose uniquement une séance de questions.
 

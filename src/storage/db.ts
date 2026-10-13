@@ -1,3 +1,5 @@
+import { questionContentVersion } from '../data/questions';
+import type { Conformer } from '../data/adapters/conformer';
 import type { TrialsCache } from '../data/adapters/clinicalTrials';
 import type { RxnormCache } from '../data/adapters/rxnorm';
 import type { ChemblKnowledge } from '../data/adapters/chemblMechanisms';
@@ -11,7 +13,7 @@ import Dexie, { type EntityTable } from 'dexie';
 import { draftSchema, emptyAnswer, parseQuestions, remainingSeconds, resultFromDraft, scoreAnswer } from '../domain/assessment';
 import type { Flashcard, FlashcardSchedule, FlashcardSession, FlashcardReview, AssessmentDraft, AssessmentResult, Question, QuestionAttempt, ScoringPolicy, DrugHistory, Favorite, StudyNote, UserProgress } from '../domain/models';
 export interface Preferences { id: 'user'; theme: 'light' | 'dark'; weeklyGoal: number; }
-export const db = new Dexie('medrevision') as Dexie & { trialsCache: EntityTable<TrialsCache,'key'>; rxnormCache: EntityTable<RxnormCache,'key'>; chemblKnowledge: EntityTable<ChemblKnowledge,'key'>; molecularCache: EntityTable<MolecularCache,'key'>; planning: EntityTable<StudyPlan,'id'>; studySettings: EntityTable<StudySettings,'id'>; caseSessions: EntityTable<CaseSession,'id'>; literature: EntityTable<LiteratureCache,'key'>; apiDocuments: EntityTable<DocumentCacheEntry,'key'>; apiCache: EntityTable<ApiCacheEntry,'key'>; preferences: EntityTable<Preferences, 'id'>; favorites: EntityTable<Favorite,'drugId'>; history: EntityTable<DrugHistory,'drugId'>; progress: EntityTable<UserProgress,'drugId'>; notes: EntityTable<StudyNote,'drugId'>; assessments: EntityTable<AssessmentDraft,'id'>; assessmentResults: EntityTable<AssessmentResult,'id'>; attempts: EntityTable<QuestionAttempt,'id'>; customCards: EntityTable<Flashcard,'id'>; cardSchedules: EntityTable<FlashcardSchedule,'cardId'>; cardSessions: EntityTable<FlashcardSession,'id'>; cardReviews: EntityTable<FlashcardReview,'id'> };
+export const db = new Dexie('medrevision') as Dexie & { conformers: EntityTable<Conformer,'key'>; trialsCache: EntityTable<TrialsCache,'key'>; rxnormCache: EntityTable<RxnormCache,'key'>; chemblKnowledge: EntityTable<ChemblKnowledge,'key'>; molecularCache: EntityTable<MolecularCache,'key'>; planning: EntityTable<StudyPlan,'id'>; studySettings: EntityTable<StudySettings,'id'>; caseSessions: EntityTable<CaseSession,'id'>; literature: EntityTable<LiteratureCache,'key'>; apiDocuments: EntityTable<DocumentCacheEntry,'key'>; apiCache: EntityTable<ApiCacheEntry,'key'>; preferences: EntityTable<Preferences, 'id'>; favorites: EntityTable<Favorite,'drugId'>; history: EntityTable<DrugHistory,'drugId'>; progress: EntityTable<UserProgress,'drugId'>; notes: EntityTable<StudyNote,'drugId'>; assessments: EntityTable<AssessmentDraft,'id'>; assessmentResults: EntityTable<AssessmentResult,'id'>; attempts: EntityTable<QuestionAttempt,'id'>; customCards: EntityTable<Flashcard,'id'>; cardSchedules: EntityTable<FlashcardSchedule,'cardId'>; cardSessions: EntityTable<FlashcardSession,'id'>; cardReviews: EntityTable<FlashcardReview,'id'> };
 db.version(1).stores({ preferences: 'id' });
 db.version(2).stores({ preferences:'id',favorites:'drugId,createdAt',history:'drugId,lastViewedAt',progress:'drugId,studiedAt',notes:'drugId' });
 db.version(3).stores({assessments:'id,mode,status,startedAt',assessmentResults:'id,mode,completedAt',attempts:'id,sessionId,questionId,recordedAt'});
@@ -25,6 +27,7 @@ db.version(10).stores({molecularCache:'key,retrievedAt,expiresAt'});
 db.version(11).stores({chemblKnowledge:'key,retrievedAt,expiresAt'});
 db.version(12).stores({rxnormCache:'key,retrievedAt,expiresAt'});
 db.version(13).stores({trialsCache:'key,retrievedAt,expiresAt'});
+db.version(14).stores({conformers:'key,retrievedAt,expiresAt'});
 export const defaultPreferences: Preferences = { id:'user',theme:'light',weeklyGoal:120 };
 export async function readPreferences() { return (await db.preferences.get('user')) ?? defaultPreferences; }
 export async function savePreferences(value:Preferences) { await db.preferences.put(value); }
@@ -36,7 +39,7 @@ export async function librarySnapshot() {return db.transaction('r',db.favorites,
 
 export async function createAssessment(mode:AssessmentDraft['mode'],selected:Question[],policy:ScoringPolicy,durationMinutes:number){
  if(!Number.isInteger(durationMinutes)||durationMinutes<1||durationMinutes>120)throw new Error('Durée invalide');
- const bank=parseQuestions(selected);const start=Date.now();const draft:AssessmentDraft={id:crypto.randomUUID(),mode,status:'active',startedAt:new Date(start).toISOString(),deadlineAt:mode==='exam'?new Date(start+durationMinutes*60000).toISOString():null,completedAt:null,questions:bank,contentVersion:'2026-10-12.1',policy,answers:{},lockedQuestionIds:[],currentIndex:0};await db.assessments.add(draftSchema.parse(draft));return draft;
+ if(selected.length>100)throw new Error('Une séance comporte au maximum 100 questions.');const bank=parseQuestions(selected);const start=Date.now();const draft:AssessmentDraft={id:crypto.randomUUID(),mode,status:'active',startedAt:new Date(start).toISOString(),deadlineAt:mode==='exam'?new Date(start+durationMinutes*60000).toISOString():null,completedAt:null,questions:bank,contentVersion:questionContentVersion,policy,answers:{},lockedQuestionIds:[],currentIndex:0};await db.assessments.add(draftSchema.parse(draft));return draft;
 }
 export async function saveAssessment(next:AssessmentDraft,lockId?:string){return db.transaction('rw',db.assessments,db.attempts,async()=>{
  const old=await db.assessments.get(next.id);if(!old||old.status!=='active')throw new Error('Séance terminée ou absente');

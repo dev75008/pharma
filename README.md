@@ -1,90 +1,79 @@
 # MEDREVISION
-Application personnelle de révision DFASM2, React/TypeScript/Vite. Dépôt cible : https://github.com/dev75008/pharma.
 
-## Entraînement quotidien personnalisé
+Plateforme personnelle de révision DFASM2 en français, sans backend obligatoire. Site : https://dev75008.github.io/pharma/ · dépôt : https://github.com/dev75008/pharma.
 
-Le tableau de bord et le planning composent une séance de 5, 10 ou 16 questions à partir des dernières erreurs, classes moins réussies et thèmes choisis. Prévisualisation des questions et raisons, barème configurable, corrections immédiates et reprise locale/hors ligne. Sélection déterministe selon le jour et les données, uniquement dans la banque existante de démonstration. Compilation réussie, 130 tests unitaires et 92 scénarios navigateur réussis. Voir [le fonctionnement et ses limites](docs/entrainement-quotidien.md).
+Livraison technique du 14 octobre 2026 : **13 fiches / 12 familles, 42 questions, 46 flashcards et 6 dossiers fictifs**. 479 champs documentés sur 650 ; les autres restent « À documenter ». **135 tests unitaires, 104 scénarios Chromium ordinateur/mobile et 42 parcours Firefox/WebKit réussis**, avec contrôles automatiques d’accessibilité. [Bilan des huit phases et limites](docs/livraison.md).
 
-## Connecteurs moléculaires — phase 7 partielle
+## Installation et lancement
 
-ClinicalTrials.gov ajouté le 13 octobre 2026 : recherche documentaire par intervention, dix dossiers avec filtres de statut, phases, disponibilité des résultats et liens originaux. Dates de traitement, de dossier et de téléchargement distinguées ; cache hors ligne 1 h. Aucun résultat interprété ni recommandation française déduite. Validation : compilation, 121 tests unitaires et 86 scénarios navigateur réussis. Voir [les études cliniques et leurs limites](docs/phase-7-essais-cliniques.md).
-
-RxNorm ajouté le 13 octobre 2026 : recherche exacte des noms anglais puis contrôle du concept actif IN, provenance NLM et cache local 24 h. Aucun mapping automatique CIS/CIP. DailyMed reste accessible par lien : son API bloque les appels depuis GitHub Pages par CORS. Validation locale : 113 tests unitaires et 80 scénarios navigateur réussis. Voir [le connecteur RxNorm et ses limites](docs/phase-7-rxnorm.md).
-
-Mise à jour du 13 octobre 2026 : mécanismes ChEMBL du parent déclaré, références et détails des cibles chargés séparément sur demande. Organisme/type/composants conservés dans la langue source, résultat vide explicite et contrôle des identités. Cache IndexedDB v11 pour la relecture hors ligne. Validation : compilation, 105 tests unitaires, 76 scénarios navigateur et vérification réelle mobile. Voir [les mécanismes et leurs limites](docs/phase-7-mecanismes-cibles.md).
-Les fiches proposent un chargement PubChem à partir du CID documenté, puis une correspondance ChEMBL par InChIKey complet. Identités contrôlées, ambiguïtés refusées, provenance et cache hors ligne 24 h. Données chimiques distinctes des rubriques cliniques françaises. Mécanismes du parent déclaré et détails des cibles désormais accessibles sur demande, avec descriptions originales, organismes et références ; aucune déduction clinique automatique. Voir docs/phase-7-mecanismes-cibles.md. Voir [la phase 7 et ses limites](docs/phase-7-donnees-moleculaires.md). Validation locale du 13 octobre 2026 : compilation, 98 tests unitaires et 70 scénarios navigateur. Appels réels PubChem/ChEMBL depuis GitHub Pages réussis, puis indisponibilité 503 PubChem observée et signalée.
-
-## Quiz Pharmacorama
-Depuis **QCM & entraînement**, le bouton « Afficher le quiz Pharmacorama » charge le quiz original dans un cadre externe. Accès internet requis ; réponses et statistiques restent chez Pharmacorama, sans ajout au score local. Un lien vers le site original reste disponible. Aucun import ou copie de sa banque. Voir [l'intégration et ses limites](docs/quiz-pharmacorama.md). Validation du 13 octobre 2026 : compilation réussie, 81 tests unitaires et 60 scénarios navigateur, plus vérification réelle depuis GitHub Pages et inspection mobile.
-
-## Publications et sources internationales
-Les fiches proposent une recherche Europe PMC volontaire, sans clé, de 10 références PubMed au maximum, avec provenance, cache IndexedDB 24 h et lecture hors ligne. Les ressources scientifiques sont distinguées dans le registre ; les bases américaines ne remplacent pas les RCP français. PubChem fournit les propriétés chimiques, ChEMBL la correspondance structurale et les mécanismes/cibles ; RxNorm et ClinicalTrials.gov sont également connectés sur demande. Les autres ressources internationales restent accessibles par lien. Voir [les connecteurs et limites](docs/api-scientifiques.md).
-
-Validation locale de cette extension : compilation réussie, 72 tests Vitest et 50 scénarios Playwright (ordinateur/mobile). Les tests utilisent une réponse bibliographique réelle figée ; l'appel réel Europe PMC depuis l'origine GitHub Pages a retourné HTTP 200 le 12 octobre 2026. Migration IndexedDB v7 : ajout du cache bibliographique, conservation des tables existantes. Les RCP/notices et bibliographies sont téléchargés uniquement sur demande et restent accessibles hors ligne dans les limites de leurs caches. Le lecteur de RCP nettoie le HTML externe avec DOMPurify avant affichage.
-
-## Installation
 Node.js 24 LTS et npm recommandés.
+
 ```powershell
 cd C:\pharma
 npm install
 npm run dev
 ```
-Ouvrir l’adresse affichée par Vite.
+
+Ouvrir l’adresse affichée par Vite. Aucun compte ni clé privée nécessaire. Les appels scientifiques externes sont déclenchés volontairement ; le site reste utilisable avec ses données locales sans ces services.
 
 ## Vérification
+
 ```powershell
 npm run test
 npm run build
-npx playwright install chromium
+npx playwright install chromium firefox webkit
 npm run test:e2e
+npm run test:compat
+npm run release:check
 npm run preview
 ```
-Les tests E2E utilisent le build de production, y compris le service worker. Le mode hors ligne nécessite une première visite en ligne et la fin du précache ; localhost ou HTTPS requis. Les documents externes sont téléchargés uniquement sur demande et conservés dans les limites du cache. Pour une mise à jour, fermer les onglets de l’ancienne phase 1 puis rouvrir le site ; les versions suivantes disposent d’un avis de mise à jour.
 
-## État actuel : phases 1 à 6
-Opérationnels : navigation des pages, recherche globale des modules et médicaments, interface responsive, mode sombre, préférences IndexedDB et objectif hebdomadaire, bibliothèque de 13 molécules / 12 familles, filtres combinables, favoris, historique des 20 dernières molécules consultées, marquage explicite des fiches étudiées, notes personnelles, fiches structurées avec provenance et statut de disponibilité par champ, comparateur de 2 à 4 molécules, impression / enregistrement PDF via le navigateur, précache PWA des contenus statiques et proposition de mise à jour.
-Les contenus sont des synthèses documentaires originales partielles, issues de RCP français ; aucune validation médicale indépendante n’est revendiquée. La bibliothèque comporte désormais 479 champs documentés sur 650 (RCP et propriétés structurales PubChem), 13 structures chimiques 2D accessibles hors ligne et cinq points essentiels sourcés par fiche. Les 171 champs restants affichent « À documenter » avec une raison visible ; le détail figure dans [le bilan documentaire](docs/enrichissement-bibliotheque.md). Les catégories de spécialité et système sont un classement pédagogique. La phase 3 ajoute une banque statique de 16 questions de démonstration, six formats, entraînement corrigé immédiatement, examens chronométrés, reprise locale, historique, analyse des erreurs, filtres par classe/format/difficulté/dernière erreur et export CSV des résultats. La phase 4 ajoute 20 flashcards documentaires, création de cartes personnelles, recto/verso, quatre évaluations, répétition espacée SM-2 adaptée, échéances locales, compteur de retards, séances quotidiennes reprises après rechargement, consultation sans planification et suspension/réactivation. La phase 5 ajoute deux dossiers progressifs fictifs (trois étapes chacun), filtres par spécialité, réponses verrouillées après validation, corrections sourcées, reprise locale/hors ligne et bilans persistants. La phase 6 ajoute statistiques unifiées, graphiques/tableaux, planning, recommandations locales expliquées et export/import JSON validé. Voir docs/phase-5-cas-cliniques.md.
-Les compteurs des fiches étudiées proviennent du marquage local effectué par l’utilisateur. Consulter une fiche ne signifie pas l’avoir maîtrisée. Les compteurs de corrections proviennent des tentatives enregistrées, blancs inclus. Le taux de réussite compte les réponses entièrement correctes, distinct des points partiels. Le temps affiché correspond aux séances terminées et inclut pauses et onglets fermés ; aucun temps n’est déduit des consultations.
+Sous Linux : `npx playwright install --with-deps chromium firefox webkit`. Les tests utilisent le build de production et le service worker. Les avertissements de taille/eval de la dépendance 3D sont [documentés](docs/structures-3d.md).
 
-## Architecture
-- `src/data` : navigation, registre, 13 synthèses et classes versionnées (`drugs.json`, `classes.json`).
-- `src/domain` : interfaces, schémas Zod stricts, recherche, règles de comparaison et péremption documentaire.
-- `src/features/library` : bibliothèque, fiches et comparateur.
-- `src/features/assessment` : configuration des séances, réponses, corrections, chronomètre et résultats.
-- `src/features/cases`, `src/domain/clinicalCases.ts`, `src/storage/clinicalCases.ts` : dossiers versionnés, progression et sauvegarde transactionnelle.
-- `src/features/flashcards` : bibliothèque de cartes, création personnelle, séances et bilans.
-- `src/domain/spacedRepetition.ts` : validation et SM-2 adapté, calendrier local.
-- `src/data/flashcards.ts` : 20 cartes initiales, uniquement à partir de champs documentés.
-- `src/data/questions.ts` : banque originale statique de démonstration, versionnée, et objectifs pédagogiques.
-- `src/storage` : Dexie/IndexedDB, migrations v1 à v13 sans perte des préférences ; bibliothèque, caches scientifiques, résultats, tentatives, cartes personnelles, échéances et historique de répétitions.
-- `src/App.tsx` : coquille, recherche globale et pages ; `src/PwaUpdate.tsx` : avis de mise à jour.
-- `src/styles.css` : Tailwind CSS via plugin Vite et styles responsive, variables du thème.
-- `src/test`, `e2e` : tests de composants et navigation navigateur.
-Les futurs adaptateurs réseau doivent rester séparés de l’interface. KaTeX affiche les équations des corrections avec trust=false et limites de rendu ; DOMPurify nettoie le HTML/MathML généré. Le module mathématique est chargé à la demande, puis reste disponible hors ligne grâce au précache. Le lecteur de RCP rend le HTML externe après nettoyage DOMPurify avec une liste limitée de balises. Les graphiques Recharts sont chargés à la demande avec tableau équivalent.
+## Fonctionnalités
 
-## GitHub Pages
-Dans le dépôt `dev75008/pharma`, sélectionner Settings → Pages → Source → GitHub Actions. Le workflow vérifie puis déploie les pushes sur `main`. URL attendue après déploiement réussi : https://dev75008.github.io/pharma/.
-Le workflow définit `VITE_BASE_PATH=/pharma/`. Les routes par hash fonctionnent sans réécriture serveur. Pour simuler ce chemin localement, copier `.env.example` vers `.env` puis compiler. Domaine personnalisé ou dépôt `dev75008.github.io` : utiliser `/`.
-Aucun déploiement n’est affirmé avant retour réussi de GitHub Actions.
+- Bibliothèque : recherche par nom, classe, mécanisme, indication et cible ; filtres combinables, favoris, historique, marquage étudié et notes personnelles.
+- Fiches : 50 champs, disponibilité, contexte molécule/spécialité, provenance, dates et liens. Comparateur 2–4 molécules et PDF par impression du navigateur.
+- Évaluation : six formats, entraînement corrigé après validation, examens chronométrés, reprise, corrections détaillées, résultats et CSV. Banque de démonstration sans validation indépendante.
+- Flashcards : six types, cartes personnelles, quatre évaluations, SM-2 adapté, échéances, rappels et suspension.
+- Dossiers : six patients fictifs, trois étapes chacun, informations progressives, réponses verrouillées, sources, reprise et bilans.
+- Suivi : statistiques réelles, graphiques avec tableaux, objectifs, planning, thèmes et recommandations. Séance quotidienne de 5, 10 ou davantage de questions selon la banque, plafonnée à 50, avec prévisualisation et barème configurable.
+- Sauvegarde : export/import JSON personnel validé et transactionnel, aperçu avant import, collisions gérées et CSV. Caches scientifiques séparés.
+- Interface : mobile, clair/sombre, navigation clavier, lien d’évitement, menu avec gestion du focus, PWA et avis de mise à jour.
 
-## Suite
-Phase 2 livrée côté fonctionnalités ; enrichissement et relecture médicale du contenu restent nécessaires. Phase 3 livrée : questions, scores et examens ; banque de démonstration à enrichir et valider. Phase 4 livrée : flashcards et SM-2 adapté. Phase 5 : cas fictifs. Phase 6 : progression, planning, statistiques, sauvegardes. Phase 7 : connecteurs autorisés. Phase 8 : validation globale et publication.
+## Sources
 
-Voir `docs/sources-et-licences.md` et `docs/limites-medicales.md`.
+Catalogue et RCP/notices via l’API indépendante Giygas ; propriétés et conformères 3D PubChem ; identités structurales, mécanismes et cibles ChEMBL ; bibliographie Europe PMC ; correspondances exactes RxNorm ; études ClinicalTrials.gov. Provenance, dates, cache borné et erreurs contrôlés. Aucun remplissage automatique des champs cliniques français.
 
-Bilan et procédure documentaire : `docs/bilan-phase-2.md`, `docs/bilan-phase-3.md`, `docs/bilan-phase-4.md`, `docs/repetition-espacee.md`, `docs/evaluation.md` et `docs/mise-a-jour-contenus.md`.
+Pharmacorama : quiz original sur demande, sans copie des questions ou scores. VIDAL et Thériaque : accès originaux, sans import de leurs bases. DailyMed : lien, CORS bloquant observé. Les autres références sont distinguées dans le registre ; aucun endpoint ou droit d’accès inventé.
 
-## Catalogue réglementaire connecté
+[Sources/licences](docs/sources-et-licences.md) · [API](docs/api-scientifiques.md) · [3D](docs/structures-3d.md) · [RxNorm](docs/phase-7-rxnorm.md) · [Études](docs/phase-7-essais-cliniques.md) · [Pharmacorama](docs/quiz-pharmacorama.md).
 
-Le module **Catalogue BDPM** recherche les spécialités par nom, CIS ou CIP via l’API indépendante [Medicaments API / Giygas](https://medicaments-api.giygas.dev/), sans clé ni backend. Les fiches locales proposent aussi un chargement des données réglementaires correspondant au CIS exact de leur RCP. Le cache IndexedDB conserve les 50 recherches récentes, disponibles hors ligne ; les copies expirées sont signalées et actualisables. Les compositions, présentations et statuts reçus n’écrasent pas les synthèses cliniques. Indications, contre-indications, posologies et interactions restent à vérifier dans les RCP.
+## Ajouter des contenus autorisés
 
-La recherche est déclenchée explicitement : l’adresse IP et les termes sont transmis au service tiers, sans données de révision. Aucune base complète n’est téléchargée automatiquement. Voir [documentation, provenance, conditions d’accès et limites](docs/api-medicaments.md).
+Paquets JSON : fiches, classes, spécialités, systèmes, questions, dossiers et cartes. Paramètres permet de vérifier un fichier et télécharger le paquet vérifié ; l’ajout au catalogue nécessite une compilation/publication.
 
-## Navigation et lecture documentaire
+```powershell
+npm run content:validate -- exemples-ou-donnees.json
+npm run content:import -- exemples-ou-donnees.json
+npm run test
+npm run build
+```
 
-Les fiches et le catalogue partagent les accès **Fiches de révision / Spécialités et RCP**. La spécialité sélectionnée et sa vue sont conservées dans l’URL, avec retour aux résultats sans nouvelle recherche. La page Catalogue propose les recherches déjà téléchargées. Le complément d’une fiche réutilise une spécialité déjà en cache en conservant sa provenance.
+Exemple : `examples/contenus-exemple.json`. L’import remplace le paquet complémentaire, jamais le catalogue initial ni la progression. [Schéma, droits et procédure](docs/importation-contenus.md). La compilation revérifie les données ; un import ne peut revendiquer une validation indépendante.
 
-Les endpoints RCP/notice documentés dans le dépôt de Giygas sont intégrés : lecture par rubrique, attribution ANSM, date du document, contenu HTML assaini côté client et cache de 20 documents pour le hors ligne. Les documents de l’API sont conservés durablement par ce service et ne garantissent pas une relecture récente de l’ANSM : le lien vers la version BDPM courante reste disponible. Aucune synthèse clinique n’est remplacée automatiquement. Le rendu documentaire et sa sécurité HTML sont chargés à la demande, indépendamment de KaTeX.
+## Architecture et déploiement
 
-## Suivi et sauvegarde
-Tableau de bord et Statistiques utilisent les corrections de QCM/examens et des dossiers enregistrées, sans données simulées. Planning permet de préparer les séances et choisir les thèmes prioritaires. Paramètres propose une sauvegarde JSON versionnée et un import transactionnel par fusion, avec aperçu et refus des conflits. Les notes et réponses sont en clair dans le fichier ; caches externes et scores Pharmacorama exclus. Voir [la phase 6 et les règles de calcul](docs/phase-6-suivi-sauvegarde.md). Validation du 13 octobre 2026 : compilation, 89 tests unitaires, 66 scénarios navigateur ; inspection mobile.
+`src/domain` : modèles, schémas, recherche, scores, SM-2, dossiers, statistiques, sélection quotidienne et imports/exports. `src/data` : contenus versionnés, registre et adaptateurs. `src/storage` : Dexie/IndexedDB, migrations v1–v14, progression et caches distincts. `src/features` : modules pédagogiques ; graphiques, équations, HTML et 3D chargés séparément. `scripts` : contrôles et import ; `e2e` : parcours et fixtures documentées.
+
+GitHub Settings → Pages → Source → GitHub Actions. Chaque push sur main déclenche tests, compatibilité, compilation avec `VITE_BASE_PATH=/pharma/`, contrôle de livraison et publication. Pull requests vérifiées sans déploiement. Routes HashRouter ; domaine personnalisé : base `/`. `.env.example` ne contient aucun secret.
+
+Une première visite en ligne et la fin du précache sont nécessaires au hors ligne. Documents/API : copies déjà téléchargées seulement, dans les limites du cache. Cliquer sur **Actualiser l’application** lorsqu’une version est proposée ; la progression reste dans IndexedDB.
+
+## Limites
+
+Synthèses partielles et exercices de démonstration, sans validation médicale indépendante ou certification universitaire. Pas de diagnostic ou prescription pour de vrais patients. Barèmes personnels distincts des examens nationaux ; QROC corrigées par mots-clés avec limites visibles.
+
+Pas de synchronisation entre appareils. Réinitialiser le navigateur peut supprimer IndexedDB : exporter régulièrement sa sauvegarde. Temps affiché : séances terminées, pauses comprises ; consultation d’une fiche distincte de sa maîtrise. Les tests axe/WebKit ne certifient ni une conformité WCAG complète ni chaque appareil Safari réel.
+
+[Limites médicales](docs/limites-medicales.md) · [Accessibilité](docs/accessibilite.md) · [SM-2](docs/repetition-espacee.md) · [Séance quotidienne](docs/entrainement-quotidien.md) · [Mises à jour](docs/mise-a-jour-contenus.md). Bilans historiques conservés dans docs avec leurs dates et résultats d’alors.

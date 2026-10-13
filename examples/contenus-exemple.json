@@ -1,0 +1,5 @@
+{
+ "schemaVersion":1,"id":"exemple-mathematique","title":"Exercice de demi-vie fictive","version":"1","rights":"Exercice mathématique original de MEDREVISION, réutilisable sous licence ISC ; références IUPAC conservées. Aucune donnée de patient ou prescription.",
+ "sources":[],"classes":[],"drugs":[],"cases":[],"flashcards":[],"specialties":{},"systems":{},
+ "questions":[{"id":"exemple-demi-vie-quatre","type":"pharmacokinetics","statement":"Modèle mathématique fictif d’élimination d’ordre 1 : après quatre demi-vies, quel pourcentage de la quantité initiale reste-t-il ? Saisir la valeur numérique.","drugIds":[],"options":[],"expectedNumeric":{"value":6.25,"tolerance":0.05,"unit":"%"},"correction":"100 × (1/2)^4 = 6,25 %. Ce calcul n’est ni une cinétique individuelle ni un calcul de posologie.","difficulty":2,"classIds":["betabloquants"],"objectiveIds":["kinetics"],"evidence":[{"sourceId":"iupac","url":"https://goldbook.iupac.org/terms/view/L03515","consultedAt":"2026-10-12","sourceUpdatedAt":null,"locator":"Demi-vie d’un modèle d’ordre 1 ; rattachement à une classe uniquement pour tester les filtres."}],"validationStatus":"demo"}]
+}

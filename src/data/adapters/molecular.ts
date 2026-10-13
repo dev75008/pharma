@@ -19,18 +19,20 @@ export const molecularCacheSchema=z.discriminatedUnion('sourceId',[
 export type MolecularCache=z.infer<typeof molecularCacheSchema>;
 type Provider=MolecularCache['sourceId'];
 const lanes:Record<Provider,{tail:Promise<void>;nextAt:number;blockedUntil:number}>={pubchem:{tail:Promise.resolve(),nextAt:0,blockedUntil:0},chembl:{tail:Promise.resolve(),nextAt:0,blockedUntil:0}};
-export function molecularJson(provider:Provider,url:string,fetcher:typeof fetch=fetch):Promise<unknown>{
+function molecularData(provider:Provider,url:string,fetcher:typeof fetch,format:'json'|'text'):Promise<unknown>{
  const lane=lanes[provider];const run=async()=>{
   if(Date.now()<lane.blockedUntil)throw new Error(`${provider} : service temporairement limité. Réessayez plus tard.`);
   const wait=lane.nextAt-Date.now();if(wait>0)await new Promise(resolve=>setTimeout(resolve,wait));lane.nextAt=Date.now()+1000;
   const controller=new AbortController();const timer=setTimeout(()=>controller.abort(),10000);
-  try{const response=await fetcher(url,{signal:controller.signal,credentials:'omit',cache:'no-store',headers:{Accept:'application/json'}});
+  try{const response=await fetcher(url,{signal:controller.signal,credentials:'omit',cache:'no-store',headers:{Accept:format==='json'?'application/json':'chemical/x-mdl-sdfile'}});
    if(response.status===429||response.status===503){const retry=response.headers.get('Retry-After');const seconds=retry&&/^\d+$/.test(retry)?Number(retry):retry?Math.max(0,(Date.parse(retry)-Date.now())/1000):30;lane.blockedUntil=Date.now()+Math.min(300,Number.isFinite(seconds)?Math.max(1,seconds):30)*1000;throw new Error(`${provider} : service occupé ou limite atteinte (HTTP ${response.status}). Aucune nouvelle tentative automatique.`);}
    if(!response.ok)throw new Error(`${provider} indisponible (HTTP ${response.status}).`);
-   return await response.json();
+   return format==='json'?await response.json():await response.text();
   }catch(error){if(error instanceof Error&&error.message.startsWith(provider))throw error;throw new Error(controller.signal.aborted?`${provider} : délai de réponse dépassé.`:`${provider} : réseau indisponible ou réponse JSON invalide.`);}finally{clearTimeout(timer);}
  };
  const job=lane.tail.then(run,run);lane.tail=job.then(()=>undefined,()=>undefined);return job;
 }
+export function molecularJson(provider:Provider,url:string,fetcher:typeof fetch=fetch){return molecularData(provider,url,fetcher,'json');}
+export function molecularText(provider:Provider,url:string,fetcher:typeof fetch=fetch){return molecularData(provider,url,fetcher,'text').then(value=>z.string().max(1000000).parse(value));}
 export async function fetchPubchem(cid:number,fetcher:typeof fetch=fetch):Promise<MolecularCache>{const url=pubchemUrl(cid);const raw=await molecularJson('pubchem',url,fetcher);let properties;try{properties=parsePubchem(raw,cid);}catch(e){if(e instanceof z.ZodError)throw new Error('PubChem : propriétés invalides ou incomplètes.');throw e;}return molecularCacheSchema.parse({key:`pubchem:${cid}`,sourceId:'pubchem',url,properties,schemaVersion:1,retrievedAt:new Date().toISOString(),expiresAt:Date.now()+86400000,sourceUpdatedAt:null});}
 export async function fetchChembl(key:string,fetcher:typeof fetch=fetch):Promise<MolecularCache>{const url=chemblUrl(key);const raw=await molecularJson('chembl',url,fetcher);let molecule;try{molecule=parseChembl(raw,key);}catch(e){if(e instanceof z.ZodError)throw new Error('ChEMBL : réponse invalide ou incomplète.');throw e;}return molecularCacheSchema.parse({key:`chembl:${key}`,sourceId:'chembl',url,inchiKey:key,molecule,schemaVersion:1,retrievedAt:new Date().toISOString(),expiresAt:Date.now()+86400000,sourceUpdatedAt:null});}
