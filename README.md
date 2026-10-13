@@ -1,6 +1,10 @@
 # MEDREVISION
 Application personnelle de révision DFASM2, React/TypeScript/Vite. Dépôt cible : https://github.com/dev75008/pharma.
 
+## Entraînement quotidien personnalisé
+
+Le tableau de bord et le planning composent une séance de 5, 10 ou 16 questions à partir des dernières erreurs, classes moins réussies et thèmes choisis. Prévisualisation des questions et raisons, barème configurable, corrections immédiates et reprise locale/hors ligne. Sélection déterministe selon le jour et les données, uniquement dans la banque existante de démonstration. Compilation réussie, 130 tests unitaires et 92 scénarios navigateur réussis. Voir [le fonctionnement et ses limites](docs/entrainement-quotidien.md).
+
 ## Connecteurs moléculaires — phase 7 partielle
 
 ClinicalTrials.gov ajouté le 13 octobre 2026 : recherche documentaire par intervention, dix dossiers avec filtres de statut, phases, disponibilité des résultats et liens originaux. Dates de traitement, de dossier et de téléchargement distinguées ; cache hors ligne 1 h. Aucun résultat interprété ni recommandation française déduite. Validation : compilation, 121 tests unitaires et 86 scénarios navigateur réussis. Voir [les études cliniques et leurs limites](docs/phase-7-essais-cliniques.md).
@@ -14,7 +18,7 @@ Les fiches proposent un chargement PubChem à partir du CID documenté, puis une
 Depuis **QCM & entraînement**, le bouton « Afficher le quiz Pharmacorama » charge le quiz original dans un cadre externe. Accès internet requis ; réponses et statistiques restent chez Pharmacorama, sans ajout au score local. Un lien vers le site original reste disponible. Aucun import ou copie de sa banque. Voir [l'intégration et ses limites](docs/quiz-pharmacorama.md). Validation du 13 octobre 2026 : compilation réussie, 81 tests unitaires et 60 scénarios navigateur, plus vérification réelle depuis GitHub Pages et inspection mobile.
 
 ## Publications et sources internationales
-Les fiches proposent une recherche Europe PMC volontaire, sans clé, de 10 références PubMed au maximum, avec provenance, cache IndexedDB 24 h et lecture hors ligne. Les neuf ressources scientifiques sont distinguées dans le registre ; les bases américaines ne remplacent pas les RCP français. PubChem fournit les propriétés chimiques, ChEMBL la correspondance structurale ; les autres API internationales restent accessibles par lien. Voir [les connecteurs et limites](docs/api-scientifiques.md).
+Les fiches proposent une recherche Europe PMC volontaire, sans clé, de 10 références PubMed au maximum, avec provenance, cache IndexedDB 24 h et lecture hors ligne. Les ressources scientifiques sont distinguées dans le registre ; les bases américaines ne remplacent pas les RCP français. PubChem fournit les propriétés chimiques, ChEMBL la correspondance structurale et les mécanismes/cibles ; RxNorm et ClinicalTrials.gov sont également connectés sur demande. Les autres ressources internationales restent accessibles par lien. Voir [les connecteurs et limites](docs/api-scientifiques.md).
 
 Validation locale de cette extension : compilation réussie, 72 tests Vitest et 50 scénarios Playwright (ordinateur/mobile). Les tests utilisent une réponse bibliographique réelle figée ; l'appel réel Europe PMC depuis l'origine GitHub Pages a retourné HTTP 200 le 12 octobre 2026. Migration IndexedDB v7 : ajout du cache bibliographique, conservation des tables existantes. Les RCP/notices et bibliographies sont téléchargés uniquement sur demande et restent accessibles hors ligne dans les limites de leurs caches. Le lecteur de RCP nettoie le HTML externe avec DOMPurify avant affichage.
 
@@ -52,7 +56,7 @@ Les compteurs des fiches étudiées proviennent du marquage local effectué par 
 - `src/domain/spacedRepetition.ts` : validation et SM-2 adapté, calendrier local.
 - `src/data/flashcards.ts` : 20 cartes initiales, uniquement à partir de champs documentés.
 - `src/data/questions.ts` : banque originale statique de démonstration, versionnée, et objectifs pédagogiques.
-- `src/storage` : Dexie/IndexedDB, migrations v1 → v2 → v3 → v4 → v5 → v6 → v7 → v8 → v9 → v10 → v11 sans perte des préférences ; bibliothèque, copies, résultats, tentatives, cartes personnelles, échéances et historique de répétitions.
+- `src/storage` : Dexie/IndexedDB, migrations v1 à v13 sans perte des préférences ; bibliothèque, caches scientifiques, résultats, tentatives, cartes personnelles, échéances et historique de répétitions.
 - `src/App.tsx` : coquille, recherche globale et pages ; `src/PwaUpdate.tsx` : avis de mise à jour.
 - `src/styles.css` : Tailwind CSS via plugin Vite et styles responsive, variables du thème.
 - `src/test`, `e2e` : tests de composants et navigation navigateur.
