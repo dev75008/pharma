@@ -22,7 +22,7 @@ Validation Zod de la réponse, recherche retournée et provenance ; refus des so
 | RxNav | https://lhncbc.nlm.nih.gov/RxNav/APIs/index.html | Connecteur exact actif puis propriétés IN ; attribution NLM, cache 24 h, CORS navigateur vérifié ; aucun mapping CIS/CIP. Voir phase-7-rxnorm.md |
 | DailyMed | https://dailymed.nlm.nih.gov/dailymed/app-support-web-services.cfm | Lien vers les notices américaines ; API répond au serveur mais CORS bloque GitHub Pages, aucun import. Voir phase-7-rxnorm.md |
 | RCSB PDB | https://data.rcsb.org/ ; https://www2.rcsb.org/pages/usage-policy | Lien ; archive PDB CC0, autres contenus du site distincts ; aucun visualiseur 3D implémenté |
-| ClinicalTrials.gov | https://clinicaltrials.gov/data-api/api | Lien ; registre d'essais, pas une recommandation ni garantie d'efficacité |
+| ClinicalTrials.gov | https://clinicaltrials.gov/data-api/api | Recherche intervention sur demande, 10 dossiers avec filtres, dates et liens ; cache 1 h, CORS réel vérifié. Voir phase-7-essais-cliniques.md ; aucune déduction clinique |
 | Wikidata | https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service | Lien ; données structurées CC0, service en migration 2026–2027 ; relations collaboratives à contrôler |
 
 Pour ces sources en lien, aucun test CORS, quotas ou connecteur n'est annoncé comme accompli. Chaque future intégration devra vérifier les conditions actuelles, une requête réelle, l'identité des substances et les dates, et ajouter des tests. Les RCP ANSM/BDPM restent prioritaires pour les spécialités françaises. Les notifications de pharmacovigilance ne permettent pas de calculer une incidence ou une causalité sans analyse appropriée.

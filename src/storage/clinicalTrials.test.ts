@@ -1,0 +1,12 @@
+import {beforeEach,afterEach,expect,it,vi} from 'vitest';
+import fixture from '../../e2e/fixtures/clinicaltrials-amoxicillin.json';
+import version from '../../e2e/fixtures/clinicaltrials-version.json';
+import {db} from './db';
+import {loadTrials} from './clinicalTrials';
+import {fetchTrials,parseTrials,trialsRequest,trialsVersionUrl,type TrialsCache} from '../data/adapters/clinicalTrials';
+vi.mock('../data/adapters/clinicalTrials',async original=>({...await original<typeof import('../data/adapters/clinicalTrials')>(),fetchTrials:vi.fn()}));
+const entry=():TrialsCache=>({...trialsRequest('amoxicilline','all'),...parseTrials(fixture,'all'),sourceId:'clinicaltrials',schemaVersion:1,versionUrl:trialsVersionUrl,version,retrievedAt:'2026-10-13T12:00:00.000Z',expiresAt:Date.now()+3600000});
+beforeEach(async()=>{await db.trialsCache.clear();vi.mocked(fetchTrials).mockReset();vi.spyOn(navigator,'onLine','get').mockReturnValue(true);});afterEach(()=>vi.restoreAllMocks());
+it('déduplique, conserve les préférences et relit après réouverture hors ligne',async()=>{await db.preferences.put({id:'user',theme:'dark',weeklyGoal:120});vi.mocked(fetchTrials).mockResolvedValue(entry());await Promise.all([loadTrials('amoxicilline','all'),loadTrials('amoxicilline','all')]);expect(fetchTrials).toHaveBeenCalledTimes(1);db.close();await db.open();expect((await db.preferences.get('user'))?.theme).toBe('dark');vi.spyOn(navigator,'onLine','get').mockReturnValue(false);expect((await loadTrials('amoxicilline','all')).warning).toContain('statut actuel');await expect(loadTrials('amoxicilline','RECRUITING')).rejects.toThrow('aucune recherche');});
+it('conserve dates et valeurs en cas de panne',async()=>{await db.trialsCache.put({...entry(),expiresAt:0});vi.mocked(fetchTrials).mockRejectedValue(new Error('HTTP 503'));const result=await loadTrials('amoxicilline','all',true);expect(result.stale).toBe(true);expect(result.entry.retrievedAt).toBe(entry().retrievedAt);expect(result.entry.version.dataTimestamp).toBe(version.dataTimestamp);expect(result.warning).toContain('503');});
+it('refuse la corruption et une réponse sous une autre clé',async()=>{await db.trialsCache.put({...entry(),key:'amoxicilline:RECRUITING'});vi.spyOn(navigator,'onLine','get').mockReturnValue(false);await expect(loadTrials('amoxicilline','RECRUITING')).rejects.toThrow('aucune recherche');vi.spyOn(navigator,'onLine','get').mockReturnValue(true);vi.mocked(fetchTrials).mockResolvedValue(entry());await expect(loadTrials('bisoprolol','all')).rejects.toThrow('identité du cache');});

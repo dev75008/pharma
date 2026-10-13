@@ -3,6 +3,8 @@ Application personnelle de révision DFASM2, React/TypeScript/Vite. Dépôt cibl
 
 ## Connecteurs moléculaires — phase 7 partielle
 
+ClinicalTrials.gov ajouté le 13 octobre 2026 : recherche documentaire par intervention, dix dossiers avec filtres de statut, phases, disponibilité des résultats et liens originaux. Dates de traitement, de dossier et de téléchargement distinguées ; cache hors ligne 1 h. Aucun résultat interprété ni recommandation française déduite. Validation : compilation, 121 tests unitaires et 86 scénarios navigateur réussis. Voir [les études cliniques et leurs limites](docs/phase-7-essais-cliniques.md).
+
 RxNorm ajouté le 13 octobre 2026 : recherche exacte des noms anglais puis contrôle du concept actif IN, provenance NLM et cache local 24 h. Aucun mapping automatique CIS/CIP. DailyMed reste accessible par lien : son API bloque les appels depuis GitHub Pages par CORS. Validation locale : 113 tests unitaires et 80 scénarios navigateur réussis. Voir [le connecteur RxNorm et ses limites](docs/phase-7-rxnorm.md).
 
 Mise à jour du 13 octobre 2026 : mécanismes ChEMBL du parent déclaré, références et détails des cibles chargés séparément sur demande. Organisme/type/composants conservés dans la langue source, résultat vide explicite et contrôle des identités. Cache IndexedDB v11 pour la relecture hors ligne. Validation : compilation, 105 tests unitaires, 76 scénarios navigateur et vérification réelle mobile. Voir [les mécanismes et leurs limites](docs/phase-7-mecanismes-cibles.md).

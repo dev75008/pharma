@@ -16,3 +16,6 @@ Ces données réglementaires sont utilisées comme instantané de test pour que 
 # RxNorm
 
 `rxnorm-amoxicillin-search.json` et `rxnorm-amoxicillin-properties.json` : réponses réelles NLM reçues le 13 octobre 2026, recherche exacte active amoxicillin puis propriétés du RxCUI 723, sans modification. Données publiques non propriétaires de RxNorm ; conditions https://lhncbc.nlm.nih.gov/RxNav/TermsofService.html. Attribution NLM affichée dans l’application. Aucun contenu DailyMed importé.
+# ClinicalTrials.gov
+
+`clinicaltrials-version.json`, `clinicaltrials-amoxicillin.json` et `clinicaltrials-amoxicillin-recruiting.json` : réponses réelles reçues le 13 octobre 2026. API v2.0.5, recherche intervention amoxicillin, première page de 10 dossiers, champs projetés listés dans docs/phase-7-essais-cliniques.md. Réponses sans modification des valeurs ; aucune pièce jointe, résumé, résultat détaillé ou coordonnée copiée. Attribution ClinicalTrials.gov, droits et conditions https://clinicaltrials.gov/about-site/terms-conditions. Aucune déclaration CC0 ou application de la licence ISC du code à ces données.

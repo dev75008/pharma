@@ -1,0 +1,213 @@
+{
+  "totalCount": 1078,
+  "studies": [
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT07870239",
+          "briefTitle": "Comparison of Topical Antibiotics Versus Systemic Antibiotics in Preventing Burn Wound Infection in Pediatric Burn Patients"
+        },
+        "statusModule": {
+          "overallStatus": "NOT_YET_RECRUITING",
+          "lastUpdatePostDateStruct": {
+            "date": "2026-10-13"
+          }
+        },
+        "designModule": {
+          "studyType": "INTERVENTIONAL",
+          "phases": [
+            "NA"
+          ]
+        }
+      },
+      "hasResults": false
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT07104318",
+          "briefTitle": "Personalized vs Standard of Care Treatment for Helicobacter Pylori Eradication Among Veterans"
+        },
+        "statusModule": {
+          "overallStatus": "NOT_YET_RECRUITING",
+          "lastUpdatePostDateStruct": {
+            "date": "2026-10-09"
+          }
+        },
+        "designModule": {
+          "studyType": "INTERVENTIONAL",
+          "phases": [
+            "PHASE3"
+          ]
+        }
+      },
+      "hasResults": false
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT07860112",
+          "briefTitle": "Vonoprazan-Amoxicillin Dual Therapy for Helicobacter Pylori Infection in United States Adolescents"
+        },
+        "statusModule": {
+          "overallStatus": "NOT_YET_RECRUITING",
+          "lastUpdatePostDateStruct": {
+            "date": "2026-10-06"
+          }
+        },
+        "designModule": {
+          "studyType": "INTERVENTIONAL",
+          "phases": [
+            "PHASE2"
+          ]
+        }
+      },
+      "hasResults": false
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT07857252",
+          "briefTitle": "Patient Choice Between Antibiotics and Appendectomy in Uncomplicated Appendicitis (FRENCH 47 - ALACARTE)"
+        },
+        "statusModule": {
+          "overallStatus": "NOT_YET_RECRUITING",
+          "lastUpdatePostDateStruct": {
+            "date": "2026-10-05"
+          }
+        },
+        "designModule": {
+          "studyType": "INTERVENTIONAL",
+          "phases": [
+            "PHASE2"
+          ]
+        }
+      },
+      "hasResults": false
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT07857863",
+          "briefTitle": "Preoperative Versus Postoperative Amoxicillin in Impacted Third Molar Surgery"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "lastUpdatePostDateStruct": {
+            "date": "2026-10-05"
+          }
+        },
+        "designModule": {
+          "studyType": "OBSERVATIONAL"
+        }
+      },
+      "hasResults": false
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT07855497",
+          "briefTitle": "Efficacy and Safety of Second-Line Helicobacter Pylori Eradication"
+        },
+        "statusModule": {
+          "overallStatus": "ACTIVE_NOT_RECRUITING",
+          "lastUpdatePostDateStruct": {
+            "date": "2026-10-02"
+          }
+        },
+        "designModule": {
+          "studyType": "INTERVENTIONAL",
+          "phases": [
+            "NA"
+          ]
+        }
+      },
+      "hasResults": false
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT07246681",
+          "briefTitle": "Lignin in Treatment of Helicobacter Pylori Infection"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "lastUpdatePostDateStruct": {
+            "date": "2026-10-01"
+          }
+        },
+        "designModule": {
+          "studyType": "INTERVENTIONAL",
+          "phases": [
+            "PHASE3"
+          ]
+        }
+      },
+      "hasResults": false
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT07224035",
+          "briefTitle": "Helicobacter Pylori Screening and Treatment in the At-risk South Florida Community- AIM 1"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "lastUpdatePostDateStruct": {
+            "date": "2026-09-30"
+          }
+        },
+        "designModule": {
+          "studyType": "INTERVENTIONAL",
+          "phases": [
+            "PHASE4"
+          ]
+        }
+      },
+      "hasResults": false
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT07845812",
+          "briefTitle": "Short Versus Standard Amoxicillin for Pediatric Strep Throat"
+        },
+        "statusModule": {
+          "overallStatus": "NOT_YET_RECRUITING",
+          "lastUpdatePostDateStruct": {
+            "date": "2026-09-29"
+          }
+        },
+        "designModule": {
+          "studyType": "INTERVENTIONAL",
+          "phases": [
+            "PHASE4"
+          ]
+        }
+      },
+      "hasResults": false
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT07720037",
+          "briefTitle": "Efficacy Comparison of 10-Day High-Dose Versus 14-Day Standard-Dose Vonoprazan Plus Amoxicillin in Helicobacter Pylori Eradication: A Multicenter Non-Inferiority Randomized Controlled Trial"
+        },
+        "statusModule": {
+          "overallStatus": "NOT_YET_RECRUITING",
+          "lastUpdatePostDateStruct": {
+            "date": "2026-09-29"
+          }
+        },
+        "designModule": {
+          "studyType": "INTERVENTIONAL",
+          "phases": [
+            "PHASE4"
+          ]
+        }
+      },
+      "hasResults": false
+    }
+  ],
+  "nextPageToken": "ZVNj7o2Elu8o3lpzCt6q57L2mpOQJJxuYvil2vAanD6SuP08FCfCFfXZ_tBK2CI"
+}
