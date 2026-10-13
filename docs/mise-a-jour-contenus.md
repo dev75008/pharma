@@ -8,3 +8,7 @@
 6. Publier sur main. Les données sont des instantanés de compilation et ne sont pas actualisées automatiquement. La consultation est signalée comme ancienne après 180 jours : ce seuil technique est une alerte de relecture, pas une garantie de validité pendant six mois.
 
 Un adaptateur réseau réglementaire Giygas/BDPM est actif (voir `api-medicaments.md`). Les synthèses cliniques restent des instantanés statiques, mis à jour manuellement ; les données de cet adaptateur ne les écrasent pas. Avant sa création, documenter API officielle, licence, quotas, CORS, politique de cache et tests ; sinon garder liens et import statique légal. Aucun secret dans le frontend.
+
+Révision du 14 octobre : voir `enrichissement-documentaire-14-octobre.md`. Le script `refresh-chemical-identifiers.ts` relit PubChem/ChEMBL avec une correspondance structurale exacte et conserve un instantané ; il ne met pas à jour la pharmacologie clinique. Le script `documentary-additions.ts` est un historique éditorial daté, pas un actualiseur de RCP : ne pas l’appliquer aveuglément à une révision ultérieure.
+
+Après modification des questions, incrémenter `questionContentVersion`. Le mélange optionnel enregistre l’ordre et les bonnes réponses dans la copie de séance ; les séances anciennes conservent leurs propres instantanés. Les contenus de démonstration ne deviennent pas validés par la réussite des tests logiciels.

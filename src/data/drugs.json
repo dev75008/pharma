@@ -564,22 +564,36 @@
         ]
       },
       "renalContext": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Dans ce RCP, une clairance de créatinine inférieure à 20 mL/min impose un plafond de 10 mg/j. Consulter les modalités de titration et de surveillance.",
+        "scope": "context",
+        "verification": "source-checked",
+        "context": "Synthèse non exhaustive du RCP de BISOPROLOL TEVA 10 mg, comprimé pelliculé. Le contexte clinique et la formulation doivent être conservés.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60524826/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-10-20",
+            "locator": "RCP BISOPROLOL TEVA 10 mg, comprimé pelliculé, rubrique 4.2 ; relecture documentaire du 14 octobre 2026"
+          }
+        ]
       },
       "hepaticContext": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Une insuffisance hépatique sévère limite la dose à 10 mg/j dans cette spécialité.",
+        "scope": "context",
+        "verification": "source-checked",
+        "context": "Synthèse non exhaustive du RCP de BISOPROLOL TEVA 10 mg, comprimé pelliculé. Le contexte clinique et la formulation doivent être conservés.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60524826/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-10-20",
+            "locator": "RCP BISOPROLOL TEVA 10 mg, comprimé pelliculé, rubrique 4.2 ; relecture documentaire du 14 octobre 2026"
+          }
+        ]
       },
       "formula": {
         "status": "available",
@@ -687,13 +701,27 @@
         ]
       },
       "chembl": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL645",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Correspondance ChEMBL non vérifiée pour cette entité chimique."
+        "context": "Correspondance structurale exacte avec le CID 2405 : InChIKey VHYCDWMUTMEGQY-UHFFFAOYSA-N. Ne démontre ni équivalence clinique, ni identité de sel ou de formulation pharmaceutique.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2405/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "PUG REST : CID 2405, InChIKey complet"
+          },
+          {
+            "sourceId": "chembl",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=VHYCDWMUTMEGQY-UHFFFAOYSA-N&limit=5",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "API ChEMBL : correspondance unique CHEMBL645, InChIKey complet ; données ChEMBL CC BY-SA 3.0"
+          }
+        ]
       },
       "essentials": {
         "status": "available",
@@ -740,13 +768,27 @@
         ]
       },
       "examTraps": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "La sélectivité bêta-1 est préférentielle. Les indications d’une spécialité de référence ne décrivent pas toutes les spécialités de bisoprolol.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide pédagogique originale fondée sur les champs référencés. Ni liste officielle de pièges d’examen, ni validation médicale indépendante.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60524826/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-10-20",
+            "locator": "RCP BISOPROLOL TEVA 10 mg, comprimé pelliculé, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60524826/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-10-20",
+            "locator": "RCP BISOPROLOL TEVA 10 mg, comprimé pelliculé, rubrique 4.1"
+          }
+        ]
       },
       "comparisons": {
         "status": "missing",
@@ -767,7 +809,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-1",
+    "contentVersion": "2026.10.14-2",
     "validationStatus": "documentary-summary"
   },
   {
@@ -947,22 +989,36 @@
         ]
       },
       "physiologicalEffects": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "Vasodilatation et diminution de la sécrétion d’aldostérone, consécutives à la baisse de formation d’angiotensine II et à la moindre dégradation de bradykinine.",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "verification": "source-checked",
+        "context": "Synthèse non exhaustive du RCP de RAMIPRIL BIOGARAN 5 mg, comprimé sécable. Le contexte clinique et la formulation doivent être conservés.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61599041/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2024-06-06",
+            "locator": "RCP RAMIPRIL BIOGARAN 5 mg, comprimé sécable, rubrique 5.1 ; relecture documentaire du 14 octobre 2026"
+          }
+        ]
       },
       "therapeuticEffects": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Réduction de la pression artérielle chez le patient hypertendu, sans augmentation compensatrice de la fréquence cardiaque.",
+        "scope": "specialty",
+        "verification": "source-checked",
+        "context": "Synthèse non exhaustive du RCP de RAMIPRIL BIOGARAN 5 mg, comprimé sécable. Le contexte clinique et la formulation doivent être conservés.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61599041/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2024-06-06",
+            "locator": "RCP RAMIPRIL BIOGARAN 5 mg, comprimé sécable, rubrique 5.1 ; relecture documentaire du 14 octobre 2026"
+          }
+        ]
       },
       "doseResponse": {
         "status": "missing",
@@ -1451,13 +1507,27 @@
         ]
       },
       "chembl": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1168",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Correspondance ChEMBL non vérifiée pour cette entité chimique."
+        "context": "Correspondance structurale exacte avec le CID 5362129 : InChIKey HDACQVRGBOVJII-JBDAPHQKSA-N. Ne démontre ni équivalence clinique, ni identité de sel ou de formulation pharmaceutique.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5362129/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "PUG REST : CID 5362129, InChIKey complet"
+          },
+          {
+            "sourceId": "chembl",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=HDACQVRGBOVJII-JBDAPHQKSA-N&limit=5",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "API ChEMBL : correspondance unique CHEMBL1168, InChIKey complet ; données ChEMBL CC BY-SA 3.0"
+          }
+        ]
       },
       "essentials": {
         "status": "available",
@@ -1504,13 +1574,34 @@
         ]
       },
       "examTraps": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "Le ramipril est une promolécule : distinguer sa dose et la demi-vie de son métabolite actif, le ramiprilate. Grossesse : ne pas confondre la restriction du premier trimestre avec la contre-indication aux deuxième et troisième.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide pédagogique originale fondée sur les champs référencés. Ni liste officielle de pièges d’examen, ni validation médicale indépendante.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61599041/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2024-06-06",
+            "locator": "RCP RAMIPRIL BIOGARAN 5 mg, comprimé sécable, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61599041/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2024-06-06",
+            "locator": "RCP RAMIPRIL BIOGARAN 5 mg, comprimé sécable, rubrique(s) 5.2"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61599041/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2024-06-06",
+            "locator": "RCP RAMIPRIL BIOGARAN 5 mg, comprimé sécable, rubrique(s) 4.6"
+          }
+        ]
       },
       "comparisons": {
         "status": "missing",
@@ -1531,7 +1622,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-1",
+    "contentVersion": "2026.10.14-2",
     "validationStatus": "documentary-summary"
   },
   {
@@ -1711,22 +1802,36 @@
         ]
       },
       "physiologicalEffects": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "Blocage des effets de l’angiotensine II sur AT1, notamment vasoconstriction et libération d’aldostérone.",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "verification": "source-checked",
+        "context": "Synthèse non exhaustive du RCP de LOSARTAN BIOGARAN 50 mg, comprimé pelliculé sécable. Le contexte clinique et la formulation doivent être conservés.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66659784/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-04-10",
+            "locator": "RCP LOSARTAN BIOGARAN 50 mg, comprimé pelliculé sécable, rubrique 5.1 ; relecture documentaire du 14 octobre 2026"
+          }
+        ]
       },
       "therapeuticEffects": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Activité antihypertensive ; réduction documentée de la protéinurie chez les patients hypertendus non diabétiques ayant une protéinurie. Ce résultat ne constitue pas une indication universelle.",
+        "scope": "specialty",
+        "verification": "source-checked",
+        "context": "Synthèse non exhaustive du RCP de LOSARTAN BIOGARAN 50 mg, comprimé pelliculé sécable. Le contexte clinique et la formulation doivent être conservés.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66659784/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-04-10",
+            "locator": "RCP LOSARTAN BIOGARAN 50 mg, comprimé pelliculé sécable, rubrique 5.1 ; relecture documentaire du 14 octobre 2026"
+          }
+        ]
       },
       "doseResponse": {
         "status": "missing",
@@ -2229,13 +2334,27 @@
         ]
       },
       "chembl": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL191",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Correspondance ChEMBL non vérifiée pour cette entité chimique."
+        "context": "Correspondance structurale exacte avec le CID 3961 : InChIKey PSIFNNKUMBGKDQ-UHFFFAOYSA-N. Ne démontre ni équivalence clinique, ni identité de sel ou de formulation pharmaceutique.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3961/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "PUG REST : CID 3961, InChIKey complet"
+          },
+          {
+            "sourceId": "chembl",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=PSIFNNKUMBGKDQ-UHFFFAOYSA-N&limit=5",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "API ChEMBL : correspondance unique CHEMBL191, InChIKey complet ; données ChEMBL CC BY-SA 3.0"
+          }
+        ]
       },
       "essentials": {
         "status": "available",
@@ -2282,13 +2401,27 @@
         ]
       },
       "examTraps": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "Distinguer le losartan de son métabolite actif pour les demi-vies. Un antagoniste AT1 n’est pas un inhibiteur de l’enzyme de conversion.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide pédagogique originale fondée sur les champs référencés. Ni liste officielle de pièges d’examen, ni validation médicale indépendante.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66659784/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-04-10",
+            "locator": "RCP LOSARTAN BIOGARAN 50 mg, comprimé pelliculé sécable, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66659784/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-04-10",
+            "locator": "RCP LOSARTAN BIOGARAN 50 mg, comprimé pelliculé sécable, rubrique(s) 5.2"
+          }
+        ]
       },
       "comparisons": {
         "status": "missing",
@@ -2309,7 +2442,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-1",
+    "contentVersion": "2026.10.14-2",
     "validationStatus": "documentary-summary"
   },
   {
@@ -2979,13 +3112,27 @@
         ]
       },
       "chembl": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL35",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Correspondance ChEMBL non vérifiée pour cette entité chimique."
+        "context": "Correspondance structurale exacte avec le CID 3440 : InChIKey ZZUFCTLCJUWOSV-UHFFFAOYSA-N. Ne démontre ni équivalence clinique, ni identité de sel ou de formulation pharmaceutique.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3440/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "PUG REST : CID 3440, InChIKey complet"
+          },
+          {
+            "sourceId": "chembl",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=ZZUFCTLCJUWOSV-UHFFFAOYSA-N&limit=5",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "API ChEMBL : correspondance unique CHEMBL35, InChIKey complet ; données ChEMBL CC BY-SA 3.0"
+          }
+        ]
       },
       "essentials": {
         "status": "available",
@@ -3032,13 +3179,34 @@
         ]
       },
       "examTraps": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "La demi-vie de 1–1,5 h est documentée après administration IV. Ne pas utiliser cette fiche injectable pour affirmer la biodisponibilité d’une forme orale.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide pédagogique originale fondée sur les champs référencés. Ni liste officielle de pièges d’examen, ni validation médicale indépendante.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65449480/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2024-11-22",
+            "locator": "RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable, rubrique(s) 5.2"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65449480/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2024-11-22",
+            "locator": "RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable, rubrique(s) 4.2"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65449480/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2024-11-22",
+            "locator": "RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable, rubrique 3"
+          }
+        ]
       },
       "comparisons": {
         "status": "missing",
@@ -3059,7 +3227,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-1",
+    "contentVersion": "2026.10.14-2",
     "validationStatus": "documentary-summary"
   },
   {
@@ -3525,28 +3693,35 @@
       },
       "interactions": {
         "status": "available",
-        "value": "Inhibiteurs puissants CYP3A4/P-gp : exposition et risque hémorragique accrus.",
-        "verification": "source-checked",
+        "value": "Inhibiteurs puissants CYP3A4/P-gp : exposition et risque hémorragique accrus. AINS et antiagrégants : prudence en raison du risque de saignement. Avec ISRS/IRSN, risque hémorragique potentiellement augmenté.",
         "scope": "context",
-        "context": "Synthèse non exhaustive du RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation.",
+        "verification": "source-checked",
+        "context": "Synthèse non exhaustive du RCP de RIVAROXABAN KRKA 20 mg, comprimé pelliculé. Le contexte clinique et la formulation doivent être conservés.",
         "evidence": [
           {
             "sourceId": "bdpm",
             "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66086174/extrait",
-            "consultedAt": "2026-10-12",
+            "consultedAt": "2026-10-14",
             "sourceUpdatedAt": "2026-02-13",
-            "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé, rubrique(s) 4.5"
+            "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé, rubrique 4.4 et 4.5 ; relecture documentaire du 14 octobre 2026"
           }
         ]
       },
       "precautions": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Prudence avec les médicaments modifiant l’hémostase, notamment AINS, antiagrégants et ISRS/IRSN. Les risques rénaux, hémorragiques et les associations avec inhibiteurs puissants CYP3A4/P-gp doivent être relus dans le RCP.",
+        "scope": "context",
+        "verification": "source-checked",
+        "context": "Synthèse non exhaustive du RCP de RIVAROXABAN KRKA 20 mg, comprimé pelliculé. Le contexte clinique et la formulation doivent être conservés.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66086174/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-02-13",
+            "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé, rubrique 4.4 et 4.5 ; relecture documentaire du 14 octobre 2026"
+          }
+        ]
       },
       "clinicalMonitoring": {
         "status": "available",
@@ -3750,13 +3925,27 @@
         ]
       },
       "chembl": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL198362",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Correspondance ChEMBL non vérifiée pour cette entité chimique."
+        "context": "Correspondance structurale exacte avec le CID 9875401 : InChIKey KGFYHTZWPPHNLQ-AWEZNQCLSA-N. Ne démontre ni équivalence clinique, ni identité de sel ou de formulation pharmaceutique.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9875401/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "PUG REST : CID 9875401, InChIKey complet"
+          },
+          {
+            "sourceId": "chembl",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=KGFYHTZWPPHNLQ-AWEZNQCLSA-N&limit=5",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "API ChEMBL : correspondance unique CHEMBL198362, InChIKey complet ; données ChEMBL CC BY-SA 3.0"
+          }
+        ]
       },
       "essentials": {
         "status": "available",
@@ -3803,13 +3992,27 @@
         ]
       },
       "examTraps": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "L’INR n’est pas adapté au suivi de son activité anticoagulante. L’adaptation rénale dépend de l’indication : aucun schéma unique ne couvre tous les usages.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide pédagogique originale fondée sur les champs référencés. Ni liste officielle de pièges d’examen, ni validation médicale indépendante.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66086174/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2026-02-13",
+            "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé, rubrique(s) 4.4 et 4.5"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66086174/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2026-02-13",
+            "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé, rubrique(s) 4.2"
+          }
+        ]
       },
       "comparisons": {
         "status": "missing",
@@ -3830,7 +4033,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-1",
+    "contentVersion": "2026.10.14-2",
     "validationStatus": "documentary-summary"
   },
   {
@@ -4491,13 +4694,27 @@
         ]
       },
       "chembl": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1771",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Correspondance ChEMBL non vérifiée pour cette entité chimique."
+        "context": "Correspondance structurale exacte avec le CID 60606 : InChIKey GKTWGGQPFAXNFI-HNNXBMFYSA-N. Ne démontre ni équivalence clinique, ni identité de sel ou de formulation pharmaceutique.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/60606/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "PUG REST : CID 60606, InChIKey complet"
+          },
+          {
+            "sourceId": "chembl",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=GKTWGGQPFAXNFI-HNNXBMFYSA-N&limit=5",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "API ChEMBL : correspondance unique CHEMBL1771, InChIKey complet ; données ChEMBL CC BY-SA 3.0"
+          }
+        ]
       },
       "essentials": {
         "status": "available",
@@ -4544,13 +4761,27 @@
         ]
       },
       "examTraps": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "La molécule administrée nécessite une activation métabolique. Ne pas assimiler sa demi-vie plasmatique à la durée de l’inhibition irréversible des plaquettes.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide pédagogique originale fondée sur les champs référencés. Ni liste officielle de pièges d’examen, ni validation médicale indépendante.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/67233727/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-05-07",
+            "locator": "RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/67233727/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-05-07",
+            "locator": "RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé, rubrique(s) 5.2"
+          }
+        ]
       },
       "comparisons": {
         "status": "missing",
@@ -4571,7 +4802,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-1",
+    "contentVersion": "2026.10.14-2",
     "validationStatus": "documentary-summary"
   },
   {
@@ -5248,13 +5479,27 @@
         ]
       },
       "chembl": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1082",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Correspondance ChEMBL non vérifiée pour cette entité chimique."
+        "context": "Correspondance structurale exacte avec le CID 33613 : InChIKey LSQZJLSUYDQPKJ-NJBDSQKTSA-N. Ne démontre ni équivalence clinique, ni identité de sel ou de formulation pharmaceutique.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/33613/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "PUG REST : CID 33613, InChIKey complet"
+          },
+          {
+            "sourceId": "chembl",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=LSQZJLSUYDQPKJ-NJBDSQKTSA-N&limit=5",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "API ChEMBL : correspondance unique CHEMBL1082, InChIKey complet ; données ChEMBL CC BY-SA 3.0"
+          }
+        ]
       },
       "essentials": {
         "status": "available",
@@ -5301,13 +5546,27 @@
         ]
       },
       "examTraps": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "Une bêta-lactamase peut inactiver l’amoxicilline. Les indications restent dépendantes du germe et du contexte ; une propriété de classe ne garantit pas une activité contre toute bactérie.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide pédagogique originale fondée sur les champs référencés. Ni liste officielle de pièges d’examen, ni validation médicale indépendante.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60453197/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2026-09-18",
+            "locator": "RCP AMOXICILLINE BIOGARAN 500 mg/5 ml, poudre pour suspension buvable, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60453197/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2026-09-18",
+            "locator": "RCP AMOXICILLINE BIOGARAN 500 mg/5 ml, poudre pour suspension buvable, rubrique 4.1"
+          }
+        ]
       },
       "comparisons": {
         "status": "missing",
@@ -5328,7 +5587,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-1",
+    "contentVersion": "2026.10.14-2",
     "validationStatus": "documentary-summary"
   },
   {
@@ -5816,13 +6075,20 @@
         ]
       },
       "clinicalMonitoring": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Informer sur les signes d’acidose lactique, notamment dyspnée, douleurs abdominales, crampes et asthénie. Contrôle cardiaque et rénal régulier si insuffisance cardiaque chronique stable.",
+        "scope": "context",
+        "verification": "source-checked",
+        "context": "Synthèse non exhaustive du RCP de METFORMINE BGR 500 mg, comprimé pelliculé. Le contexte clinique et la formulation doivent être conservés.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-03-26",
+            "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé, rubrique 4.4 ; relecture documentaire du 14 octobre 2026"
+          }
+        ]
       },
       "biologicalMonitoring": {
         "status": "available",
@@ -6010,13 +6276,27 @@
         ]
       },
       "chembl": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1431",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Correspondance ChEMBL non vérifiée pour cette entité chimique."
+        "context": "Correspondance structurale exacte avec le CID 4091 : InChIKey XZWYZXLIPXDOLR-UHFFFAOYSA-N. Ne démontre ni équivalence clinique, ni identité de sel ou de formulation pharmaceutique.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/4091/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "PUG REST : CID 4091, InChIKey complet"
+          },
+          {
+            "sourceId": "chembl",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=XZWYZXLIPXDOLR-UHFFFAOYSA-N&limit=5",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "API ChEMBL : correspondance unique CHEMBL1431, InChIKey complet ; données ChEMBL CC BY-SA 3.0"
+          }
+        ]
       },
       "essentials": {
         "status": "available",
@@ -6063,13 +6343,34 @@
         ]
       },
       "examTraps": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "La metformine ne stimule pas directement la sécrétion d’insuline. La contre-indication rénale documentée est un DFG < 30 mL/min ; le risque d’acidose lactique dépend également du contexte.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide pédagogique originale fondée sur les champs référencés. Ni liste officielle de pièges d’examen, ni validation médicale indépendante.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-03-26",
+            "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-03-26",
+            "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé, rubrique 4.3"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-03-26",
+            "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé, rubrique(s) 4.4"
+          }
+        ]
       },
       "comparisons": {
         "status": "missing",
@@ -6090,7 +6391,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-1",
+    "contentVersion": "2026.10.14-2",
     "validationStatus": "documentary-summary"
   },
   {
@@ -6252,13 +6553,20 @@
         "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
       },
       "physiologicalEffects": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Pour cette perfusion : début du soulagement en 5–10 min ; effet antalgique maximal vers 1 h, généralement pendant 4–6 h. Baisse de fièvre vers 30 min, effet au moins 6 h.",
+        "scope": "specialty",
+        "verification": "source-checked",
+        "context": "Synthèse non exhaustive du RCP de PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion. Le contexte clinique et la formulation doivent être conservés.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-04-23",
+            "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion, rubrique 5.1 ; relecture documentaire du 14 octobre 2026"
+          }
+        ]
       },
       "therapeuticEffects": {
         "status": "available",
@@ -6448,13 +6756,20 @@
         ]
       },
       "indications": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Pour cette solution IV : douleur modérée ou fièvre, en traitement court, lorsque l’urgence justifie la voie IV ou lorsque les autres voies ne sont pas possibles.",
+        "scope": "specialty",
+        "verification": "source-checked",
+        "context": "Synthèse non exhaustive du RCP de PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion. Le contexte clinique et la formulation doivent être conservés.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-04-23",
+            "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion, rubrique 4.1 ; relecture documentaire du 14 octobre 2026"
+          }
+        ]
       },
       "therapeuticStrategy": {
         "status": "available",
@@ -6473,13 +6788,20 @@
         ]
       },
       "clinicalContexts": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Exemple documentaire : douleur modérée postopératoire lorsque la voie IV est cliniquement justifiée. Ne pas extrapoler ces conditions à toutes les formes orales.",
+        "scope": "context",
+        "verification": "source-checked",
+        "context": "Synthèse non exhaustive du RCP de PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion. Le contexte clinique et la formulation doivent être conservés.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-04-23",
+            "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion, rubrique 4.1 ; relecture documentaire du 14 octobre 2026"
+          }
+        ]
       },
       "contraindications": {
         "status": "available",
@@ -6578,13 +6900,20 @@
         ]
       },
       "biologicalMonitoring": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Dans le contexte du surdosage : dosage plasmatique du paracétamol et tests hépatiques répétés toutes les 24 h selon le RCP. Ce n’est pas un programme systématique de surveillance du traitement usuel.",
+        "scope": "context",
+        "verification": "source-checked",
+        "context": "Synthèse non exhaustive du RCP de PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion. Le contexte clinique et la formulation doivent être conservés.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-04-23",
+            "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion, rubrique 4.9 ; relecture documentaire du 14 octobre 2026"
+          }
+        ]
       },
       "pregnancy": {
         "status": "available",
@@ -6749,13 +7078,27 @@
         ]
       },
       "chembl": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL112",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Correspondance ChEMBL non vérifiée pour cette entité chimique."
+        "context": "Correspondance structurale exacte avec le CID 1983 : InChIKey RZVAJINKPMORJF-UHFFFAOYSA-N. Ne démontre ni équivalence clinique, ni identité de sel ou de formulation pharmaceutique.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/1983/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "PUG REST : CID 1983, InChIKey complet"
+          },
+          {
+            "sourceId": "chembl",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=RZVAJINKPMORJF-UHFFFAOYSA-N&limit=5",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "API ChEMBL : correspondance unique CHEMBL112, InChIKey complet ; données ChEMBL CC BY-SA 3.0"
+          }
+        ]
       },
       "essentials": {
         "status": "available",
@@ -6802,13 +7145,41 @@
         ]
       },
       "examTraps": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "Cette fiche s’appuie sur une solution pour perfusion : douleur au site d’injection et conditions d’utilisation IV ne s’appliquent pas aux formes orales. La cible moléculaire précise ne doit pas être inventée.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide pédagogique originale fondée sur les champs référencés. Ni liste officielle de pièges d’examen, ni validation médicale indépendante.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-04-23",
+            "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion, rubrique 3"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-04-23",
+            "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion, rubrique(s) 4.2"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-04-23",
+            "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion, rubrique(s) 4.8"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-04-23",
+            "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion, rubrique 5.1"
+          }
+        ]
       },
       "comparisons": {
         "status": "missing",
@@ -6829,7 +7200,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-1",
+    "contentVersion": "2026.10.14-2",
     "validationStatus": "documentary-summary"
   },
   {
@@ -7513,13 +7884,27 @@
         ]
       },
       "chembl": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL521",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Correspondance ChEMBL non vérifiée pour cette entité chimique."
+        "context": "Correspondance structurale exacte avec le CID 3672 : InChIKey HEFNNWSXXWATRW-UHFFFAOYSA-N. Ne démontre ni équivalence clinique, ni identité de sel ou de formulation pharmaceutique.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3672/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "PUG REST : CID 3672, InChIKey complet"
+          },
+          {
+            "sourceId": "chembl",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=HEFNNWSXXWATRW-UHFFFAOYSA-N&limit=5",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "API ChEMBL : correspondance unique CHEMBL521, InChIKey complet ; données ChEMBL CC BY-SA 3.0"
+          }
+        ]
       },
       "essentials": {
         "status": "available",
@@ -7566,13 +7951,20 @@
         ]
       },
       "examTraps": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "La contre-indication au troisième trimestre ne résume pas toutes les restrictions de grossesse. Les risques fœtaux décrits dès vingt semaines doivent aussi être considérés dans la lecture du RCP.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide pédagogique originale fondée sur les champs référencés. Ni liste officielle de pièges d’examen, ni validation médicale indépendante.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69932537/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-07-17",
+            "locator": "RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé, rubrique(s) 4.6"
+          }
+        ]
       },
       "comparisons": {
         "status": "missing",
@@ -7593,7 +7985,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-1",
+    "contentVersion": "2026.10.14-2",
     "validationStatus": "documentary-summary"
   },
   {
@@ -7721,31 +8113,52 @@
         ]
       },
       "target": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "Récepteur intracellulaire des glucocorticoïdes (GR), appartenant à la famille des récepteurs nucléaires.",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "context": "Synthèse originale du mécanisme de classe des glucocorticoïdes, dont la prednisolone, à partir du Collège national de pharmacologie médicale. Ne provient pas du RCP ; pas de validation indépendante.",
+        "evidence": [
+          {
+            "sourceId": "cnpm",
+            "url": "https://pharmacomedicale.org/medicaments/par-specialites/item/corticoides-les-points-essentiels",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-06-05",
+            "locator": "CNPM, Corticoïdes : points essentiels, résumé et mécanismes ; prednisolone dans le tableau des glucocorticoïdes. Paraphrase originale, aucun cours ou tableau reproduit."
+          }
+        ]
       },
       "mechanism": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "L’activation de GR entraîne sa translocation vers le noyau et modifie la transcription de gènes, notamment par interaction avec les éléments GRE et les facteurs de transcription inflammatoires. Des effets non génomiques sont également décrits pour la classe.",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "context": "Synthèse originale du mécanisme de classe des glucocorticoïdes, dont la prednisolone, à partir du Collège national de pharmacologie médicale. Ne provient pas du RCP ; pas de validation indépendante.",
+        "evidence": [
+          {
+            "sourceId": "cnpm",
+            "url": "https://pharmacomedicale.org/medicaments/par-specialites/item/corticoides-les-points-essentiels",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-06-05",
+            "locator": "CNPM, Corticoïdes : points essentiels, résumé et mécanismes ; prednisolone dans le tableau des glucocorticoïdes. Paraphrase originale, aucun cours ou tableau reproduit."
+          }
+        ]
       },
       "actionType": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "Agonisme du récepteur des glucocorticoïdes ; mécanisme de classe distinct de l’inhibition directe des cyclo-oxygénases par les AINS.",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "context": "Synthèse originale du mécanisme de classe des glucocorticoïdes, dont la prednisolone, à partir du Collège national de pharmacologie médicale. Ne provient pas du RCP ; pas de validation indépendante.",
+        "evidence": [
+          {
+            "sourceId": "cnpm",
+            "url": "https://pharmacomedicale.org/medicaments/par-specialites/item/corticoides-les-points-essentiels",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-06-05",
+            "locator": "CNPM, Corticoïdes : points essentiels, résumé et mécanismes ; prednisolone dans le tableau des glucocorticoïdes. Paraphrase originale, aucun cours ou tableau reproduit."
+          }
+        ]
       },
       "physiologicalEffects": {
         "status": "available",
@@ -8030,22 +8443,36 @@
         ]
       },
       "clinicalMonitoring": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Surveiller l’apparition d’infections, dont les signes peuvent être masqués. Après traitement prolongé, l’arrêt progressif tient compte du risque de rechute et d’insuffisance surrénalienne.",
+        "scope": "context",
+        "verification": "source-checked",
+        "context": "Synthèse non exhaustive du RCP de PREDNISOLONE TEVA 5 mg, comprimé effervescent. Le contexte clinique et la formulation doivent être conservés.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2024-03-19",
+            "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent, rubrique 4.2 et 4.4 ; relecture documentaire du 14 octobre 2026"
+          }
+        ]
       },
       "biologicalMonitoring": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "En sclérose systémique exposée au risque de crise rénale sous prednisolone : contrôles réguliers de pression artérielle et de créatinine. Avec un autre hypokaliémiant : surveillance de la kaliémie.",
+        "scope": "context",
+        "verification": "source-checked",
+        "context": "Synthèse non exhaustive du RCP de PREDNISOLONE TEVA 5 mg, comprimé effervescent. Le contexte clinique et la formulation doivent être conservés.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2024-03-19",
+            "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent, rubrique 4.4 et 4.5 ; relecture documentaire du 14 octobre 2026"
+          }
+        ]
       },
       "pregnancy": {
         "status": "available",
@@ -8217,13 +8644,27 @@
         ]
       },
       "chembl": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL131",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Correspondance ChEMBL non vérifiée pour cette entité chimique."
+        "context": "Correspondance structurale exacte avec le CID 5755 : InChIKey OIGNJSKKLXVSLS-VWUMJDOOSA-N. Ne démontre ni équivalence clinique, ni identité de sel ou de formulation pharmaceutique.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5755/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "PUG REST : CID 5755, InChIKey complet"
+          },
+          {
+            "sourceId": "chembl",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=OIGNJSKKLXVSLS-VWUMJDOOSA-N&limit=5",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "API ChEMBL : correspondance unique CHEMBL131, InChIKey complet ; données ChEMBL CC BY-SA 3.0"
+          }
+        ]
       },
       "essentials": {
         "status": "available",
@@ -8270,13 +8711,27 @@
         ]
       },
       "examTraps": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "La demi-vie plasmatique n’est pas la durée de l’effet biologique. Les restrictions de vaccins vivants dépendent du contexte de corticothérapie.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide pédagogique originale fondée sur les champs référencés. Ni liste officielle de pièges d’examen, ni validation médicale indépendante.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2024-03-19",
+            "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent, rubrique 5.2"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2024-03-19",
+            "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent, rubrique(s) 4.5"
+          }
+        ]
       },
       "comparisons": {
         "status": "missing",
@@ -8297,7 +8752,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-1",
+    "contentVersion": "2026.10.14-2",
     "validationStatus": "documentary-summary"
   },
   {
@@ -8967,13 +9422,27 @@
         ]
       },
       "chembl": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL809",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Correspondance ChEMBL non vérifiée pour cette entité chimique."
+        "context": "Correspondance structurale exacte avec le CID 68617 : InChIKey VGKDLMBJGBXTGI-SJCJKPOMSA-N. Ne démontre ni équivalence clinique, ni identité de sel ou de formulation pharmaceutique.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/68617/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "PUG REST : CID 68617, InChIKey complet"
+          },
+          {
+            "sourceId": "chembl",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=VGKDLMBJGBXTGI-SJCJKPOMSA-N&limit=5",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "API ChEMBL : correspondance unique CHEMBL809, InChIKey complet ; données ChEMBL CC BY-SA 3.0"
+          }
+        ]
       },
       "essentials": {
         "status": "available",
@@ -9020,13 +9489,27 @@
         ]
       },
       "examTraps": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "Distinguer la demi-vie de la sertraline et celle de la N-desméthylsertraline. Les interactions sérotoninergiques restent à vérifier même si la recapture est sélective.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide pédagogique originale fondée sur les champs référencés. Ni liste officielle de pièges d’examen, ni validation médicale indépendante.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63288007/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2023-06-19",
+            "locator": "RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule, rubrique(s) 5.2"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63288007/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2023-06-19",
+            "locator": "RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule, rubrique(s) 4.5"
+          }
+        ]
       },
       "comparisons": {
         "status": "missing",
@@ -9047,7 +9530,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-1",
+    "contentVersion": "2026.10.14-2",
     "validationStatus": "documentary-summary"
   },
   {
@@ -9731,13 +10214,27 @@
         ]
       },
       "chembl": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1286",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Correspondance ChEMBL non vérifiée pour cette entité chimique."
+        "context": "Correspondance structurale exacte avec le CID 5284583 : InChIKey HPHUVLMMVZITSG-LURJTMIESA-N. Ne démontre ni équivalence clinique, ni identité de sel ou de formulation pharmaceutique.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5284583/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "PUG REST : CID 5284583, InChIKey complet"
+          },
+          {
+            "sourceId": "chembl",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=HPHUVLMMVZITSG-LURJTMIESA-N&limit=5",
+            "consultedAt": "2026-10-13",
+            "sourceUpdatedAt": null,
+            "locator": "API ChEMBL : correspondance unique CHEMBL1286, InChIKey complet ; données ChEMBL CC BY-SA 3.0"
+          }
+        ]
       },
       "essentials": {
         "status": "available",
@@ -9784,13 +10281,34 @@
         ]
       },
       "examTraps": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "Une liaison à SV2A ne signifie pas que le mécanisme exact soit totalement élucidé. La baisse de fonction rénale prolonge la demi-vie et modifie les adaptations documentées.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide pédagogique originale fondée sur les champs référencés. Ni liste officielle de pièges d’examen, ni validation médicale indépendante.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61610687/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-12-11",
+            "locator": "RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61610687/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-12-11",
+            "locator": "RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable, rubrique(s) 5.2"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61610687/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-12-11",
+            "locator": "RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable, rubrique(s) 4.2"
+          }
+        ]
       },
       "comparisons": {
         "status": "missing",
@@ -9811,7 +10329,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-1",
+    "contentVersion": "2026.10.14-2",
     "validationStatus": "documentary-summary"
   }
 ]

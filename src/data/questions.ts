@@ -3,7 +3,7 @@ import { manualContent,withImported } from './manualContent';
 import { drugs } from './drugs';
 import { parseQuestions } from '../domain/assessment';
 import type { FieldKey, LearningObjective, Question } from '../domain/models';
-export const questionContentVersion='2026-10-14.1'+(manualContent.questions.length?'+'+manualContent.id+'@'+manualContent.version:'');
+export const questionContentVersion='2026-10-14.2'+(manualContent.questions.length?'+'+manualContent.id+'@'+manualContent.version:'');
 export const learningObjectives:LearningObjective[]=[{id:'mechanisms',title:'Identifier les mécanismes et cibles moléculaires',specialtyIds:[],drugClassIds:[]},{id:'safety',title:'Reconnaître un élément de sécurité documenté dans un RCP',specialtyIds:[],drugClassIds:[]},{id:'kinetics',title:'Interpréter une élimination et un modèle de demi-vie',specialtyIds:[],drugClassIds:[]}];
 function references(ids:string[],key:FieldKey='mechanism'){return ids.flatMap(id=>drugs.find(d=>d.id===id)!.fields[key].evidence);}
 function q(id:string,type:Question['type'],statement:string,drugIds:string[],options:Question['options'],correction:string,extra:Partial<Question>={}):Question{return {id,type,statement,drugIds,options,correction,difficulty:1,classIds:[...new Set(drugIds.map(id=>drugs.find(d=>d.id===id)!.classId))],objectiveIds:['mechanisms'],evidence:references(drugIds),validationStatus:'demo',...extra};}

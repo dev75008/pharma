@@ -1,0 +1,10 @@
+import {beforeEach,afterEach,expect,it,vi} from 'vitest';
+import {db} from './db';
+import {loadLabels} from './openfda';
+import {fetchLabels,openfdaRequest,parseLabels,type OpenfdaCache} from '../data/adapters/openfda';
+import fixture from '../../e2e/fixtures/openfda-amoxicillin.json';
+vi.mock('../data/adapters/openfda',async original=>({...await original<typeof import('../data/adapters/openfda')>(),fetchLabels:vi.fn()}));
+const entry=():OpenfdaCache=>({key:'amoxicilline',schemaVersion:1,sourceId:'openfda',...openfdaRequest('amoxicilline'),labels:parseLabels(fixture,'AMOXICILLIN').results,total:216,sourceUpdatedAt:'2026-10-13',retrievedAt:'2026-10-14T12:00:00.000Z',expiresAt:Date.now()+86400000});
+beforeEach(async()=>{await db.openfdaCache.clear();vi.mocked(fetchLabels).mockReset();vi.spyOn(navigator,'onLine','get').mockReturnValue(true);});afterEach(()=>vi.restoreAllMocks());
+it('déduplique et conserve les métadonnées hors ligne après réouverture',async()=>{vi.mocked(fetchLabels).mockResolvedValue(entry());await Promise.all([loadLabels('amoxicilline'),loadLabels('amoxicilline')]);expect(fetchLabels).toHaveBeenCalledTimes(1);db.close();await db.open();vi.spyOn(navigator,'onLine','get').mockReturnValue(false);expect((await loadLabels('amoxicilline')).warning).toContain('hors ligne');await expect(loadLabels('bisoprolol')).rejects.toThrow('non téléchargées');});
+it('garde la date de l’ancienne copie et rejette une provenance altérée',async()=>{await db.openfdaCache.put({...entry(),expiresAt:0});vi.mocked(fetchLabels).mockRejectedValue(new Error('HTTP 503'));const r=await loadLabels('amoxicilline',true);expect(r.stale).toBe(true);expect(r.entry.retrievedAt).toBe(entry().retrievedAt);await db.openfdaCache.put({...entry(),key:'bisoprolol'});vi.spyOn(navigator,'onLine','get').mockReturnValue(false);await expect(loadLabels('bisoprolol')).rejects.toThrow('non téléchargées');});

@@ -2,7 +2,7 @@
 
 Plateforme personnelle de révision DFASM2 en français, sans backend obligatoire. Site : https://dev75008.github.io/pharma/ · dépôt : https://github.com/dev75008/pharma.
 
-Livraison technique du 14 octobre 2026 : **13 fiches / 12 familles, 42 questions, 46 flashcards et 6 dossiers fictifs**. 479 champs documentés sur 650 ; les autres restent « À documenter ». **135 tests unitaires, 104 scénarios Chromium ordinateur/mobile et 42 parcours Firefox/WebKit réussis**, avec contrôles automatiques d’accessibilité. [Bilan des huit phases et limites](docs/livraison.md).
+Version technique du 14 octobre 2026 : **13 fiches / 12 familles, 43 questions, 47 flashcards et 7 dossiers fictifs**. 522 champs documentés sur 650 ; les 128 autres restent « À documenter ». Moteurs opérationnels avec tests unitaires, scénarios navigateur et contrôles automatiques d’accessibilité. Le cahier des charges documentaire et la validation médicale indépendante ne sont pas intégralement achevés. [Bilan des huit phases, tests et limites](docs/livraison.md).
 
 ## Installation et lancement
 
@@ -34,20 +34,20 @@ Sous Linux : `npx playwright install --with-deps chromium firefox webkit`. Les t
 
 - Bibliothèque : recherche par nom, classe, mécanisme, indication et cible ; filtres combinables, favoris, historique, marquage étudié et notes personnelles.
 - Fiches : 50 champs, disponibilité, contexte molécule/spécialité, provenance, dates et liens. Comparateur 2–4 molécules et PDF par impression du navigateur.
-- Évaluation : six formats, entraînement corrigé après validation, examens chronométrés, reprise, corrections détaillées, résultats et CSV. Banque de démonstration sans validation indépendante.
+- Évaluation : six formats, filtres par classe/spécialité/objectif, mélange optionnel, entraînement corrigé après validation, examens chronométrés, reprise de l’ordre et des réponses, corrections détaillées, résultats et CSV. Banque de démonstration sans validation indépendante.
 - Flashcards : six types, cartes personnelles, quatre évaluations, SM-2 adapté, échéances, rappels et suspension.
-- Dossiers : six patients fictifs, trois étapes chacun, informations progressives, réponses verrouillées, sources, reprise et bilans.
+- Dossiers : sept patients fictifs, six dossiers de trois étapes et un transversal de cinq étapes, informations progressives, réponses verrouillées, sources, reprise et bilans.
 - Suivi : statistiques réelles, graphiques avec tableaux, objectifs, planning, thèmes et recommandations. Séance quotidienne de 5, 10 ou davantage de questions selon la banque, plafonnée à 50, avec prévisualisation et barème configurable.
 - Sauvegarde : export/import JSON personnel validé et transactionnel, aperçu avant import, collisions gérées et CSV. Caches scientifiques séparés.
 - Interface : mobile, clair/sombre, navigation clavier, lien d’évitement, menu avec gestion du focus, PWA et avis de mise à jour.
 
 ## Sources
 
-Catalogue et RCP/notices via l’API indépendante Giygas ; propriétés et conformères 3D PubChem ; identités structurales, mécanismes et cibles ChEMBL ; bibliographie Europe PMC ; correspondances exactes RxNorm ; études ClinicalTrials.gov. Provenance, dates, cache borné et erreurs contrôlés. Aucun remplissage automatique des champs cliniques français.
+Catalogue et RCP/notices via l’API indépendante Giygas ; propriétés et conformères 3D PubChem ; identités structurales, mécanismes et cibles ChEMBL ; bibliographie Europe PMC ; correspondances exactes RxNorm ; études ClinicalTrials.gov ; métadonnées SPL américaines OpenFDA avec liens DailyMed. Provenance, dates, cache borné et erreurs contrôlés. Aucun remplissage automatique des champs cliniques français.
 
 Pharmacorama : quiz original sur demande, sans copie des questions ou scores. VIDAL et Thériaque : accès originaux, sans import de leurs bases. DailyMed : lien, CORS bloquant observé. Les autres références sont distinguées dans le registre ; aucun endpoint ou droit d’accès inventé.
 
-[Sources/licences](docs/sources-et-licences.md) · [API](docs/api-scientifiques.md) · [3D](docs/structures-3d.md) · [RxNorm](docs/phase-7-rxnorm.md) · [Études](docs/phase-7-essais-cliniques.md) · [Pharmacorama](docs/quiz-pharmacorama.md).
+[Sources/licences](docs/sources-et-licences.md) · [Enrichissement](docs/enrichissement-documentaire-14-octobre.md) · [OpenFDA](docs/openfda.md) · [API](docs/api-scientifiques.md) · [3D](docs/structures-3d.md) · [RxNorm](docs/phase-7-rxnorm.md) · [Études](docs/phase-7-essais-cliniques.md) · [Pharmacorama](docs/quiz-pharmacorama.md).
 
 ## Ajouter des contenus autorisés
 
@@ -64,7 +64,7 @@ Exemple : `examples/contenus-exemple.json`. L’import remplace le paquet compl�
 
 ## Architecture et déploiement
 
-`src/domain` : modèles, schémas, recherche, scores, SM-2, dossiers, statistiques, sélection quotidienne et imports/exports. `src/data` : contenus versionnés, registre et adaptateurs. `src/storage` : Dexie/IndexedDB, migrations v1–v14, progression et caches distincts. `src/features` : modules pédagogiques ; graphiques, équations, HTML et 3D chargés séparément. `scripts` : contrôles et import ; `e2e` : parcours et fixtures documentées.
+`src/domain` : modèles, schémas, recherche, scores, mélange d’exercices, SM-2, dossiers, statistiques, sélection quotidienne et imports/exports. `src/data` : contenus versionnés, registre et adaptateurs. `src/storage` : Dexie/IndexedDB, migrations v1–v15, progression et caches distincts. `src/features` : modules pédagogiques ; graphiques, équations, HTML et 3D chargés séparément. `scripts` : contrôles, import et révisions documentaires ; `e2e` : parcours et fixtures documentées.
 
 GitHub Settings → Pages → Source → GitHub Actions. Chaque push sur main déclenche tests, compatibilité, compilation avec `VITE_BASE_PATH=/pharma/`, contrôle de livraison et publication. Pull requests vérifiées sans déploiement. Routes HashRouter ; domaine personnalisé : base `/`. `.env.example` ne contient aucun secret.
 

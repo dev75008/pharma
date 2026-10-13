@@ -15,5 +15,5 @@ test('bibliographie indisponible et sources américaines explicitement distingu�
  await page.route('https://www.ebi.ac.uk/europepmc/**',route=>route.fulfill({status:503}));
  await page.goto('/#/medicaments/paracetamol');await page.getByRole('button',{name:'Rechercher les publications'}).click();
  await expect(page.getByRole('alert')).toContainText('HTTP 503');
- await page.goto('/#/sources');await expect(page.getByRole('heading',{name:'OpenFDA'})).toBeVisible();await expect(page.getByText('États-Unis — étiquetages et pharmacovigilance FDA')).toBeVisible();
+ await page.goto('/#/sources');await expect(page.getByRole('heading',{name:'OpenFDA'})).toBeVisible();await expect(page.getByText('États-Unis — métadonnées d’étiquetages SPL')).toBeVisible();
 });

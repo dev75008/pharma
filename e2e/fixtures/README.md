@@ -22,3 +22,7 @@ Ces données réglementaires sont utilisées comme instantané de test pour que 
 # PubChem 3D
 
 `pubchem-bisoprolol-3d.sdf` : réponse SDF originale PubChem CID 2405, record_type=3d, reçue le 13 octobre 2026. 54 atomes et 54 liaisons ; conformère calculé, pas une conformation expérimentale ou liée à une cible. Attribution PubChem ; aucun transfert de droits supposé pour les autres annotations. Endpoint et vérifications : docs/structures-3d.md. Aucune structure synthétique publiée comme donnée source.
+
+# OpenFDA
+
+`openfda-amoxicillin.json` : projection de la réponse réelle du 14 octobre 2026, recherche de nom générique exact AMOXICILLIN, cinq résultats triés par effective_time décroissant. Seuls meta/id/set_id/effective_time/version/openfda conservés, valeurs inchangées. 216 résultats, base mise à jour le 13 octobre 2026. Attribution FDA/openFDA, conditions https://open.fda.gov/terms/ et licence https://open.fda.gov/license/. Aucun texte de notice ou déclaration de pharmacovigilance reproduit. Les modifications des tests sont des cas synthétiques, jamais des données médicales publiées.

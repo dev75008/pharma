@@ -1,4 +1,14 @@
 # Sources et licences
+
+## État complémentaire du 14 octobre 2026
+
+Les sections suivantes conservent aussi les vérifications historiques avec leurs dates. État actuel : [enrichissement documentaire](enrichissement-documentaire-14-octobre.md), [API actives](api-scientifiques.md), [OpenFDA](openfda.md) et [bilan](livraison.md).
+
+43 champs supplémentaires documentés, dont 13 correspondances ChEMBL exactes avec instantané attribué CC BY-SA 3.0, 14 rubriques RCP auparavant absentes, trois courtes paraphrases originales du mécanisme de classe des glucocorticoïdes et 13 pièges pédagogiques. Les références CNPM sont datées et distinctes du RCP ; aucun cours, tableau, image ou questionnaire du collège n’est reproduit. La licence ISC du code ne s’applique pas aux instantanés ChEMBL.
+
+Le connecteur OpenFDA conserve des métadonnées SPL, cinq résultats par recherche exacte, avec liens vers DailyMed. API sans clé et CORS navigateur vérifiés depuis GitHub Pages. Conditions, quotas et licence officielle consultés ; attribution FDA visible. Aucune section clinique, posologie, monographie ou déclaration de pharmacovigilance importée. Les résultats américains ne remplissent pas les champs français et ne génèrent aucune question.
+
+## Vérifications initiales et ajouts antérieurs
 Le registre contient les huit références principales demandées et les références complémentaires ajoutées. La BDPM est utilisée pour 13 synthèses documentaires originales très brèves avec lien, rubrique RCP et dates par champ ; aucune monographie complète n’est reproduite. PubChem fournit aussi des données structurales ; les autres références restent des liens. Les fiches cliniques restent des synthèses manuelles ; le catalogue réglementaire utilise désormais l’adaptateur Giygas décrit ci-dessous. Aucun téléchargement massif ni scraping n’est effectué.
 Les [mentions légales BDPM](https://base-donnees-publique.medicaments.gouv.fr/mentions-legales) ont été consultées le 12 octobre 2026 : elles identifient l’éditeur mais n’établissent pas à elles seules une licence de réutilisation automatisée. Pour les textes cliniques BDPM, aucune API ni licence de téléchargement massif de RCP n’est déclarée vérifiée ; les fichiers administratifs téléchargeables doivent être étudiés séparément. Les courtes synthèses ne constituent pas une redistribution de la base. Une intégration automatisée devra être vérifiée séparément en phase 7.
 Avant tout adaptateur : consigner la documentation officielle, la licence, les modalités de téléchargement, quotas, règles de cache et tests CORS datés. En cas de restriction, conserver des liens ou autoriser un import manuel légal. Aucun scraping ni contournement.

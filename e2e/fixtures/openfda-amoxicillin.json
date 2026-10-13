@@ -1,0 +1,279 @@
+{
+  "meta": {
+    "disclaimer": "Do not rely on openFDA to make decisions regarding medical care. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated. We may limit or otherwise restrict your access to the API in line with our Terms of Service.",
+    "terms": "https://open.fda.gov/terms/",
+    "license": "https://open.fda.gov/license/",
+    "last_updated": "2026-10-13",
+    "results": {
+      "skip": 0,
+      "limit": 5,
+      "total": 216
+    }
+  },
+  "results": [
+    {
+      "id": "5b0d4963-eecd-294e-e063-6294a90a87b4",
+      "set_id": "4adc198e-39d8-4b3e-bfa4-278aaf4064ae",
+      "effective_time": "20260909",
+      "version": "2",
+      "openfda": {
+        "application_number": [
+          "ANDA062216"
+        ],
+        "brand_name": [
+          "AMOXICILLIN"
+        ],
+        "generic_name": [
+          "AMOXICILLIN"
+        ],
+        "manufacturer_name": [
+          "REMEDYREPACK INC."
+        ],
+        "product_ndc": [
+          "70518-4371"
+        ],
+        "product_type": [
+          "HUMAN PRESCRIPTION DRUG"
+        ],
+        "route": [
+          "ORAL"
+        ],
+        "substance_name": [
+          "AMOXICILLIN"
+        ],
+        "rxcui": [
+          "308191"
+        ],
+        "spl_id": [
+          "5b0d4963-eecd-294e-e063-6294a90a87b4"
+        ],
+        "spl_set_id": [
+          "4adc198e-39d8-4b3e-bfa4-278aaf4064ae"
+        ],
+        "package_ndc": [
+          "70518-4371-0"
+        ],
+        "original_packager_product_ndc": [
+          "81964-205"
+        ],
+        "unii": [
+          "804826J2HU"
+        ]
+      }
+    },
+    {
+      "id": "5a95270a-c24d-1f5c-e063-6394a90a91c9",
+      "set_id": "b6ea2f81-aee6-4c88-b681-50eb28e80a86",
+      "effective_time": "20260903",
+      "version": "3",
+      "openfda": {
+        "application_number": [
+          "ANDA065291"
+        ],
+        "brand_name": [
+          "Amoxicillin"
+        ],
+        "generic_name": [
+          "AMOXICILLIN"
+        ],
+        "manufacturer_name": [
+          "REMEDYREPACK INC."
+        ],
+        "product_ndc": [
+          "70518-4279"
+        ],
+        "product_type": [
+          "HUMAN PRESCRIPTION DRUG"
+        ],
+        "route": [
+          "ORAL"
+        ],
+        "substance_name": [
+          "AMOXICILLIN"
+        ],
+        "rxcui": [
+          "308191"
+        ],
+        "spl_id": [
+          "5a95270a-c24d-1f5c-e063-6394a90a91c9"
+        ],
+        "spl_set_id": [
+          "b6ea2f81-aee6-4c88-b681-50eb28e80a86"
+        ],
+        "package_ndc": [
+          "70518-4279-1",
+          "70518-4279-0"
+        ],
+        "original_packager_product_ndc": [
+          "0143-9939"
+        ],
+        "unii": [
+          "804826J2HU"
+        ]
+      }
+    },
+    {
+      "id": "5a7966af-cc0a-452c-e063-6294a90af6a9",
+      "set_id": "5a79669f-52f7-e8ea-e063-6394a90a93b8",
+      "effective_time": "20260902",
+      "version": "1",
+      "openfda": {
+        "application_number": [
+          "ANDA065255"
+        ],
+        "brand_name": [
+          "Amoxicillin"
+        ],
+        "generic_name": [
+          "AMOXICILLIN"
+        ],
+        "manufacturer_name": [
+          "Redpharm Drug"
+        ],
+        "product_ndc": [
+          "67296-2328"
+        ],
+        "product_type": [
+          "HUMAN PRESCRIPTION DRUG"
+        ],
+        "route": [
+          "ORAL"
+        ],
+        "substance_name": [
+          "AMOXICILLIN"
+        ],
+        "rxcui": [
+          "308194"
+        ],
+        "spl_id": [
+          "5a7966af-cc0a-452c-e063-6294a90af6a9"
+        ],
+        "spl_set_id": [
+          "5a79669f-52f7-e8ea-e063-6394a90a93b8"
+        ],
+        "package_ndc": [
+          "67296-2328-2"
+        ],
+        "original_packager_product_ndc": [
+          "0143-9285"
+        ],
+        "upc": [
+          "0301439285205",
+          "0301439285014"
+        ],
+        "unii": [
+          "804826J2HU"
+        ]
+      }
+    },
+    {
+      "id": "5a81b276-1046-0709-e063-6294a90a86d7",
+      "set_id": "f37eb415-77b2-41b0-8d20-64e821e4b05d",
+      "effective_time": "20260902",
+      "version": "8",
+      "openfda": {
+        "application_number": [
+          "ANDA065256"
+        ],
+        "brand_name": [
+          "Amoxicillin"
+        ],
+        "generic_name": [
+          "AMOXICILLIN"
+        ],
+        "manufacturer_name": [
+          "REMEDYREPACK INC."
+        ],
+        "product_ndc": [
+          "70518-3886"
+        ],
+        "product_type": [
+          "HUMAN PRESCRIPTION DRUG"
+        ],
+        "route": [
+          "ORAL"
+        ],
+        "substance_name": [
+          "AMOXICILLIN"
+        ],
+        "rxcui": [
+          "308192"
+        ],
+        "spl_id": [
+          "5a81b276-1046-0709-e063-6294a90a86d7"
+        ],
+        "spl_set_id": [
+          "f37eb415-77b2-41b0-8d20-64e821e4b05d"
+        ],
+        "package_ndc": [
+          "70518-3886-1",
+          "70518-3886-0",
+          "70518-3886-2"
+        ],
+        "original_packager_product_ndc": [
+          "57237-028"
+        ],
+        "unii": [
+          "804826J2HU"
+        ]
+      }
+    },
+    {
+      "id": "5a660378-37fc-cc42-e063-6294a90a0f43",
+      "set_id": "5a660370-9a81-33f9-e063-6394a90a6c62",
+      "effective_time": "20260901",
+      "version": "1",
+      "openfda": {
+        "application_number": [
+          "ANDA062216"
+        ],
+        "brand_name": [
+          "AMOXICILLIN"
+        ],
+        "generic_name": [
+          "AMOXICILLIN"
+        ],
+        "manufacturer_name": [
+          "Redpharm Drug"
+        ],
+        "product_ndc": [
+          "67296-1914"
+        ],
+        "product_type": [
+          "HUMAN PRESCRIPTION DRUG"
+        ],
+        "route": [
+          "ORAL"
+        ],
+        "substance_name": [
+          "AMOXICILLIN"
+        ],
+        "rxcui": [
+          "308191"
+        ],
+        "spl_id": [
+          "5a660378-37fc-cc42-e063-6294a90a0f43"
+        ],
+        "spl_set_id": [
+          "5a660370-9a81-33f9-e063-6394a90a6c62"
+        ],
+        "package_ndc": [
+          "67296-1914-2"
+        ],
+        "original_packager_product_ndc": [
+          "81964-205"
+        ],
+        "upc": [
+          "0381964350982",
+          "0381964350104",
+          "0381964225013",
+          "0381964225051",
+          "0381964350609"
+        ],
+        "unii": [
+          "804826J2HU"
+        ]
+      }
+    }
+  ]
+}

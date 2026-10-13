@@ -1,0 +1,6 @@
+import {expect,it} from 'vitest';
+import {questions} from '../data/questions';
+import {shuffledQuestions} from './questionOrder';
+import {emptyAnswer,scoreAnswer} from './assessment';
+it('mélange sans changer les identifiants, bonnes réponses et associations ni modifier la banque',()=>{const selected=questions.filter(q=>['qcu','qrm','association'].includes(q.type));const original=structuredClone(selected);const output=shuffledQuestions(selected,()=>0);expect(output.map(q=>q.id)).not.toEqual(selected.map(q=>q.id));expect(selected).toEqual(original);for(const q of output){const source=selected.find(x=>x.id===q.id)!;expect(q.options.map(o=>o.id).sort()).toEqual(source.options.map(o=>o.id).sort());const answer={...emptyAnswer(q),selectedOptionIds:q.options.filter(o=>o.correct).map(o=>o.id),associations:Object.fromEntries(q.associationItems?.map(i=>[i.id,i.expectedChoiceId])??[])};expect(scoreAnswer(q,answer,'exact').score).toBe(1);expect(scoreAnswer(source,answer,'exact').score).toBe(1);}});
+it('refuse un tirage hors limites et conserve les réponses ouvertes sans transformation',()=>{expect(()=>shuffledQuestions(questions,()=>1)).toThrow('Tirage');const source=questions.find(q=>q.type==='qroc')!;expect(shuffledQuestions([source],()=>0)).toEqual([source]);});

@@ -1,0 +1,539 @@
+{
+  "schemaVersion": 1,
+  "license": "ChEMBL CC BY-SA 3.0 ; propriétés structurales PubChem",
+  "snapshots": [
+    {
+      "drugId": "bisoprolol",
+      "pubchem": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:16.088Z",
+        "expiresAt": 1792017556091,
+        "sourceUpdatedAt": null,
+        "key": "pubchem:2405",
+        "sourceId": "pubchem",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2405/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+        "properties": {
+          "CID": 2405,
+          "MolecularFormula": "C18H31NO4",
+          "MolecularWeight": "325.4",
+          "InChIKey": "VHYCDWMUTMEGQY-UHFFFAOYSA-N",
+          "SMILES": "CC(C)NCC(COC1=CC=C(C=C1)COCCOC(C)C)O",
+          "XLogP": 1.9,
+          "TPSA": 60
+        }
+      },
+      "chembl": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:16.244Z",
+        "expiresAt": 1792017556244,
+        "sourceUpdatedAt": null,
+        "key": "chembl:VHYCDWMUTMEGQY-UHFFFAOYSA-N",
+        "sourceId": "chembl",
+        "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=VHYCDWMUTMEGQY-UHFFFAOYSA-N&limit=5",
+        "inchiKey": "VHYCDWMUTMEGQY-UHFFFAOYSA-N",
+        "molecule": {
+          "molecule_chembl_id": "CHEMBL645",
+          "pref_name": "BISOPROLOL",
+          "molecule_structures": {
+            "standard_inchi_key": "VHYCDWMUTMEGQY-UHFFFAOYSA-N"
+          },
+          "molecule_hierarchy": {
+            "parent_chembl_id": "CHEMBL645"
+          }
+        }
+      }
+    },
+    {
+      "drugId": "ramipril",
+      "pubchem": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:16.881Z",
+        "expiresAt": 1792017556881,
+        "sourceUpdatedAt": null,
+        "key": "pubchem:5362129",
+        "sourceId": "pubchem",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5362129/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+        "properties": {
+          "CID": 5362129,
+          "MolecularFormula": "C23H32N2O5",
+          "MolecularWeight": "416.5",
+          "InChIKey": "HDACQVRGBOVJII-JBDAPHQKSA-N",
+          "SMILES": "CCOC(=O)[C@H](CCC1=CC=CC=C1)N[C@@H](C)C(=O)N2[C@H]3CCC[C@H]3C[C@H]2C(=O)O",
+          "XLogP": 1.4,
+          "TPSA": 95.9
+        }
+      },
+      "chembl": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:17.153Z",
+        "expiresAt": 1792017557153,
+        "sourceUpdatedAt": null,
+        "key": "chembl:HDACQVRGBOVJII-JBDAPHQKSA-N",
+        "sourceId": "chembl",
+        "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=HDACQVRGBOVJII-JBDAPHQKSA-N&limit=5",
+        "inchiKey": "HDACQVRGBOVJII-JBDAPHQKSA-N",
+        "molecule": {
+          "molecule_chembl_id": "CHEMBL1168",
+          "pref_name": "RAMIPRIL",
+          "molecule_structures": {
+            "standard_inchi_key": "HDACQVRGBOVJII-JBDAPHQKSA-N"
+          },
+          "molecule_hierarchy": {
+            "parent_chembl_id": "CHEMBL1168"
+          }
+        }
+      }
+    },
+    {
+      "drugId": "losartan",
+      "pubchem": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:17.888Z",
+        "expiresAt": 1792017557888,
+        "sourceUpdatedAt": null,
+        "key": "pubchem:3961",
+        "sourceId": "pubchem",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3961/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+        "properties": {
+          "CID": 3961,
+          "MolecularFormula": "C22H23ClN6O",
+          "MolecularWeight": "422.9",
+          "InChIKey": "PSIFNNKUMBGKDQ-UHFFFAOYSA-N",
+          "SMILES": "CCCCC1=NC(=C(N1CC2=CC=C(C=C2)C3=CC=CC=C3C4=NNN=N4)CO)Cl",
+          "XLogP": 4.3,
+          "TPSA": 92.5
+        }
+      },
+      "chembl": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:18.237Z",
+        "expiresAt": 1792017558237,
+        "sourceUpdatedAt": null,
+        "key": "chembl:PSIFNNKUMBGKDQ-UHFFFAOYSA-N",
+        "sourceId": "chembl",
+        "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=PSIFNNKUMBGKDQ-UHFFFAOYSA-N&limit=5",
+        "inchiKey": "PSIFNNKUMBGKDQ-UHFFFAOYSA-N",
+        "molecule": {
+          "molecule_chembl_id": "CHEMBL191",
+          "pref_name": "LOSARTAN",
+          "molecule_structures": {
+            "standard_inchi_key": "PSIFNNKUMBGKDQ-UHFFFAOYSA-N"
+          },
+          "molecule_hierarchy": {
+            "parent_chembl_id": "CHEMBL191"
+          }
+        }
+      }
+    },
+    {
+      "drugId": "furosemide",
+      "pubchem": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:18.878Z",
+        "expiresAt": 1792017558878,
+        "sourceUpdatedAt": null,
+        "key": "pubchem:3440",
+        "sourceId": "pubchem",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3440/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+        "properties": {
+          "CID": 3440,
+          "MolecularFormula": "C12H11ClN2O5S",
+          "MolecularWeight": "330.74",
+          "InChIKey": "ZZUFCTLCJUWOSV-UHFFFAOYSA-N",
+          "SMILES": "C1=COC(=C1)CNC2=CC(=C(C=C2C(=O)O)S(=O)(=O)N)Cl",
+          "XLogP": 2,
+          "TPSA": 131
+        }
+      },
+      "chembl": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:19.172Z",
+        "expiresAt": 1792017559172,
+        "sourceUpdatedAt": null,
+        "key": "chembl:ZZUFCTLCJUWOSV-UHFFFAOYSA-N",
+        "sourceId": "chembl",
+        "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=ZZUFCTLCJUWOSV-UHFFFAOYSA-N&limit=5",
+        "inchiKey": "ZZUFCTLCJUWOSV-UHFFFAOYSA-N",
+        "molecule": {
+          "molecule_chembl_id": "CHEMBL35",
+          "pref_name": "FUROSEMIDE",
+          "molecule_structures": {
+            "standard_inchi_key": "ZZUFCTLCJUWOSV-UHFFFAOYSA-N"
+          },
+          "molecule_hierarchy": {
+            "parent_chembl_id": "CHEMBL35"
+          }
+        }
+      }
+    },
+    {
+      "drugId": "rivaroxaban",
+      "pubchem": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:19.964Z",
+        "expiresAt": 1792017559964,
+        "sourceUpdatedAt": null,
+        "key": "pubchem:9875401",
+        "sourceId": "pubchem",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9875401/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+        "properties": {
+          "CID": 9875401,
+          "MolecularFormula": "C19H18ClN3O5S",
+          "MolecularWeight": "435.9",
+          "InChIKey": "KGFYHTZWPPHNLQ-AWEZNQCLSA-N",
+          "SMILES": "C1COCC(=O)N1C2=CC=C(C=C2)N3C[C@@H](OC3=O)CNC(=O)C4=CC=C(S4)Cl",
+          "XLogP": 2.5,
+          "TPSA": 116
+        }
+      },
+      "chembl": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:20.242Z",
+        "expiresAt": 1792017560242,
+        "sourceUpdatedAt": null,
+        "key": "chembl:KGFYHTZWPPHNLQ-AWEZNQCLSA-N",
+        "sourceId": "chembl",
+        "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=KGFYHTZWPPHNLQ-AWEZNQCLSA-N&limit=5",
+        "inchiKey": "KGFYHTZWPPHNLQ-AWEZNQCLSA-N",
+        "molecule": {
+          "molecule_chembl_id": "CHEMBL198362",
+          "pref_name": "RIVAROXABAN",
+          "molecule_structures": {
+            "standard_inchi_key": "KGFYHTZWPPHNLQ-AWEZNQCLSA-N"
+          },
+          "molecule_hierarchy": {
+            "parent_chembl_id": "CHEMBL198362"
+          }
+        }
+      }
+    },
+    {
+      "drugId": "clopidogrel",
+      "pubchem": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:20.986Z",
+        "expiresAt": 1792017560986,
+        "sourceUpdatedAt": null,
+        "key": "pubchem:60606",
+        "sourceId": "pubchem",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/60606/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+        "properties": {
+          "CID": 60606,
+          "MolecularFormula": "C16H16ClNO2S",
+          "MolecularWeight": "321.8",
+          "InChIKey": "GKTWGGQPFAXNFI-HNNXBMFYSA-N",
+          "SMILES": "COC(=O)[C@H](C1=CC=CC=C1Cl)N2CCC3=C(C2)C=CS3",
+          "XLogP": 3.8,
+          "TPSA": 57.8
+        }
+      },
+      "chembl": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:21.183Z",
+        "expiresAt": 1792017561183,
+        "sourceUpdatedAt": null,
+        "key": "chembl:GKTWGGQPFAXNFI-HNNXBMFYSA-N",
+        "sourceId": "chembl",
+        "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=GKTWGGQPFAXNFI-HNNXBMFYSA-N&limit=5",
+        "inchiKey": "GKTWGGQPFAXNFI-HNNXBMFYSA-N",
+        "molecule": {
+          "molecule_chembl_id": "CHEMBL1771",
+          "pref_name": "CLOPIDOGREL",
+          "molecule_structures": {
+            "standard_inchi_key": "GKTWGGQPFAXNFI-HNNXBMFYSA-N"
+          },
+          "molecule_hierarchy": {
+            "parent_chembl_id": "CHEMBL1771"
+          }
+        }
+      }
+    },
+    {
+      "drugId": "amoxicilline",
+      "pubchem": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:21.923Z",
+        "expiresAt": 1792017561923,
+        "sourceUpdatedAt": null,
+        "key": "pubchem:33613",
+        "sourceId": "pubchem",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/33613/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+        "properties": {
+          "CID": 33613,
+          "MolecularFormula": "C16H19N3O5S",
+          "MolecularWeight": "365.4",
+          "InChIKey": "LSQZJLSUYDQPKJ-NJBDSQKTSA-N",
+          "SMILES": "CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)[C@@H](C3=CC=C(C=C3)O)N)C(=O)O)C",
+          "XLogP": -2,
+          "TPSA": 158
+        }
+      },
+      "chembl": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:22.195Z",
+        "expiresAt": 1792017562195,
+        "sourceUpdatedAt": null,
+        "key": "chembl:LSQZJLSUYDQPKJ-NJBDSQKTSA-N",
+        "sourceId": "chembl",
+        "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=LSQZJLSUYDQPKJ-NJBDSQKTSA-N&limit=5",
+        "inchiKey": "LSQZJLSUYDQPKJ-NJBDSQKTSA-N",
+        "molecule": {
+          "molecule_chembl_id": "CHEMBL1082",
+          "pref_name": "AMOXICILLIN",
+          "molecule_structures": {
+            "standard_inchi_key": "LSQZJLSUYDQPKJ-NJBDSQKTSA-N"
+          },
+          "molecule_hierarchy": {
+            "parent_chembl_id": "CHEMBL1082"
+          }
+        }
+      }
+    },
+    {
+      "drugId": "metformine",
+      "pubchem": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:22.962Z",
+        "expiresAt": 1792017562962,
+        "sourceUpdatedAt": null,
+        "key": "pubchem:4091",
+        "sourceId": "pubchem",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/4091/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+        "properties": {
+          "CID": 4091,
+          "MolecularFormula": "C4H11N5",
+          "MolecularWeight": "129.16",
+          "InChIKey": "XZWYZXLIPXDOLR-UHFFFAOYSA-N",
+          "SMILES": "CN(C)C(=N)N=C(N)N",
+          "XLogP": -1.3,
+          "TPSA": 91.5
+        }
+      },
+      "chembl": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:23.215Z",
+        "expiresAt": 1792017563215,
+        "sourceUpdatedAt": null,
+        "key": "chembl:XZWYZXLIPXDOLR-UHFFFAOYSA-N",
+        "sourceId": "chembl",
+        "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=XZWYZXLIPXDOLR-UHFFFAOYSA-N&limit=5",
+        "inchiKey": "XZWYZXLIPXDOLR-UHFFFAOYSA-N",
+        "molecule": {
+          "molecule_chembl_id": "CHEMBL1431",
+          "pref_name": "METFORMIN",
+          "molecule_structures": {
+            "standard_inchi_key": "XZWYZXLIPXDOLR-UHFFFAOYSA-N"
+          },
+          "molecule_hierarchy": {
+            "parent_chembl_id": "CHEMBL1431"
+          }
+        }
+      }
+    },
+    {
+      "drugId": "paracetamol",
+      "pubchem": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:23.893Z",
+        "expiresAt": 1792017563893,
+        "sourceUpdatedAt": null,
+        "key": "pubchem:1983",
+        "sourceId": "pubchem",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/1983/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+        "properties": {
+          "CID": 1983,
+          "MolecularFormula": "C8H9NO2",
+          "MolecularWeight": "151.16",
+          "InChIKey": "RZVAJINKPMORJF-UHFFFAOYSA-N",
+          "SMILES": "CC(=O)NC1=CC=C(C=C1)O",
+          "XLogP": 0.5,
+          "TPSA": 49.3
+        }
+      },
+      "chembl": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:24.209Z",
+        "expiresAt": 1792017564209,
+        "sourceUpdatedAt": null,
+        "key": "chembl:RZVAJINKPMORJF-UHFFFAOYSA-N",
+        "sourceId": "chembl",
+        "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=RZVAJINKPMORJF-UHFFFAOYSA-N&limit=5",
+        "inchiKey": "RZVAJINKPMORJF-UHFFFAOYSA-N",
+        "molecule": {
+          "molecule_chembl_id": "CHEMBL112",
+          "pref_name": "ACETAMINOPHEN",
+          "molecule_structures": {
+            "standard_inchi_key": "RZVAJINKPMORJF-UHFFFAOYSA-N"
+          },
+          "molecule_hierarchy": {
+            "parent_chembl_id": "CHEMBL112"
+          }
+        }
+      }
+    },
+    {
+      "drugId": "ibuprofene",
+      "pubchem": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:24.993Z",
+        "expiresAt": 1792017564993,
+        "sourceUpdatedAt": null,
+        "key": "pubchem:3672",
+        "sourceId": "pubchem",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3672/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+        "properties": {
+          "CID": 3672,
+          "MolecularFormula": "C13H18O2",
+          "MolecularWeight": "206.28",
+          "InChIKey": "HEFNNWSXXWATRW-UHFFFAOYSA-N",
+          "SMILES": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O",
+          "XLogP": 3.5,
+          "TPSA": 37.3
+        }
+      },
+      "chembl": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:25.226Z",
+        "expiresAt": 1792017565226,
+        "sourceUpdatedAt": null,
+        "key": "chembl:HEFNNWSXXWATRW-UHFFFAOYSA-N",
+        "sourceId": "chembl",
+        "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=HEFNNWSXXWATRW-UHFFFAOYSA-N&limit=5",
+        "inchiKey": "HEFNNWSXXWATRW-UHFFFAOYSA-N",
+        "molecule": {
+          "molecule_chembl_id": "CHEMBL521",
+          "pref_name": "IBUPROFEN",
+          "molecule_structures": {
+            "standard_inchi_key": "HEFNNWSXXWATRW-UHFFFAOYSA-N"
+          },
+          "molecule_hierarchy": {
+            "parent_chembl_id": "CHEMBL521"
+          }
+        }
+      }
+    },
+    {
+      "drugId": "prednisolone",
+      "pubchem": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:25.942Z",
+        "expiresAt": 1792017565942,
+        "sourceUpdatedAt": null,
+        "key": "pubchem:5755",
+        "sourceId": "pubchem",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5755/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+        "properties": {
+          "CID": 5755,
+          "MolecularFormula": "C21H28O5",
+          "MolecularWeight": "360.4",
+          "InChIKey": "OIGNJSKKLXVSLS-VWUMJDOOSA-N",
+          "SMILES": "C[C@]12C[C@@H]([C@H]3[C@H]([C@@H]1CC[C@@]2(C(=O)CO)O)CCC4=CC(=O)C=C[C@]34C)O",
+          "XLogP": 1.6,
+          "TPSA": 94.8
+        }
+      },
+      "chembl": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:26.208Z",
+        "expiresAt": 1792017566208,
+        "sourceUpdatedAt": null,
+        "key": "chembl:OIGNJSKKLXVSLS-VWUMJDOOSA-N",
+        "sourceId": "chembl",
+        "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=OIGNJSKKLXVSLS-VWUMJDOOSA-N&limit=5",
+        "inchiKey": "OIGNJSKKLXVSLS-VWUMJDOOSA-N",
+        "molecule": {
+          "molecule_chembl_id": "CHEMBL131",
+          "pref_name": "PREDNISOLONE",
+          "molecule_structures": {
+            "standard_inchi_key": "OIGNJSKKLXVSLS-VWUMJDOOSA-N"
+          },
+          "molecule_hierarchy": {
+            "parent_chembl_id": "CHEMBL131"
+          }
+        }
+      }
+    },
+    {
+      "drugId": "sertraline",
+      "pubchem": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:26.912Z",
+        "expiresAt": 1792017566912,
+        "sourceUpdatedAt": null,
+        "key": "pubchem:68617",
+        "sourceId": "pubchem",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/68617/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+        "properties": {
+          "CID": 68617,
+          "MolecularFormula": "C17H17Cl2N",
+          "MolecularWeight": "306.2",
+          "InChIKey": "VGKDLMBJGBXTGI-SJCJKPOMSA-N",
+          "SMILES": "CN[C@H]1CC[C@H](C2=CC=CC=C12)C3=CC(=C(C=C3)Cl)Cl",
+          "XLogP": 4.8,
+          "TPSA": 12
+        }
+      },
+      "chembl": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:27.218Z",
+        "expiresAt": 1792017567218,
+        "sourceUpdatedAt": null,
+        "key": "chembl:VGKDLMBJGBXTGI-SJCJKPOMSA-N",
+        "sourceId": "chembl",
+        "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=VGKDLMBJGBXTGI-SJCJKPOMSA-N&limit=5",
+        "inchiKey": "VGKDLMBJGBXTGI-SJCJKPOMSA-N",
+        "molecule": {
+          "molecule_chembl_id": "CHEMBL809",
+          "pref_name": "SERTRALINE",
+          "molecule_structures": {
+            "standard_inchi_key": "VGKDLMBJGBXTGI-SJCJKPOMSA-N"
+          },
+          "molecule_hierarchy": {
+            "parent_chembl_id": "CHEMBL809"
+          }
+        }
+      }
+    },
+    {
+      "drugId": "levetiracetam",
+      "pubchem": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:28.161Z",
+        "expiresAt": 1792017568161,
+        "sourceUpdatedAt": null,
+        "key": "pubchem:5284583",
+        "sourceId": "pubchem",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5284583/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+        "properties": {
+          "CID": 5284583,
+          "MolecularFormula": "C8H14N2O2",
+          "MolecularWeight": "170.21",
+          "InChIKey": "HPHUVLMMVZITSG-LURJTMIESA-N",
+          "SMILES": "CC[C@@H](C(=O)N)N1CCCC1=O",
+          "XLogP": -0.3,
+          "TPSA": 63.4
+        }
+      },
+      "chembl": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-13T22:39:28.233Z",
+        "expiresAt": 1792017568233,
+        "sourceUpdatedAt": null,
+        "key": "chembl:HPHUVLMMVZITSG-LURJTMIESA-N",
+        "sourceId": "chembl",
+        "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=HPHUVLMMVZITSG-LURJTMIESA-N&limit=5",
+        "inchiKey": "HPHUVLMMVZITSG-LURJTMIESA-N",
+        "molecule": {
+          "molecule_chembl_id": "CHEMBL1286",
+          "pref_name": "LEVETIRACETAM",
+          "molecule_structures": {
+            "standard_inchi_key": "HPHUVLMMVZITSG-LURJTMIESA-N"
+          },
+          "molecule_hierarchy": {
+            "parent_chembl_id": "CHEMBL1286"
+          }
+        }
+      }
+    }
+  ]
+}
