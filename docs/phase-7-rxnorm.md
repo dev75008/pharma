@@ -1,0 +1,15 @@
+# RxNorm et accès aux notices américaines
+
+Vérification du 13 octobre 2026. Connecteur RxNorm opérationnel ; DailyMed demeure un lien externe.
+
+Documentation : https://lhncbc.nlm.nih.gov/RxNav/APIs/api-RxNorm.findRxcuiByString.html ; https://lhncbc.nlm.nih.gov/RxNav/APIs/api-RxNorm.getRxConceptProperties.html ; conditions https://lhncbc.nlm.nih.gov/RxNav/TermsofService.html.
+
+Deux GET publics sans clé : `/REST/rxcui.json?name=amoxicillin&allsrc=0&search=0`, puis `/REST/rxcui/723/properties.json`. Réponses réelles HTTP 200, recherche `["723"]`, concept amoxicillin, type IN, langue ENG, suppress N. CORS navigateur depuis GitHub Pages vérifié avec succès. Fixtures : réponses originales non modifiées, attribution NLM. Aucun contenu propriétaire RxClass ou vocabulaire sous licence importé. Mention demandée par NLM affichée dans chaque module ; aucun logo NLM utilisé.
+
+Les 13 noms anglais explicitement associés aux fiches sont recherchés exactement. Une correspondance n’est acceptée que si un seul identifiant actif est retourné et si ses propriétés confirment cet identifiant, ce nom sans autre normalisation que la casse, et le type IN. Absence explicite ; ambiguïtés, sels PIN, produits SCD, noms différents et réponses malformées refusés. Ce lien nominal n’est pas une correspondance structurale, ni un mapping CIS/CIP, ni une équivalence clinique. Aucun champ scientifique de la fiche n’est modifié.
+
+NLM autorise 20 requêtes/s/IP et recommande 12–24 h de cache. Cadence locale conservatrice de 1 requête/s, file sérialisée, délai 10 s, pause après 429/503 avec Retry-After numérique (maximum 300 s, sinon 60 s), sans relance automatique. IndexedDB version 12 ajoute uniquement rxnormCache, 30 résultats maximum, TTL 24 h, déduplication des chargements. Hors ligne : copies déjà téléchargées ; panne : copie ancienne conservée avec sa date. Date de mise à jour du référentiel inconnue. Caches exclus des sauvegardes personnelles JSON, comme les autres caches scientifiques.
+
+DailyMed : https://dailymed.nlm.nih.gov/dailymed/webservices-help/v2/spls_api.cfm. Le GET officiel `/dailymed/services/v2/spls.json?rxcui=723&pagesize=5&page=1` répond HTTP 200 au serveur, avec 632 notices au moment du test, dont des associations amoxicilline/acide clavulanique. L’appel fetch réel depuis GitHub Pages échoue ; absence de permission CORS observée. Aucune API DailyMed intégrée au navigateur, aucun contournement par proxy. L’utilisateur ouvre le site original et recherche le nom anglais indiqué. Aucun texte SPL, image ou contenu tiers reproduit. Notices américaines distinctes du RCP français ; le RxCUI d’un ingrédient ne garantit pas un produit contenant cette seule substance.
+
+Validation locale : 113 tests unitaires réussis et 80 scénarios Playwright réussis sur ordinateur/mobile. Contrôles d’identité, absence, ambiguïtés, types, provenance, cadence, limitation, déduplication, cache persistant et panne ; chargement volontaire et hors ligne. La phase 7 reste partielle : DailyMed, OpenFDA, RCSB, ClinicalTrials.gov et Wikidata n’ont pas de connecteur clinique.

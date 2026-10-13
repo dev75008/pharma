@@ -1,0 +1,9 @@
+import {beforeEach,afterEach,expect,it,vi} from 'vitest';
+import {db} from './db';
+import {loadRxnorm} from './rxnorm';
+import {fetchRxnorm,propertiesUrl,rxnormRequest,type RxnormCache} from '../data/adapters/rxnorm';
+vi.mock('../data/adapters/rxnorm',async original=>({...await original<typeof import('../data/adapters/rxnorm')>(),fetchRxnorm:vi.fn()}));
+const entry=():RxnormCache=>({key:'amoxicilline',sourceId:'rxnorm',schemaVersion:1,...rxnormRequest('amoxicilline'),ingredient:{rxcui:'723',name:'amoxicillin',tty:'IN',language:'ENG',suppress:'N'},propertiesUrl:propertiesUrl('723'),retrievedAt:'2026-10-13T12:00:00.000Z',expiresAt:Date.now()+86400000,sourceUpdatedAt:null});
+beforeEach(async()=>{await db.rxnormCache.clear();vi.mocked(fetchRxnorm).mockReset();vi.spyOn(navigator,'onLine','get').mockReturnValue(true);});afterEach(()=>vi.restoreAllMocks());
+it('déduplique et relit le cache hors ligne après réouverture',async()=>{vi.mocked(fetchRxnorm).mockResolvedValue(entry());await Promise.all([loadRxnorm('amoxicilline'),loadRxnorm('amoxicilline')]);expect(fetchRxnorm).toHaveBeenCalledTimes(1);db.close();await db.open();vi.spyOn(navigator,'onLine','get').mockReturnValue(false);expect((await loadRxnorm('amoxicilline')).warning).toContain('hors ligne');await expect(loadRxnorm('bisoprolol')).rejects.toThrow('non téléchargée');});
+it('conserve la date en cas de panne et refuse un cache incompatible',async()=>{await db.rxnormCache.put({...entry(),expiresAt:0});vi.mocked(fetchRxnorm).mockRejectedValue(new Error('HTTP 503'));const result=await loadRxnorm('amoxicilline',true);expect(result.stale).toBe(true);expect(result.entry.retrievedAt).toBe(entry().retrievedAt);expect(result.warning).toContain('503');await db.rxnormCache.put({...entry(),key:'bisoprolol'});vi.spyOn(navigator,'onLine','get').mockReturnValue(false);await expect(loadRxnorm('bisoprolol')).rejects.toThrow('non téléchargée');});
