@@ -1,0 +1,14 @@
+import {beforeEach,afterEach,expect,it,vi} from 'vitest';
+import molecule from '../../e2e/fixtures/chembl-amoxicillin.json';
+import raw from '../../e2e/fixtures/chembl-amoxicillin-mechanisms.json';
+import {db} from './db';
+import {parseChembl} from '../data/adapters/molecular';
+import {bindingKey,fetchMechanisms,mechanismsUrl,parseMechanisms,type ChemblKnowledge} from '../data/adapters/chemblMechanisms';
+import {loadMechanisms,loadTarget} from './chemblKnowledge';
+vi.mock('../data/adapters/chemblMechanisms',async(original)=>({...await original<typeof import('../data/adapters/chemblMechanisms')>(),fetchMechanisms:vi.fn()}));
+const binding={inchiKey:'LSQZJLSUYDQPKJ-NJBDSQKTSA-N',molecule:parseChembl(molecule,'LSQZJLSUYDQPKJ-NJBDSQKTSA-N')!};
+const entry=():ChemblKnowledge=>({kind:'mechanisms',sourceId:'chembl',schemaVersion:1,key:bindingKey(binding),binding,queryMoleculeId:'CHEMBL1082',url:mechanismsUrl('CHEMBL1082'),retrievedAt:'2026-10-13T12:00:00.000Z',expiresAt:Date.now()+86400000,sourceUpdatedAt:null,...parseMechanisms(raw,'CHEMBL1082')});
+beforeEach(async()=>{await db.chemblKnowledge.clear();vi.mocked(fetchMechanisms).mockReset();vi.spyOn(navigator,'onLine','get').mockReturnValue(true);});
+afterEach(()=>vi.restoreAllMocks());
+it('déduplique, conserve la liaison et relit les mécanismes hors ligne',async()=>{vi.mocked(fetchMechanisms).mockResolvedValue(entry());await Promise.all([loadMechanisms(binding),loadMechanisms(binding)]);expect(fetchMechanisms).toHaveBeenCalledTimes(1);db.close();await db.open();vi.spyOn(navigator,'onLine','get').mockReturnValue(false);const cached=await loadMechanisms(binding);expect(cached.warning).toContain('hors ligne');expect(cached.entry.key).toBe(bindingKey(binding));await expect(loadTarget('CHEMBL2354204')).rejects.toThrow('pas encore');});
+it('préserve la date de consultation si ChEMBL est indisponible',async()=>{await db.chemblKnowledge.put({...entry(),expiresAt:0});vi.mocked(fetchMechanisms).mockRejectedValue(new Error('HTTP 500'));const result=await loadMechanisms(binding,true);expect(result.stale).toBe(true);expect(result.warning).toContain('500');expect(result.entry.retrievedAt).toBe('2026-10-13T12:00:00.000Z');});

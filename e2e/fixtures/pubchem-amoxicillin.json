@@ -1,0 +1,15 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 33613,
+        "MolecularFormula": "C16H19N3O5S",
+        "MolecularWeight": "365.4",
+        "SMILES": "CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)[C@@H](C3=CC=C(C=C3)O)N)C(=O)O)C",
+        "InChIKey": "LSQZJLSUYDQPKJ-NJBDSQKTSA-N",
+        "XLogP": -2,
+        "TPSA": 158
+      }
+    ]
+  }
+}

@@ -17,7 +17,7 @@ Validation Zod de la réponse, recherche retournée et provenance ; refus des so
 | Source | Documentation officielle et usage | État dans MEDREVISION |
 |---|---|---|
 | PubChem | https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest ; propriétés chimiques, limite documentée 5 requêtes/s | Instantanés des 13 CID et connecteur navigateur de propriétés : voir docs/phase-7-donnees-moleculaires.md |
-| ChEMBL | https://chembl.gitbook.io/chembl-interface-documentation/web-services/chembl-data-web-services ; https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/general-questions ; CC BY-SA 3.0 | Correspondance par InChIKey connectée avec attribution CC BY-SA ; mécanismes/cibles non importés : voir docs/phase-7-donnees-moleculaires.md |
+| ChEMBL | https://chembl.gitbook.io/chembl-interface-documentation/web-services/chembl-data-web-services ; https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/general-questions ; CC BY-SA 3.0 | Correspondance par InChIKey connectée avec attribution CC BY-SA ; mécanismes du parent et cibles connectés sur demande : voir docs/phase-7-mecanismes-cibles.md |
 | OpenFDA | https://open.fda.gov/apis/drug/label/ ; https://open.fda.gov/apis/authentication/ | Lien ; informations américaines. Documentation présente des quotas sans clé malgré une formulation introductive ambiguë sur sa nécessité ; aucun accès sans clé testé ici |
 | RxNav | https://lhncbc.nlm.nih.gov/RxNav/APIs/index.html | Lien ; normalisation US, certaines fonctions/vocabulaires demandent clé UMLS/licence ; aucun mapping vers CIS/CIP |
 | DailyMed | https://dailymed.nlm.nih.gov/dailymed/app-support-web-services.cfm | Lien ; SPL américains, aucune importation de notices |

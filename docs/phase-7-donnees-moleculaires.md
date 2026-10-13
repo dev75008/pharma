@@ -1,5 +1,7 @@
 # Phase 7 — première extension moléculaire
 
+Ce document décrit l'extension initiale. L'endpoint de mécanismes a depuis répondu à nouveau ; son intégration et celle des cibles sont décrites dans [la mise à jour suivante](phase-7-mecanismes-cibles.md). Les mentions d'import inactif ci-dessous correspondent à la première vérification, et non à l'état actuel du connecteur.
+
 ## Connecteurs disponibles
 
 Dans chaque fiche, **Données moléculaires PubChem et ChEMBL** propose deux chargements explicites, sans requête sur ouverture de la fiche :
