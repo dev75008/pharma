@@ -45,7 +45,7 @@ export const priorityQuestions: Question[] = [
     ['Les restrictions sont indépendantes de la population.', false, 'Le RCP distingue l’enfant.'],
   ], 'Conserver la population et évaluer la fonction rénale dans son contexte.'),
   exercise('spironolactone-effet-demi-vie', 'spironolactone', 'therapeuticEffects', 'La durée de l’effet diurétique (24–48 h) donne-t-elle la demi-vie plasmatique de la spironolactone ?', [
-    ['Non : effet et demi-vie sont des grandeurs distinctes.', true, 'Le champ demi-vie reste à documenter.'],
+    ['Non : effet et demi-vie sont des grandeurs distinctes.', true, 'La demi-vie doit avoir sa propre référence ; la durée d’effet ne la remplace pas.'],
     ['Oui : cette durée remplit automatiquement le champ demi-vie.', false, 'Ce serait une extrapolation sans preuve.'],
   ], 'Ne pas transformer une durée d’effet en donnée pharmacocinétique.', 'kinetics'),
 ];

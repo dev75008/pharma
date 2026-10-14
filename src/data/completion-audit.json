@@ -1,0 +1,1769 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-14",
+  "baselineCommit": "823063f",
+  "rows": [
+    {
+      "drugId": "bisoprolol",
+      "key": "doseResponse",
+      "outcome": "source-limit",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60524826/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-10-20",
+          "locator": "RCP BISOPROLOL TEVA 10 mg, comprimé pelliculé ; rubrique(s) 4.2, 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "bisoprolol",
+      "key": "cyp",
+      "outcome": "source-limit",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60524826/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-10-20",
+          "locator": "RCP BISOPROLOL TEVA 10 mg, comprimé pelliculé ; rubrique(s) 5.2"
+        }
+      ]
+    },
+    {
+      "drugId": "bisoprolol",
+      "key": "therapeuticStrategy",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60524826/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-10-20",
+          "locator": "RCP BISOPROLOL TEVA 10 mg, comprimé pelliculé ; rubrique(s) 4.1–4.4"
+        }
+      ]
+    },
+    {
+      "drugId": "bisoprolol",
+      "key": "comparisons",
+      "outcome": "documented",
+      "pedagogical": true,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60524826/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-10-20",
+          "locator": "RCP BISOPROLOL TEVA 10 mg, comprimé pelliculé, rubrique 5.1"
+        },
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66659784/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-04-10",
+          "locator": "RCP LOSARTAN BIOGARAN 50 mg, comprimé pelliculé sécable, rubrique 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "bisoprolol",
+      "key": "mnemonics",
+      "outcome": "documented",
+      "pedagogical": true,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60524826/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-10-20",
+          "locator": "RCP BISOPROLOL TEVA 10 mg, comprimé pelliculé, rubrique 5.1"
+        },
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60524826/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-10-20",
+          "locator": "RCP BISOPROLOL TEVA 10 mg, comprimé pelliculé, rubrique 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "ramipril",
+      "key": "doseResponse",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61599041/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2024-06-06",
+          "locator": "RCP RAMIPRIL BIOGARAN 5 mg, comprimé sécable ; rubrique(s) 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "ramipril",
+      "key": "distribution",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61599041/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2024-06-06",
+          "locator": "RCP RAMIPRIL BIOGARAN 5 mg, comprimé sécable ; rubrique(s) 5.2"
+        }
+      ]
+    },
+    {
+      "drugId": "ramipril",
+      "key": "cyp",
+      "outcome": "source-limit",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61599041/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2024-06-06",
+          "locator": "RCP RAMIPRIL BIOGARAN 5 mg, comprimé sécable ; rubrique(s) 5.2"
+        }
+      ]
+    },
+    {
+      "drugId": "ramipril",
+      "key": "therapeuticStrategy",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61599041/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2024-06-06",
+          "locator": "RCP RAMIPRIL BIOGARAN 5 mg, comprimé sécable ; rubrique(s) 4.1–4.4"
+        }
+      ]
+    },
+    {
+      "drugId": "ramipril",
+      "key": "mnemonics",
+      "outcome": "documented",
+      "pedagogical": true,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61599041/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2024-06-06",
+          "locator": "RCP RAMIPRIL BIOGARAN 5 mg, comprimé sécable, rubrique 5.1"
+        },
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61599041/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2024-06-06",
+          "locator": "RCP RAMIPRIL BIOGARAN 5 mg, comprimé sécable, rubrique 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "losartan",
+      "key": "doseResponse",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66659784/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-04-10",
+          "locator": "RCP LOSARTAN BIOGARAN 50 mg, comprimé pelliculé sécable ; rubrique(s) 4.2"
+        }
+      ]
+    },
+    {
+      "drugId": "losartan",
+      "key": "therapeuticStrategy",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66659784/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-04-10",
+          "locator": "RCP LOSARTAN BIOGARAN 50 mg, comprimé pelliculé sécable ; rubrique(s) 4.1–4.4"
+        }
+      ]
+    },
+    {
+      "drugId": "losartan",
+      "key": "clinicalContexts",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66659784/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-04-10",
+          "locator": "RCP LOSARTAN BIOGARAN 50 mg, comprimé pelliculé sécable ; rubrique(s) 4.1–4.2"
+        }
+      ]
+    },
+    {
+      "drugId": "losartan",
+      "key": "mnemonics",
+      "outcome": "documented",
+      "pedagogical": true,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66659784/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-04-10",
+          "locator": "RCP LOSARTAN BIOGARAN 50 mg, comprimé pelliculé sécable, rubrique 5.1"
+        },
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66659784/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-04-10",
+          "locator": "RCP LOSARTAN BIOGARAN 50 mg, comprimé pelliculé sécable, rubrique 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "furosemide",
+      "key": "absorption",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65449480/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2024-11-22",
+          "locator": "RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable ; rubrique(s) 4.2"
+        },
+        {
+          "sourceId": "cnpm",
+          "url": "https://pharmacomedicale.org/pharmacologie/pharmacocinetique/36-etapes-du-devenir-du-medicament/74-absorption",
+          "locator": "CNPM Absorption, voie intraveineuse et définition de F ; paraphrase originale",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2024-05-23"
+        }
+      ]
+    },
+    {
+      "drugId": "furosemide",
+      "key": "bioavailability",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65449480/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2024-11-22",
+          "locator": "RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable ; rubrique(s) 4.2"
+        },
+        {
+          "sourceId": "cnpm",
+          "url": "https://pharmacomedicale.org/pharmacologie/pharmacocinetique/36-etapes-du-devenir-du-medicament/74-absorption",
+          "locator": "CNPM Absorption, voie intraveineuse et définition de F ; paraphrase originale",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2024-05-23"
+        }
+      ]
+    },
+    {
+      "drugId": "furosemide",
+      "key": "cyp",
+      "outcome": "source-limit",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65449480/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2024-11-22",
+          "locator": "RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable ; rubrique(s) 5.2"
+        }
+      ]
+    },
+    {
+      "drugId": "furosemide",
+      "key": "activeMetabolites",
+      "outcome": "source-limit",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65449480/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2024-11-22",
+          "locator": "RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable ; rubrique(s) 5.2"
+        }
+      ]
+    },
+    {
+      "drugId": "furosemide",
+      "key": "hepaticAdjustment",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65449480/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2024-11-22",
+          "locator": "RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable ; rubrique(s) 4.2–4.3"
+        }
+      ]
+    },
+    {
+      "drugId": "furosemide",
+      "key": "mnemonics",
+      "outcome": "documented",
+      "pedagogical": true,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65449480/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2024-11-22",
+          "locator": "RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable, rubrique 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "rivaroxaban",
+      "key": "physiologicalEffects",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66086174/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2026-02-13",
+          "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé ; rubrique(s) 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "rivaroxaban",
+      "key": "therapeuticEffects",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66086174/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2026-02-13",
+          "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé ; rubrique(s) 4.1, 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "rivaroxaban",
+      "key": "doseResponse",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66086174/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2026-02-13",
+          "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé ; rubrique(s) 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "rivaroxaban",
+      "key": "therapeuticStrategy",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66086174/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2026-02-13",
+          "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé ; rubrique(s) 4.1–4.4"
+        }
+      ]
+    },
+    {
+      "drugId": "rivaroxaban",
+      "key": "clinicalContexts",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66086174/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2026-02-13",
+          "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé ; rubrique(s) 4.1–4.2"
+        }
+      ]
+    },
+    {
+      "drugId": "rivaroxaban",
+      "key": "mnemonics",
+      "outcome": "documented",
+      "pedagogical": true,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66086174/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2026-02-13",
+          "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé, rubrique 5.1"
+        },
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66086174/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2026-02-13",
+          "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé, rubrique 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "clopidogrel",
+      "key": "doseResponse",
+      "outcome": "source-limit",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/67233727/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-05-07",
+          "locator": "RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé ; rubrique(s) 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "clopidogrel",
+      "key": "bioavailability",
+      "outcome": "source-limit",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/67233727/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-05-07",
+          "locator": "RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé ; rubrique(s) 5.2"
+        }
+      ]
+    },
+    {
+      "drugId": "clopidogrel",
+      "key": "distribution",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/67233727/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-05-07",
+          "locator": "RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé ; rubrique(s) 5.2"
+        }
+      ]
+    },
+    {
+      "drugId": "clopidogrel",
+      "key": "therapeuticStrategy",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/67233727/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-05-07",
+          "locator": "RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé ; rubrique(s) 4.1–4.4"
+        }
+      ]
+    },
+    {
+      "drugId": "clopidogrel",
+      "key": "comparisons",
+      "outcome": "documented",
+      "pedagogical": true,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/67233727/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-05-07",
+          "locator": "RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé, rubrique 5.1"
+        },
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66086174/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2026-02-13",
+          "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé, rubrique 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "clopidogrel",
+      "key": "mnemonics",
+      "outcome": "documented",
+      "pedagogical": true,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/67233727/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-05-07",
+          "locator": "RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé, rubrique 5.1"
+        },
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/67233727/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-05-07",
+          "locator": "RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé, rubrique 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "amoxicilline",
+      "key": "cyp",
+      "outcome": "source-limit",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60453197/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2026-09-18",
+          "locator": "RCP AMOXICILLINE BIOGARAN 500 mg/5 ml, poudre pour suspension buvable ; rubrique(s) 5.2"
+        }
+      ]
+    },
+    {
+      "drugId": "amoxicilline",
+      "key": "therapeuticStrategy",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60453197/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2026-09-18",
+          "locator": "RCP AMOXICILLINE BIOGARAN 500 mg/5 ml, poudre pour suspension buvable ; rubrique(s) 4.1–4.4"
+        }
+      ]
+    },
+    {
+      "drugId": "amoxicilline",
+      "key": "comparisons",
+      "outcome": "documented",
+      "pedagogical": true,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60453197/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2026-09-18",
+          "locator": "RCP AMOXICILLINE BIOGARAN 500 mg/5 ml, poudre pour suspension buvable, rubrique 5.1"
+        },
+        {
+          "sourceId": "cnpm",
+          "url": "https://pharmacomedicale.org/medicaments/par-specialites/item/corticoides-les-points-essentiels",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-06-05",
+          "locator": "CNPM, Corticoïdes : points essentiels, résumé et mécanismes ; prednisolone dans le tableau des glucocorticoïdes. Paraphrase originale, aucun cours ou tableau reproduit."
+        }
+      ]
+    },
+    {
+      "drugId": "amoxicilline",
+      "key": "mnemonics",
+      "outcome": "documented",
+      "pedagogical": true,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60453197/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2026-09-18",
+          "locator": "RCP AMOXICILLINE BIOGARAN 500 mg/5 ml, poudre pour suspension buvable, rubrique 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "metformine",
+      "key": "target",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-03-26",
+          "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé ; rubrique(s) 5.1"
+        },
+        {
+          "sourceId": "cnpm",
+          "url": "https://pharmacomedicale.org/medicaments/par-specialites/item/antidiabetiques-les-points-essentiels",
+          "locator": "CNPM Antidiabétiques, mécanismes des biguanides : activation AMPK, mécanisme non complètement élucidé",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": null
+        }
+      ]
+    },
+    {
+      "drugId": "metformine",
+      "key": "actionType",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-03-26",
+          "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé ; rubrique(s) 5.1"
+        },
+        {
+          "sourceId": "cnpm",
+          "url": "https://pharmacomedicale.org/medicaments/par-specialites/item/antidiabetiques-les-points-essentiels",
+          "locator": "CNPM Antidiabétiques, mécanismes des biguanides : activation AMPK, mécanisme non complètement élucidé",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": null
+        }
+      ]
+    },
+    {
+      "drugId": "metformine",
+      "key": "doseResponse",
+      "outcome": "source-limit",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-03-26",
+          "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé ; rubrique(s) 4.2, 5.2"
+        }
+      ]
+    },
+    {
+      "drugId": "metformine",
+      "key": "cyp",
+      "outcome": "source-limit",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-03-26",
+          "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé ; rubrique(s) 5.2"
+        }
+      ]
+    },
+    {
+      "drugId": "metformine",
+      "key": "clinicalContexts",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-03-26",
+          "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé ; rubrique(s) 4.1"
+        }
+      ]
+    },
+    {
+      "drugId": "metformine",
+      "key": "comparisons",
+      "outcome": "documented",
+      "pedagogical": true,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-03-26",
+          "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé, rubrique 5.1"
+        },
+        {
+          "sourceId": "cnpm",
+          "url": "https://pharmacomedicale.org/medicaments/par-specialites/item/corticoides-les-points-essentiels",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-06-05",
+          "locator": "CNPM, Corticoïdes : points essentiels, résumé et mécanismes ; prednisolone dans le tableau des glucocorticoïdes. Paraphrase originale, aucun cours ou tableau reproduit."
+        }
+      ]
+    },
+    {
+      "drugId": "metformine",
+      "key": "mnemonics",
+      "outcome": "documented",
+      "pedagogical": true,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-03-26",
+          "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé, rubrique 5.1"
+        },
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-03-26",
+          "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé, rubrique 5.2"
+        },
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-03-26",
+          "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé, rubrique(s) 4.8"
+        }
+      ]
+    },
+    {
+      "drugId": "paracetamol",
+      "key": "target",
+      "outcome": "source-limit",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-04-23",
+          "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion ; rubrique(s) 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "paracetamol",
+      "key": "actionType",
+      "outcome": "source-limit",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-04-23",
+          "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion ; rubrique(s) 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "paracetamol",
+      "key": "doseResponse",
+      "outcome": "source-limit",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-04-23",
+          "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion ; rubrique(s) 5.1–5.2"
+        }
+      ]
+    },
+    {
+      "drugId": "paracetamol",
+      "key": "bioavailability",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-04-23",
+          "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion ; rubrique(s) 4.2"
+        },
+        {
+          "sourceId": "cnpm",
+          "url": "https://pharmacomedicale.org/pharmacologie/pharmacocinetique/36-etapes-du-devenir-du-medicament/74-absorption",
+          "locator": "CNPM Absorption, voie intraveineuse et définition de F ; paraphrase originale",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2024-05-23"
+        }
+      ]
+    },
+    {
+      "drugId": "paracetamol",
+      "key": "activeMetabolites",
+      "outcome": "source-limit",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-04-23",
+          "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion ; rubrique(s) 5.2"
+        }
+      ]
+    },
+    {
+      "drugId": "paracetamol",
+      "key": "hepaticContext",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-04-23",
+          "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion ; rubrique(s) 4.2–4.4"
+        }
+      ]
+    },
+    {
+      "drugId": "paracetamol",
+      "key": "comparisons",
+      "outcome": "documented",
+      "pedagogical": true,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-04-23",
+          "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion, rubrique 5.1"
+        },
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69932537/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-07-17",
+          "locator": "RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé, rubrique 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "paracetamol",
+      "key": "mnemonics",
+      "outcome": "documented",
+      "pedagogical": true,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-04-23",
+          "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion, rubrique 5.1"
+        },
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-04-23",
+          "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion, rubrique(s) 4.4"
+        },
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-04-23",
+          "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion, rubrique(s) 4.4 et 4.8"
+        }
+      ]
+    },
+    {
+      "drugId": "ibuprofene",
+      "key": "doseResponse",
+      "outcome": "source-limit",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69932537/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-07-17",
+          "locator": "RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé ; rubrique(s) 4.2, 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "ibuprofene",
+      "key": "bioavailability",
+      "outcome": "source-limit",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69932537/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-07-17",
+          "locator": "RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé ; rubrique(s) 5.2"
+        }
+      ]
+    },
+    {
+      "drugId": "ibuprofene",
+      "key": "comparisons",
+      "outcome": "documented",
+      "pedagogical": true,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69932537/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-07-17",
+          "locator": "RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé, rubrique 5.1"
+        },
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-04-23",
+          "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion, rubrique 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "ibuprofene",
+      "key": "mnemonics",
+      "outcome": "documented",
+      "pedagogical": true,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69932537/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-07-17",
+          "locator": "RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé, rubrique 5.1"
+        },
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69932537/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-07-17",
+          "locator": "RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé, rubrique(s) 4.3"
+        }
+      ]
+    },
+    {
+      "drugId": "prednisolone",
+      "key": "doseResponse",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2024-03-19",
+          "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent ; rubrique(s) 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "prednisolone",
+      "key": "bioavailability",
+      "outcome": "source-limit",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2024-03-19",
+          "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent ; rubrique(s) 5.2"
+        }
+      ]
+    },
+    {
+      "drugId": "prednisolone",
+      "key": "distribution",
+      "outcome": "source-limit",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2024-03-19",
+          "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent ; rubrique(s) 5.2"
+        }
+      ]
+    },
+    {
+      "drugId": "prednisolone",
+      "key": "proteinBinding",
+      "outcome": "source-limit",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2024-03-19",
+          "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent ; rubrique(s) 5.2"
+        }
+      ]
+    },
+    {
+      "drugId": "prednisolone",
+      "key": "cyp",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2024-03-19",
+          "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent ; rubrique(s) 4.5, 5.2"
+        },
+        {
+          "sourceId": "cnpm",
+          "url": "https://pharmacomedicale.org/pharmacologie/les-sources-de-variabilite-de-la-reponse-au-medicament/45-variabilites-pharmacocinetiques/101-inhibitions-enzymatiques",
+          "locator": "CNPM Inhibitions enzymatiques : prednisolone parmi les substrats CYP3A4 ; aucune table reproduite",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-06-05"
+        }
+      ]
+    },
+    {
+      "drugId": "prednisolone",
+      "key": "activeMetabolites",
+      "outcome": "source-limit",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2024-03-19",
+          "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent ; rubrique(s) 5.2"
+        }
+      ]
+    },
+    {
+      "drugId": "prednisolone",
+      "key": "renalAdjustment",
+      "outcome": "source-limit",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2024-03-19",
+          "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent ; rubrique(s) 4.2, 4.4"
+        }
+      ]
+    },
+    {
+      "drugId": "prednisolone",
+      "key": "hepaticAdjustment",
+      "outcome": "source-limit",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2024-03-19",
+          "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent ; rubrique(s) 4.2, 4.4"
+        }
+      ]
+    },
+    {
+      "drugId": "prednisolone",
+      "key": "therapeuticStrategy",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2024-03-19",
+          "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent ; rubrique(s) 4.1–4.4"
+        }
+      ]
+    },
+    {
+      "drugId": "prednisolone",
+      "key": "comparisons",
+      "outcome": "documented",
+      "pedagogical": true,
+      "evidence": [
+        {
+          "sourceId": "cnpm",
+          "url": "https://pharmacomedicale.org/medicaments/par-specialites/item/corticoides-les-points-essentiels",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-06-05",
+          "locator": "CNPM, Corticoïdes : points essentiels, résumé et mécanismes ; prednisolone dans le tableau des glucocorticoïdes. Paraphrase originale, aucun cours ou tableau reproduit."
+        },
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69932537/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-07-17",
+          "locator": "RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé, rubrique 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "prednisolone",
+      "key": "mnemonics",
+      "outcome": "documented",
+      "pedagogical": true,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2024-03-19",
+          "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent, rubrique 5.1"
+        },
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2024-03-19",
+          "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent, rubrique 4.2 et 4.4 ; relecture documentaire du 14 octobre 2026"
+        }
+      ]
+    },
+    {
+      "drugId": "sertraline",
+      "key": "therapeuticEffects",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63288007/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2023-06-19",
+          "locator": "RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; rubrique(s) 4.1, 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "sertraline",
+      "key": "doseResponse",
+      "outcome": "source-limit",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63288007/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2023-06-19",
+          "locator": "RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; rubrique(s) 4.2, 5.2"
+        }
+      ]
+    },
+    {
+      "drugId": "sertraline",
+      "key": "activeMetabolites",
+      "outcome": "source-limit",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63288007/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2023-06-19",
+          "locator": "RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; rubrique(s) 5.2"
+        }
+      ]
+    },
+    {
+      "drugId": "sertraline",
+      "key": "therapeuticStrategy",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63288007/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2023-06-19",
+          "locator": "RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; rubrique(s) 4.1–4.4"
+        }
+      ]
+    },
+    {
+      "drugId": "sertraline",
+      "key": "comparisons",
+      "outcome": "documented",
+      "pedagogical": true,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63288007/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2023-06-19",
+          "locator": "RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule, rubrique 5.1"
+        },
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61610687/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-12-11",
+          "locator": "RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable, rubrique 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "sertraline",
+      "key": "mnemonics",
+      "outcome": "documented",
+      "pedagogical": true,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63288007/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2023-06-19",
+          "locator": "RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule, rubrique 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "levetiracetam",
+      "key": "actionType",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61610687/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-12-11",
+          "locator": "RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable ; rubrique(s) 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "levetiracetam",
+      "key": "doseResponse",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61610687/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-12-11",
+          "locator": "RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable ; rubrique(s) 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "levetiracetam",
+      "key": "therapeuticStrategy",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61610687/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2025-12-11",
+          "locator": "RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable ; rubrique(s) 4.1–4.4"
+        }
+      ]
+    },
+    {
+      "drugId": "levetiracetam",
+      "key": "comparisons",
+      "outcome": "documented",
+      "pedagogical": true,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61610687/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-12-11",
+          "locator": "RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable, rubrique 5.1"
+        },
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63288007/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2023-06-19",
+          "locator": "RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule, rubrique 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "levetiracetam",
+      "key": "mnemonics",
+      "outcome": "documented",
+      "pedagogical": true,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61610687/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-12-11",
+          "locator": "RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable, rubrique 5.1"
+        },
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61610687/extrait",
+          "consultedAt": "2026-10-12",
+          "sourceUpdatedAt": "2025-12-11",
+          "locator": "RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable, rubrique 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "apixaban",
+      "key": "physiologicalEffects",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "ema",
+          "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": null,
+          "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "apixaban",
+      "key": "therapeuticEffects",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "ema",
+          "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": null,
+          "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.1, 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "apixaban",
+      "key": "doseResponse",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "ema",
+          "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": null,
+          "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "apixaban",
+      "key": "renalAdjustment",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "ema",
+          "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": null,
+          "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.2"
+        }
+      ]
+    },
+    {
+      "drugId": "apixaban",
+      "key": "hepaticAdjustment",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "ema",
+          "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": null,
+          "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.2"
+        }
+      ]
+    },
+    {
+      "drugId": "apixaban",
+      "key": "therapeuticStrategy",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "ema",
+          "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": null,
+          "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.1–4.4"
+        }
+      ]
+    },
+    {
+      "drugId": "apixaban",
+      "key": "clinicalContexts",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "ema",
+          "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": null,
+          "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.1"
+        }
+      ]
+    },
+    {
+      "drugId": "apixaban",
+      "key": "commonEffects",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "ema",
+          "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": null,
+          "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.8, tableau 3"
+        }
+      ]
+    },
+    {
+      "drugId": "apixaban",
+      "key": "seriousEffects",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "ema",
+          "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": null,
+          "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.4, 4.8"
+        }
+      ]
+    },
+    {
+      "drugId": "apixaban",
+      "key": "precautions",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "ema",
+          "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": null,
+          "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.4–4.5"
+        }
+      ]
+    },
+    {
+      "drugId": "apixaban",
+      "key": "pregnancy",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "ema",
+          "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": null,
+          "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.6"
+        }
+      ]
+    },
+    {
+      "drugId": "apixaban",
+      "key": "breastfeeding",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "ema",
+          "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": null,
+          "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.6"
+        }
+      ]
+    },
+    {
+      "drugId": "apixaban",
+      "key": "renalContext",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "ema",
+          "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": null,
+          "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.2, 4.4"
+        }
+      ]
+    },
+    {
+      "drugId": "apixaban",
+      "key": "hepaticContext",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "ema",
+          "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": null,
+          "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.2–4.3"
+        }
+      ]
+    },
+    {
+      "drugId": "apixaban",
+      "key": "essentials",
+      "outcome": "documented",
+      "pedagogical": true,
+      "evidence": [
+        {
+          "sourceId": "ema",
+          "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": null,
+          "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.1–4.5, 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "apixaban",
+      "key": "mnemonics",
+      "outcome": "documented",
+      "pedagogical": true,
+      "evidence": [
+        {
+          "sourceId": "ema",
+          "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": null,
+          "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 5.1"
+        },
+        {
+          "sourceId": "ema",
+          "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": null,
+          "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 5.1"
+        }
+      ]
+    },
+    {
+      "drugId": "spironolactone",
+      "key": "target",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2026-07-08",
+          "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable ; rubrique(s) 5.1"
+        },
+        {
+          "sourceId": "cnpm",
+          "url": "https://pharmacomedicale.org/medicaments/par-specialites/item/anti-aldosterone-et-apparentes",
+          "locator": "CNPM Anti-aldostérone, cible et effets hormonaux dose-dépendants ; mécanisme seulement, pas de recommandation copiée",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": null
+        }
+      ]
+    },
+    {
+      "drugId": "spironolactone",
+      "key": "doseResponse",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2026-07-08",
+          "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable ; rubrique(s) 4.8"
+        },
+        {
+          "sourceId": "cnpm",
+          "url": "https://pharmacomedicale.org/medicaments/par-specialites/item/anti-aldosterone-et-apparentes",
+          "locator": "CNPM Anti-aldostérone, cible et effets hormonaux dose-dépendants ; mécanisme seulement, pas de recommandation copiée",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": null
+        }
+      ]
+    },
+    {
+      "drugId": "spironolactone",
+      "key": "bioavailability",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "dailymed",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ae0dcb4e-63df-459c-8e60-0caa817b8135",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2026-02-04",
+          "locator": "DailyMed SPIRONOLACTONE comprimés 25/50/100 mg, 12.3 ; étiquetage américain, mise à jour de la page, pas RCP BIOGARAN français"
+        }
+      ]
+    },
+    {
+      "drugId": "spironolactone",
+      "key": "proteinBinding",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "dailymed",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ae0dcb4e-63df-459c-8e60-0caa817b8135",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2026-02-04",
+          "locator": "DailyMed SPIRONOLACTONE comprimés 25/50/100 mg, 12.3 ; étiquetage américain, mise à jour de la page, pas RCP BIOGARAN français"
+        }
+      ]
+    },
+    {
+      "drugId": "spironolactone",
+      "key": "cyp",
+      "outcome": "source-limit",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2026-07-08",
+          "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable ; rubrique(s) 5.2"
+        }
+      ]
+    },
+    {
+      "drugId": "spironolactone",
+      "key": "halfLife",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "dailymed",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ae0dcb4e-63df-459c-8e60-0caa817b8135",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2026-02-04",
+          "locator": "DailyMed SPIRONOLACTONE comprimés 25/50/100 mg, 12.3 ; étiquetage américain, mise à jour de la page, pas RCP BIOGARAN français"
+        }
+      ]
+    },
+    {
+      "drugId": "spironolactone",
+      "key": "renalAdjustment",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2026-07-08",
+          "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable ; rubrique(s) 4.2–4.4"
+        }
+      ]
+    },
+    {
+      "drugId": "spironolactone",
+      "key": "hepaticAdjustment",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2026-07-08",
+          "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable ; rubrique(s) 4.2–4.3"
+        }
+      ]
+    },
+    {
+      "drugId": "spironolactone",
+      "key": "therapeuticStrategy",
+      "outcome": "documented",
+      "pedagogical": false,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2026-07-08",
+          "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable ; rubrique(s) 4.1–4.4"
+        }
+      ]
+    },
+    {
+      "drugId": "spironolactone",
+      "key": "mnemonics",
+      "outcome": "documented",
+      "pedagogical": true,
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2026-07-08",
+          "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 5.1"
+        },
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": "2026-07-08",
+          "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable, rubrique(s) 5.1 ; notice, indications"
+        }
+      ]
+    }
+  ]
+}

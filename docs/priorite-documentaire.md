@@ -1,6 +1,8 @@
 # Complément documentaire prioritaire — 14 octobre 2026
 
-Ce lot réduit les rubriques absentes de 122 à 103 : 647 champs documentés sur 750, pour les mêmes quinze molécules. Il ajoute dix-neuf synthèses originales, huit exercices de démonstration et cinq cartes documentaires. Le corpus comprend maintenant 73 questions, 60 cartes et onze dossiers fictifs. Aucune validation médicale indépendante n’a été obtenue.
+Historique du lot `823063f`. Le bilan courant et les nouveaux champs figurent dans [examen-des-103-rubriques.md](examen-des-103-rubriques.md).
+
+Ce lot réduit les rubriques absentes de 122 à 103 : 647 champs documentés sur 750, pour les mêmes quinze molécules. Il ajoute dix-neuf synthèses originales, huit exercices de démonstration et cinq cartes documentaires. Ce lot portait alors le corpus à 73 questions, 60 cartes et onze dossiers fictifs. Aucune validation médicale indépendante n’a été obtenue.
 
 Les pages primaires ci-dessous ont été consultées le 14 octobre 2026 ; la date propre au RCP est conservée séparément. Il n’y a ni copie intégrale de monographie ni extraction automatique utilisée pour rédiger les valeurs. `scripts/document-priority.ts` conserve l’historique éditorial et refuse de remplacer des champs disponibles ; ce n’est pas un actualiseur à réexécuter.
 

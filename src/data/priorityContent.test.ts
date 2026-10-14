@@ -13,7 +13,8 @@ it('conserve populations, formulations et paramètres distincts dans les nouvell
   expect(fields('levetiracetam').clinicalContexts.value).toContain('16 ans');
   expect(fields('ibuprofene').clinicalContexts.value).toContain('12 ans et 40 kg');
   expect(fields('spironolactone').renalContext.value).toContain('chez l’enfant');
-  expect(fields('spironolactone').halfLife.status).toBe('missing');
+  expect(fields('spironolactone').halfLife.value).toContain('1,4 h');
+  expect(fields('spironolactone').halfLife.evidence[0].sourceId).toBe('dailymed');
   expect(fields('spironolactone').therapeuticEffects.value).toContain('ne sont pas une demi-vie');
 });
 it('chaque nouvel exercice garde une source disponible et une correction déterministe sans validation inventée', () => {

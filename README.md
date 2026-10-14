@@ -4,7 +4,7 @@ Maintenance documentaire : `npm run review:diff -- review/avant.json review/apre
 
 Plateforme personnelle de révision DFASM2 en français, sans backend obligatoire. Site : https://dev75008.github.io/pharma/ · dépôt : https://github.com/dev75008/pharma.
 
-Version technique du 14 octobre 2026 : **15 fiches / 12 familles, 73 questions, 60 flashcards et 11 dossiers fictifs**. 647 champs documentés sur 750 ; les 103 autres restent « À documenter ». La page Sources expose un bilan filtrable et exportable des rubriques et besoins de relecture. Le cahier des charges documentaire et la validation médicale indépendante ne sont pas intégralement achevés. [Bilan des huit phases, tests et limites](docs/livraison.md), [complément prioritaire et réserve de référence historique](docs/priorite-documentaire.md).
+Version technique du 14 octobre 2026 : **15 fiches / 12 familles, 74 questions, 61 flashcards et 11 dossiers fictifs**. 725 champs disponibles sur 750 (665 rubriques documentaires et 60 aides pédagogiques) ; les 25 autres restent « À documenter ». La page Sources expose un bilan filtrable et exportable des rubriques et besoins de relecture. Le cahier des charges documentaire et la validation médicale indépendante ne sont pas intégralement achevés. [Bilan des huit phases, tests et limites](docs/livraison.md), [examen des 103 rubriques et limites conservées](docs/examen-des-103-rubriques.md).
 
 ## Installation et lancement
 

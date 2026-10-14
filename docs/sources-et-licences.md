@@ -1,5 +1,7 @@
 # Sources et licences
 
+Complément du 14 octobre 2026 : courtes synthèses originales de PK et mécanismes CNPM, sécurité ELIQUIS au RCP européen en anglais et trois paramètres de PK de spironolactone issus de DailyMed. Les données américaines sont étiquetées, sans transfert de posologie ou d’indication française. Aucun PDF, tableau, cours ou monographie entière ajouté au dépôt ou à la PWA. Les aides mémoire sont des créations pédagogiques, pas des contenus officiels. [Références, périmètre et limites](examen-des-103-rubriques.md).
+
 ## État complémentaire du 14 octobre 2026
 
 Les sections suivantes conservent aussi les vérifications historiques avec leurs dates. État actuel : [enrichissement documentaire](enrichissement-documentaire-14-octobre.md), [API actives](api-scientifiques.md), [OpenFDA](openfda.md) et [bilan](livraison.md).

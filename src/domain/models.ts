@@ -1,7 +1,8 @@
 export type StableId = string;
 export interface Provenance { sourceId: string; url: string; consultedAt: string; sourceUpdatedAt: string | null; locator: string; }
 // « source-checked » est une concordance documentaire, jamais une validation clinique.
-export type ScientificField = { status: 'available'; value: string; verification: 'source-checked' | 'independently-reviewed'; scope: 'molecule' | 'specialty' | 'context'; context: string; evidence: Provenance[] } | { status: 'missing'; value: null; verification: 'unverified'; scope: 'molecule' | 'specialty' | 'context'; context: string; evidence: []; reason: string };
+export interface AbsenceReview { checkedAt:string; kind:'not-reported'|'uncertain'; evidence:Provenance[]; }
+export type ScientificField = { status: 'available'; value: string; verification: 'source-checked' | 'independently-reviewed'; scope: 'molecule' | 'specialty' | 'context'; context: string; evidence: Provenance[]; presentation?:'pedagogical' } | { status: 'missing'; value: null; verification: 'unverified'; scope: 'molecule' | 'specialty' | 'context'; context: string; evidence: []; reason: string; absenceReview?:AbsenceReview };
 export interface DrugClass { id: StableId; label: string; parentId?: StableId; specialtyIds: string[]; systemIds: string[]; }
 export interface MolecularTarget { id: StableId; name: ScientificField; }
 export interface Indication { id: StableId; description: ScientificField; specialtyId?: StableId; }

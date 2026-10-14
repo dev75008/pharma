@@ -19,7 +19,7 @@ export function checkContentRelations(pack:ContentPack,known:{sources:string[];c
  const evidence=(rows:{sourceId:string}[])=>all(rows.map(e=>e.sourceId),sources,'sources');
  for(const c of pack.classes){all(c.specialtyIds,specialties,'spécialités');all(c.systemIds,systems,'systèmes');if(c.parentId)all([c.parentId],classes,'classe parente');}
  const parents=new Map(pack.classes.map(c=>[c.id,c.parentId]));for(const c of pack.classes){const seen=new Set<string>();let current:string|undefined=c.id;while(current){if(seen.has(current))throw new Error('Cycle dans la hiérarchie des classes.');seen.add(current);current=parents.get(current);}}
- for(const d of pack.drugs){all([d.classId],classes,'classes');all(d.specialtyIds,specialties,'spécialités');all(d.systemIds,systems,'systèmes');Object.values(d.fields).forEach(f=>evidence(f.evidence));if(d.referenceNotice)evidence(d.referenceNotice.evidence);}
+ for(const d of pack.drugs){all([d.classId],classes,'classes');all(d.specialtyIds,specialties,'spécialités');all(d.systemIds,systems,'systèmes');Object.values(d.fields).forEach(f=>{evidence(f.evidence);if(f.status==='missing'&&f.absenceReview)evidence(f.absenceReview.evidence);});if(d.referenceNotice)evidence(d.referenceNotice.evidence);}
  const question=(q:ContentPack['questions'][number])=>{all(q.classIds,classes,'classes');all(q.drugIds,drugs,'médicaments');evidence(q.evidence);};
  pack.questions.forEach(question);for(const c of pack.cases){all(c.specialtyIds,specialties,'spécialités');evidence(c.evidence);c.steps.forEach(s=>question(s.question));}
  for(const c of pack.flashcards){all(c.classIds,classes,'classes');all(c.drugIds,drugs,'médicaments');evidence(c.evidence);}

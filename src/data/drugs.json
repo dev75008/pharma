@@ -211,10 +211,23 @@
         "status": "missing",
         "value": null,
         "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
+        "scope": "context",
+        "context": "Référence BISOPROLOL TEVA 10 mg, comprimé pelliculé, limite documentaire circonscrite aux rubriques citées. Aucune conclusion d’absence de risque.",
         "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "reason": "Le RCP fournit une titration, pas une courbe quantitative dose–effet dans les rubriques consultées.",
+        "absenceReview": {
+          "checkedAt": "2026-10-14",
+          "kind": "not-reported",
+          "evidence": [
+            {
+              "sourceId": "bdpm",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60524826/extrait",
+              "consultedAt": "2026-10-14",
+              "sourceUpdatedAt": "2025-10-20",
+              "locator": "RCP BISOPROLOL TEVA 10 mg, comprimé pelliculé ; rubrique(s) 4.2, 5.1"
+            }
+          ]
+        }
       },
       "absorption": {
         "status": "available",
@@ -300,10 +313,23 @@
         "status": "missing",
         "value": null,
         "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
+        "scope": "context",
+        "context": "Référence BISOPROLOL TEVA 10 mg, comprimé pelliculé, limite documentaire circonscrite aux rubriques citées. Aucune conclusion d’absence de risque.",
         "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "reason": "La rubrique de biotransformation ne nomme pas de CYP impliqué ; ne pas attribuer celui d’un autre bêtabloquant.",
+        "absenceReview": {
+          "checkedAt": "2026-10-14",
+          "kind": "not-reported",
+          "evidence": [
+            {
+              "sourceId": "bdpm",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60524826/extrait",
+              "consultedAt": "2026-10-14",
+              "sourceUpdatedAt": "2025-10-20",
+              "locator": "RCP BISOPROLOL TEVA 10 mg, comprimé pelliculé ; rubrique(s) 5.2"
+            }
+          ]
+        }
       },
       "activeMetabolites": {
         "status": "available",
@@ -402,13 +428,20 @@
         ]
       },
       "therapeuticStrategy": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Cadre du RCP TEVA 10 mg : HTA et angor stable ; d’autres formulations sont nécessaires pour le traitement de l’insuffisance cardiaque chronique.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60524826/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-10-20",
+            "locator": "RCP BISOPROLOL TEVA 10 mg, comprimé pelliculé ; rubrique(s) 4.1–4.4"
+          }
+        ]
       },
       "clinicalContexts": {
         "status": "available",
@@ -779,7 +812,8 @@
             "sourceUpdatedAt": "2025-10-20",
             "locator": "RCP BISOPROLOL TEVA 10 mg, comprimé pelliculé, rubrique(s) 4.6"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "examTraps": {
         "status": "available",
@@ -802,28 +836,59 @@
             "sourceUpdatedAt": "2025-10-20",
             "locator": "RCP BISOPROLOL TEVA 10 mg, comprimé pelliculé, rubrique 4.1"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "comparisons": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "Bisoprolol : bêta-1 préférentiel ; losartan : AT1. Deux cibles antihypertensives distinctes.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Comparaison de notions documentées, parfois entre classes différentes. Ne démontre ni équivalence ni supériorité ; pas de choix thérapeutique individuel.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60524826/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-10-20",
+            "locator": "RCP BISOPROLOL TEVA 10 mg, comprimé pelliculé, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66659784/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-04-10",
+            "locator": "RCP LOSARTAN BIOGARAN 50 mg, comprimé pelliculé sécable, rubrique 5.1"
+          }
+        ],
+        "presentation": "pedagogical"
       },
       "mnemonics": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "« BISO → Bêta-1 préférentiel ».",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide mémoire originale, non officielle et non validée. Raccourci incomplet ; ne fournit ni indication ni règle de prescription. Les sources établissent les notions, pas ce moyen mnémotechnique.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60524826/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-10-20",
+            "locator": "RCP BISOPROLOL TEVA 10 mg, comprimé pelliculé, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60524826/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-10-20",
+            "locator": "RCP BISOPROLOL TEVA 10 mg, comprimé pelliculé, rubrique 5.1"
+          }
+        ],
+        "presentation": "pedagogical"
       }
     },
-    "contentVersion": "2026.10.14-8",
+    "contentVersion": "2026.10.14-9",
     "validationStatus": "documentary-summary"
   },
   {
@@ -1035,13 +1100,20 @@
         ]
       },
       "doseResponse": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "status": "available",
+        "value": "Dans la population pédiatrique étudiée au RCP, la réponse tensionnelle n’était pas linéaire avec la dose. Ne pas extrapoler à une courbe universelle adulte.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61599041/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2024-06-06",
+            "locator": "RCP RAMIPRIL BIOGARAN 5 mg, comprimé sécable ; rubrique(s) 5.1"
+          }
+        ]
       },
       "absorption": {
         "status": "available",
@@ -1076,13 +1148,20 @@
         ]
       },
       "distribution": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "status": "available",
+        "value": "Liaison aux protéines sériques : ramipril environ 73 %, ramiprilate environ 56 %. Ce paramètre de distribution ne fournit pas un volume de distribution.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61599041/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2024-06-06",
+            "locator": "RCP RAMIPRIL BIOGARAN 5 mg, comprimé sécable ; rubrique(s) 5.2"
+          }
+        ]
       },
       "proteinBinding": {
         "status": "available",
@@ -1120,10 +1199,23 @@
         "status": "missing",
         "value": null,
         "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
+        "scope": "context",
+        "context": "Référence RAMIPRIL BIOGARAN 5 mg, comprimé sécable, limite documentaire circonscrite aux rubriques citées. Aucune conclusion d’absence de risque.",
         "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "reason": "La biotransformation est décrite sans CYP identifié dans cette rubrique ; activation en ramiprilate ne signifie pas activation par CYP.",
+        "absenceReview": {
+          "checkedAt": "2026-10-14",
+          "kind": "not-reported",
+          "evidence": [
+            {
+              "sourceId": "bdpm",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61599041/extrait",
+              "consultedAt": "2026-10-14",
+              "sourceUpdatedAt": "2024-06-06",
+              "locator": "RCP RAMIPRIL BIOGARAN 5 mg, comprimé sécable ; rubrique(s) 5.2"
+            }
+          ]
+        }
       },
       "activeMetabolites": {
         "status": "available",
@@ -1222,13 +1314,20 @@
         ]
       },
       "therapeuticStrategy": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Cadre du RCP : HTA en monothérapie ou association ; autres rôles cardiovasculaires et rénaux soumis à leurs critères propres.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61599041/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2024-06-06",
+            "locator": "RCP RAMIPRIL BIOGARAN 5 mg, comprimé sécable ; rubrique(s) 4.1–4.4"
+          }
+        ]
       },
       "clinicalContexts": {
         "status": "available",
@@ -1599,7 +1698,8 @@
             "sourceUpdatedAt": "2024-06-06",
             "locator": "RCP RAMIPRIL BIOGARAN 5 mg, comprimé sécable, rubrique(s) 4.6"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "examTraps": {
         "status": "available",
@@ -1629,7 +1729,8 @@
             "sourceUpdatedAt": "2024-06-06",
             "locator": "RCP RAMIPRIL BIOGARAN 5 mg, comprimé sécable, rubrique(s) 4.6"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "comparisons": {
         "status": "available",
@@ -1652,19 +1753,35 @@
             "sourceUpdatedAt": "2025-04-10",
             "locator": "RCP LOSARTAN BIOGARAN 50 mg, comprimé pelliculé sécable, rubrique 5.1"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "mnemonics": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "« RAMI → RAMIPRILATE → IEC ».",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide mémoire originale, non officielle et non validée. Raccourci incomplet ; ne fournit ni indication ni règle de prescription. Les sources établissent les notions, pas ce moyen mnémotechnique.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61599041/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2024-06-06",
+            "locator": "RCP RAMIPRIL BIOGARAN 5 mg, comprimé sécable, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61599041/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2024-06-06",
+            "locator": "RCP RAMIPRIL BIOGARAN 5 mg, comprimé sécable, rubrique 5.1"
+          }
+        ],
+        "presentation": "pedagogical"
       }
     },
-    "contentVersion": "2026.10.14-7",
+    "contentVersion": "2026.10.14-9",
     "validationStatus": "documentary-summary"
   },
   {
@@ -1876,13 +1993,20 @@
         ]
       },
       "doseResponse": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "status": "available",
+        "value": "Chez les adultes hypertendus, augmenter 50 à 100 mg/j peut accroître l’efficacité chez certains patients ; pas de réponse individuelle garantie.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66659784/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-04-10",
+            "locator": "RCP LOSARTAN BIOGARAN 50 mg, comprimé pelliculé sécable ; rubrique(s) 4.2"
+          }
+        ]
       },
       "absorption": {
         "status": "available",
@@ -2077,22 +2201,36 @@
         ]
       },
       "therapeuticStrategy": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "En insuffisance cardiaque chronique : rôle lorsque l’IEC est inadapté ; ne pas relayer automatiquement un patient stabilisé par IEC.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66659784/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-04-10",
+            "locator": "RCP LOSARTAN BIOGARAN 50 mg, comprimé pelliculé sécable ; rubrique(s) 4.1–4.4"
+          }
+        ]
       },
       "clinicalContexts": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Exemple : adulte ou enfant/adolescent de 6 à 18 ans avec HTA essentielle ; modalités pédiatriques et poids à lire séparément.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66659784/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-04-10",
+            "locator": "RCP LOSARTAN BIOGARAN 50 mg, comprimé pelliculé sécable ; rubrique(s) 4.1–4.2"
+          }
+        ]
       },
       "contraindications": {
         "status": "available",
@@ -2447,7 +2585,8 @@
             "sourceUpdatedAt": "2025-04-10",
             "locator": "RCP LOSARTAN BIOGARAN 50 mg, comprimé pelliculé sécable, rubrique(s) 4.6"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "examTraps": {
         "status": "available",
@@ -2470,7 +2609,8 @@
             "sourceUpdatedAt": "2025-04-10",
             "locator": "RCP LOSARTAN BIOGARAN 50 mg, comprimé pelliculé sécable, rubrique(s) 5.2"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "comparisons": {
         "status": "available",
@@ -2493,19 +2633,35 @@
             "sourceUpdatedAt": "2024-06-06",
             "locator": "RCP RAMIPRIL BIOGARAN 5 mg, comprimé sécable, rubrique 5.1"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "mnemonics": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "« LOSARTAN → AT1 ».",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide mémoire originale, non officielle et non validée. Raccourci incomplet ; ne fournit ni indication ni règle de prescription. Les sources établissent les notions, pas ce moyen mnémotechnique.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66659784/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-04-10",
+            "locator": "RCP LOSARTAN BIOGARAN 50 mg, comprimé pelliculé sécable, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66659784/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-04-10",
+            "locator": "RCP LOSARTAN BIOGARAN 50 mg, comprimé pelliculé sécable, rubrique 5.1"
+          }
+        ],
+        "presentation": "pedagogical"
       }
     },
-    "contentVersion": "2026.10.14-7",
+    "contentVersion": "2026.10.14-9",
     "validationStatus": "documentary-summary"
   },
   {
@@ -2733,22 +2889,50 @@
         ]
       },
       "absorption": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "La fiche porte sur une formulation injectable. Aucune biodisponibilité orale ne doit être extrapolée depuis ce RCP."
+        "status": "available",
+        "value": "Voie IV : arrivée directe dans la circulation, sans étape d’absorption extravasculaire. Cette description ne documente pas la voie IM ou une forme orale.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65449480/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2024-11-22",
+            "locator": "RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable ; rubrique(s) 4.2"
+          },
+          {
+            "sourceId": "cnpm",
+            "url": "https://pharmacomedicale.org/pharmacologie/pharmacocinetique/36-etapes-du-devenir-du-medicament/74-absorption",
+            "locator": "CNPM Absorption, voie intraveineuse et définition de F ; paraphrase originale",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2024-05-23"
+          }
+        ]
       },
       "bioavailability": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "status": "available",
+        "value": "Pour la voie IV uniquement : biodisponibilité absolue de 100 % par définition. Ne pas extrapoler à une autre voie ou formulation.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65449480/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2024-11-22",
+            "locator": "RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable ; rubrique(s) 4.2"
+          },
+          {
+            "sourceId": "cnpm",
+            "url": "https://pharmacomedicale.org/pharmacologie/pharmacocinetique/36-etapes-du-devenir-du-medicament/74-absorption",
+            "locator": "CNPM Absorption, voie intraveineuse et définition de F ; paraphrase originale",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2024-05-23"
+          }
+        ]
       },
       "distribution": {
         "status": "available",
@@ -2802,19 +2986,45 @@
         "status": "missing",
         "value": null,
         "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
+        "scope": "context",
+        "context": "Référence FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable, limite documentaire circonscrite aux rubriques citées. Aucune conclusion d’absence de risque.",
         "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "reason": "Le RCP décrit excrétion inchangée et glucuroconjugaison, sans CYP nommé dans la rubrique consultée.",
+        "absenceReview": {
+          "checkedAt": "2026-10-14",
+          "kind": "not-reported",
+          "evidence": [
+            {
+              "sourceId": "bdpm",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65449480/extrait",
+              "consultedAt": "2026-10-14",
+              "sourceUpdatedAt": "2024-11-22",
+              "locator": "RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable ; rubrique(s) 5.2"
+            }
+          ]
+        }
       },
       "activeMetabolites": {
         "status": "missing",
         "value": null,
         "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
+        "scope": "context",
+        "context": "Référence FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable, limite documentaire circonscrite aux rubriques citées. Aucune conclusion d’absence de risque.",
         "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "reason": "Le glucuronide est mentionné, sans activité thérapeutique de métabolite établie dans cette rubrique.",
+        "absenceReview": {
+          "checkedAt": "2026-10-14",
+          "kind": "uncertain",
+          "evidence": [
+            {
+              "sourceId": "bdpm",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65449480/extrait",
+              "consultedAt": "2026-10-14",
+              "sourceUpdatedAt": "2024-11-22",
+              "locator": "RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable ; rubrique(s) 5.2"
+            }
+          ]
+        }
       },
       "halfLife": {
         "status": "available",
@@ -2865,13 +3075,20 @@
         ]
       },
       "hepaticAdjustment": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Œdèmes hépatiques : ajustement prudent pour une perte liquidienne progressive ; tenir compte des contre-indications en précoma/coma hépatique. Pas de formule universelle selon Child-Pugh.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65449480/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2024-11-22",
+            "locator": "RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable ; rubrique(s) 4.2–4.3"
+          }
+        ]
       },
       "indications": {
         "status": "available",
@@ -3274,7 +3491,8 @@
             "sourceUpdatedAt": "2024-11-22",
             "locator": "RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable, rubrique(s) 4.6"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "examTraps": {
         "status": "available",
@@ -3304,7 +3522,8 @@
             "sourceUpdatedAt": "2024-11-22",
             "locator": "RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable, rubrique 3"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "comparisons": {
         "status": "available",
@@ -3327,19 +3546,28 @@
             "sourceUpdatedAt": "2026-07-08",
             "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 5.1"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "mnemonics": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "« FURO → Fuite de sel et de potassium ».",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide mémoire originale, non officielle et non validée. Raccourci incomplet ; ne fournit ni indication ni règle de prescription. Les sources établissent les notions, pas ce moyen mnémotechnique.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65449480/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2024-11-22",
+            "locator": "RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable, rubrique 5.1"
+          }
+        ],
+        "presentation": "pedagogical"
       }
     },
-    "contentVersion": "2026.10.14-7",
+    "contentVersion": "2026.10.14-9",
     "validationStatus": "documentary-summary"
   },
   {
@@ -3519,31 +3747,52 @@
         ]
       },
       "physiologicalEffects": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "Frein à la formation de thrombine et au développement du thrombus ; pas d’inhibition directe de la thrombine.",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66086174/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-02-13",
+            "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé ; rubrique(s) 5.1"
+          }
+        ]
       },
       "therapeuticEffects": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Anticoagulation pour les indications de prévention en FANV et de traitement/prévention des récidives de TVP–EP définies au RCP.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66086174/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-02-13",
+            "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé ; rubrique(s) 4.1, 5.1"
+          }
+        ]
       },
       "doseResponse": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "status": "available",
+        "value": "Inhibition du facteur Xa dose-dépendante chez l’humain ; le TQ dépend aussi du réactif. L’INR n’est pas une mesure adaptée de cet effet.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66086174/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-02-13",
+            "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé ; rubrique(s) 5.1"
+          }
+        ]
       },
       "absorption": {
         "status": "available",
@@ -3738,22 +3987,36 @@
         ]
       },
       "therapeuticStrategy": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Cadre du RCP : prévention en FANV et traitement/prévention de récidives de TVP–EP ; indications et schémas distincts.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66086174/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-02-13",
+            "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé ; rubrique(s) 4.1–4.4"
+          }
+        ]
       },
       "clinicalContexts": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Exemple adulte : TVP ou EP et prévention des récidives. Le schéma et la durée dépendent du contexte du RCP.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66086174/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-02-13",
+            "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé ; rubrique(s) 4.1–4.2"
+          }
+        ]
       },
       "contraindications": {
         "status": "available",
@@ -4108,7 +4371,8 @@
             "sourceUpdatedAt": "2026-02-13",
             "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé, rubrique(s) 4.6"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "examTraps": {
         "status": "available",
@@ -4131,7 +4395,8 @@
             "sourceUpdatedAt": "2026-02-13",
             "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé, rubrique(s) 4.2"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "comparisons": {
         "status": "available",
@@ -4154,19 +4419,35 @@
             "sourceUpdatedAt": null,
             "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 5.1"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "mnemonics": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "« RIVA bloque Xa ».",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide mémoire originale, non officielle et non validée. Raccourci incomplet ; ne fournit ni indication ni règle de prescription. Les sources établissent les notions, pas ce moyen mnémotechnique.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66086174/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2026-02-13",
+            "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66086174/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2026-02-13",
+            "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé, rubrique 5.1"
+          }
+        ],
+        "presentation": "pedagogical"
       }
     },
-    "contentVersion": "2026.10.14-7",
+    "contentVersion": "2026.10.14-9",
     "validationStatus": "documentary-summary"
   },
   {
@@ -4379,10 +4660,23 @@
         "status": "missing",
         "value": null,
         "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
+        "scope": "context",
+        "context": "Référence CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé, limite documentaire circonscrite aux rubriques citées. Aucune conclusion d’absence de risque.",
         "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "reason": "Une inhibition moyenne de 40–60 % à 75 mg/j est décrite, mais ce résultat à dose fixe ne fournit pas une courbe dose–effet.",
+        "absenceReview": {
+          "checkedAt": "2026-10-14",
+          "kind": "not-reported",
+          "evidence": [
+            {
+              "sourceId": "bdpm",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/67233727/extrait",
+              "consultedAt": "2026-10-14",
+              "sourceUpdatedAt": "2025-05-07",
+              "locator": "RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé ; rubrique(s) 5.1"
+            }
+          ]
+        }
       },
       "absorption": {
         "status": "available",
@@ -4404,19 +4698,39 @@
         "status": "missing",
         "value": null,
         "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
+        "scope": "context",
+        "context": "Référence CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé, limite documentaire circonscrite aux rubriques citées. Aucune conclusion d’absence de risque.",
         "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "reason": "Le RCP donne une absorption ≥ 50 %, pas une biodisponibilité absolue ; ne pas convertir un taux d’absorption en F.",
+        "absenceReview": {
+          "checkedAt": "2026-10-14",
+          "kind": "not-reported",
+          "evidence": [
+            {
+              "sourceId": "bdpm",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/67233727/extrait",
+              "consultedAt": "2026-10-14",
+              "sourceUpdatedAt": "2025-05-07",
+              "locator": "RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé ; rubrique(s) 5.2"
+            }
+          ]
+        }
       },
       "distribution": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "status": "available",
+        "value": "In vitro : liaison réversible aux protéines, clopidogrel 98 % et principal métabolite circulant inactif 94 %, non saturable sur la gamme étudiée.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/67233727/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-05-07",
+            "locator": "RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé ; rubrique(s) 5.2"
+          }
+        ]
       },
       "proteinBinding": {
         "status": "available",
@@ -4563,13 +4877,20 @@
         ]
       },
       "therapeuticStrategy": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Cadre du RCP : prévention secondaire athérothrombotique ; dans certains syndromes coronaires aigus, association à l’aspirine selon critères précis.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/67233727/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-05-07",
+            "locator": "RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé ; rubrique(s) 4.1–4.4"
+          }
+        ]
       },
       "clinicalContexts": {
         "status": "available",
@@ -4940,7 +5261,8 @@
             "sourceUpdatedAt": "2025-05-07",
             "locator": "RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé, rubrique(s) 4.6"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "examTraps": {
         "status": "available",
@@ -4963,28 +5285,59 @@
             "sourceUpdatedAt": "2025-05-07",
             "locator": "RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé, rubrique(s) 5.2"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "comparisons": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "Clopidogrel : antiagrégant P2Y12 après activation ; rivaroxaban : anticoagulant Xa direct.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Comparaison de notions documentées, parfois entre classes différentes. Ne démontre ni équivalence ni supériorité ; pas de choix thérapeutique individuel.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/67233727/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-05-07",
+            "locator": "RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66086174/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2026-02-13",
+            "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé, rubrique 5.1"
+          }
+        ],
+        "presentation": "pedagogical"
       },
       "mnemonics": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "« CLOP : converti, puis P2Y12 ».",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide mémoire originale, non officielle et non validée. Raccourci incomplet ; ne fournit ni indication ni règle de prescription. Les sources établissent les notions, pas ce moyen mnémotechnique.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/67233727/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-05-07",
+            "locator": "RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/67233727/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-05-07",
+            "locator": "RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé, rubrique 5.1"
+          }
+        ],
+        "presentation": "pedagogical"
       }
     },
-    "contentVersion": "2026.10.14-7",
+    "contentVersion": "2026.10.14-9",
     "validationStatus": "documentary-summary"
   },
   {
@@ -5295,10 +5648,23 @@
         "status": "missing",
         "value": null,
         "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
+        "scope": "context",
+        "context": "Référence AMOXICILLINE BIOGARAN 500 mg/5 ml, poudre pour suspension buvable, limite documentaire circonscrite aux rubriques citées. Aucune conclusion d’absence de risque.",
         "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "reason": "Aucune enzyme CYP de biotransformation n’est nommée dans la rubrique consultée ; absence de mention ne signifie pas absence de toute interaction.",
+        "absenceReview": {
+          "checkedAt": "2026-10-14",
+          "kind": "not-reported",
+          "evidence": [
+            {
+              "sourceId": "bdpm",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60453197/extrait",
+              "consultedAt": "2026-10-14",
+              "sourceUpdatedAt": "2026-09-18",
+              "locator": "RCP AMOXICILLINE BIOGARAN 500 mg/5 ml, poudre pour suspension buvable ; rubrique(s) 5.2"
+            }
+          ]
+        }
       },
       "activeMetabolites": {
         "status": "available",
@@ -5397,13 +5763,20 @@
         ]
       },
       "therapeuticStrategy": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Cadre du RCP : infections bactériennes des indications autorisées, avec prise en compte de la sensibilité et des recommandations officielles. Pas de première ligne universelle.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60453197/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-09-18",
+            "locator": "RCP AMOXICILLINE BIOGARAN 500 mg/5 ml, poudre pour suspension buvable ; rubrique(s) 4.1–4.4"
+          }
+        ]
       },
       "clinicalContexts": {
         "status": "available",
@@ -5774,7 +6147,8 @@
             "sourceUpdatedAt": "2026-09-18",
             "locator": "RCP AMOXICILLINE BIOGARAN 500 mg/5 ml, poudre pour suspension buvable, rubrique(s) 4.6"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "examTraps": {
         "status": "available",
@@ -5797,28 +6171,52 @@
             "sourceUpdatedAt": "2026-09-18",
             "locator": "RCP AMOXICILLINE BIOGARAN 500 mg/5 ml, poudre pour suspension buvable, rubrique 4.1"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "comparisons": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "Amoxicilline : antibiotique agissant sur la paroi bactérienne ; prednisolone : glucocorticoïde anti-inflammatoire.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Comparaison de notions documentées, parfois entre classes différentes. Ne démontre ni équivalence ni supériorité ; pas de choix thérapeutique individuel.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60453197/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2026-09-18",
+            "locator": "RCP AMOXICILLINE BIOGARAN 500 mg/5 ml, poudre pour suspension buvable, rubrique 5.1"
+          },
+          {
+            "sourceId": "cnpm",
+            "url": "https://pharmacomedicale.org/medicaments/par-specialites/item/corticoides-les-points-essentiels",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-06-05",
+            "locator": "CNPM, Corticoïdes : points essentiels, résumé et mécanismes ; prednisolone dans le tableau des glucocorticoïdes. Paraphrase originale, aucun cours ou tableau reproduit."
+          }
+        ],
+        "presentation": "pedagogical"
       },
       "mnemonics": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "« AMOXI attaque la paroi ».",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide mémoire originale, non officielle et non validée. Raccourci incomplet ; ne fournit ni indication ni règle de prescription. Les sources établissent les notions, pas ce moyen mnémotechnique.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60453197/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2026-09-18",
+            "locator": "RCP AMOXICILLINE BIOGARAN 500 mg/5 ml, poudre pour suspension buvable, rubrique 5.1"
+          }
+        ],
+        "presentation": "pedagogical"
       }
     },
-    "contentVersion": "2026.10.14-8",
+    "contentVersion": "2026.10.14-9",
     "validationStatus": "documentary-summary"
   },
   {
@@ -5948,13 +6346,27 @@
         ]
       },
       "target": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "status": "available",
+        "value": "Voie impliquée : AMPK hépatique. Son activation est décrite, sans démontrer ici une liaison directe à une cible unique ou exclusive.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-03-26",
+            "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé ; rubrique(s) 5.1"
+          },
+          {
+            "sourceId": "cnpm",
+            "url": "https://pharmacomedicale.org/medicaments/par-specialites/item/antidiabetiques-les-points-essentiels",
+            "locator": "CNPM Antidiabétiques, mécanismes des biguanides : activation AMPK, mécanisme non complètement élucidé",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null
+          }
+        ]
       },
       "mechanism": {
         "status": "available",
@@ -5973,13 +6385,27 @@
         ]
       },
       "actionType": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "status": "available",
+        "value": "Activation de voies métaboliques, notamment AMPK ; le mécanisme demeure incomplètement élucidé, sans classification comme agoniste d’un récepteur dans cette synthèse.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-03-26",
+            "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé ; rubrique(s) 5.1"
+          },
+          {
+            "sourceId": "cnpm",
+            "url": "https://pharmacomedicale.org/medicaments/par-specialites/item/antidiabetiques-les-points-essentiels",
+            "locator": "CNPM Antidiabétiques, mécanismes des biguanides : activation AMPK, mécanisme non complètement élucidé",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null
+          }
+        ]
       },
       "physiologicalEffects": {
         "status": "available",
@@ -6017,10 +6443,23 @@
         "status": "missing",
         "value": null,
         "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
+        "scope": "context",
+        "context": "Référence METFORMINE BGR 500 mg, comprimé pelliculé, limite documentaire circonscrite aux rubriques citées. Aucune conclusion d’absence de risque.",
         "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "reason": "Titration selon glycémie et absorption saturable ne fournissent pas une courbe pharmacodynamique universelle.",
+        "absenceReview": {
+          "checkedAt": "2026-10-14",
+          "kind": "not-reported",
+          "evidence": [
+            {
+              "sourceId": "bdpm",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
+              "consultedAt": "2026-10-14",
+              "sourceUpdatedAt": "2025-03-26",
+              "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé ; rubrique(s) 4.2, 5.2"
+            }
+          ]
+        }
       },
       "absorption": {
         "status": "available",
@@ -6106,10 +6545,23 @@
         "status": "missing",
         "value": null,
         "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
+        "scope": "context",
+        "context": "Référence METFORMINE BGR 500 mg, comprimé pelliculé, limite documentaire circonscrite aux rubriques citées. Aucune conclusion d’absence de risque.",
         "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "reason": "Le RCP décrit excrétion inchangée sans métabolite humain identifié ; il ne caractérise pas de CYP impliqué.",
+        "absenceReview": {
+          "checkedAt": "2026-10-14",
+          "kind": "not-reported",
+          "evidence": [
+            {
+              "sourceId": "bdpm",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
+              "consultedAt": "2026-10-14",
+              "sourceUpdatedAt": "2025-03-26",
+              "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé ; rubrique(s) 5.2"
+            }
+          ]
+        }
       },
       "activeMetabolites": {
         "status": "available",
@@ -6231,13 +6683,20 @@
         ]
       },
       "clinicalContexts": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Exemple : adulte en surcharge pondérale avec diabète de type 2 insuffisamment contrôlé par alimentation et exercice.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-03-26",
+            "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé ; rubrique(s) 4.1"
+          }
+        ]
       },
       "contraindications": {
         "status": "available",
@@ -6592,7 +7051,8 @@
             "sourceUpdatedAt": "2025-03-26",
             "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé, rubrique(s) 4.6"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "examTraps": {
         "status": "available",
@@ -6622,28 +7082,66 @@
             "sourceUpdatedAt": "2025-03-26",
             "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé, rubrique(s) 4.4"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "comparisons": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "Metformine : effet sur le métabolisme du glucose ; prednisolone : glucocorticoïde. Mécanismes distincts, sans relation de substitution.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Comparaison de notions documentées, parfois entre classes différentes. Ne démontre ni équivalence ni supériorité ; pas de choix thérapeutique individuel.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-03-26",
+            "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé, rubrique 5.1"
+          },
+          {
+            "sourceId": "cnpm",
+            "url": "https://pharmacomedicale.org/medicaments/par-specialites/item/corticoides-les-points-essentiels",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-06-05",
+            "locator": "CNPM, Corticoïdes : points essentiels, résumé et mécanismes ; prednisolone dans le tableau des glucocorticoïdes. Paraphrase originale, aucun cours ou tableau reproduit."
+          }
+        ],
+        "presentation": "pedagogical"
       },
       "mnemonics": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "« MET : Moins de glucose hépatique, Élimination rénale, Tolérance digestive ».",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide mémoire originale, non officielle et non validée. Raccourci incomplet ; ne fournit ni indication ni règle de prescription. Les sources établissent les notions, pas ce moyen mnémotechnique.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-03-26",
+            "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-03-26",
+            "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé, rubrique 5.2"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-03-26",
+            "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé, rubrique(s) 4.8"
+          }
+        ],
+        "presentation": "pedagogical"
       }
     },
-    "contentVersion": "2026.10.14-7",
+    "contentVersion": "2026.10.14-9",
     "validationStatus": "documentary-summary"
   },
   {
@@ -6774,10 +7272,23 @@
         "status": "missing",
         "value": null,
         "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
+        "scope": "context",
+        "context": "Référence PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion, limite documentaire circonscrite aux rubriques citées. Aucune conclusion d’absence de risque.",
         "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "reason": "Le RCP indique que le mécanisme précis n’est pas établi : aucune cible moléculaire unique ne peut être affirmée ici.",
+        "absenceReview": {
+          "checkedAt": "2026-10-14",
+          "kind": "uncertain",
+          "evidence": [
+            {
+              "sourceId": "bdpm",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+              "consultedAt": "2026-10-14",
+              "sourceUpdatedAt": "2025-04-23",
+              "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion ; rubrique(s) 5.1"
+            }
+          ]
+        }
       },
       "mechanism": {
         "status": "available",
@@ -6799,10 +7310,23 @@
         "status": "missing",
         "value": null,
         "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
+        "scope": "context",
+        "context": "Référence PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion, limite documentaire circonscrite aux rubriques citées. Aucune conclusion d’absence de risque.",
         "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "reason": "Aucun agonisme, antagonisme ou inhibition moléculaire unique établi par le RCP consulté.",
+        "absenceReview": {
+          "checkedAt": "2026-10-14",
+          "kind": "uncertain",
+          "evidence": [
+            {
+              "sourceId": "bdpm",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+              "consultedAt": "2026-10-14",
+              "sourceUpdatedAt": "2025-04-23",
+              "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion ; rubrique(s) 5.1"
+            }
+          ]
+        }
       },
       "physiologicalEffects": {
         "status": "available",
@@ -6840,10 +7364,23 @@
         "status": "missing",
         "value": null,
         "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
+        "scope": "context",
+        "context": "Référence PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion, limite documentaire circonscrite aux rubriques citées. Aucune conclusion d’absence de risque.",
         "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "reason": "La linéarité pharmacocinétique mentionnée ne démontre pas une relation dose–effet antalgique linéaire.",
+        "absenceReview": {
+          "checkedAt": "2026-10-14",
+          "kind": "not-reported",
+          "evidence": [
+            {
+              "sourceId": "bdpm",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+              "consultedAt": "2026-10-14",
+              "sourceUpdatedAt": "2025-04-23",
+              "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion ; rubrique(s) 5.1–5.2"
+            }
+          ]
+        }
       },
       "absorption": {
         "status": "available",
@@ -6862,13 +7399,27 @@
         ]
       },
       "bioavailability": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "status": "available",
+        "value": "Pour la voie IV uniquement : biodisponibilité absolue de 100 % par définition. Ne pas extrapoler à une autre voie ou formulation.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-04-23",
+            "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion ; rubrique(s) 4.2"
+          },
+          {
+            "sourceId": "cnpm",
+            "url": "https://pharmacomedicale.org/pharmacologie/pharmacocinetique/36-etapes-du-devenir-du-medicament/74-absorption",
+            "locator": "CNPM Absorption, voie intraveineuse et définition de F ; paraphrase originale",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2024-05-23"
+          }
+        ]
       },
       "distribution": {
         "status": "available",
@@ -6938,10 +7489,23 @@
         "status": "missing",
         "value": null,
         "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
+        "scope": "context",
+        "context": "Référence PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion, limite documentaire circonscrite aux rubriques citées. Aucune conclusion d’absence de risque.",
         "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "reason": "L’intermédiaire réactif décrit est toxique, pas présenté comme un métabolite thérapeutique actif.",
+        "absenceReview": {
+          "checkedAt": "2026-10-14",
+          "kind": "uncertain",
+          "evidence": [
+            {
+              "sourceId": "bdpm",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+              "consultedAt": "2026-10-14",
+              "sourceUpdatedAt": "2025-04-23",
+              "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion ; rubrique(s) 5.2"
+            }
+          ]
+        }
       },
       "halfLife": {
         "status": "available",
@@ -7216,13 +7780,20 @@
         ]
       },
       "hepaticContext": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Perfusion : insuffisance hépatocellulaire sévère contre-indiquée ; facteurs de risque hépatiques imposent les limites propres au RCP, sans extrapolation orale.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-04-23",
+            "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion ; rubrique(s) 4.2–4.4"
+          }
+        ]
       },
       "formula": {
         "status": "available",
@@ -7401,7 +7972,8 @@
             "sourceUpdatedAt": "2025-04-23",
             "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion, rubrique(s) 4.6"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "examTraps": {
         "status": "available",
@@ -7438,28 +8010,66 @@
             "sourceUpdatedAt": "2025-04-23",
             "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion, rubrique 5.1"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "comparisons": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "Paracétamol : antalgique/antipyrétique, mécanisme non entièrement établi ; ibuprofène : AINS inhibant la cyclo-oxygénase.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Comparaison de notions documentées, parfois entre classes différentes. Ne démontre ni équivalence ni supériorité ; pas de choix thérapeutique individuel.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-04-23",
+            "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69932537/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-07-17",
+            "locator": "RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé, rubrique 5.1"
+          }
+        ],
+        "presentation": "pedagogical"
       },
       "mnemonics": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "« Douleur–Fièvre ; Dose totale ; Danger hépatique ».",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide mémoire originale, non officielle et non validée. Raccourci incomplet ; ne fournit ni indication ni règle de prescription. Les sources établissent les notions, pas ce moyen mnémotechnique.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-04-23",
+            "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-04-23",
+            "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion, rubrique(s) 4.4"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-04-23",
+            "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion, rubrique(s) 4.4 et 4.8"
+          }
+        ],
+        "presentation": "pedagogical"
       }
     },
-    "contentVersion": "2026.10.14-7",
+    "contentVersion": "2026.10.14-9",
     "validationStatus": "documentary-summary"
   },
   {
@@ -7674,10 +8284,23 @@
         "status": "missing",
         "value": null,
         "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
+        "scope": "context",
+        "context": "Référence IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé, limite documentaire circonscrite aux rubriques citées. Aucune conclusion d’absence de risque.",
         "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "reason": "Les doses recommandées et les effets COX ne fournissent pas de courbe quantitative dose–effet dans ce RCP.",
+        "absenceReview": {
+          "checkedAt": "2026-10-14",
+          "kind": "not-reported",
+          "evidence": [
+            {
+              "sourceId": "bdpm",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69932537/extrait",
+              "consultedAt": "2026-10-14",
+              "sourceUpdatedAt": "2025-07-17",
+              "locator": "RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé ; rubrique(s) 4.2, 5.1"
+            }
+          ]
+        }
       },
       "absorption": {
         "status": "available",
@@ -7699,10 +8322,23 @@
         "status": "missing",
         "value": null,
         "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
+        "scope": "context",
+        "context": "Référence IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé, limite documentaire circonscrite aux rubriques citées. Aucune conclusion d’absence de risque.",
         "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "reason": "Le délai du pic et l’absorption rapide sont décrits, sans fraction absolue F chiffrée dans cette rubrique.",
+        "absenceReview": {
+          "checkedAt": "2026-10-14",
+          "kind": "not-reported",
+          "evidence": [
+            {
+              "sourceId": "bdpm",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69932537/extrait",
+              "consultedAt": "2026-10-14",
+              "sourceUpdatedAt": "2025-07-17",
+              "locator": "RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé ; rubrique(s) 5.2"
+            }
+          ]
+        }
       },
       "distribution": {
         "status": "available",
@@ -8249,7 +8885,8 @@
             "sourceUpdatedAt": "2025-07-17",
             "locator": "RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé, rubrique(s) 4.6"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "examTraps": {
         "status": "available",
@@ -8265,28 +8902,59 @@
             "sourceUpdatedAt": "2025-07-17",
             "locator": "RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé, rubrique(s) 4.6"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "comparisons": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "Ibuprofène : AINS inhibant la cyclo-oxygénase ; paracétamol : antalgique/antipyrétique au mécanisme non entièrement établi.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Comparaison de notions documentées, parfois entre classes différentes. Ne démontre ni équivalence ni supériorité ; pas de choix thérapeutique individuel.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69932537/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-07-17",
+            "locator": "RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61304982/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-04-23",
+            "locator": "RCP PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion, rubrique 5.1"
+          }
+        ],
+        "presentation": "pedagogical"
       },
       "mnemonics": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "« IBU : inhibition COX ; vigilance Rein–Estomac ».",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide mémoire originale, non officielle et non validée. Raccourci incomplet ; ne fournit ni indication ni règle de prescription. Les sources établissent les notions, pas ce moyen mnémotechnique.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69932537/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-07-17",
+            "locator": "RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69932537/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-07-17",
+            "locator": "RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé, rubrique(s) 4.3"
+          }
+        ],
+        "presentation": "pedagogical"
       }
     },
-    "contentVersion": "2026.10.14-8",
+    "contentVersion": "2026.10.14-9",
     "validationStatus": "documentary-summary"
   },
   {
@@ -8494,13 +9162,20 @@
         ]
       },
       "doseResponse": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "status": "available",
+        "value": "À forte dose, diminution de la réponse immunitaire décrite ; aucune courbe quantitative universelle n’est fournie ici.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2024-03-19",
+            "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent ; rubrique(s) 5.1"
+          }
+        ]
       },
       "absorption": {
         "status": "available",
@@ -8522,28 +9197,67 @@
         "status": "missing",
         "value": null,
         "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
+        "scope": "context",
+        "context": "Référence PREDNISOLONE TEVA 5 mg, comprimé effervescent, limite documentaire circonscrite aux rubriques citées. Aucune conclusion d’absence de risque.",
         "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "reason": "Le délai du pic oral ne donne pas une biodisponibilité absolue ; aucune fraction F fournie dans cette rubrique.",
+        "absenceReview": {
+          "checkedAt": "2026-10-14",
+          "kind": "not-reported",
+          "evidence": [
+            {
+              "sourceId": "bdpm",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+              "consultedAt": "2026-10-14",
+              "sourceUpdatedAt": "2024-03-19",
+              "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent ; rubrique(s) 5.2"
+            }
+          ]
+        }
       },
       "distribution": {
         "status": "missing",
         "value": null,
         "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
+        "scope": "context",
+        "context": "Référence PREDNISOLONE TEVA 5 mg, comprimé effervescent, limite documentaire circonscrite aux rubriques citées. Aucune conclusion d’absence de risque.",
         "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "reason": "La rubrique intitulée distribution rapporte une demi-vie, sans volume ou distribution tissulaire utilisable ici.",
+        "absenceReview": {
+          "checkedAt": "2026-10-14",
+          "kind": "not-reported",
+          "evidence": [
+            {
+              "sourceId": "bdpm",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+              "consultedAt": "2026-10-14",
+              "sourceUpdatedAt": "2024-03-19",
+              "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent ; rubrique(s) 5.2"
+            }
+          ]
+        }
       },
       "proteinBinding": {
         "status": "missing",
         "value": null,
         "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
+        "scope": "context",
+        "context": "Référence PREDNISOLONE TEVA 5 mg, comprimé effervescent, limite documentaire circonscrite aux rubriques citées. Aucune conclusion d’absence de risque.",
         "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "reason": "Aucune fraction de liaison protéique n’est fournie pour cette référence ; ne pas emprunter celle du budésonide.",
+        "absenceReview": {
+          "checkedAt": "2026-10-14",
+          "kind": "not-reported",
+          "evidence": [
+            {
+              "sourceId": "bdpm",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+              "consultedAt": "2026-10-14",
+              "sourceUpdatedAt": "2024-03-19",
+              "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent ; rubrique(s) 5.2"
+            }
+          ]
+        }
       },
       "metabolism": {
         "status": "available",
@@ -8562,22 +9276,49 @@
         ]
       },
       "cyp": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "Le CNPM classe la prednisolone parmi les médicaments métabolisés par CYP3A4 ; le RCP de cette forme ne quantifie pas sa contribution.",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2024-03-19",
+            "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent ; rubrique(s) 4.5, 5.2"
+          },
+          {
+            "sourceId": "cnpm",
+            "url": "https://pharmacomedicale.org/pharmacologie/les-sources-de-variabilite-de-la-reponse-au-medicament/45-variabilites-pharmacocinetiques/101-inhibitions-enzymatiques",
+            "locator": "CNPM Inhibitions enzymatiques : prednisolone parmi les substrats CYP3A4 ; aucune table reproduite",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-06-05"
+          }
+        ]
       },
       "activeMetabolites": {
         "status": "missing",
         "value": null,
         "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
+        "scope": "context",
+        "context": "Référence PREDNISOLONE TEVA 5 mg, comprimé effervescent, limite documentaire circonscrite aux rubriques citées. Aucune conclusion d’absence de risque.",
         "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "reason": "Le métabolisme hépatique est mentionné sans métabolite thérapeutique actif caractérisé dans cette rubrique.",
+        "absenceReview": {
+          "checkedAt": "2026-10-14",
+          "kind": "not-reported",
+          "evidence": [
+            {
+              "sourceId": "bdpm",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+              "consultedAt": "2026-10-14",
+              "sourceUpdatedAt": "2024-03-19",
+              "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent ; rubrique(s) 5.2"
+            }
+          ]
+        }
       },
       "halfLife": {
         "status": "available",
@@ -8615,19 +9356,45 @@
         "status": "missing",
         "value": null,
         "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
+        "scope": "context",
+        "context": "Référence PREDNISOLONE TEVA 5 mg, comprimé effervescent, limite documentaire circonscrite aux rubriques citées. Aucune conclusion d’absence de risque.",
         "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "reason": "Précautions et surveillance ne donnent pas un algorithme de dose selon le DFG dans les rubriques consultées.",
+        "absenceReview": {
+          "checkedAt": "2026-10-14",
+          "kind": "not-reported",
+          "evidence": [
+            {
+              "sourceId": "bdpm",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+              "consultedAt": "2026-10-14",
+              "sourceUpdatedAt": "2024-03-19",
+              "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent ; rubrique(s) 4.2, 4.4"
+            }
+          ]
+        }
       },
       "hepaticAdjustment": {
         "status": "missing",
         "value": null,
         "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
+        "scope": "context",
+        "context": "Référence PREDNISOLONE TEVA 5 mg, comprimé effervescent, limite documentaire circonscrite aux rubriques citées. Aucune conclusion d’absence de risque.",
         "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "reason": "Pas de schéma d’adaptation chiffré par sévérité hépatique dans les rubriques consultées ; ne pas affirmer qu’aucune adaptation n’est nécessaire.",
+        "absenceReview": {
+          "checkedAt": "2026-10-14",
+          "kind": "not-reported",
+          "evidence": [
+            {
+              "sourceId": "bdpm",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+              "consultedAt": "2026-10-14",
+              "sourceUpdatedAt": "2024-03-19",
+              "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent ; rubrique(s) 4.2, 4.4"
+            }
+          ]
+        }
       },
       "indications": {
         "status": "available",
@@ -8646,13 +9413,20 @@
         ]
       },
       "therapeuticStrategy": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Cadre du RCP : contrôle initial de la maladie, puis dose minimale efficace ; décroissance prudente après traitement prolongé selon maladie et durée.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2024-03-19",
+            "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent ; rubrique(s) 4.1–4.4"
+          }
+        ]
       },
       "clinicalContexts": {
         "status": "available",
@@ -9023,7 +9797,8 @@
             "sourceUpdatedAt": "2024-03-19",
             "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent, rubrique(s) 4.6"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "examTraps": {
         "status": "available",
@@ -9046,28 +9821,59 @@
             "sourceUpdatedAt": "2024-03-19",
             "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent, rubrique(s) 4.5"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "comparisons": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "Prednisolone : glucocorticoïde ; ibuprofène : AINS. Les mécanismes de l’effet anti-inflammatoire sont distincts.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Comparaison de notions documentées, parfois entre classes différentes. Ne démontre ni équivalence ni supériorité ; pas de choix thérapeutique individuel.",
+        "evidence": [
+          {
+            "sourceId": "cnpm",
+            "url": "https://pharmacomedicale.org/medicaments/par-specialites/item/corticoides-les-points-essentiels",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-06-05",
+            "locator": "CNPM, Corticoïdes : points essentiels, résumé et mécanismes ; prednisolone dans le tableau des glucocorticoïdes. Paraphrase originale, aucun cours ou tableau reproduit."
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69932537/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-07-17",
+            "locator": "RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé, rubrique 5.1"
+          }
+        ],
+        "presentation": "pedagogical"
       },
       "mnemonics": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "« Corticoïde : inflammation freinée, vigilance infectieuse ».",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide mémoire originale, non officielle et non validée. Raccourci incomplet ; ne fournit ni indication ni règle de prescription. Les sources établissent les notions, pas ce moyen mnémotechnique.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2024-03-19",
+            "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2024-03-19",
+            "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent, rubrique 4.2 et 4.4 ; relecture documentaire du 14 octobre 2026"
+          }
+        ],
+        "presentation": "pedagogical"
       }
     },
-    "contentVersion": "2026.10.14-8",
+    "contentVersion": "2026.10.14-9",
     "validationStatus": "documentary-summary"
   },
   {
@@ -9263,22 +10069,42 @@
         ]
       },
       "therapeuticEffects": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Dans le RCP historique : effet antidépresseur et effet dans les TOC ; les autres indications sont distinctes.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. RCP historique : autorisation de cette spécialité abrogée le 30/09/2024. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63288007/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2023-06-19",
+            "locator": "RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; rubrique(s) 4.1, 5.1"
+          }
+        ]
       },
       "doseResponse": {
         "status": "missing",
         "value": null,
         "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
+        "scope": "context",
+        "context": "Référence SERTRALINE VIATRIS GENERIQUES 25 mg, gélule, historique ; limite documentaire circonscrite aux rubriques citées. Aucune conclusion d’absence de risque.",
         "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "reason": "Le RCP historique décrit une titration et une cinétique dose-dépendante, pas une courbe universelle d’efficacité clinique.",
+        "absenceReview": {
+          "checkedAt": "2026-10-14",
+          "kind": "not-reported",
+          "evidence": [
+            {
+              "sourceId": "bdpm",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63288007/extrait",
+              "consultedAt": "2026-10-14",
+              "sourceUpdatedAt": "2023-06-19",
+              "locator": "RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; rubrique(s) 4.2, 5.2"
+            }
+          ]
+        }
       },
       "absorption": {
         "status": "available",
@@ -9380,10 +10206,23 @@
         "status": "missing",
         "value": null,
         "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
+        "scope": "context",
+        "context": "Référence SERTRALINE VIATRIS GENERIQUES 25 mg, gélule, historique ; limite documentaire circonscrite aux rubriques citées. Aucune conclusion d’absence de risque.",
         "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "reason": "La N-desméthylsertraline est décrite, mais son activité thérapeutique n’est pas caractérisée dans la rubrique consultée.",
+        "absenceReview": {
+          "checkedAt": "2026-10-14",
+          "kind": "uncertain",
+          "evidence": [
+            {
+              "sourceId": "bdpm",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63288007/extrait",
+              "consultedAt": "2026-10-14",
+              "sourceUpdatedAt": "2023-06-19",
+              "locator": "RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; rubrique(s) 5.2"
+            }
+          ]
+        }
       },
       "halfLife": {
         "status": "available",
@@ -9466,13 +10305,20 @@
         ]
       },
       "therapeuticStrategy": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "RCP historique : dose minimale efficace à l’entretien ; réévaluation régulière du traitement prolongé. Rôles différents selon l’indication.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. RCP historique : autorisation de cette spécialité abrogée le 30/09/2024. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63288007/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2023-06-19",
+            "locator": "RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; rubrique(s) 4.1–4.4"
+          }
+        ]
       },
       "clinicalContexts": {
         "status": "available",
@@ -9843,7 +10689,8 @@
             "sourceUpdatedAt": "2023-06-19",
             "locator": "RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule, rubrique(s) 4.6"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "examTraps": {
         "status": "available",
@@ -9866,28 +10713,52 @@
             "sourceUpdatedAt": "2023-06-19",
             "locator": "RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule, rubrique(s) 4.5"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "comparisons": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "Sertraline : recapture de sérotonine ; lévétiracétam : liaison à SV2A. Cibles neurologiques distinctes, sans équivalence thérapeutique.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Comparaison de notions documentées, parfois entre classes différentes. Ne démontre ni équivalence ni supériorité ; pas de choix thérapeutique individuel.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63288007/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2023-06-19",
+            "locator": "RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61610687/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-12-11",
+            "locator": "RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable, rubrique 5.1"
+          }
+        ],
+        "presentation": "pedagogical"
       },
       "mnemonics": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "« SERTRALINE → SÉROTONINE recapturée moins ».",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide mémoire originale, non officielle et non validée. Raccourci incomplet ; ne fournit ni indication ni règle de prescription. Les sources établissent les notions, pas ce moyen mnémotechnique.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63288007/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2023-06-19",
+            "locator": "RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule, rubrique 5.1"
+          }
+        ],
+        "presentation": "pedagogical"
       }
     },
-    "contentVersion": "2026.10.14-8",
+    "contentVersion": "2026.10.14-9",
     "validationStatus": "documentary-summary",
     "referenceNotice": {
       "status": "available",
@@ -10067,13 +10938,20 @@
         ]
       },
       "actionType": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "Liaison à SV2A décrite ; le RCP ne la définit pas comme un agonisme ou antagonisme classique. Mécanisme incomplètement élucidé.",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61610687/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-12-11",
+            "locator": "RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable ; rubrique(s) 5.1"
+          }
+        ]
       },
       "physiologicalEffects": {
         "status": "available",
@@ -10108,13 +10986,20 @@
         ]
       },
       "doseResponse": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "status": "available",
+        "value": "Essais adultes en association, crises partielles : réponses ≥ 50 % chez 27,7 %, 31,6 % et 41,3 % aux doses étudiées de 1 000, 2 000 et 3 000 mg/j ; résultats de groupes, pas prédiction individuelle.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61610687/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-12-11",
+            "locator": "RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable ; rubrique(s) 5.1"
+          }
+        ]
       },
       "absorption": {
         "status": "available",
@@ -10309,13 +11194,20 @@
         ]
       },
       "therapeuticStrategy": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Cadre du RCP : monothérapie ou association selon type de crise et âge ; ne pas transposer les critères d’une indication à une autre.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61610687/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-12-11",
+            "locator": "RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable ; rubrique(s) 4.1–4.4"
+          }
+        ]
       },
       "clinicalContexts": {
         "status": "available",
@@ -10686,7 +11578,8 @@
             "sourceUpdatedAt": "2025-12-11",
             "locator": "RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable, rubrique(s) 4.6"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "examTraps": {
         "status": "available",
@@ -10716,28 +11609,59 @@
             "sourceUpdatedAt": "2025-12-11",
             "locator": "RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable, rubrique(s) 4.2"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "comparisons": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "Lévétiracétam : liaison à SV2A ; sertraline : recapture de sérotonine. Cibles distinctes, sans équivalence thérapeutique.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Comparaison de notions documentées, parfois entre classes différentes. Ne démontre ni équivalence ni supériorité ; pas de choix thérapeutique individuel.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61610687/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-12-11",
+            "locator": "RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63288007/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2023-06-19",
+            "locator": "RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule, rubrique 5.1"
+          }
+        ],
+        "presentation": "pedagogical"
       },
       "mnemonics": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "« LÉVÉ : liaison vésiculaire SV2A ».",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide mémoire originale, non officielle et non validée. Raccourci incomplet ; ne fournit ni indication ni règle de prescription. Les sources établissent les notions, pas ce moyen mnémotechnique.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61610687/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-12-11",
+            "locator": "RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61610687/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-12-11",
+            "locator": "RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable, rubrique 5.1"
+          }
+        ],
+        "presentation": "pedagogical"
       }
     },
-    "contentVersion": "2026.10.14-8",
+    "contentVersion": "2026.10.14-9",
     "validationStatus": "documentary-summary"
   },
   {
@@ -10918,31 +11842,52 @@
         ]
       },
       "physiologicalEffects": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "Réduction de génération de thrombine et de formation du thrombus ; pas d’inhibition plaquettaire directe.",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 5.1"
+          }
+        ]
       },
       "therapeuticEffects": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Effet anticoagulant dans les indications FANV et TVP–EP autorisées.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.1, 5.1"
+          }
+        ]
       },
       "doseResponse": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Relation concentration–activité anti-Xa approximativement linéaire ; pas une équivalence de doses entre AOD.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 5.1"
+          }
+        ]
       },
       "absorption": {
         "status": "available",
@@ -11089,22 +12034,36 @@
         ]
       },
       "renalAdjustment": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Adulte : réduction selon indication, âge, poids, créatinine et clairance ; en FANV, lire ensemble les critères de 4.2.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.2"
+          }
+        ]
       },
       "hepaticAdjustment": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Adulte Child-Pugh A/B : prudence, sans adaptation systématique ; atteinte sévère non recommandée.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.2"
+          }
+        ]
       },
       "indications": {
         "status": "available",
@@ -11123,22 +12082,36 @@
         ]
       },
       "therapeuticStrategy": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Cadre européen : anticoagulation dans les indications autorisées, selon risque et contexte. Aucun classement universel entre AOD.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.1–4.4"
+          }
+        ]
       },
       "clinicalContexts": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Exemple : adulte avec FANV et facteur(s) de risque définis au RCP.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.1"
+          }
+        ]
       },
       "contraindications": {
         "status": "available",
@@ -11157,22 +12130,36 @@
         ]
       },
       "commonEffects": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Adulte FANV/traitement TVP–EP : épistaxis, hématurie et hémorragie digestive classées fréquentes ; autres populations distinctes.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.8, tableau 3"
+          }
+        ]
       },
       "seriousEffects": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Hémorragies majeures, notamment intracrâniennes ou digestives ; gravité distincte de fréquence.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.4, 4.8"
+          }
+        ]
       },
       "interactions": {
         "status": "available",
@@ -11191,13 +12178,20 @@
         ]
       },
       "precautions": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Risque hémorragique accru avec antiagrégants, AINS et certains antidépresseurs ; procédures invasives à anticiper.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.4–4.5"
+          }
+        ]
       },
       "clinicalMonitoring": {
         "status": "available",
@@ -11232,40 +12226,68 @@
         ]
       },
       "pregnancy": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Utilisation de préférence évitée par précaution ; absence de données humaines dans ce RCP.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.6"
+          }
+        ]
       },
       "breastfeeding": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Passage dans le lait humain inconnu ; choix entre arrêt d’allaitement ou traitement après balance bénéfice/risque.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.6"
+          }
+        ]
       },
       "renalContext": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Adulte : clairance < 15 mL/min ou dialyse non recommandées ; clairance 15–29, précautions selon indication.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.2, 4.4"
+          }
+        ]
       },
       "hepaticContext": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Hépatopathie avec coagulopathie et risque hémorragique cliniquement pertinent : contre-indication.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.2–4.3"
+          }
+        ]
       },
       "formula": {
         "status": "available",
@@ -11403,13 +12425,21 @@
         ]
       },
       "essentials": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "1. Xa direct.\n2. Anticoagulant.\n3. Saignement.\n4. Critères rénaux contextualisés.\n5. Associations à vérifier.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP européen ELIQUIS 5 mg, document anglais, pages 36–65 ; rubrique(s) 4.1–4.5, 5.1"
+          }
+        ],
+        "presentation": "pedagogical"
       },
       "examTraps": {
         "status": "available",
@@ -11425,7 +12455,8 @@
             "sourceUpdatedAt": null,
             "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 4.4 et 5.1"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "comparisons": {
         "status": "available",
@@ -11448,19 +12479,35 @@
             "sourceUpdatedAt": "2026-02-13",
             "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé, rubrique 5.1"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "mnemonics": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "« APIXABAN → Anti-Xa ».",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide mémoire originale, non officielle et non validée. Raccourci incomplet ; ne fournit ni indication ni règle de prescription. Les sources établissent les notions, pas ce moyen mnémotechnique.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 5.1"
+          },
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 5.1"
+          }
+        ],
+        "presentation": "pedagogical"
       }
     },
-    "contentVersion": "2026.10.14-7",
+    "contentVersion": "2026.10.14-9",
     "validationStatus": "documentary-summary"
   },
   {
@@ -11592,13 +12639,27 @@
         ]
       },
       "target": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "Récepteur des minéralocorticoïdes (aldostérone) ; antagoniste non spécifique, avec interactions hormonales également décrites.",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable ; rubrique(s) 5.1"
+          },
+          {
+            "sourceId": "cnpm",
+            "url": "https://pharmacomedicale.org/medicaments/par-specialites/item/anti-aldosterone-et-apparentes",
+            "locator": "CNPM Anti-aldostérone, cible et effets hormonaux dose-dépendants ; mécanisme seulement, pas de recommandation copiée",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null
+          }
+        ]
       },
       "mechanism": {
         "status": "available",
@@ -11665,13 +12726,27 @@
         ]
       },
       "doseResponse": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Des effets hormonaux, notamment gynécomastie et impuissance, sont décrits comme dose-dépendants au CNPM. Ce n’est pas une courbe d’efficacité antihypertensive.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable ; rubrique(s) 4.8"
+          },
+          {
+            "sourceId": "cnpm",
+            "url": "https://pharmacomedicale.org/medicaments/par-specialites/item/anti-aldosterone-et-apparentes",
+            "locator": "CNPM Anti-aldostérone, cible et effets hormonaux dose-dépendants ; mécanisme seulement, pas de recommandation copiée",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null
+          }
+        ]
       },
       "absorption": {
         "status": "available",
@@ -11690,13 +12765,20 @@
         ]
       },
       "bioavailability": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Étiquetage américain, comprimés étudiés : repas associé à une hausse d’ASC d’environ 95,4 %. Ce n’est pas une biodisponibilité absolue de 95,4 %.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Source américaine de pharmacocinétique, distincte du RCP BIOGARAN. Aucun transfert d’indication, posologie ou équivalence de formulation en France ; pas de validation indépendante.",
+        "evidence": [
+          {
+            "sourceId": "dailymed",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ae0dcb4e-63df-459c-8e60-0caa817b8135",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-02-04",
+            "locator": "DailyMed SPIRONOLACTONE comprimés 25/50/100 mg, 12.3 ; étiquetage américain, mise à jour de la page, pas RCP BIOGARAN français"
+          }
+        ]
       },
       "distribution": {
         "status": "available",
@@ -11715,13 +12797,20 @@
         ]
       },
       "proteinBinding": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Étiquetage américain : spironolactone et métabolites liés à plus de 90 % aux protéines plasmatiques.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Source américaine de pharmacocinétique, distincte du RCP BIOGARAN. Aucun transfert d’indication, posologie ou équivalence de formulation en France ; pas de validation indépendante.",
+        "evidence": [
+          {
+            "sourceId": "dailymed",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ae0dcb4e-63df-459c-8e60-0caa817b8135",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-02-04",
+            "locator": "DailyMed SPIRONOLACTONE comprimés 25/50/100 mg, 12.3 ; étiquetage américain, mise à jour de la page, pas RCP BIOGARAN français"
+          }
+        ]
       },
       "metabolism": {
         "status": "available",
@@ -11743,10 +12832,23 @@
         "status": "missing",
         "value": null,
         "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
+        "scope": "context",
+        "context": "Référence SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable, limite documentaire circonscrite aux rubriques citées. Aucune conclusion d’absence de risque.",
         "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "reason": "La rubrique française décrit les métabolites sans enzyme CYP identifiée ; ne pas en déduire une absence générale d’interactions.",
+        "absenceReview": {
+          "checkedAt": "2026-10-14",
+          "kind": "not-reported",
+          "evidence": [
+            {
+              "sourceId": "bdpm",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+              "consultedAt": "2026-10-14",
+              "sourceUpdatedAt": "2026-07-08",
+              "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable ; rubrique(s) 5.2"
+            }
+          ]
+        }
       },
       "activeMetabolites": {
         "status": "available",
@@ -11765,13 +12867,20 @@
         ]
       },
       "halfLife": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Étiquetage américain : molécule environ 1,4 h ; canrénone 16,5 h, TMS 13,8 h, HTMS 15 h. Ces valeurs ne sont pas une durée d’effet.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Source américaine de pharmacocinétique, distincte du RCP BIOGARAN. Aucun transfert d’indication, posologie ou équivalence de formulation en France ; pas de validation indépendante.",
+        "evidence": [
+          {
+            "sourceId": "dailymed",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ae0dcb4e-63df-459c-8e60-0caa817b8135",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-02-04",
+            "locator": "DailyMed SPIRONOLACTONE comprimés 25/50/100 mg, 12.3 ; étiquetage américain, mise à jour de la page, pas RCP BIOGARAN français"
+          }
+        ]
       },
       "elimination": {
         "status": "available",
@@ -11790,22 +12899,36 @@
         ]
       },
       "renalAdjustment": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Adulte NYHA III/IV : le RCP adapte la dose selon kaliémie et créatininémie, avec réduction/arrêt aux seuils de 4.2. Ce cadre ne constitue pas une règle universelle selon le DFG.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable ; rubrique(s) 4.2–4.4"
+          }
+        ]
       },
       "hepaticAdjustment": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Ascite cirrhotique : adaptation selon réponse diurétique et bilan électrolytique ; stade terminal hépatique contre-indiqué. Pas d’algorithme chiffré selon Child-Pugh.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable ; rubrique(s) 4.2–4.3"
+          }
+        ]
       },
       "indications": {
         "status": "available",
@@ -11824,13 +12947,20 @@
         ]
       },
       "therapeuticStrategy": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Cadre du RCP : en insuffisance cardiaque adulte NYHA III/IV, ajout au traitement décrit, avec surveillance potassique/rénale.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle ; formulation et population de la référence à conserver. Aucune validation indépendante ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable ; rubrique(s) 4.1–4.4"
+          }
+        ]
       },
       "clinicalContexts": {
         "status": "available",
@@ -12173,7 +13303,8 @@
             "sourceUpdatedAt": "2026-07-08",
             "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable, rubrique(s) 4.1, 4.3–4.4, 5.1"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "examTraps": {
         "status": "available",
@@ -12196,7 +13327,8 @@
             "sourceUpdatedAt": "2026-07-08",
             "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 4.8"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "comparisons": {
         "status": "available",
@@ -12219,19 +13351,35 @@
             "sourceUpdatedAt": "2024-11-22",
             "locator": "RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable, rubrique 5.1"
           }
-        ]
+        ],
+        "presentation": "pedagogical"
       },
       "mnemonics": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "« SPIRO : Sel sort, Potassium reste ».",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide mémoire originale, non officielle et non validée. Raccourci incomplet ; ne fournit ni indication ni règle de prescription. Les sources établissent les notions, pas ce moyen mnémotechnique.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable, rubrique(s) 5.1 ; notice, indications"
+          }
+        ],
+        "presentation": "pedagogical"
       }
     },
-    "contentVersion": "2026.10.14-8",
+    "contentVersion": "2026.10.14-9",
     "validationStatus": "documentary-summary"
   }
 ]
