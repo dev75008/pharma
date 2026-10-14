@@ -660,13 +660,20 @@
         ]
       },
       "structure3d": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2405/SDF?record_type=3d",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
+        "context": "Conformère PubChem calculé CID 2405, inclus dans cette version pour lecture hors ligne. Ni structure expérimentale ni conformation liée à une cible ; sel/formulation clinique potentiellement distincts.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2405/SDF?record_type=3d",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "SDF record_type=3d : identité CID, coordonnées V2000 et liaisons vérifiées ; 54 atomes, 54 liaisons"
+          }
+        ]
       },
       "physicochemical": {
         "status": "available",
@@ -809,7 +816,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-2",
+    "contentVersion": "2026.10.14-7",
     "validationStatus": "documentary-summary"
   },
   {
@@ -1217,13 +1224,20 @@
         "reason": "Champ non documenté dans cette version."
       },
       "clinicalContexts": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Exemple de contexte autorisé : adulte ayant une hypertension. Les indications de néphropathie et de prévention cardiovasculaire ont leurs propres critères au RCP.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse originale non exhaustive du RCP RAMIPRIL BIOGARAN 5 mg, comprimé sécable ; contexte et formulation conservés.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61599041/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2024-06-06",
+            "locator": "RCP RAMIPRIL BIOGARAN 5 mg, comprimé sécable, rubrique 4.1"
+          }
+        ]
       },
       "contraindications": {
         "status": "available",
@@ -1466,13 +1480,20 @@
         ]
       },
       "structure3d": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5362129/SDF?record_type=3d",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
+        "context": "Conformère PubChem calculé CID 5362129, inclus dans cette version pour lecture hors ligne. Ni structure expérimentale ni conformation liée à une cible ; sel/formulation clinique potentiellement distincts.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5362129/SDF?record_type=3d",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "SDF record_type=3d : identité CID, coordonnées V2000 et liaisons vérifiées ; 62 atomes, 64 liaisons"
+          }
+        ]
       },
       "physicochemical": {
         "status": "available",
@@ -1604,13 +1625,27 @@
         ]
       },
       "comparisons": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "Ramipril : Le ramiprilate inhibe l’enzyme de conversion : baisse d’angiotensine II et moindre dégradation de la bradykinine, favorisant la vasodilatation.\nLosartan : Le losartan et son métabolite actif bloquent sélectivement les récepteurs AT1 et les effets de l’angiotensine II.\nComparer ces propriétés documentées ne démontre ni interchangeabilité ni supériorité clinique.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Assemblage pédagogique de deux champs existants et de leurs preuves, sans nouvelle inférence médicale. Lire séparément les indications et restrictions de chaque spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61599041/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2024-06-06",
+            "locator": "RCP RAMIPRIL BIOGARAN 5 mg, comprimé sécable, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66659784/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-04-10",
+            "locator": "RCP LOSARTAN BIOGARAN 50 mg, comprimé pelliculé sécable, rubrique 5.1"
+          }
+        ]
       },
       "mnemonics": {
         "status": "missing",
@@ -1622,7 +1657,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-2",
+    "contentVersion": "2026.10.14-7",
     "validationStatus": "documentary-summary"
   },
   {
@@ -2293,13 +2328,20 @@
         ]
       },
       "structure3d": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3961/SDF?record_type=3d",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
+        "context": "Conformère PubChem calculé CID 3961, inclus dans cette version pour lecture hors ligne. Ni structure expérimentale ni conformation liée à une cible ; sel/formulation clinique potentiellement distincts.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3961/SDF?record_type=3d",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "SDF record_type=3d : identité CID, coordonnées V2000 et liaisons vérifiées ; 53 atomes, 56 liaisons"
+          }
+        ]
       },
       "physicochemical": {
         "status": "available",
@@ -2424,13 +2466,27 @@
         ]
       },
       "comparisons": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "Losartan : Le losartan et son métabolite actif bloquent sélectivement les récepteurs AT1 et les effets de l’angiotensine II.\nRamipril : Le ramiprilate inhibe l’enzyme de conversion : baisse d’angiotensine II et moindre dégradation de la bradykinine, favorisant la vasodilatation.\nComparer ces propriétés documentées ne démontre ni interchangeabilité ni supériorité clinique.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Assemblage pédagogique de deux champs existants et de leurs preuves, sans nouvelle inférence médicale. Lire séparément les indications et restrictions de chaque spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66659784/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-04-10",
+            "locator": "RCP LOSARTAN BIOGARAN 50 mg, comprimé pelliculé sécable, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61599041/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2024-06-06",
+            "locator": "RCP RAMIPRIL BIOGARAN 5 mg, comprimé sécable, rubrique 5.1"
+          }
+        ]
       },
       "mnemonics": {
         "status": "missing",
@@ -2442,7 +2498,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-2",
+    "contentVersion": "2026.10.14-7",
     "validationStatus": "documentary-summary"
   },
   {
@@ -2622,31 +2678,52 @@
         ]
       },
       "physiologicalEffects": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "Augmentation de l’excrétion de sodium, potassium, calcium et magnésium consécutive au blocage de la réabsorption dans l’anse.",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "context": "Synthèse originale non exhaustive du RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable ; contexte et formulation conservés.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65449480/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2024-11-22",
+            "locator": "RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable, rubrique 5.1"
+          }
+        ]
       },
       "therapeuticEffects": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Diurèse rapide ; effet IV dans les 15 minutes. Dans l’insuffisance cardiaque, diminution aiguë de la précharge décrite.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse originale non exhaustive du RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable ; contexte et formulation conservés.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65449480/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2024-11-22",
+            "locator": "RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable, rubrique 5.1"
+          }
+        ]
       },
       "doseResponse": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "status": "available",
+        "value": "Chez des sujets sains étudiés entre 10 et 100 mg : diurèse/natriurèse dose-dépendantes. Relation tubulaire–natriurèse sigmoïde chez les patients ; au-delà d’une dose en bolus, le gain devient limité.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse originale non exhaustive du RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable ; contexte et formulation conservés.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65449480/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2024-11-22",
+            "locator": "RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable, rubrique 5.1"
+          }
+        ]
       },
       "absorption": {
         "status": "missing",
@@ -2765,13 +2842,20 @@
         ]
       },
       "renalAdjustment": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Pour cette solution injectable, si créatinine sérique > 5 mg/dL : débit maximal de perfusion recommandé 2,5 mg/min. Ne pas extrapoler en dose orale ou en seuil de DFG.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse originale non exhaustive du RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable ; contexte et formulation conservés.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65449480/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2024-11-22",
+            "locator": "RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable, rubrique 4.2"
+          }
+        ]
       },
       "hepaticAdjustment": {
         "status": "missing",
@@ -3071,13 +3155,20 @@
         ]
       },
       "structure3d": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3440/SDF?record_type=3d",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
+        "context": "Conformère PubChem calculé CID 3440, inclus dans cette version pour lecture hors ligne. Ni structure expérimentale ni conformation liée à une cible ; sel/formulation clinique potentiellement distincts.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3440/SDF?record_type=3d",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "SDF record_type=3d : identité CID, coordonnées V2000 et liaisons vérifiées ; 32 atomes, 33 liaisons"
+          }
+        ]
       },
       "physicochemical": {
         "status": "available",
@@ -3209,13 +3300,27 @@
         ]
       },
       "comparisons": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "Furosémide : Inhibition du cotransport luminal Na+/K+/2Cl− dans la branche ascendante de l’anse de Henlé, augmentant l’excrétion hydro-électrolytique.\nSpironolactone : Antagonisme de l’aldostérone ; épargne potassique.\nComparer ces propriétés documentées ne démontre ni interchangeabilité ni supériorité clinique.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Assemblage pédagogique de deux champs existants et de leurs preuves, sans nouvelle inférence médicale. Lire séparément les indications et restrictions de chaque spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65449480/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2024-11-22",
+            "locator": "RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 5.1"
+          }
+        ]
       },
       "mnemonics": {
         "status": "missing",
@@ -3227,7 +3332,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-2",
+    "contentVersion": "2026.10.14-7",
     "validationStatus": "documentary-summary"
   },
   {
@@ -3884,13 +3989,20 @@
         ]
       },
       "structure3d": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9875401/SDF?record_type=3d",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
+        "context": "Conformère PubChem calculé CID 9875401, inclus dans cette version pour lecture hors ligne. Ni structure expérimentale ni conformation liée à une cible ; sel/formulation clinique potentiellement distincts.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9875401/SDF?record_type=3d",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "SDF record_type=3d : identité CID, coordonnées V2000 et liaisons vérifiées ; 47 atomes, 50 liaisons"
+          }
+        ]
       },
       "physicochemical": {
         "status": "available",
@@ -4015,13 +4127,27 @@
         ]
       },
       "comparisons": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
+        "status": "available",
+        "value": "Rivaroxaban : Inhibition directe du facteur Xa : diminution de la formation de thrombine et du thrombus.\nApixaban : Inhibition directe réversible du facteur Xa, réduisant la génération de thrombine.\nComparer ces propriétés documentées ne démontre ni interchangeabilité ni supériorité clinique.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Assemblage pédagogique de deux champs existants et de leurs preuves, sans nouvelle inférence médicale. Lire séparément les indications et restrictions de chaque spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66086174/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2026-02-13",
+            "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé, rubrique 5.1"
+          },
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 5.1"
+          }
+        ]
       },
       "mnemonics": {
         "status": "missing",
@@ -4033,7 +4159,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-2",
+    "contentVersion": "2026.10.14-7",
     "validationStatus": "documentary-summary"
   },
   {
@@ -4695,13 +4821,20 @@
         ]
       },
       "structure3d": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/60606/SDF?record_type=3d",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
+        "context": "Conformère PubChem calculé CID 60606, inclus dans cette version pour lecture hors ligne. Ni structure expérimentale ni conformation liée à une cible ; sel/formulation clinique potentiellement distincts.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/60606/SDF?record_type=3d",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "SDF record_type=3d : identité CID, coordonnées V2000 et liaisons vérifiées ; 37 atomes, 39 liaisons"
+          }
+        ]
       },
       "physicochemical": {
         "status": "available",
@@ -4844,7 +4977,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-5",
+    "contentVersion": "2026.10.14-7",
     "validationStatus": "documentary-summary"
   },
   {
@@ -5508,13 +5641,20 @@
         ]
       },
       "structure3d": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/33613/SDF?record_type=3d",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
+        "context": "Conformère PubChem calculé CID 33613, inclus dans cette version pour lecture hors ligne. Ni structure expérimentale ni conformation liée à une cible ; sel/formulation clinique potentiellement distincts.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/33613/SDF?record_type=3d",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "SDF record_type=3d : identité CID, coordonnées V2000 et liaisons vérifiées ; 44 atomes, 46 liaisons"
+          }
+        ]
       },
       "physicochemical": {
         "status": "available",
@@ -5657,7 +5797,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-5",
+    "contentVersion": "2026.10.14-7",
     "validationStatus": "documentary-summary"
   },
   {
@@ -6319,13 +6459,20 @@
         ]
       },
       "structure3d": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/4091/SDF?record_type=3d",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
+        "context": "Conformère PubChem calculé CID 4091, inclus dans cette version pour lecture hors ligne. Ni structure expérimentale ni conformation liée à une cible ; sel/formulation clinique potentiellement distincts.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/4091/SDF?record_type=3d",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "SDF record_type=3d : identité CID, coordonnées V2000 et liaisons vérifiées ; 20 atomes, 19 liaisons"
+          }
+        ]
       },
       "physicochemical": {
         "status": "available",
@@ -6475,7 +6622,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-4",
+    "contentVersion": "2026.10.14-7",
     "validationStatus": "documentary-summary"
   },
   {
@@ -7121,13 +7268,20 @@
         ]
       },
       "structure3d": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/1983/SDF?record_type=3d",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
+        "context": "Conformère PubChem calculé CID 1983, inclus dans cette version pour lecture hors ligne. Ni structure expérimentale ni conformation liée à une cible ; sel/formulation clinique potentiellement distincts.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/1983/SDF?record_type=3d",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "SDF record_type=3d : identité CID, coordonnées V2000 et liaisons vérifiées ; 20 atomes, 20 liaisons"
+          }
+        ]
       },
       "physicochemical": {
         "status": "available",
@@ -7284,7 +7438,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-2",
+    "contentVersion": "2026.10.14-7",
     "validationStatus": "documentary-summary"
   },
   {
@@ -7927,13 +8081,20 @@
         ]
       },
       "structure3d": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3672/SDF?record_type=3d",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
+        "context": "Conformère PubChem calculé CID 3672, inclus dans cette version pour lecture hors ligne. Ni structure expérimentale ni conformation liée à une cible ; sel/formulation clinique potentiellement distincts.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3672/SDF?record_type=3d",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "SDF record_type=3d : identité CID, coordonnées V2000 et liaisons vérifiées ; 33 atomes, 33 liaisons"
+          }
+        ]
       },
       "physicochemical": {
         "status": "available",
@@ -8069,7 +8230,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-2",
+    "contentVersion": "2026.10.14-7",
     "validationStatus": "documentary-summary"
   },
   {
@@ -8687,13 +8848,20 @@
         ]
       },
       "structure3d": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5755/SDF?record_type=3d",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
+        "context": "Conformère PubChem calculé CID 5755, inclus dans cette version pour lecture hors ligne. Ni structure expérimentale ni conformation liée à une cible ; sel/formulation clinique potentiellement distincts.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5755/SDF?record_type=3d",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "SDF record_type=3d : identité CID, coordonnées V2000 et liaisons vérifiées ; 54 atomes, 57 liaisons"
+          }
+        ]
       },
       "physicochemical": {
         "status": "available",
@@ -8836,7 +9004,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-2",
+    "contentVersion": "2026.10.14-7",
     "validationStatus": "documentary-summary"
   },
   {
@@ -9016,13 +9184,20 @@
         ]
       },
       "physiologicalEffects": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Aux doses cliniques, blocage de la capture de sérotonine dans les plaquettes humaines. Les observations animales restent distinctes des effets cliniques.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse originale non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte et formulation conservés.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63288007/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2023-06-19",
+            "locator": "RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule, rubrique 5.1"
+          }
+        ]
       },
       "therapeuticEffects": {
         "status": "missing",
@@ -9075,13 +9250,20 @@
         ]
       },
       "distribution": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "status": "available",
+        "value": "Le RCP décrit un grand volume de distribution dans le contexte du surdosage, sans chiffre fourni ici. Ne pas transformer cette description en estimation numérique.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse originale non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte et formulation conservés.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63288007/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2023-06-19",
+            "locator": "RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule, rubrique 4.9"
+          }
+        ]
       },
       "proteinBinding": {
         "status": "available",
@@ -9486,13 +9668,20 @@
         ]
       },
       "structure3d": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/68617/SDF?record_type=3d",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
+        "context": "Conformère PubChem calculé CID 68617, inclus dans cette version pour lecture hors ligne. Ni structure expérimentale ni conformation liée à une cible ; sel/formulation clinique potentiellement distincts.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/68617/SDF?record_type=3d",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "SDF record_type=3d : identité CID, coordonnées V2000 et liaisons vérifiées ; 37 atomes, 39 liaisons"
+          }
+        ]
       },
       "physicochemical": {
         "status": "available",
@@ -9635,7 +9824,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-5",
+    "contentVersion": "2026.10.14-7",
     "validationStatus": "documentary-summary"
   },
   {
@@ -10299,13 +10488,20 @@
         ]
       },
       "structure3d": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5284583/SDF?record_type=3d",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Aucun conformère 3D statique conservé dans cette synthèse. Le panneau 3D permet un chargement PubChem sur demande, si disponible."
+        "context": "Conformère PubChem calculé CID 5284583, inclus dans cette version pour lecture hors ligne. Ni structure expérimentale ni conformation liée à une cible ; sel/formulation clinique potentiellement distincts.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5284583/SDF?record_type=3d",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "SDF record_type=3d : identité CID, coordonnées V2000 et liaisons vérifiées ; 26 atomes, 26 liaisons"
+          }
+        ]
       },
       "physicochemical": {
         "status": "available",
@@ -10455,7 +10651,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-5",
+    "contentVersion": "2026.10.14-7",
     "validationStatus": "documentary-summary"
   },
   {
@@ -11034,22 +11230,36 @@
         ]
       },
       "structure2d": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "structures/apixaban.png",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "context": "Représentation 2D calculée PubChem CID 10182969 ; ne garantit ni identité de sel/hydrate ni équivalence de formulation clinique.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10182969/PNG?record_type=2d",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "PubChem CID 10182969 : PNG calculé, record_type=2d"
+          }
+        ]
       },
       "structure3d": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10182969/SDF?record_type=3d",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "context": "Conformère PubChem calculé CID 10182969, inclus dans cette version pour lecture hors ligne. Ni structure expérimentale ni conformation liée à une cible ; sel/formulation clinique potentiellement distincts.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10182969/SDF?record_type=3d",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "SDF record_type=3d : identité CID, coordonnées V2000 et liaisons vérifiées ; 59 atomes, 63 liaisons"
+          }
+        ]
       },
       "physicochemical": {
         "status": "available",
@@ -11132,13 +11342,27 @@
         ]
       },
       "comparisons": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Apixaban : Inhibition directe réversible du facteur Xa, réduisant la génération de thrombine.\nRivaroxaban : Inhibition directe du facteur Xa : diminution de la formation de thrombine et du thrombus.\nComparer ces propriétés documentées ne démontre ni interchangeabilité ni supériorité clinique.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Assemblage pédagogique de deux champs existants et de leurs preuves, sans nouvelle inférence médicale. Lire séparément les indications et restrictions de chaque spécialité.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66086174/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2026-02-13",
+            "locator": "RCP RIVAROXABAN KRKA 20 mg, comprimé pelliculé, rubrique 5.1"
+          }
+        ]
       },
       "mnemonics": {
         "status": "missing",
@@ -11150,7 +11374,7 @@
         "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
       }
     },
-    "contentVersion": "2026.10.14-4",
+    "contentVersion": "2026.10.14-7",
     "validationStatus": "documentary-summary"
   },
   {
@@ -11707,22 +11931,36 @@
         ]
       },
       "structure2d": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "structures/spironolactone.png",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "context": "Représentation 2D calculée PubChem CID 5833 ; ne garantit ni identité de sel/hydrate ni équivalence de formulation clinique.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5833/PNG?record_type=2d",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "PubChem CID 5833 : PNG calculé, record_type=2d"
+          }
+        ]
       },
       "structure3d": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5833/SDF?record_type=3d",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "context": "Conformère PubChem calculé CID 5833, inclus dans cette version pour lecture hors ligne. Ni structure expérimentale ni conformation liée à une cible ; sel/formulation clinique potentiellement distincts.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5833/SDF?record_type=3d",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "SDF record_type=3d : identité CID, coordonnées V2000 et liaisons vérifiées ; 61 atomes, 65 liaisons"
+          }
+        ]
       },
       "physicochemical": {
         "status": "available",
@@ -11812,13 +12050,27 @@
         ]
       },
       "comparisons": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Spironolactone : Antagonisme de l’aldostérone ; épargne potassique.\nFurosémide : Inhibition du cotransport luminal Na+/K+/2Cl− dans la branche ascendante de l’anse de Henlé, augmentant l’excrétion hydro-électrolytique.\nComparer ces propriétés documentées ne démontre ni interchangeabilité ni supériorité clinique.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Assemblage pédagogique de deux champs existants et de leurs preuves, sans nouvelle inférence médicale. Lire séparément les indications et restrictions de chaque spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 5.1"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65449480/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2024-11-22",
+            "locator": "RCP FUROSEMIDE ACCORD 20 mg/2 ml, solution injectable, rubrique 5.1"
+          }
+        ]
       },
       "mnemonics": {
         "status": "missing",
@@ -11830,7 +12082,7 @@
         "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
       }
     },
-    "contentVersion": "2026.10.14-4",
+    "contentVersion": "2026.10.14-7",
     "validationStatus": "documentary-summary"
   }
 ]

@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "license": "Structures calculées PubChem ; attribution aux sources originales",
+  "items": [
+    {
+      "drugId": "bisoprolol",
+      "cid": 2405,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2405/SDF?record_type=3d",
+      "retrievedAt": "2026-10-14T12:22:13.115Z",
+      "assetPath": "conformers/bisoprolol.txt",
+      "sha256": "4a26e2bf2cf13a5d490d5e1358197b6ce17479284bae3fa7a3485f68897e877b",
+      "atoms": 54,
+      "bonds": 54
+    },
+    {
+      "drugId": "ramipril",
+      "cid": 5362129,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5362129/SDF?record_type=3d",
+      "retrievedAt": "2026-10-14T12:22:13.741Z",
+      "assetPath": "conformers/ramipril.txt",
+      "sha256": "f541db3dd3ab68625262e428f7f61c27aa723ae804ccc84607cfb98ecedf169d",
+      "atoms": 62,
+      "bonds": 64
+    },
+    {
+      "drugId": "losartan",
+      "cid": 3961,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3961/SDF?record_type=3d",
+      "retrievedAt": "2026-10-14T12:22:14.769Z",
+      "assetPath": "conformers/losartan.txt",
+      "sha256": "07f23256dbdfbbf45874b788099973bebae98948ccd8d1a652172002f7c2480d",
+      "atoms": 53,
+      "bonds": 56
+    },
+    {
+      "drugId": "furosemide",
+      "cid": 3440,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3440/SDF?record_type=3d",
+      "retrievedAt": "2026-10-14T12:22:15.782Z",
+      "assetPath": "conformers/furosemide.txt",
+      "sha256": "6395ba20dcd2ea7f3b9d8db6e43c6e54da06506d9ce69274c3ef13d454c49112",
+      "atoms": 32,
+      "bonds": 33
+    },
+    {
+      "drugId": "rivaroxaban",
+      "cid": 9875401,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9875401/SDF?record_type=3d",
+      "retrievedAt": "2026-10-14T12:22:16.812Z",
+      "assetPath": "conformers/rivaroxaban.txt",
+      "sha256": "da39ceb45f471654f481b5e2c1046e51a65c7ee8cb25f8b5e6cc2b5689d7ae6e",
+      "atoms": 47,
+      "bonds": 50
+    },
+    {
+      "drugId": "clopidogrel",
+      "cid": 60606,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/60606/SDF?record_type=3d",
+      "retrievedAt": "2026-10-14T12:22:17.838Z",
+      "assetPath": "conformers/clopidogrel.txt",
+      "sha256": "5b35b800af112ecb988f2837af3503a796e10c918d860f2031e364d20dde51a8",
+      "atoms": 37,
+      "bonds": 39
+    },
+    {
+      "drugId": "amoxicilline",
+      "cid": 33613,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/33613/SDF?record_type=3d",
+      "retrievedAt": "2026-10-14T12:22:19.506Z",
+      "assetPath": "conformers/amoxicilline.txt",
+      "sha256": "a762a4836752304ec7b86e0ca2ad4e7cc2a9e17bb5d08534a293a9ba23143442",
+      "atoms": 44,
+      "bonds": 46
+    },
+    {
+      "drugId": "metformine",
+      "cid": 4091,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/4091/SDF?record_type=3d",
+      "retrievedAt": "2026-10-14T12:22:20.935Z",
+      "assetPath": "conformers/metformine.txt",
+      "sha256": "243a1cc4be79ef623c3b2f3c8490ffc5e2f40580abf39c292de6b31e0e447eb7",
+      "atoms": 20,
+      "bonds": 19
+    },
+    {
+      "drugId": "paracetamol",
+      "cid": 1983,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/1983/SDF?record_type=3d",
+      "retrievedAt": "2026-10-14T12:22:21.957Z",
+      "assetPath": "conformers/paracetamol.txt",
+      "sha256": "37bff5d783e39e02077cdaba54f11c5092b6937e6502787a4fbc1a08385e9280",
+      "atoms": 20,
+      "bonds": 20
+    },
+    {
+      "drugId": "ibuprofene",
+      "cid": 3672,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3672/SDF?record_type=3d",
+      "retrievedAt": "2026-10-14T12:22:22.673Z",
+      "assetPath": "conformers/ibuprofene.txt",
+      "sha256": "b0018b2392f58f8589c6902bd2c860ce8d63cf79da5073190a321198816d6337",
+      "atoms": 33,
+      "bonds": 33
+    },
+    {
+      "drugId": "prednisolone",
+      "cid": 5755,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5755/SDF?record_type=3d",
+      "retrievedAt": "2026-10-14T12:22:23.607Z",
+      "assetPath": "conformers/prednisolone.txt",
+      "sha256": "f5df25d5d45ccfe80f1b40be60151490f9be929a114d56b4f33f8db2feb9826c",
+      "atoms": 54,
+      "bonds": 57
+    },
+    {
+      "drugId": "sertraline",
+      "cid": 68617,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/68617/SDF?record_type=3d",
+      "retrievedAt": "2026-10-14T12:22:24.639Z",
+      "assetPath": "conformers/sertraline.txt",
+      "sha256": "f536e593dc88ed723b4d323a49604de0b306237273c5107e6f11b874b9bb1755",
+      "atoms": 37,
+      "bonds": 39
+    },
+    {
+      "drugId": "levetiracetam",
+      "cid": 5284583,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5284583/SDF?record_type=3d",
+      "retrievedAt": "2026-10-14T12:22:25.640Z",
+      "assetPath": "conformers/levetiracetam.txt",
+      "sha256": "1207795e0d4995ebc55d1ca79c2369d349b49f346544dddfa0c82437f76240fd",
+      "atoms": 26,
+      "bonds": 26
+    },
+    {
+      "drugId": "apixaban",
+      "cid": 10182969,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10182969/SDF?record_type=3d",
+      "retrievedAt": "2026-10-14T12:22:26.693Z",
+      "assetPath": "conformers/apixaban.txt",
+      "sha256": "a7872f01bfaedab7661ddb1bc301f3096f68f00c64c0306f63d0be73c6617c14",
+      "atoms": 59,
+      "bonds": 63
+    },
+    {
+      "drugId": "spironolactone",
+      "cid": 5833,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5833/SDF?record_type=3d",
+      "retrievedAt": "2026-10-14T12:22:27.764Z",
+      "assetPath": "conformers/spironolactone.txt",
+      "sha256": "aa9f955abee3abb5c4ed58f8405e721ca0df0b7e4c743c7216dff89fe327e133",
+      "atoms": 61,
+      "bonds": 65
+    }
+  ]
+}

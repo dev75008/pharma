@@ -2,22 +2,22 @@
 
 Version préparée le 14 octobre 2026. L’application est une plateforme personnelle sans backend obligatoire, publiée par GitHub Actions avec routes HashRouter, stockage IndexedDB, PWA et sauvegardes locales. Ce bilan décrit les moteurs livrés et leurs limites ; il ne déclare pas l’ensemble du cahier des charges achevé ou médicalement validé.
 
-Validation : **156 tests unitaires, 122 scénarios Chromium ordinateur/mobile et 60 parcours Firefox/WebKit réussis**. Audits axe sur 17 routes en clair/sombre dans les deux présentations, compilation TypeScript/Vite et contrôles de livraison réussis. Les nouveaux tests couvrent les corrections des exercices, les dates de relecture, le bilan exportable et la reprise des dossiers après confirmation d’écriture. Ces vérifications ne constituent pas un audit général de sécurité ou une validation médicale.
+Validation : **165 tests unitaires, 130 scénarios Chromium ordinateur/mobile et 68 parcours Firefox/WebKit réussis**. Audits axe sur 17 routes en clair/sombre dans les deux présentations, compilation TypeScript/Vite et contrôles de livraison réussis. Les nouveaux tests couvrent les corrections des exercices, les dates de relecture, le bilan exportable et la reprise des dossiers après confirmation d’écriture. Ces vérifications ne constituent pas un audit général de sécurité ou une validation médicale.
 
 | Phase | Résultat livré |
 |---|---|
 | 1 | Architecture React/TypeScript, navigation, recherche globale, mobile, thèmes, PWA |
 | 2 | Bibliothèque, pages de famille et sous-classes, fiches sourcées, favoris, notes, historique, progression réelle, navigation pédagogique liée, comparateur 2–4 et PDF par impression |
-| 3 | Six formats, filtres classe/spécialité/objectif, mélange optionnel conservé à la reprise, entraînements, examens chronométrés, corrections et CSV ; 56 exercices de démonstration |
-| 4 | 52 cartes documentaires, cartes personnelles, six types, SM-2 adapté, échéances et séances |
-| 5 | Dix dossiers progressifs fictifs : neuf de trois étapes et un transversal de cinq, sources, réponses verrouillées, reprise et bilans |
+| 3 | Six formats, filtres classe/spécialité/objectif, mélange optionnel conservé à la reprise, entraînements, examens chronométrés, corrections et CSV ; 65 exercices de démonstration |
+| 4 | 55 cartes documentaires, cartes personnelles, six types, SM-2 adapté, échéances et séances |
+| 5 | Onze dossiers progressifs fictifs : neuf de trois étapes, un AOMI de quatre et un transversal de cinq, sources, réponses verrouillées, reprise et bilans |
 | 6 | Statistiques réelles, planning, objectifs, thèmes, recommandations, séances quotidiennes et sauvegardes JSON validées |
 | 7 | Registre, connecteurs publics documentés, RCP, chimie/propriétés/mécanismes/cibles, bibliographie, identifiants, études et métadonnées américaines OpenFDA ; conformères 3D ; import légal de paquets à la compilation |
 | 8 | Tests unitaires et navigateur, audits automatiques d’accessibilité, compatibilité Firefox/WebKit, vérifications de livraison et déploiement automatique |
 
 ## Périmètre documentaire
 
-15 molécules et 12 familles ; 598 champs disponibles sur 750. Les 152 autres restent absents avec un motif : 111 dans les treize anciennes fiches et 41 dans les deux nouvelles. Les panneaux API enrichissent la consultation sans remplacer ces champs. La bibliothèque peut être étendue par paquets versionnés : fiches/classes/spécialités/systèmes, questions, cartes et dossiers. Les nouveaux exercices utilisent uniquement les champs disponibles avec leurs références ; statuts demo ou documentary-summary maintenus. Aucune génération médicale en ligne ni validation indépendante revendiquée. Les ajouts RCP/CNPM et les 13 premières correspondances ChEMBL sont détaillés dans enrichissement-documentaire-14-octobre.md ; le complément RCP/HAS de la metformine et les pages de classe dans classes-et-strategie.md. Apixaban, spironolactone, deux nouvelles correspondances chimiques, douze exercices contextualisés, trois dossiers et le bilan documentaire figurent dans extension-bibliotheque-et-relecture.md.
+15 molécules et 12 familles ; 628 champs disponibles sur 750. Les 122 autres restent absents avec un motif : 87 dans les treize anciennes fiches et 35 dans les deux nouvelles. Les panneaux API enrichissent la consultation sans remplacer ces champs. La bibliothèque peut être étendue par paquets versionnés : fiches/classes/spécialités/systèmes, questions, cartes et dossiers. Les nouveaux exercices utilisent uniquement les champs disponibles avec leurs références ; statuts demo ou documentary-summary maintenus. Aucune génération médicale en ligne ni validation indépendante revendiquée. Les ajouts RCP/CNPM et les 13 premières correspondances ChEMBL sont détaillés dans enrichissement-documentaire-14-octobre.md ; le complément RCP/HAS de la metformine et les pages de classe dans classes-et-strategie.md. Apixaban, spironolactone, deux nouvelles correspondances chimiques, douze exercices contextualisés, trois dossiers et le bilan documentaire figurent dans extension-bibliotheque-et-relecture.md.
 
 Les dossiers supplémentaires couvrent amoxicilline, rivaroxaban, sertraline et lévétiracétam. Patients, constantes et situations sont explicitement fictifs. Les exercices interrogent mécanisme, sécurité/interaction/surveillance puis cinétique, sans prescription individuelle. Les valeurs de demi-vie gardent leur contexte de spécialité/voie/population ; les effets fréquents du paracétamol injectable ne sont pas généralisés aux formes orales.
 
@@ -44,3 +44,5 @@ La validation médicale indépendante, l’exhaustivité des informations et les
 Documenter les champs encore absents lorsqu’une source pertinente le permet ; étoffer la banque au niveau DFASM2 et faire relire les contenus indépendamment ; contrôler les critères d’accessibilité nécessitant un audit humain et des matériels réels. Les ressources encore indiquées comme liens ne sont pas des bases importées. La présence des moteurs, une couverture chiffrée des champs ou la réussite des tests logiciels ne suffit pas à déclarer ce travail terminé.
 
 Seize rubriques supplémentaires de surveillance, précautions et pharmacologie sont détaillées dans [complement-surveillance.md](complement-surveillance.md). Les rappels de cible ont été rattachés à l’objectif mécanismes et distingués des exercices de sécurité.
+
+La préparation de relecture (146 éléments, empreintes, contrôle de déclarations sans authentification ni élévation de statut), les comparaisons et les ajouts RCP sont détaillés dans [relecture-et-comparaisons.md](relecture-et-comparaisons.md).

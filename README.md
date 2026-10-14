@@ -2,9 +2,11 @@
 
 Plateforme personnelle de révision DFASM2 en français, sans backend obligatoire. Site : https://dev75008.github.io/pharma/ · dépôt : https://github.com/dev75008/pharma.
 
-Version technique du 14 octobre 2026 : **15 fiches / 12 familles, 56 questions, 52 flashcards et 10 dossiers fictifs**. 598 champs documentés sur 750 ; les 152 autres restent « À documenter ». La page Sources expose un bilan filtrable et exportable des rubriques et besoins de relecture. Le cahier des charges documentaire et la validation médicale indépendante ne sont pas intégralement achevés. [Bilan des huit phases, tests et limites](docs/livraison.md), [extension et procédure de relecture](docs/extension-bibliotheque-et-relecture.md).
+Version technique du 14 octobre 2026 : **15 fiches / 12 familles, 65 questions, 55 flashcards et 11 dossiers fictifs**. 628 champs documentés sur 750 ; les 122 autres restent « À documenter ». La page Sources expose un bilan filtrable et exportable des rubriques et besoins de relecture. Le cahier des charges documentaire et la validation médicale indépendante ne sont pas intégralement achevés. [Bilan des huit phases, tests et limites](docs/livraison.md), [extension et procédure de relecture](docs/extension-bibliotheque-et-relecture.md).
 
 ## Installation et lancement
+
+La page **Sources scientifiques** propose aussi l’export d’un dossier de relecture avec sources et empreintes des contenus. Les commandes `npm run review:export` et `npm run review:check -- rapport.json dossier-original.json` préparent et contrôlent une déclaration, sans authentifier le relecteur ni modifier les statuts médicaux. [Procédure et limites](docs/relecture-et-comparaisons.md).
 
 Node.js 24 LTS et npm recommandés.
 

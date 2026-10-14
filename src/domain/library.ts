@@ -7,12 +7,15 @@ const searchIndex=new WeakMap<Drug,{fields:Drug['fields'];version:string;text:st
 function indexedText(drug:Drug) {
  const cached=searchIndex.get(drug);
  if(cached&&cached.fields===drug.fields&&cached.version===drug.contentVersion)return cached.text;
- const text=normalize([drug.fields.dci.value,drugClasses.find(c=>c.id===drug.classId)?.label,...Object.values(drug.fields).filter(f=>f.status==='available').map(f=>f.value)].join(' '));
+ // Le texte comparatif peut décrire une autre molécule : ne pas lui attribuer sa cible dans la recherche.
+ const text=normalize([drug.fields.dci.value,drugClasses.find(c=>c.id===drug.classId)?.label,...Object.entries(drug.fields).filter(([key,f])=>key!=='comparisons'&&f.status==='available').map(([,f])=>f.value)].join(' '));
  searchIndex.set(drug,{fields:drug.fields,version:drug.contentVersion,text});return text;
 }
 export function searchDrugs(drugs:Drug[], filters:LibraryFilters={}, favoriteIds:string[]=[]) {
- const words=normalize(filters.query??'').trim().split(/\s+/).filter(Boolean);
- return drugs.filter(d=>(!filters.classId||d.classId===filters.classId)&&(!filters.specialtyId||d.specialtyIds.includes(filters.specialtyId))&&(!filters.systemId||d.systemIds.includes(filters.systemId))&&(!filters.favoritesOnly||favoriteIds.includes(d.id))&&words.every(word=>indexedText(d).includes(word)));
+ const query=normalize(filters.query??'').trim();const words=query.split(/\s+/).filter(Boolean);
+ // Une DCI exacte vise sa fiche ; une comparaison qui cite cette DCI n'est pas la molécule cherchée.
+ const exact=query?drugs.filter(d=>normalize(d.id)===query||d.fields.dci.status==='available'&&normalize(d.fields.dci.value)===query):[];
+ return (exact.length?exact:drugs).filter(d=>(!filters.classId||d.classId===filters.classId)&&(!filters.specialtyId||d.specialtyIds.includes(filters.specialtyId))&&(!filters.systemId||d.systemIds.includes(filters.systemId))&&(!filters.favoritesOnly||favoriteIds.includes(d.id))&&words.every(word=>indexedText(d).includes(word)));
 }
 
 export function isStale(field:ScientificField, now=new Date(), maxAgeDays=180) { return field.status==='available' && field.evidence.some(e=>now.getTime()-new Date(e.consultedAt+'T00:00:00Z').getTime()>maxAgeDays*86400000); }
