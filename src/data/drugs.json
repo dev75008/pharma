@@ -411,13 +411,20 @@
         "reason": "Champ non documenté dans cette version."
       },
       "clinicalContexts": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "BISOPROLOL TEVA 10 mg : HTA et angor chronique stable. Ce dosage ne doit pas être utilisé pour traiter l’insuffisance cardiaque chronique ; le RCP renvoie à d’autres formulations et à une titration stricte.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle du RCP BISOPROLOL TEVA 10 mg, comprimé pelliculé. Formulation, indication et population de cette référence uniquement ; aucun choix individuel de traitement.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60524826/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-10-20",
+            "locator": "RCP BISOPROLOL TEVA 10 mg, comprimé pelliculé, rubrique(s) 4.1, 4.4"
+          }
+        ]
       },
       "contraindications": {
         "status": "available",
@@ -816,7 +823,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-7",
+    "contentVersion": "2026.10.14-8",
     "validationStatus": "documentary-summary"
   },
   {
@@ -5173,13 +5180,20 @@
         ]
       },
       "therapeuticEffects": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "L’inhibition de la synthèse de paroi peut entraîner lyse et mort bactériennes ; les bêta-lactamases limitent le spectre.",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "context": "Synthèse partielle du RCP AMOXICILLINE BIOGARAN 500 mg/5 ml, poudre pour suspension buvable. Formulation, indication et population de cette référence uniquement ; aucun choix individuel de traitement.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60453197/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-09-18",
+            "locator": "RCP AMOXICILLINE BIOGARAN 500 mg/5 ml, poudre pour suspension buvable, rubrique(s) 5.1"
+          }
+        ]
       },
       "doseResponse": {
         "status": "available",
@@ -5392,13 +5406,20 @@
         "reason": "Champ non documenté dans cette version."
       },
       "clinicalContexts": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Exemples d’indications : angine documentée à streptocoque, sinusite bactérienne aiguë, pneumonie communautaire. Une indication au RCP ne dispense pas des recommandations officielles d’antibiothérapie.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle du RCP AMOXICILLINE BIOGARAN 500 mg/5 ml, poudre pour suspension buvable. Formulation, indication et population de cette référence uniquement ; aucun choix individuel de traitement.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60453197/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-09-18",
+            "locator": "RCP AMOXICILLINE BIOGARAN 500 mg/5 ml, poudre pour suspension buvable, rubrique(s) 4.1"
+          }
+        ]
       },
       "contraindications": {
         "status": "available",
@@ -5797,7 +5818,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-7",
+    "contentVersion": "2026.10.14-8",
     "validationStatus": "documentary-summary"
   },
   {
@@ -7732,13 +7753,20 @@
         ]
       },
       "cyp": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "Substrat du CYP2C9 ; ses inhibiteurs peuvent augmenter l’exposition à l’ibuprofène.",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
+        "context": "Synthèse partielle du RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé. Formulation, indication et population de cette référence uniquement ; aucun choix individuel de traitement.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69932537/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-07-17",
+            "locator": "RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé, rubrique(s) 4.5"
+          }
+        ]
       },
       "activeMetabolites": {
         "status": "available",
@@ -7837,22 +7865,36 @@
         ]
       },
       "therapeuticStrategy": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Cadre du RCP : traitement symptomatique court, dose efficace minimale et durée minimale. Ce résumé ne définit pas la place dans toutes les recommandations françaises.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle du RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé. Formulation, indication et population de cette référence uniquement ; aucun choix individuel de traitement.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69932537/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-07-17",
+            "locator": "RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé, rubrique(s) 4.1–4.2"
+          }
+        ]
       },
       "clinicalContexts": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Douleurs légères/modérées ou fièvre, traitement court ; cette spécialité 200 mg concerne les adultes et adolescents d’au moins 12 ans et 40 kg.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle du RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé. Formulation, indication et population de cette référence uniquement ; aucun choix individuel de traitement.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69932537/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-07-17",
+            "locator": "RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé, rubrique(s) 4.1"
+          }
+        ]
       },
       "contraindications": {
         "status": "available",
@@ -7935,22 +7977,36 @@
         ]
       },
       "clinicalMonitoring": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Dans un contexte infectieux, surveiller l’évolution : douleur et fièvre peuvent être masquées. Persistance ou aggravation des symptômes : consultation médicale.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle du RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé. Formulation, indication et population de cette référence uniquement ; aucun choix individuel de traitement.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69932537/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-07-17",
+            "locator": "RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé, rubrique(s) 4.4"
+          }
+        ]
       },
       "biologicalMonitoring": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Fonction rénale/hépatique selon l’atteinte correspondante ; kaliémie avec IEC ou diurétique épargneur de potassium. Pas de calendrier universel déduit.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle du RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé. Formulation, indication et population de cette référence uniquement ; aucun choix individuel de traitement.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69932537/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-07-17",
+            "locator": "RCP IBUPROFENE ZENTIVA CONSEIL 200 mg, comprimé pelliculé, rubrique(s) 4.2, 4.5"
+          }
+        ]
       },
       "pregnancy": {
         "status": "available",
@@ -8230,7 +8286,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-7",
+    "contentVersion": "2026.10.14-8",
     "validationStatus": "documentary-summary"
   },
   {
@@ -8599,13 +8655,20 @@
         "reason": "Champ non documenté dans cette version."
       },
       "clinicalContexts": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Exemples d’indications de la spécialité : poussées de lupus systémique ou de maladie de Crohn ; ne pas généraliser à toute situation inflammatoire.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle du RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent. Formulation, indication et population de cette référence uniquement ; aucun choix individuel de traitement.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69200035/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2024-03-19",
+            "locator": "RCP PREDNISOLONE TEVA 5 mg, comprimé effervescent, rubrique(s) 4.1"
+          }
+        ]
       },
       "contraindications": {
         "status": "available",
@@ -9004,7 +9067,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-7",
+    "contentVersion": "2026.10.14-8",
     "validationStatus": "documentary-summary"
   },
   {
@@ -9028,7 +9091,7 @@
         "value": "Sertraline",
         "verification": "source-checked",
         "scope": "molecule",
-        "context": "Caractéristique de la molécule décrite dans le RCP consulté.",
+        "context": "Caractéristique de la molécule décrite dans le RCP consulté. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9044,7 +9107,7 @@
         "value": "Antidépresseurs",
         "verification": "source-checked",
         "scope": "molecule",
-        "context": "Caractéristique de la molécule décrite dans le RCP consulté.",
+        "context": "Caractéristique de la molécule décrite dans le RCP consulté. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9060,7 +9123,7 @@
         "value": "ISRS",
         "verification": "source-checked",
         "scope": "molecule",
-        "context": "Caractéristique de la molécule décrite dans le RCP consulté.",
+        "context": "Caractéristique de la molécule décrite dans le RCP consulté. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9076,7 +9139,7 @@
         "value": "N06AB06",
         "verification": "source-checked",
         "scope": "molecule",
-        "context": "Caractéristique de la molécule décrite dans le RCP consulté.",
+        "context": "Caractéristique de la molécule décrite dans le RCP consulté. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9092,7 +9155,7 @@
         "value": "SERTRALINE VIATRIS GENERIQUES 25 mg, gélule",
         "verification": "source-checked",
         "scope": "specialty",
-        "context": "SERTRALINE VIATRIS GENERIQUES 25 mg, gélule",
+        "context": "SERTRALINE VIATRIS GENERIQUES 25 mg, gélule Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9108,7 +9171,7 @@
         "value": "Gélule",
         "verification": "source-checked",
         "scope": "specialty",
-        "context": "SERTRALINE VIATRIS GENERIQUES 25 mg, gélule",
+        "context": "SERTRALINE VIATRIS GENERIQUES 25 mg, gélule Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9124,7 +9187,7 @@
         "value": "Orale ; gélule pendant les repas.",
         "verification": "source-checked",
         "scope": "specialty",
-        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation.",
+        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9140,7 +9203,7 @@
         "value": "Recapture neuronale de la sérotonine (5-HT)",
         "verification": "source-checked",
         "scope": "molecule",
-        "context": "Caractéristique de la molécule décrite dans le RCP consulté.",
+        "context": "Caractéristique de la molécule décrite dans le RCP consulté. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9156,7 +9219,7 @@
         "value": "Inhibition sélective de la recapture neuronale de la sérotonine.",
         "verification": "source-checked",
         "scope": "molecule",
-        "context": "Caractéristique de la molécule décrite dans le RCP consulté.",
+        "context": "Caractéristique de la molécule décrite dans le RCP consulté. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9172,7 +9235,7 @@
         "value": "Inhibition de la recapture",
         "verification": "source-checked",
         "scope": "molecule",
-        "context": "Caractéristique de la molécule décrite dans le RCP consulté.",
+        "context": "Caractéristique de la molécule décrite dans le RCP consulté. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9188,7 +9251,7 @@
         "value": "Aux doses cliniques, blocage de la capture de sérotonine dans les plaquettes humaines. Les observations animales restent distinctes des effets cliniques.",
         "verification": "source-checked",
         "scope": "context",
-        "context": "Synthèse originale non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte et formulation conservés.",
+        "context": "Synthèse originale non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte et formulation conservés. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9222,7 +9285,7 @@
         "value": "Pic plasmatique après 4,5–8,4 h.",
         "verification": "source-checked",
         "scope": "specialty",
-        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation.",
+        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9238,7 +9301,7 @@
         "value": "Aliments augmentant la biodisponibilité de ces gélules.",
         "verification": "source-checked",
         "scope": "specialty",
-        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation.",
+        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9254,7 +9317,7 @@
         "value": "Le RCP décrit un grand volume de distribution dans le contexte du surdosage, sans chiffre fourni ici. Ne pas transformer cette description en estimation numérique.",
         "verification": "source-checked",
         "scope": "context",
-        "context": "Synthèse originale non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte et formulation conservés.",
+        "context": "Synthèse originale non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte et formulation conservés. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9270,7 +9333,7 @@
         "value": "Environ 98 %.",
         "verification": "source-checked",
         "scope": "context",
-        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation.",
+        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9286,7 +9349,7 @@
         "value": "Premier passage hépatique important.",
         "verification": "source-checked",
         "scope": "context",
-        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation.",
+        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9302,7 +9365,7 @@
         "value": "Voies multiples dont CYP3A4, CYP2C19 et CYP2B6.",
         "verification": "source-checked",
         "scope": "context",
-        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation.",
+        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9327,7 +9390,7 @@
         "value": "Environ 26 h ; N-desméthylsertraline : 62–104 h.",
         "verification": "source-checked",
         "scope": "context",
-        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation.",
+        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9343,7 +9406,7 @@
         "value": "Métabolites urinaires et fécaux en quantités comparables.",
         "verification": "source-checked",
         "scope": "context",
-        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation.",
+        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9359,7 +9422,7 @@
         "value": "Pas d’adaptation selon l’insuffisance rénale dans ce RCP.",
         "verification": "source-checked",
         "scope": "context",
-        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation.",
+        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9375,7 +9438,7 @@
         "value": "Doses réduites ou espacées ; ne pas utiliser en atteinte sévère.",
         "verification": "source-checked",
         "scope": "context",
-        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation.",
+        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9391,7 +9454,7 @@
         "value": "Sélection : épisodes dépressifs majeurs et prévention des récidives ; autres indications et limites d’âge au RCP.",
         "verification": "source-checked",
         "scope": "specialty",
-        "context": "SERTRALINE VIATRIS GENERIQUES 25 mg, gélule",
+        "context": "SERTRALINE VIATRIS GENERIQUES 25 mg, gélule Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9416,7 +9479,7 @@
         "value": "Exemple documentaire : TOC chez l’adulte et chez l’enfant/adolescent de 6 à 17 ans. Cette autorisation pédiatrique ne couvre pas toutes les indications adultes.",
         "verification": "source-checked",
         "scope": "context",
-        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule. Conserver formulation, indication et circonstances décrites ; aucune fréquence universelle de contrôle ni prescription individuelle.",
+        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule. Conserver formulation, indication et circonstances décrites ; aucune fréquence universelle de contrôle ni prescription individuelle. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9432,7 +9495,7 @@
         "value": "Notamment IMAO irréversibles et pimozide associés.",
         "verification": "source-checked",
         "scope": "specialty",
-        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation.",
+        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9448,7 +9511,7 @@
         "value": "Nausées les plus fréquentes ; troubles sexuels rapportés.",
         "verification": "source-checked",
         "scope": "specialty",
-        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation.",
+        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9464,7 +9527,7 @@
         "value": "Syndrome sérotoninergique et manifestations suicidaires : vigilance requise.",
         "verification": "source-checked",
         "scope": "specialty",
-        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation.",
+        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9480,7 +9543,7 @@
         "value": "Autres sérotoninergiques : syndrome sérotoninergique ; hyponatrémiants : risque accru.",
         "verification": "source-checked",
         "scope": "context",
-        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation.",
+        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9496,7 +9559,7 @@
         "value": "Risque d’hyponatrémie accru chez le sujet âgé, sous diurétique ou en déplétion volémique. Éviter l’arrêt brutal ; diminution progressive décrite au RCP.",
         "verification": "source-checked",
         "scope": "context",
-        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule. Conserver formulation, indication et circonstances décrites ; aucune fréquence universelle de contrôle ni prescription individuelle.",
+        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule. Conserver formulation, indication et circonstances décrites ; aucune fréquence universelle de contrôle ni prescription individuelle. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9512,7 +9575,7 @@
         "value": "Surveiller aggravation clinique, suicidalité et changements comportementaux.",
         "verification": "source-checked",
         "scope": "context",
-        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation.",
+        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9528,7 +9591,7 @@
         "value": "Contexte diabétique : surveiller le contrôle glycémique. Risque d’hyponatrémie à considérer chez les personnes exposées ; aucun calendrier systématique de natrémie fixé ici.",
         "verification": "source-checked",
         "scope": "context",
-        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule. Conserver formulation, indication et circonstances décrites ; aucune fréquence universelle de contrôle ni prescription individuelle.",
+        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule. Conserver formulation, indication et circonstances décrites ; aucune fréquence universelle de contrôle ni prescription individuelle. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9544,7 +9607,7 @@
         "value": "Non recommandée sauf bénéfice supérieur au risque ; surveillance néonatale.",
         "verification": "source-checked",
         "scope": "specialty",
-        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation.",
+        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9560,7 +9623,7 @@
         "value": "Déconseillée sauf évaluation médicale favorable.",
         "verification": "source-checked",
         "scope": "specialty",
-        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation.",
+        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9576,7 +9639,7 @@
         "value": "Pas d’accumulation significative observée dans les études.",
         "verification": "source-checked",
         "scope": "context",
-        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation.",
+        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9592,7 +9655,7 @@
         "value": "Demi-vie et exposition augmentées.",
         "verification": "source-checked",
         "scope": "context",
-        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation.",
+        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9743,7 +9806,7 @@
         "value": "1. Antidépresseurs\n2. Environ 26 h ; N-desméthylsertraline : 62–104 h.\n3. Notamment IMAO irréversibles et pimozide associés.\n4. Autres sérotoninergiques : syndrome sérotoninergique ; hyponatrémiants : risque accru.\n5. Non recommandée sauf bénéfice supérieur au risque ; surveillance néonatale.",
         "verification": "source-checked",
         "scope": "context",
-        "context": "Sélection pédagogique originale de cinq informations documentées (classe, demi-vie, contre-indications, interactions, grossesse). Non exhaustive et sans validation indépendante ni garantie de conformité à un barème d’examen.",
+        "context": "Sélection pédagogique originale de cinq informations documentées (classe, demi-vie, contre-indications, interactions, grossesse). Non exhaustive et sans validation indépendante ni garantie de conformité à un barème d’examen. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9787,7 +9850,7 @@
         "value": "Distinguer la demi-vie de la sertraline et celle de la N-desméthylsertraline. Les interactions sérotoninergiques restent à vérifier même si la recapture est sélective.",
         "verification": "source-checked",
         "scope": "context",
-        "context": "Aide pédagogique originale fondée sur les champs référencés. Ni liste officielle de pièges d’examen, ni validation médicale indépendante.",
+        "context": "Aide pédagogique originale fondée sur les champs référencés. Ni liste officielle de pièges d’examen, ni validation médicale indépendante. Référence de spécialité historique : autorisation abrogée le 30/09/2024 ; ne pas en déduire un statut pour toute la DCI.",
         "evidence": [
           {
             "sourceId": "bdpm",
@@ -9824,8 +9887,24 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-7",
-    "validationStatus": "documentary-summary"
+    "contentVersion": "2026.10.14-8",
+    "validationStatus": "documentary-summary",
+    "referenceNotice": {
+      "status": "available",
+      "scope": "specialty",
+      "verification": "source-checked",
+      "value": "Référence historique : autorisation de SERTRALINE VIATRIS GENERIQUES 25 mg, gélule abrogée le 30 septembre 2024.",
+      "context": "Le RCP conservé sert à une lecture documentaire. Cela ne signifie pas que toutes les spécialités de sertraline sont retirées ; vérifier une spécialité actuelle dans le catalogue.",
+      "evidence": [
+        {
+          "sourceId": "bdpm",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63288007/extrait",
+          "consultedAt": "2026-10-14",
+          "sourceUpdatedAt": null,
+          "locator": "Fiche info : statut de l’autorisation « Abrogée le 30-09-2024 » ; distinct de la date du RCP (19/06/2023)."
+        }
+      ]
+    }
   },
   {
     "id": "levetiracetam",
@@ -10239,13 +10318,20 @@
         "reason": "Champ non documenté dans cette version."
       },
       "clinicalContexts": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Monothérapie : crises partielles avec ou sans généralisation secondaire, épilepsie nouvellement diagnostiquée, à partir de 16 ans. Les indications en association ont d’autres limites d’âge et de type de crise.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle du RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable. Formulation, indication et population de cette référence uniquement ; aucun choix individuel de traitement.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61610687/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-12-11",
+            "locator": "RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable, rubrique(s) 4.1"
+          }
+        ]
       },
       "contraindications": {
         "status": "available",
@@ -10651,7 +10737,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-7",
+    "contentVersion": "2026.10.14-8",
     "validationStatus": "documentary-summary"
   },
   {
@@ -11547,22 +11633,36 @@
         ]
       },
       "physiologicalEffects": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "Élimination accrue de sodium et d’eau, avec épargne potassique.",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable. Formulation, indication et population de cette référence uniquement ; aucun choix individuel de traitement.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable, rubrique(s) 5.1 ; notice, indications"
+          }
+        ]
       },
       "therapeuticEffects": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Effet antiminéralocorticoïde maximal vers 24 h ; effet diurétique prolongé de 24 à 48 h. Ces durées ne sont pas une demi-vie plasmatique.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable. Formulation, indication et population de cette référence uniquement ; aucun choix individuel de traitement.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable, rubrique(s) 5.1–5.2"
+          }
+        ]
       },
       "doseResponse": {
         "status": "missing",
@@ -11599,13 +11699,20 @@
         "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
       },
       "distribution": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Passage placentaire et présence possible dans le lait de la molécule ou de ses métabolites. Aucun volume de distribution fourni.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable. Formulation, indication et population de cette référence uniquement ; aucun choix individuel de traitement.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable, rubrique(s) 5.2"
+          }
+        ]
       },
       "proteinBinding": {
         "status": "missing",
@@ -11726,13 +11833,20 @@
         "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
       },
       "clinicalContexts": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Exemple : adulte avec insuffisance cardiaque NYHA III/IV, FEVG ≤ 35 %, dans l’association décrite au RCP.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable. Formulation, indication et population de cette référence uniquement ; aucun choix individuel de traitement.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable, rubrique(s) 4.1"
+          }
+        ]
       },
       "contraindications": {
         "status": "available",
@@ -11799,22 +11913,36 @@
         ]
       },
       "precautions": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Hyperkaliémie : risque majoré par âge, diabète, atteinte rénale, associations hyperkaliémiantes ou événement intercurrent.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable. Formulation, indication et population de cette référence uniquement ; aucun choix individuel de traitement.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable, rubrique(s) 4.4"
+          }
+        ]
       },
       "clinicalMonitoring": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Surveillance périodique de l’état volumétrique : diurèse excessive, déshydratation et hypotension à considérer.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable. Formulation, indication et population de cette référence uniquement ; aucun choix individuel de traitement.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable, rubrique(s) 4.4"
+          }
+        ]
       },
       "biologicalMonitoring": {
         "status": "available",
@@ -11865,22 +11993,36 @@
         ]
       },
       "renalContext": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Contre-indication rénale sévère/aiguë ; chez l’enfant, également modérée. La créatininémie isolée peut être faussement rassurante.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable. Formulation, indication et population de cette référence uniquement ; aucun choix individuel de traitement.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable, rubrique(s) 4.3–4.4"
+          }
+        ]
       },
       "hepaticContext": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "Stade terminal hépatique : contre-indication. Cirrhose avec natrémie < 125 mmol/L : usage généralement déconseillé.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable. Formulation, indication et population de cette référence uniquement ; aucun choix individuel de traitement.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable, rubrique(s) 4.3"
+          }
+        ]
       },
       "formula": {
         "status": "available",
@@ -12018,13 +12160,20 @@
         ]
       },
       "essentials": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+        "status": "available",
+        "value": "1. Antagoniste de l’aldostérone.\n2. Épargne potassique.\n3. Hyperkaliémie possible.\n4. Surveiller kaliémie et fonction rénale.\n5. Respecter indication et restrictions de population.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable. Formulation, indication et population de cette référence uniquement ; aucun choix individuel de traitement.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable, rubrique(s) 4.1, 4.3–4.4, 5.1"
+          }
+        ]
       },
       "examTraps": {
         "status": "available",
@@ -12082,7 +12231,7 @@
         "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
       }
     },
-    "contentVersion": "2026.10.14-7",
+    "contentVersion": "2026.10.14-8",
     "validationStatus": "documentary-summary"
   }
 ]

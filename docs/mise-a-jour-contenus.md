@@ -16,4 +16,6 @@ Révision du 14 octobre : voir `enrichissement-documentaire-14-octobre.md`. Le s
 Après modification des questions, incrémenter `questionContentVersion`. Le mélange optionnel enregistre l’ordre et les bonnes réponses dans la copie de séance ; les séances anciennes conservent leurs propres instantanés. Les contenus de démonstration ne deviennent pas validés par la réussite des tests logiciels.
 # Bilan visible des données
 
+Le [lot prioritaire](priorite-documentaire.md) ajoute dix-neuf rubriques et signale une référence historique abrogée. Vérifier aussi le statut de la spécialité au moment de consulter le RCP : sa présence en ligne n’établit pas une autorisation actuelle. Le statut administratif, la date de consultation et la date de mise à jour du RCP sont des informations distinctes.
+
 La page Sources permet de filtrer et exporter les champs absents, leur motif et les besoins de relecture. Le seuil de 180 jours porte sur la consultation de chaque référence, sans prétendre qu’un document a changé. Le détail de la révision apixaban/spironolactone figure dans [extension-bibliotheque-et-relecture.md](extension-bibliotheque-et-relecture.md). Les scripts datés sont une trace éditoriale, pas un remplacement automatique des sources.

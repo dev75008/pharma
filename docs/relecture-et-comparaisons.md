@@ -1,6 +1,6 @@
 # Comparaisons et préparation de relecture — 14 octobre 2026
 
-Quinze rubriques auparavant absentes ont été documentées dans le premier lot : sept synthèses RCP, six comparaisons issues de champs existants et deux représentations 2D PubChem. Le complément [structures-3d.md](structures-3d.md) documente ensuite quinze conformères calculés inclus. État courant du corpus : 628 champs sur 750 ; 122 restent absents. Les limites ou mécanismes non établis ne sont pas remplacés par des suppositions.
+Quinze rubriques auparavant absentes ont été documentées dans le premier lot : sept synthèses RCP, six comparaisons issues de champs existants et deux représentations 2D PubChem. Le complément [structures-3d.md](structures-3d.md) documente ensuite quinze conformères calculés inclus : le corpus atteignait alors 628 champs sur 750. Le [lot prioritaire](priorite-documentaire.md) porte désormais ce bilan à 647/750, avec 103 rubriques absentes. Les limites ou mécanismes non établis ne sont pas remplacés par des suppositions.
 
 ## Documentation effectivement consultée
 
@@ -18,7 +18,7 @@ Neuf nouveaux exercices, trois cartes comparatives et un dossier AOMI à quatre 
 
 ## Dossier de relecture
 
-La page Sources exporte un JSON comprenant les 146 éléments du corpus (15 fiches, 65 questions, 55 cartes, 11 dossiers), leurs sources, versions et empreintes SHA-256. Les notes, résultats, favoris et cartes personnelles sont exclus. L’empreinte identifie un contenu ; elle ne prouve ni véracité médicale, ni identité du rédacteur, ni date authentifiée.
+La page Sources exporte un JSON comprenant les 159 éléments actuels du corpus (15 fiches, 73 questions, 60 cartes, 11 dossiers), leurs sources, versions et empreintes SHA-256. Les notes, résultats, favoris et cartes personnelles sont exclus. L’empreinte identifie un contenu ; elle ne prouve ni véracité médicale, ni identité du rédacteur, ni date authentifiée. Les réserves documentaires présentes dans les fiches font partie du contenu soumis à l’empreinte.
 
 Le script local offre les mêmes fonctions :
 
