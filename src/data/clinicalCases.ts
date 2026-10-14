@@ -1,4 +1,5 @@
 import { manualContent,withImported } from './manualContent';
+import {additionalCases} from './additionalCases';
 import {clinicalCaseSchema,type ProgressiveCase} from '../domain/clinicalCases';
 import {questions} from './questions';
 import {drugs} from './drugs';
@@ -39,4 +40,4 @@ bank.push({id:'polymedication-rein-hemostase',title:'Polymédication : rein, dia
  {id:'t4',title:'Choisir un concept de surveillance',information:'Le dossier demande si un INR peut être utilisé comme pour les AVK. Il ne demande pas de calculer un niveau d’anticoagulation ni une adaptation de dose.',question:reuse('rivaroxaban-inr-surveillance','case-transversal-inr')},
  {id:'t5',title:'Revenir au suivi rénal',information:'La dernière étape porte sur les paramètres à contrôler dans le RCP de metformine. Aucune fréquence individualisée ou décision de prescription n’est proposée.',question:{...metMonitoring,id:'case-transversal-suivi'}}
  ],evidence:[...evidence('metformine','contraindications'),...combinedBleeding.evidence,...evidence('rivaroxaban','biologicalMonitoring')],validationStatus:'demo'});
-export const clinicalCases=withImported(bank,manualContent.cases).map(c=>clinicalCaseSchema.parse(c));
+export const clinicalCases=withImported([...bank,...additionalCases],manualContent.cases).map(c=>clinicalCaseSchema.parse(c));

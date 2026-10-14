@@ -1,0 +1,13 @@
+import {test,expect} from '@playwright/test';
+test('bilan réel filtrable, export et lien vers une nouvelle fiche',async({page})=>{
+ await page.goto('/#/sources');const panel=page.getByRole('region',{name:'Couverture et relecture documentaire'});
+ await expect(panel).toContainText('pour 15 molécules');await expect(panel).toContainText('0 question(s) avec statut de relecture indépendante');
+ await panel.getByLabel('Famille du bilan').selectOption('anticoagulants');await expect(panel.getByRole('status')).toHaveText('2 fiche(s) dans le bilan');
+ const downloadPromise=page.waitForEvent('download');await panel.getByRole('button',{name:'Exporter le bilan documentaire'}).click();const download=await downloadPromise;expect(download.suggestedFilename()).toMatch(/^medrevision-bilan-documentaire-\d{4}-\d{2}-\d{2}\.json$/);
+ await panel.getByRole('link',{name:'Apixaban',exact:true}).click();await expect(page.getByRole('heading',{level:1})).toHaveText('Apixaban');await expect(page.getByText('ELIQUIS 5 mg, comprimé pelliculé').first()).toBeVisible();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});
+test('nouveau dossier : progression et deux conditions de reprise conservées',async({page})=>{
+ await page.goto('/#/cas-cliniques');await page.getByRole('button',{name:'Commencer Metformine : contraste iodé et réévaluation'}).click();
+ await expect(page.getByText(/L’examen fictif est passé depuis/)).toHaveCount(0);await page.getByRole('radio',{name:'Atteinte rénale, accumulation, risque d’acidose lactique'}).check();await page.getByRole('button',{name:'Valider l’étape et corriger'}).click();await page.getByRole('button',{name:'Découvrir l’étape suivante'}).click();
+ await page.getByRole('checkbox',{name:'Délai minimum de 48 h'}).check();await page.getByRole('checkbox',{name:'Fonction rénale réévaluée et stable'}).check();await page.getByRole('button',{name:'Valider l’étape et corriger'}).click();await expect(page.getByRole('status')).toHaveText('Réponse verrouillée et enregistrée');await page.reload();await expect(page.getByRole('checkbox',{name:'Fonction rénale réévaluée et stable'})).toBeChecked();await page.getByRole('button',{name:'Découvrir l’étape suivante'}).click();await page.getByRole('checkbox',{name:'Altération de la fonction rénale'}).check();await page.getByRole('checkbox',{name:'Accumulation et acidose lactique'}).check();await page.getByRole('button',{name:'Valider l’étape et corriger'}).click();await page.getByRole('button',{name:'Terminer le dossier'}).click();await expect(page.getByText('3 / 3',{exact:true})).toBeVisible();
+});

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "license": "PubChem ; ChEMBL CC BY-SA 3.0",
+  "snapshots": [
+    {
+      "drugId": "apixaban",
+      "properties": {
+        "CID": 10182969,
+        "MolecularFormula": "C25H25N5O4",
+        "MolecularWeight": "459.5",
+        "InChIKey": "QNZCBYKSOIHPEH-UHFFFAOYSA-N",
+        "SMILES": "COC1=CC=C(C=C1)N2C3=C(CCN(C3=O)C4=CC=C(C=C4)N5CCCCC5=O)C(=N2)C(=O)N",
+        "XLogP": 2.2,
+        "TPSA": 111
+      },
+      "match": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-14T11:15:36.891Z",
+        "expiresAt": 1792062936891,
+        "sourceUpdatedAt": null,
+        "key": "chembl:QNZCBYKSOIHPEH-UHFFFAOYSA-N",
+        "sourceId": "chembl",
+        "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=QNZCBYKSOIHPEH-UHFFFAOYSA-N&limit=5",
+        "inchiKey": "QNZCBYKSOIHPEH-UHFFFAOYSA-N",
+        "molecule": {
+          "molecule_chembl_id": "CHEMBL231779",
+          "pref_name": "APIXABAN",
+          "molecule_structures": {
+            "standard_inchi_key": "QNZCBYKSOIHPEH-UHFFFAOYSA-N"
+          },
+          "molecule_hierarchy": {
+            "parent_chembl_id": "CHEMBL231779"
+          }
+        }
+      }
+    },
+    {
+      "drugId": "spironolactone",
+      "properties": {
+        "CID": 5833,
+        "MolecularFormula": "C24H32O4S",
+        "MolecularWeight": "416.6",
+        "InChIKey": "LXMSZDCAJNLERA-ZHYRCANASA-N",
+        "SMILES": "CC(=O)S[C@@H]1CC2=CC(=O)CC[C@@]2([C@@H]3[C@@H]1[C@@H]4CC[C@]5([C@]4(CC3)C)CCC(=O)O5)C",
+        "XLogP": 2.9,
+        "TPSA": 85.7
+      },
+      "match": {
+        "schemaVersion": 1,
+        "retrievedAt": "2026-10-14T11:15:37.840Z",
+        "expiresAt": 1792062937840,
+        "sourceUpdatedAt": null,
+        "key": "chembl:LXMSZDCAJNLERA-ZHYRCANASA-N",
+        "sourceId": "chembl",
+        "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=LXMSZDCAJNLERA-ZHYRCANASA-N&limit=5",
+        "inchiKey": "LXMSZDCAJNLERA-ZHYRCANASA-N",
+        "molecule": {
+          "molecule_chembl_id": "CHEMBL1393",
+          "pref_name": "SPIRONOLACTONE",
+          "molecule_structures": {
+            "standard_inchi_key": "LXMSZDCAJNLERA-ZHYRCANASA-N"
+          },
+          "molecule_hierarchy": {
+            "parent_chembl_id": "CHEMBL1393"
+          }
+        }
+      }
+    }
+  ]
+}

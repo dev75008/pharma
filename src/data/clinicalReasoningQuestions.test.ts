@@ -1,0 +1,9 @@
+import {expect,it} from 'vitest';
+import {clinicalReasoningQuestions} from './clinicalReasoningQuestions';
+import {additionalCases} from './additionalCases';
+import {parseQuestions,scoreAnswer} from '../domain/assessment';
+import {clinicalCaseSchema} from '../domain/clinicalCases';
+import {drugs} from './drugs';
+it('les exercices contextualisés ont des corrections déterministes et restent non validés',()=>{parseQuestions(clinicalReasoningQuestions);for(const q of clinicalReasoningQuestions){expect(q.validationStatus).toBe('demo');const correct=q.options.filter(o=>o.correct).map(o=>o.id);expect(scoreAnswer(q,{questionId:q.id,selectedOptionIds:correct},'exact').score).toBe(1);const wrong=q.options.filter(o=>!o.correct).map(o=>o.id).slice(0,1);expect(scoreAnswer(q,{questionId:q.id,selectedOptionIds:wrong},'exact').score).toBe(0);expect(q.evidence.length).toBeGreaterThan(0);}});
+it('les nouveaux dossiers sont fictifs et gardent les preuves de toutes les étapes',()=>{for(const c of additionalCases){clinicalCaseSchema.parse(c);expect(c.fictional).toBe(true);expect(c.evidence).toEqual(c.steps.flatMap(s=>s.question.evidence));expect(c.steps.map(s=>s.question.id).length).toBe(new Set(c.steps.map(s=>s.question.id)).size);}});
+it('la reprise après contraste garde le délai ET la condition rénale dans une preuve fraîche',()=>{const q=clinicalReasoningQuestions.find(q=>q.id==='metformine-contraste-reprise')!;expect(q.options.filter(o=>o.correct).map(o=>o.text)).toEqual(['Délai minimum de 48 h','Fonction rénale réévaluée et stable']);expect(q.evidence[0].locator).toContain('4.4');expect(q.evidence[0].consultedAt).toBe('2026-10-14');const met=drugs.find(d=>d.id==='metformine')!;expect(met.fields.precautions.value).toContain('48 h');expect(met.fields.precautions.value).toContain('réévaluation rénale stable');});

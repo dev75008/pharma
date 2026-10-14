@@ -12,3 +12,6 @@ Un adaptateur réseau réglementaire Giygas/BDPM est actif (voir `api-medicament
 Révision du 14 octobre : voir `enrichissement-documentaire-14-octobre.md`. Le script `refresh-chemical-identifiers.ts` relit PubChem/ChEMBL avec une correspondance structurale exacte et conserve un instantané ; il ne met pas à jour la pharmacologie clinique. Le script `documentary-additions.ts` est un historique éditorial daté, pas un actualiseur de RCP : ne pas l’appliquer aveuglément à une révision ultérieure.
 
 Après modification des questions, incrémenter `questionContentVersion`. Le mélange optionnel enregistre l’ordre et les bonnes réponses dans la copie de séance ; les séances anciennes conservent leurs propres instantanés. Les contenus de démonstration ne deviennent pas validés par la réussite des tests logiciels.
+# Bilan visible des données
+
+La page Sources permet de filtrer et exporter les champs absents, leur motif et les besoins de relecture. Le seuil de 180 jours porte sur la consultation de chaque référence, sans prétendre qu’un document a changé. Le détail de la révision apixaban/spironolactone figure dans [extension-bibliotheque-et-relecture.md](extension-bibliotheque-et-relecture.md). Les scripts datés sont une trace éditoriale, pas un remplacement automatique des sources.

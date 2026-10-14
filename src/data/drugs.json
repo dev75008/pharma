@@ -566,8 +566,8 @@
       "renalContext": {
         "status": "available",
         "value": "Dans ce RCP, une clairance de créatinine inférieure à 20 mL/min impose un plafond de 10 mg/j. Consulter les modalités de titration et de surveillance.",
-        "scope": "context",
         "verification": "source-checked",
+        "scope": "context",
         "context": "Synthèse non exhaustive du RCP de BISOPROLOL TEVA 10 mg, comprimé pelliculé. Le contexte clinique et la formulation doivent être conservés.",
         "evidence": [
           {
@@ -582,8 +582,8 @@
       "hepaticContext": {
         "status": "available",
         "value": "Une insuffisance hépatique sévère limite la dose à 10 mg/j dans cette spécialité.",
-        "scope": "context",
         "verification": "source-checked",
+        "scope": "context",
         "context": "Synthèse non exhaustive du RCP de BISOPROLOL TEVA 10 mg, comprimé pelliculé. Le contexte clinique et la formulation doivent être conservés.",
         "evidence": [
           {
@@ -991,8 +991,8 @@
       "physiologicalEffects": {
         "status": "available",
         "value": "Vasodilatation et diminution de la sécrétion d’aldostérone, consécutives à la baisse de formation d’angiotensine II et à la moindre dégradation de bradykinine.",
-        "scope": "molecule",
         "verification": "source-checked",
+        "scope": "molecule",
         "context": "Synthèse non exhaustive du RCP de RAMIPRIL BIOGARAN 5 mg, comprimé sécable. Le contexte clinique et la formulation doivent être conservés.",
         "evidence": [
           {
@@ -1007,8 +1007,8 @@
       "therapeuticEffects": {
         "status": "available",
         "value": "Réduction de la pression artérielle chez le patient hypertendu, sans augmentation compensatrice de la fréquence cardiaque.",
-        "scope": "specialty",
         "verification": "source-checked",
+        "scope": "specialty",
         "context": "Synthèse non exhaustive du RCP de RAMIPRIL BIOGARAN 5 mg, comprimé sécable. Le contexte clinique et la formulation doivent être conservés.",
         "evidence": [
           {
@@ -1804,8 +1804,8 @@
       "physiologicalEffects": {
         "status": "available",
         "value": "Blocage des effets de l’angiotensine II sur AT1, notamment vasoconstriction et libération d’aldostérone.",
-        "scope": "molecule",
         "verification": "source-checked",
+        "scope": "molecule",
         "context": "Synthèse non exhaustive du RCP de LOSARTAN BIOGARAN 50 mg, comprimé pelliculé sécable. Le contexte clinique et la formulation doivent être conservés.",
         "evidence": [
           {
@@ -1820,8 +1820,8 @@
       "therapeuticEffects": {
         "status": "available",
         "value": "Activité antihypertensive ; réduction documentée de la protéinurie chez les patients hypertendus non diabétiques ayant une protéinurie. Ce résultat ne constitue pas une indication universelle.",
-        "scope": "specialty",
         "verification": "source-checked",
+        "scope": "specialty",
         "context": "Synthèse non exhaustive du RCP de LOSARTAN BIOGARAN 50 mg, comprimé pelliculé sécable. Le contexte clinique et la formulation doivent être conservés.",
         "evidence": [
           {
@@ -3694,8 +3694,8 @@
       "interactions": {
         "status": "available",
         "value": "Inhibiteurs puissants CYP3A4/P-gp : exposition et risque hémorragique accrus. AINS et antiagrégants : prudence en raison du risque de saignement. Avec ISRS/IRSN, risque hémorragique potentiellement augmenté.",
-        "scope": "context",
         "verification": "source-checked",
+        "scope": "context",
         "context": "Synthèse non exhaustive du RCP de RIVAROXABAN KRKA 20 mg, comprimé pelliculé. Le contexte clinique et la formulation doivent être conservés.",
         "evidence": [
           {
@@ -3710,8 +3710,8 @@
       "precautions": {
         "status": "available",
         "value": "Prudence avec les médicaments modifiant l’hémostase, notamment AINS, antiagrégants et ISRS/IRSN. Les risques rénaux, hémorragiques et les associations avec inhibiteurs puissants CYP3A4/P-gp doivent être relus dans le RCP.",
-        "scope": "context",
         "verification": "source-checked",
+        "scope": "context",
         "context": "Synthèse non exhaustive du RCP de RIVAROXABAN KRKA 20 mg, comprimé pelliculé. Le contexte clinique et la formulation doivent être conservés.",
         "evidence": [
           {
@@ -6010,7 +6010,7 @@
       },
       "contraindications": {
         "status": "available",
-        "value": "Sélection : DFG < 30 mL/min ; acidose métabolique aiguë.",
+        "value": "Sélection : DFG < 30 mL/min, acidose métabolique aiguë ; affections aiguës altérant la fonction rénale, dont déshydratation, infection grave et choc.",
         "verification": "source-checked",
         "scope": "context",
         "context": "METFORMINE BGR 500 mg, comprimé pelliculé",
@@ -6018,9 +6018,9 @@
           {
             "sourceId": "bdpm",
             "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
-            "consultedAt": "2026-10-12",
+            "consultedAt": "2026-10-14",
             "sourceUpdatedAt": "2025-03-26",
-            "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé, rubrique 4.3"
+            "locator": "RCP METFORMINE BGR 500 mg, rubrique 4.3"
           }
         ]
       },
@@ -6058,7 +6058,7 @@
       },
       "interactions": {
         "status": "available",
-        "value": "Alcool et altération rénale médicamenteuse : risque d’acidose lactique accru.",
+        "value": "Contraste iodé : atteinte rénale pouvant entraîner accumulation et acidose lactique. Alcool et médicaments altérant la fonction rénale : risques documentés.",
         "verification": "source-checked",
         "scope": "context",
         "context": "Synthèse non exhaustive du RCP METFORMINE BGR 500 mg, comprimé pelliculé ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation.",
@@ -6066,15 +6066,15 @@
           {
             "sourceId": "bdpm",
             "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
-            "consultedAt": "2026-10-12",
+            "consultedAt": "2026-10-14",
             "sourceUpdatedAt": "2025-03-26",
-            "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé, rubrique(s) 4.5"
+            "locator": "RCP METFORMINE BGR 500 mg, rubrique 4.5"
           }
         ]
       },
       "precautions": {
         "status": "available",
-        "value": "Interruption autour du contraste iodé selon le RCP ; réévaluation rénale avant reprise.",
+        "value": "Contraste iodé intravasculaire : interruption avant ou lors de l’examen ; reprise après au moins 48 h et réévaluation rénale stable. Déshydratation : interruption temporaire et contact avec un professionnel.",
         "verification": "source-checked",
         "scope": "context",
         "context": "Synthèse non exhaustive du RCP METFORMINE BGR 500 mg, comprimé pelliculé ; contexte adulte sauf indication contraire. Ne pas extrapoler à une autre formulation.",
@@ -6082,17 +6082,17 @@
           {
             "sourceId": "bdpm",
             "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
-            "consultedAt": "2026-10-12",
+            "consultedAt": "2026-10-14",
             "sourceUpdatedAt": "2025-03-26",
-            "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé, rubrique(s) 4.4"
+            "locator": "RCP METFORMINE BGR 500 mg, rubrique 4.4"
           }
         ]
       },
       "clinicalMonitoring": {
         "status": "available",
         "value": "Informer sur les signes d’acidose lactique, notamment dyspnée, douleurs abdominales, crampes et asthénie. Contrôle cardiaque et rénal régulier si insuffisance cardiaque chronique stable.",
-        "scope": "context",
         "verification": "source-checked",
+        "scope": "context",
         "context": "Synthèse non exhaustive du RCP de METFORMINE BGR 500 mg, comprimé pelliculé. Le contexte clinique et la formulation doivent être conservés.",
         "evidence": [
           {
@@ -6405,7 +6405,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-3",
+    "contentVersion": "2026.10.14-4",
     "validationStatus": "documentary-summary"
   },
   {
@@ -6569,8 +6569,8 @@
       "physiologicalEffects": {
         "status": "available",
         "value": "Pour cette perfusion : début du soulagement en 5–10 min ; effet antalgique maximal vers 1 h, généralement pendant 4–6 h. Baisse de fièvre vers 30 min, effet au moins 6 h.",
-        "scope": "specialty",
         "verification": "source-checked",
+        "scope": "specialty",
         "context": "Synthèse non exhaustive du RCP de PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion. Le contexte clinique et la formulation doivent être conservés.",
         "evidence": [
           {
@@ -6772,8 +6772,8 @@
       "indications": {
         "status": "available",
         "value": "Pour cette solution IV : douleur modérée ou fièvre, en traitement court, lorsque l’urgence justifie la voie IV ou lorsque les autres voies ne sont pas possibles.",
-        "scope": "specialty",
         "verification": "source-checked",
+        "scope": "specialty",
         "context": "Synthèse non exhaustive du RCP de PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion. Le contexte clinique et la formulation doivent être conservés.",
         "evidence": [
           {
@@ -6804,8 +6804,8 @@
       "clinicalContexts": {
         "status": "available",
         "value": "Exemple documentaire : douleur modérée postopératoire lorsque la voie IV est cliniquement justifiée. Ne pas extrapoler ces conditions à toutes les formes orales.",
-        "scope": "context",
         "verification": "source-checked",
+        "scope": "context",
         "context": "Synthèse non exhaustive du RCP de PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion. Le contexte clinique et la formulation doivent être conservés.",
         "evidence": [
           {
@@ -6916,8 +6916,8 @@
       "biologicalMonitoring": {
         "status": "available",
         "value": "Dans le contexte du surdosage : dosage plasmatique du paracétamol et tests hépatiques répétés toutes les 24 h selon le RCP. Ce n’est pas un programme systématique de surveillance du traitement usuel.",
-        "scope": "context",
         "verification": "source-checked",
+        "scope": "context",
         "context": "Synthèse non exhaustive du RCP de PARACETAMOL B. BRAUN 10 mg/ml, solution pour perfusion. Le contexte clinique et la formulation doivent être conservés.",
         "evidence": [
           {
@@ -8459,8 +8459,8 @@
       "clinicalMonitoring": {
         "status": "available",
         "value": "Surveiller l’apparition d’infections, dont les signes peuvent être masqués. Après traitement prolongé, l’arrêt progressif tient compte du risque de rechute et d’insuffisance surrénalienne.",
-        "scope": "context",
         "verification": "source-checked",
+        "scope": "context",
         "context": "Synthèse non exhaustive du RCP de PREDNISOLONE TEVA 5 mg, comprimé effervescent. Le contexte clinique et la formulation doivent être conservés.",
         "evidence": [
           {
@@ -8475,8 +8475,8 @@
       "biologicalMonitoring": {
         "status": "available",
         "value": "En sclérose systémique exposée au risque de crise rénale sous prednisolone : contrôles réguliers de pression artérielle et de créatinine. Avec un autre hypokaliémiant : surveillance de la kaliémie.",
-        "scope": "context",
         "verification": "source-checked",
+        "scope": "context",
         "context": "Synthèse non exhaustive du RCP de PREDNISOLONE TEVA 5 mg, comprimé effervescent. Le contexte clinique et la formulation doivent être conservés.",
         "evidence": [
           {
@@ -10344,6 +10344,1381 @@
       }
     },
     "contentVersion": "2026.10.14-2",
+    "validationStatus": "documentary-summary"
+  },
+  {
+    "id": "apixaban",
+    "classId": "anticoagulants",
+    "systemIds": [
+      "hemostase"
+    ],
+    "specialtyIds": [
+      "cardiologie",
+      "nephrologie"
+    ],
+    "targetIds": [
+      "apixaban-target"
+    ],
+    "indicationIds": [
+      "apixaban-indication"
+    ],
+    "fields": {
+      "dci": {
+        "status": "available",
+        "value": "Apixaban",
+        "verification": "source-checked",
+        "scope": "molecule",
+        "context": "Synthèse française originale du RCP européen ELIQUIS 5 mg, version anglaise consultée. Données adultes sauf mention contraire ; pas une recommandation américaine.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 1–2"
+          }
+        ]
+      },
+      "class": {
+        "status": "available",
+        "value": "Anticoagulants",
+        "verification": "source-checked",
+        "scope": "molecule",
+        "context": "Synthèse française originale du RCP européen ELIQUIS 5 mg, version anglaise consultée. Données adultes sauf mention contraire ; pas une recommandation américaine.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 5.1"
+          }
+        ]
+      },
+      "subclass": {
+        "status": "available",
+        "value": "Inhibiteurs directs du facteur Xa",
+        "verification": "source-checked",
+        "scope": "molecule",
+        "context": "Synthèse française originale du RCP européen ELIQUIS 5 mg, version anglaise consultée. Données adultes sauf mention contraire ; pas une recommandation américaine.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 5.1"
+          }
+        ]
+      },
+      "atc": {
+        "status": "available",
+        "value": "B01AF02",
+        "verification": "source-checked",
+        "scope": "molecule",
+        "context": "Synthèse française originale du RCP européen ELIQUIS 5 mg, version anglaise consultée. Données adultes sauf mention contraire ; pas une recommandation américaine.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 5.1"
+          }
+        ]
+      },
+      "brands": {
+        "status": "available",
+        "value": "ELIQUIS 5 mg, comprimé pelliculé",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse française originale du RCP européen ELIQUIS 5 mg, version anglaise consultée. Données adultes sauf mention contraire ; pas une recommandation américaine.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 1"
+          }
+        ]
+      },
+      "forms": {
+        "status": "available",
+        "value": "Comprimé pelliculé",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse française originale du RCP européen ELIQUIS 5 mg, version anglaise consultée. Données adultes sauf mention contraire ; pas une recommandation américaine.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 3"
+          }
+        ]
+      },
+      "routes": {
+        "status": "available",
+        "value": "Orale, avec ou sans nourriture.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse française originale du RCP européen ELIQUIS 5 mg, version anglaise consultée. Données adultes sauf mention contraire ; pas une recommandation américaine.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 4.2"
+          }
+        ]
+      },
+      "target": {
+        "status": "available",
+        "value": "Facteur Xa",
+        "verification": "source-checked",
+        "scope": "molecule",
+        "context": "Synthèse française originale du RCP européen ELIQUIS 5 mg, version anglaise consultée. Données adultes sauf mention contraire ; pas une recommandation américaine.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 5.1"
+          }
+        ]
+      },
+      "mechanism": {
+        "status": "available",
+        "value": "Inhibition directe réversible du facteur Xa, réduisant la génération de thrombine.",
+        "verification": "source-checked",
+        "scope": "molecule",
+        "context": "Synthèse française originale du RCP européen ELIQUIS 5 mg, version anglaise consultée. Données adultes sauf mention contraire ; pas une recommandation américaine.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 5.1"
+          }
+        ]
+      },
+      "actionType": {
+        "status": "available",
+        "value": "Inhibition enzymatique",
+        "verification": "source-checked",
+        "scope": "molecule",
+        "context": "Synthèse française originale du RCP européen ELIQUIS 5 mg, version anglaise consultée. Données adultes sauf mention contraire ; pas une recommandation américaine.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 5.1"
+          }
+        ]
+      },
+      "physiologicalEffects": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "therapeuticEffects": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "doseResponse": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "absorption": {
+        "status": "available",
+        "value": "Adulte : pic plasmatique en 3–4 h.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse française originale du RCP européen ELIQUIS 5 mg, version anglaise consultée. Données adultes sauf mention contraire ; pas une recommandation américaine.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 5.2"
+          }
+        ]
+      },
+      "bioavailability": {
+        "status": "available",
+        "value": "Adulte : environ 50 % jusqu’à 10 mg.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse française originale du RCP européen ELIQUIS 5 mg, version anglaise consultée. Données adultes sauf mention contraire ; pas une recommandation américaine.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 5.2"
+          }
+        ]
+      },
+      "distribution": {
+        "status": "available",
+        "value": "Adulte : volume de distribution environ 21 L.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse française originale du RCP européen ELIQUIS 5 mg, version anglaise consultée. Données adultes sauf mention contraire ; pas une recommandation américaine.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 5.2"
+          }
+        ]
+      },
+      "proteinBinding": {
+        "status": "available",
+        "value": "Adulte : environ 87 %.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse française originale du RCP européen ELIQUIS 5 mg, version anglaise consultée. Données adultes sauf mention contraire ; pas une recommandation américaine.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 5.2"
+          }
+        ]
+      },
+      "metabolism": {
+        "status": "available",
+        "value": "Principalement CYP3A4/5.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse française originale du RCP européen ELIQUIS 5 mg, version anglaise consultée. Données adultes sauf mention contraire ; pas une recommandation américaine.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 5.2"
+          }
+        ]
+      },
+      "cyp": {
+        "status": "available",
+        "value": "CYP3A4/5 prédominants.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse française originale du RCP européen ELIQUIS 5 mg, version anglaise consultée. Données adultes sauf mention contraire ; pas une recommandation américaine.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 5.2"
+          }
+        ]
+      },
+      "activeMetabolites": {
+        "status": "available",
+        "value": "Aucun métabolite actif circulant décrit.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse française originale du RCP européen ELIQUIS 5 mg, version anglaise consultée. Données adultes sauf mention contraire ; pas une recommandation américaine.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 5.2"
+          }
+        ]
+      },
+      "halfLife": {
+        "status": "available",
+        "value": "Adulte : environ 12 h.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse française originale du RCP européen ELIQUIS 5 mg, version anglaise consultée. Données adultes sauf mention contraire ; pas une recommandation américaine.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 5.2"
+          }
+        ]
+      },
+      "elimination": {
+        "status": "available",
+        "value": "Voies multiples ; excrétion rénale : environ 27 % de la clairance totale adulte.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse française originale du RCP européen ELIQUIS 5 mg, version anglaise consultée. Données adultes sauf mention contraire ; pas une recommandation américaine.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 5.2"
+          }
+        ]
+      },
+      "renalAdjustment": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "hepaticAdjustment": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "indications": {
+        "status": "available",
+        "value": "Sélection adulte : prévention AVC/embolie systémique en FANV avec facteurs de risque ; traitement TVP/EP et prévention des récidives.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse française originale du RCP européen ELIQUIS 5 mg, version anglaise consultée. Données adultes sauf mention contraire ; pas une recommandation américaine.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 4.1"
+          }
+        ]
+      },
+      "therapeuticStrategy": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "clinicalContexts": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "contraindications": {
+        "status": "available",
+        "value": "Sélection : saignement actif significatif ; hépatopathie avec coagulopathie et risque hémorragique pertinent.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse française originale du RCP européen ELIQUIS 5 mg, version anglaise consultée. Données adultes sauf mention contraire ; pas une recommandation américaine.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 4.3"
+          }
+        ]
+      },
+      "commonEffects": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "seriousEffects": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "interactions": {
+        "status": "available",
+        "value": "Antiagrégants : saignements accrus ; prudence avec AINS et ISRS.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse française originale du RCP européen ELIQUIS 5 mg, version anglaise consultée. Données adultes sauf mention contraire ; pas une recommandation américaine.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 4.4–4.5"
+          }
+        ]
+      },
+      "precautions": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "clinicalMonitoring": {
+        "status": "available",
+        "value": "Rechercher les signes de saignement.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse française originale du RCP européen ELIQUIS 5 mg, version anglaise consultée. Données adultes sauf mention contraire ; pas une recommandation américaine.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 4.4"
+          }
+        ]
+      },
+      "biologicalMonitoring": {
+        "status": "available",
+        "value": "INR non recommandé pour mesurer l’effet ; anti-Xa calibré dans certaines situations exceptionnelles.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse française originale du RCP européen ELIQUIS 5 mg, version anglaise consultée. Données adultes sauf mention contraire ; pas une recommandation américaine.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 4.4 et 5.1"
+          }
+        ]
+      },
+      "pregnancy": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "breastfeeding": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "renalContext": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "hepaticContext": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "formula": {
+        "status": "available",
+        "value": "C25H25N5O4",
+        "verification": "source-checked",
+        "scope": "molecule",
+        "context": "Structure PubChem ; sel, hydrate et formulation clinique distincts.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/apixaban/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "PubChem CID 10182969, propriétés structurales calculées ; ne démontre ni équivalence clinique ni identité de formulation."
+          }
+        ]
+      },
+      "molecularMass": {
+        "status": "available",
+        "value": "459.5 g/mol",
+        "verification": "source-checked",
+        "scope": "molecule",
+        "context": "Structure PubChem ; sel, hydrate et formulation clinique distincts.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/apixaban/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "PubChem CID 10182969, propriétés structurales calculées ; ne démontre ni équivalence clinique ni identité de formulation."
+          }
+        ]
+      },
+      "smiles": {
+        "status": "available",
+        "value": "COC1=CC=C(C=C1)N2C3=C(CCN(C3=O)C4=CC=C(C=C4)N5CCCCC5=O)C(=N2)C(=O)N",
+        "verification": "source-checked",
+        "scope": "molecule",
+        "context": "Structure PubChem ; sel, hydrate et formulation clinique distincts.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/apixaban/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "PubChem CID 10182969, propriétés structurales calculées ; ne démontre ni équivalence clinique ni identité de formulation."
+          }
+        ]
+      },
+      "structure2d": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "structure3d": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "physicochemical": {
+        "status": "available",
+        "value": "Propriétés calculées : XLogP 2.2 ; TPSA 111 Å². Sans interprétation d’efficacité clinique.",
+        "verification": "source-checked",
+        "scope": "molecule",
+        "context": "Structure PubChem ; sel, hydrate et formulation clinique distincts.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/apixaban/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "PubChem CID 10182969, propriétés structurales calculées ; ne démontre ni équivalence clinique ni identité de formulation."
+          }
+        ]
+      },
+      "pubchem": {
+        "status": "available",
+        "value": "https://pubchem.ncbi.nlm.nih.gov/compound/10182969",
+        "verification": "source-checked",
+        "scope": "molecule",
+        "context": "Structure PubChem ; sel, hydrate et formulation clinique distincts.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/apixaban/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "PubChem CID 10182969, propriétés structurales calculées ; ne démontre ni équivalence clinique ni identité de formulation."
+          }
+        ]
+      },
+      "chembl": {
+        "status": "available",
+        "value": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL231779",
+        "verification": "source-checked",
+        "scope": "molecule",
+        "context": "Correspondance InChIKey complet QNZCBYKSOIHPEH-UHFFFAOYSA-N. Ne démontre ni équivalence clinique ni identité de sel ou formulation.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/apixaban/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "PubChem CID 10182969, propriétés structurales calculées ; ne démontre ni équivalence clinique ni identité de formulation."
+          },
+          {
+            "sourceId": "chembl",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=QNZCBYKSOIHPEH-UHFFFAOYSA-N&limit=5",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "Correspondance structurale unique ; ChEMBL CC BY-SA 3.0"
+          }
+        ]
+      },
+      "essentials": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "examTraps": {
+        "status": "available",
+        "value": "Ne pas assimiler INR et mesure d’activité de cet AOD.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide pédagogique originale ; aucune validation indépendante d’examen.",
+        "evidence": [
+          {
+            "sourceId": "ema",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/eliquis-epar-product-information_en.pdf",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "RCP ELIQUIS 5 mg (pages 36–65 du PDF), rubrique 4.4 et 5.1"
+          }
+        ]
+      },
+      "comparisons": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "mnemonics": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      }
+    },
+    "contentVersion": "2026.10.14-4",
+    "validationStatus": "documentary-summary"
+  },
+  {
+    "id": "spironolactone",
+    "classId": "diuretiques",
+    "systemIds": [
+      "renal",
+      "cardiovasculaire"
+    ],
+    "specialtyIds": [
+      "cardiologie",
+      "nephrologie"
+    ],
+    "targetIds": [],
+    "indicationIds": [
+      "spironolactone-indication"
+    ],
+    "fields": {
+      "dci": {
+        "status": "available",
+        "value": "Spironolactone",
+        "verification": "source-checked",
+        "scope": "molecule",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg ; indications et précautions propres à cette spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 1–2"
+          }
+        ]
+      },
+      "class": {
+        "status": "available",
+        "value": "Diurétiques",
+        "verification": "source-checked",
+        "scope": "molecule",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg ; indications et précautions propres à cette spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 5.1"
+          }
+        ]
+      },
+      "subclass": {
+        "status": "available",
+        "value": "Diurétiques épargneurs de potassium",
+        "verification": "source-checked",
+        "scope": "molecule",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg ; indications et précautions propres à cette spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 5.1"
+          }
+        ]
+      },
+      "atc": {
+        "status": "available",
+        "value": "C03DA01",
+        "verification": "source-checked",
+        "scope": "molecule",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg ; indications et précautions propres à cette spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 5.1"
+          }
+        ]
+      },
+      "brands": {
+        "status": "available",
+        "value": "SPIRONOLACTONE BIOGARAN 25 mg, comprimé sécable",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg ; indications et précautions propres à cette spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 1"
+          }
+        ]
+      },
+      "forms": {
+        "status": "available",
+        "value": "Comprimé sécable",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg ; indications et précautions propres à cette spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 3"
+          }
+        ]
+      },
+      "routes": {
+        "status": "available",
+        "value": "Orale.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg ; indications et précautions propres à cette spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 4.2"
+          }
+        ]
+      },
+      "target": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "mechanism": {
+        "status": "available",
+        "value": "Antagonisme de l’aldostérone ; épargne potassique.",
+        "verification": "source-checked",
+        "scope": "molecule",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg ; indications et précautions propres à cette spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 5.1"
+          }
+        ]
+      },
+      "actionType": {
+        "status": "available",
+        "value": "Antagonisme",
+        "verification": "source-checked",
+        "scope": "molecule",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg ; indications et précautions propres à cette spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 5.1"
+          }
+        ]
+      },
+      "physiologicalEffects": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "therapeuticEffects": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "doseResponse": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "absorption": {
+        "status": "available",
+        "value": "Absorption gastro-intestinale.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg ; indications et précautions propres à cette spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 5.2"
+          }
+        ]
+      },
+      "bioavailability": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "distribution": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "proteinBinding": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "metabolism": {
+        "status": "available",
+        "value": "Transformation rapide en métabolites.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg ; indications et précautions propres à cette spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 5.2"
+          }
+        ]
+      },
+      "cyp": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "activeMetabolites": {
+        "status": "available",
+        "value": "Canrénone, métabolite majeur actif.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg ; indications et précautions propres à cette spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 4.6 et 5.2"
+          }
+        ]
+      },
+      "halfLife": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "elimination": {
+        "status": "available",
+        "value": "Urinaire et fécale.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg ; indications et précautions propres à cette spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 5.2"
+          }
+        ]
+      },
+      "renalAdjustment": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "hepaticAdjustment": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "indications": {
+        "status": "available",
+        "value": "Sélection : hyperaldostéronisme, HTA essentielle, certains œdèmes ; insuffisance cardiaque adulte NYHA III/IV avec FEVG ≤ 35 %, en association définie au RCP.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg ; indications et précautions propres à cette spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 4.1"
+          }
+        ]
+      },
+      "therapeuticStrategy": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "clinicalContexts": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "contraindications": {
+        "status": "available",
+        "value": "Sélection : hyperkaliémie, insuffisance rénale sévère/aiguë, maladie d’Addison.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg ; indications et précautions propres à cette spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 4.3"
+          }
+        ]
+      },
+      "commonEffects": {
+        "status": "available",
+        "value": "Hyperkaliémie très fréquente ; gynécomastie fréquente.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg ; indications et précautions propres à cette spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 4.8"
+          }
+        ]
+      },
+      "seriousEffects": {
+        "status": "available",
+        "value": "Hyperkaliémie potentiellement mortelle.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg ; indications et précautions propres à cette spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 4.4"
+          }
+        ]
+      },
+      "interactions": {
+        "status": "available",
+        "value": "IEC, ARA2, potassium, triméthoprime : risque hyperkaliémique accru.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg ; indications et précautions propres à cette spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 4.4–4.5"
+          }
+        ]
+      },
+      "precautions": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "clinicalMonitoring": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "biologicalMonitoring": {
+        "status": "available",
+        "value": "Kaliémie, natrémie et fonction rénale : avant traitement, après modification, régulièrement et lors d’événements intercurrents.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg ; indications et précautions propres à cette spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 4.4"
+          }
+        ]
+      },
+      "pregnancy": {
+        "status": "available",
+        "value": "Éviter sauf bénéfice potentiel justifiant le risque.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg ; indications et précautions propres à cette spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 4.6"
+          }
+        ]
+      },
+      "breastfeeding": {
+        "status": "available",
+        "value": "Ne pas utiliser pendant l’allaitement ; décision documentée d’interruption de l’un ou l’autre.",
+        "verification": "source-checked",
+        "scope": "specialty",
+        "context": "Synthèse partielle du RCP SPIRONOLACTONE BIOGARAN 25 mg ; indications et précautions propres à cette spécialité.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 4.6"
+          }
+        ]
+      },
+      "renalContext": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "hepaticContext": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "formula": {
+        "status": "available",
+        "value": "C24H32O4S",
+        "verification": "source-checked",
+        "scope": "molecule",
+        "context": "Structure PubChem ; sel, hydrate et formulation clinique distincts.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/spironolactone/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "PubChem CID 5833, propriétés structurales calculées ; ne démontre ni équivalence clinique ni identité de formulation."
+          }
+        ]
+      },
+      "molecularMass": {
+        "status": "available",
+        "value": "416.6 g/mol",
+        "verification": "source-checked",
+        "scope": "molecule",
+        "context": "Structure PubChem ; sel, hydrate et formulation clinique distincts.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/spironolactone/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "PubChem CID 5833, propriétés structurales calculées ; ne démontre ni équivalence clinique ni identité de formulation."
+          }
+        ]
+      },
+      "smiles": {
+        "status": "available",
+        "value": "CC(=O)S[C@@H]1CC2=CC(=O)CC[C@@]2([C@@H]3[C@@H]1[C@@H]4CC[C@]5([C@]4(CC3)C)CCC(=O)O5)C",
+        "verification": "source-checked",
+        "scope": "molecule",
+        "context": "Structure PubChem ; sel, hydrate et formulation clinique distincts.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/spironolactone/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "PubChem CID 5833, propriétés structurales calculées ; ne démontre ni équivalence clinique ni identité de formulation."
+          }
+        ]
+      },
+      "structure2d": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "structure3d": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "physicochemical": {
+        "status": "available",
+        "value": "Propriétés calculées : XLogP 2.9 ; TPSA 85.7 Å². Sans interprétation d’efficacité clinique.",
+        "verification": "source-checked",
+        "scope": "molecule",
+        "context": "Structure PubChem ; sel, hydrate et formulation clinique distincts.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/spironolactone/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "PubChem CID 5833, propriétés structurales calculées ; ne démontre ni équivalence clinique ni identité de formulation."
+          }
+        ]
+      },
+      "pubchem": {
+        "status": "available",
+        "value": "https://pubchem.ncbi.nlm.nih.gov/compound/5833",
+        "verification": "source-checked",
+        "scope": "molecule",
+        "context": "Structure PubChem ; sel, hydrate et formulation clinique distincts.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/spironolactone/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "PubChem CID 5833, propriétés structurales calculées ; ne démontre ni équivalence clinique ni identité de formulation."
+          }
+        ]
+      },
+      "chembl": {
+        "status": "available",
+        "value": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1393",
+        "verification": "source-checked",
+        "scope": "molecule",
+        "context": "Correspondance InChIKey complet LXMSZDCAJNLERA-ZHYRCANASA-N. Ne démontre ni équivalence clinique ni identité de sel ou formulation.",
+        "evidence": [
+          {
+            "sourceId": "pubchem",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/spironolactone/property/MolecularFormula,MolecularWeight,InChIKey,SMILES,XLogP,TPSA/JSON",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "PubChem CID 5833, propriétés structurales calculées ; ne démontre ni équivalence clinique ni identité de formulation."
+          },
+          {
+            "sourceId": "chembl",
+            "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_structures__standard_inchi_key=LXMSZDCAJNLERA-ZHYRCANASA-N&limit=5",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "Correspondance structurale unique ; ChEMBL CC BY-SA 3.0"
+          }
+        ]
+      },
+      "essentials": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "examTraps": {
+        "status": "available",
+        "value": "Un diurétique épargneur de potassium ne protège pas de l’hyperkaliémie.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Aide pédagogique originale ; aucune validation indépendante d’examen.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 4.4"
+          },
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60625921/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-07-08",
+            "locator": "RCP SPIRONOLACTONE BIOGARAN 25 mg, rubrique 4.8"
+          }
+        ]
+      },
+      "comparisons": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      },
+      "mnemonics": {
+        "status": "missing",
+        "value": null,
+        "verification": "unverified",
+        "scope": "molecule",
+        "context": "",
+        "evidence": [],
+        "reason": "Non documenté dans cette synthèse partielle. Aucune absence de mécanisme ou de risque ne peut en être déduite."
+      }
+    },
+    "contentVersion": "2026.10.14-4",
     "validationStatus": "documentary-summary"
   }
 ]

@@ -1,7 +1,7 @@
 import { z } from 'zod';
 
 // Noms documentaires anglais explicites ; une recherche n'est pas une correspondance d'identifiants.
-export const literatureTerms:Record<string,string> = {bisoprolol:'bisoprolol',ramipril:'ramipril',losartan:'losartan',furosemide:'furosemide',rivaroxaban:'rivaroxaban',clopidogrel:'clopidogrel',amoxicilline:'amoxicillin',metformine:'metformin',paracetamol:'acetaminophen',ibuprofene:'ibuprofen',prednisolone:'prednisolone',sertraline:'sertraline',levetiracetam:'levetiracetam'};
+export const literatureTerms:Record<string,string> = {apixaban:'apixaban',spironolactone:'spironolactone',bisoprolol:'bisoprolol',ramipril:'ramipril',losartan:'losartan',furosemide:'furosemide',rivaroxaban:'rivaroxaban',clopidogrel:'clopidogrel',amoxicilline:'amoxicillin',metformine:'metformin',paracetamol:'acetaminophen',ibuprofene:'ibuprofen',prednisolone:'prednisolone',sertraline:'sertraline',levetiracetam:'levetiracetam'};
 const text=z.string().max(10000);
 export const citationSchema=z.object({id:z.string().regex(/^\d+$/),source:z.literal('MED'),title:text,authorString:text.optional(),journalTitle:text.optional(),pubYear:z.string().regex(/^\d{4}$/).optional(),doi:text.optional(),isOpenAccess:z.enum(['Y','N']).optional()});
 const responseSchema=z.object({hitCount:z.number().int().nonnegative(),request:z.object({queryString:text}),resultList:z.object({result:z.array(citationSchema).max(10)})});

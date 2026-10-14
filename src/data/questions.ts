@@ -1,9 +1,10 @@
 import { extendedQuestions } from './extendedQuestions';
+import { clinicalReasoningQuestions } from './clinicalReasoningQuestions';
 import { manualContent,withImported } from './manualContent';
 import { drugs } from './drugs';
 import { parseQuestions } from '../domain/assessment';
 import type { FieldKey, LearningObjective, Question } from '../domain/models';
-export const questionContentVersion='2026-10-14.2'+(manualContent.questions.length?'+'+manualContent.id+'@'+manualContent.version:'');
+export const questionContentVersion='2026-10-14.4'+(manualContent.questions.length?'+'+manualContent.id+'@'+manualContent.version:'');
 export const learningObjectives:LearningObjective[]=[{id:'mechanisms',title:'Identifier les mécanismes et cibles moléculaires',specialtyIds:[],drugClassIds:[]},{id:'safety',title:'Reconnaître un élément de sécurité documenté dans un RCP',specialtyIds:[],drugClassIds:[]},{id:'kinetics',title:'Interpréter une élimination et un modèle de demi-vie',specialtyIds:[],drugClassIds:[]}];
 function references(ids:string[],key:FieldKey='mechanism'){return ids.flatMap(id=>drugs.find(d=>d.id===id)!.fields[key].evidence);}
 function q(id:string,type:Question['type'],statement:string,drugIds:string[],options:Question['options'],correction:string,extra:Partial<Question>={}):Question{return {id,type,statement,drugIds,options,correction,difficulty:1,classIds:[...new Set(drugIds.map(id=>drugs.find(d=>d.id===id)!.classId))],objectiveIds:['mechanisms'],evidence:references(drugIds),validationStatus:'demo',...extra};}
@@ -27,5 +28,5 @@ const bank:Question[]=[
  q('kinetique-modele','pharmacokinetics','Exercice mathématique fictif : une quantité suit une élimination d’ordre 1, de demi-vie constante. Après trois demi-vies, quel pourcentage de la quantité initiale reste-t-il ? Saisir le nombre, sans le symbole %.',['bisoprolol'],[],'La quantité est divisée par deux à chaque demi-vie : 100 × (1/2)³ = 12,5 %. Ce modèle simplifié ne décrit pas toutes les cinétiques réelles.',{equation:String.raw`100 \times \left(\frac{1}{2}\right)^3 = 12.5\%`,difficulty:2,objectiveIds:['kinetics'],expectedNumeric:{value:12.5,tolerance:0.1,unit:'%'},evidence:[{sourceId:'iupac',url:'https://goldbook.iupac.org/terms/view/L03515',consultedAt:'2026-10-12',sourceUpdatedAt:null,locator:'IUPAC Gold Book, lifetime, DOI 10.1351/goldbook.L03515 ; définition de demi-vie en cinétique d’ordre 1'}]}),
  q('metformine-cas-renal','qcu','Situation fictive pédagogique : un adulte a un DFG de 25 mL/min. Quel élément du RCP de METFORMINE BGR 500 mg concerne ce seuil, sans proposer de prescription ?',['metformine'],[option('a','Contre-indication pour DFG < 30 mL/min',true,'Seuil de contre-indication du RCP.'),option('b','Ce DFG exclut tout risque d’accumulation',false,'Le seuil est une contre-indication.'),option('c','Le RCP ne mentionne pas la fonction rénale',false,'Il comporte des critères rénaux.')],'Il s’agit d’une lecture de RCP, pas d’une décision médicale réelle.',{difficulty:2,objectiveIds:['safety'],evidence:references(['metformine'],'contraindications')}),
 ];
-export const questions=parseQuestions(withImported([...bank,...extendedQuestions(drugs)],manualContent.questions));
+export const questions=parseQuestions(withImported([...bank,...extendedQuestions(drugs),...clinicalReasoningQuestions],manualContent.questions));
 export const questionTypeLabels:Record<Question['type'],string>={qcu:'QCU',qrm:'QRM',qroc:'QROC','true-false':'Vrai / Faux',association:'Association',pharmacokinetics:'Pharmacocinétique'};

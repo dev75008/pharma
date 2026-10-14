@@ -2,7 +2,7 @@
 
 Plateforme personnelle de révision DFASM2 en français, sans backend obligatoire. Site : https://dev75008.github.io/pharma/ · dépôt : https://github.com/dev75008/pharma.
 
-Version technique du 14 octobre 2026 : **13 fiches / 12 familles, 43 questions, 47 flashcards et 7 dossiers fictifs**. 523 champs documentés sur 650 ; les 127 autres restent « À documenter ». Moteurs opérationnels avec tests unitaires, scénarios navigateur et contrôles automatiques d’accessibilité. Le cahier des charges documentaire et la validation médicale indépendante ne sont pas intégralement achevés. [Bilan des huit phases, tests et limites](docs/livraison.md).
+Version technique du 14 octobre 2026 : **15 fiches / 12 familles, 56 questions, 52 flashcards et 10 dossiers fictifs**. 582 champs documentés sur 750 ; les 168 autres restent « À documenter ». La page Sources expose un bilan filtrable et exportable des rubriques et besoins de relecture. Le cahier des charges documentaire et la validation médicale indépendante ne sont pas intégralement achevés. [Bilan des huit phases, tests et limites](docs/livraison.md), [extension et procédure de relecture](docs/extension-bibliotheque-et-relecture.md).
 
 ## Installation et lancement
 
