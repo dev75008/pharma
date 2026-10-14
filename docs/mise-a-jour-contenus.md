@@ -1,5 +1,7 @@
 # Mise à jour documentaire
 
+Avant une modification, conserver un export `npm run review:export -- review/avant.json`. Après modification, exporter `review/apres.json` et exécuter `npm run review:diff -- review/avant.json review/apres.json review/differences.json` pour identifier les éléments à relire. Voir [comparer-les-revisions.md](comparer-les-revisions.md) pour les limites des empreintes et les chemins de différences.
+
 1. Consulter manuellement la source primaire originale. Vérifier la spécialité, formulation, indication, contexte et rubrique. Les versions mobiles et principales peuvent afficher des dates différentes : référencer la page effectivement utilisée.
 2. Rédiger une synthèse originale brève ; ne pas copier une monographie ni étendre une information de spécialité à toute une classe. Pour toute donnée non établie, garder le statut missing.
 3. Modifier `src/data/drugs.json` : valeur, scope/context, sourceId, URL HTTPS exacte, locator, consultedAt, sourceUpdatedAt (null si inconnue), vérification source-checked. Réserver independently-reviewed à une véritable relecture indépendante traçable.

@@ -2,7 +2,7 @@
 
 Version préparée le 14 octobre 2026. L’application est une plateforme personnelle sans backend obligatoire, publiée par GitHub Actions avec routes HashRouter, stockage IndexedDB, PWA et sauvegardes locales. Ce bilan décrit les moteurs livrés et leurs limites ; il ne déclare pas l’ensemble du cahier des charges achevé ou médicalement validé.
 
-Validation : **165 tests unitaires, 130 scénarios Chromium ordinateur/mobile et 68 parcours Firefox/WebKit réussis**. Audits axe sur 17 routes en clair/sombre dans les deux présentations, compilation TypeScript/Vite et contrôles de livraison réussis. Les nouveaux tests couvrent les corrections des exercices, les dates de relecture, le bilan exportable et la reprise des dossiers après confirmation d’écriture. Ces vérifications ne constituent pas un audit général de sécurité ou une validation médicale.
+Validation : **171 tests unitaires réussis** après ajout de six tests de comparaison documentaire ; compilation TypeScript/Vite et contrôles de livraison réussis. La précédente livraison a également réussi 130 scénarios Chromium ordinateur/mobile et 68 parcours Firefox/WebKit, avec audits axe sur 17 routes en clair/sombre dans les deux présentations. Ces vérifications ne constituent pas un audit général de sécurité ou une validation médicale.
 
 | Phase | Résultat livré |
 |---|---|
@@ -46,3 +46,5 @@ Documenter les champs encore absents lorsqu’une source pertinente le permet ; 
 Seize rubriques supplémentaires de surveillance, précautions et pharmacologie sont détaillées dans [complement-surveillance.md](complement-surveillance.md). Les rappels de cible ont été rattachés à l’objectif mécanismes et distingués des exercices de sécurité.
 
 La préparation de relecture (146 éléments, empreintes, contrôle de déclarations sans authentification ni élévation de statut), les comparaisons et les ajouts RCP sont détaillés dans [relecture-et-comparaisons.md](relecture-et-comparaisons.md).
+
+Le complément de maintenance ajoute `review:diff` : comparaison de deux exports après vérification de leurs empreintes, bilan des ajouts/retraits/modifications, chemins JSON Pointer bornés et protection contre l’écrasement d’un dossier d’entrée. [Procédure de comparaison](comparer-les-revisions.md). Les tests couvrent les changements de références/corrections/statuts, les clés JSON réservées, les listes, le changement de version, l’ordre et les dossiers altérés. Un essai CLI sur le catalogue réel a retrouvé 146 éléments inchangés et le refus d’écrasement a été vérifié. Aucun contenu médical n’a été ajouté dans ce complément.

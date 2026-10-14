@@ -5,6 +5,7 @@
   "scripts": {
     "review:export": "tsx scripts/review.ts export",
     "review:check": "tsx scripts/review.ts check",
+    "review:diff": "tsx scripts/review.ts diff",
     "dev": "vite",
     "prebuild": "npm run content:validate -- src/data/manual-content.json",
     "build": "tsc --noEmit && vite build",

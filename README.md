@@ -1,5 +1,7 @@
 # MEDREVISION
 
+Maintenance documentaire : `npm run review:diff -- review/avant.json review/apres.json review/differences.json` compare deux exports vérifiés et identifie les contenus à relire. Voir [la procédure](docs/comparer-les-revisions.md).
+
 Plateforme personnelle de révision DFASM2 en français, sans backend obligatoire. Site : https://dev75008.github.io/pharma/ · dépôt : https://github.com/dev75008/pharma.
 
 Version technique du 14 octobre 2026 : **15 fiches / 12 familles, 65 questions, 55 flashcards et 11 dossiers fictifs**. 628 champs documentés sur 750 ; les 122 autres restent « À documenter ». La page Sources expose un bilan filtrable et exportable des rubriques et besoins de relecture. Le cahier des charges documentaire et la validation médicale indépendante ne sont pas intégralement achevés. [Bilan des huit phases, tests et limites](docs/livraison.md), [extension et procédure de relecture](docs/extension-bibliotheque-et-relecture.md).
