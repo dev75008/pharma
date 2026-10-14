@@ -4211,22 +4211,36 @@
         ]
       },
       "physiologicalEffects": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "Le métabolite actif inhibe irréversiblement la réponse plaquettaire à l’ADP ; récupération liée au renouvellement des plaquettes.",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "context": "Synthèse non exhaustive du RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé. Conserver formulation, indication et circonstances décrites ; aucune fréquence universelle de contrôle ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/67233727/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-05-07",
+            "locator": "RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé, rubrique 5.1 ; relecture du 14 octobre 2026"
+          }
+        ]
       },
       "therapeuticEffects": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Prévention d’événements athérothrombotiques dans les contextes autorisés ; ne pas déduire une supériorité universelle sur les autres antiagrégants.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse non exhaustive du RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé. Conserver formulation, indication et circonstances décrites ; aucune fréquence universelle de contrôle ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/67233727/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-05-07",
+            "locator": "RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé, rubrique 4.1 et 5.1 ; relecture du 14 octobre 2026"
+          }
+        ]
       },
       "doseResponse": {
         "status": "missing",
@@ -4368,22 +4382,36 @@
         ]
       },
       "renalAdjustment": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Expérience limitée en insuffisance rénale ; utilisation prudente. Le RCP ne fournit pas ici un algorithme numérique universel d’adaptation.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse non exhaustive du RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé. Conserver formulation, indication et circonstances décrites ; aucune fréquence universelle de contrôle ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/67233727/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-05-07",
+            "locator": "RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé, rubrique 4.2 et 4.4 ; relecture du 14 octobre 2026"
+          }
+        ]
       },
       "hepaticAdjustment": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Expérience limitée en insuffisance hépatique modérée avec diathèse hémorragique : prudence. Insuffisance hépatique sévère : contre-indication.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse non exhaustive du RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé. Conserver formulation, indication et circonstances décrites ; aucune fréquence universelle de contrôle ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/67233727/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-05-07",
+            "locator": "RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé, rubrique 4.2, 4.3 et 4.4 ; relecture du 14 octobre 2026"
+          }
+        ]
       },
       "indications": {
         "status": "available",
@@ -4411,13 +4439,20 @@
         "reason": "Champ non documenté dans cette version."
       },
       "clinicalContexts": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Exemple de prévention secondaire : adulte avec artériopathie oblitérante des membres inférieurs établie. Autres situations et associations : consulter la rubrique complète.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse non exhaustive du RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé. Conserver formulation, indication et circonstances décrites ; aucune fréquence universelle de contrôle ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/67233727/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-05-07",
+            "locator": "RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé, rubrique 4.1 ; relecture du 14 octobre 2026"
+          }
+        ]
       },
       "contraindications": {
         "status": "available",
@@ -4516,13 +4551,20 @@
         ]
       },
       "biologicalMonitoring": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "En cas de signes de saignement : envisager rapidement NFS et/ou examens appropriés. Ce n’est pas un calendrier systématique pour tous les patients.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse non exhaustive du RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé. Conserver formulation, indication et circonstances décrites ; aucune fréquence universelle de contrôle ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/67233727/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-05-07",
+            "locator": "RCP CLOPIDOGREL EG LABO 75 mg, comprimé pelliculé, rubrique 4.4 ; relecture du 14 octobre 2026"
+          }
+        ]
       },
       "pregnancy": {
         "status": "available",
@@ -4802,7 +4844,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-2",
+    "contentVersion": "2026.10.14-5",
     "validationStatus": "documentary-summary"
   },
   {
@@ -4982,13 +5024,20 @@
         ]
       },
       "physiologicalEffects": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
+        "status": "available",
+        "value": "Fragilisation de la paroi bactérienne, souvent suivie de lyse et mort cellulaire.",
+        "verification": "source-checked",
         "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "context": "Synthèse non exhaustive du RCP AMOXICILLINE BIOGARAN 500 mg/5 ml, poudre pour suspension buvable. Conserver formulation, indication et circonstances décrites ; aucune fréquence universelle de contrôle ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60453197/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-09-18",
+            "locator": "RCP AMOXICILLINE BIOGARAN 500 mg/5 ml, poudre pour suspension buvable, rubrique 5.1 ; relecture du 14 octobre 2026"
+          }
+        ]
       },
       "therapeuticEffects": {
         "status": "missing",
@@ -5283,31 +5332,52 @@
         ]
       },
       "precautions": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Rechercher les antécédents d’hypersensibilité aux bêta-lactamines. Éviter en cas de suspicion de mononucléose infectieuse ; risque d’éruption.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse non exhaustive du RCP AMOXICILLINE BIOGARAN 500 mg/5 ml, poudre pour suspension buvable. Conserver formulation, indication et circonstances décrites ; aucune fréquence universelle de contrôle ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60453197/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-09-18",
+            "locator": "RCP AMOXICILLINE BIOGARAN 500 mg/5 ml, poudre pour suspension buvable, rubrique 4.4 ; relecture du 14 octobre 2026"
+          }
+        ]
       },
       "clinicalMonitoring": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Rechercher les réactions allergiques et les diarrhées pendant/après antibiothérapie ; surveillance des signes de lymphohistiocytose hémophagocytaire selon le RCP.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse non exhaustive du RCP AMOXICILLINE BIOGARAN 500 mg/5 ml, poudre pour suspension buvable. Conserver formulation, indication et circonstances décrites ; aucune fréquence universelle de contrôle ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60453197/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-09-18",
+            "locator": "RCP AMOXICILLINE BIOGARAN 500 mg/5 ml, poudre pour suspension buvable, rubrique 4.4 ; relecture du 14 octobre 2026"
+          }
+        ]
       },
       "biologicalMonitoring": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Traitement prolongé : contrôles réguliers des fonctions rénale, hépatique et hématopoïétique. Anticoagulant associé : surveillance appropriée de la coagulation.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse non exhaustive du RCP AMOXICILLINE BIOGARAN 500 mg/5 ml, poudre pour suspension buvable. Conserver formulation, indication et circonstances décrites ; aucune fréquence universelle de contrôle ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60453197/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2026-09-18",
+            "locator": "RCP AMOXICILLINE BIOGARAN 500 mg/5 ml, poudre pour suspension buvable, rubrique 4.4 ; relecture du 14 octobre 2026"
+          }
+        ]
       },
       "pregnancy": {
         "status": "available",
@@ -5587,7 +5657,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-2",
+    "contentVersion": "2026.10.14-5",
     "validationStatus": "documentary-summary"
   },
   {
@@ -9160,13 +9230,20 @@
         "reason": "Champ non documenté dans cette version."
       },
       "clinicalContexts": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Exemple documentaire : TOC chez l’adulte et chez l’enfant/adolescent de 6 à 17 ans. Cette autorisation pédiatrique ne couvre pas toutes les indications adultes.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule. Conserver formulation, indication et circonstances décrites ; aucune fréquence universelle de contrôle ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63288007/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2023-06-19",
+            "locator": "RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule, rubrique 4.1 et 5.1 ; relecture du 14 octobre 2026"
+          }
+        ]
       },
       "contraindications": {
         "status": "available",
@@ -9233,13 +9310,20 @@
         ]
       },
       "precautions": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Risque d’hyponatrémie accru chez le sujet âgé, sous diurétique ou en déplétion volémique. Éviter l’arrêt brutal ; diminution progressive décrite au RCP.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule. Conserver formulation, indication et circonstances décrites ; aucune fréquence universelle de contrôle ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63288007/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2023-06-19",
+            "locator": "RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule, rubrique 4.4 ; relecture du 14 octobre 2026"
+          }
+        ]
       },
       "clinicalMonitoring": {
         "status": "available",
@@ -9258,13 +9342,20 @@
         ]
       },
       "biologicalMonitoring": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Contexte diabétique : surveiller le contrôle glycémique. Risque d’hyponatrémie à considérer chez les personnes exposées ; aucun calendrier systématique de natrémie fixé ici.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse non exhaustive du RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule. Conserver formulation, indication et circonstances décrites ; aucune fréquence universelle de contrôle ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63288007/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2023-06-19",
+            "locator": "RCP SERTRALINE VIATRIS GENERIQUES 25 mg, gélule, rubrique 4.4 ; relecture du 14 octobre 2026"
+          }
+        ]
       },
       "pregnancy": {
         "status": "available",
@@ -9544,7 +9635,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-2",
+    "contentVersion": "2026.10.14-5",
     "validationStatus": "documentary-summary"
   },
   {
@@ -9717,22 +9808,36 @@
         "reason": "Cette information n’est pas établie dans le RCP consulté pour cette rubrique. L’absence de donnée ne prouve pas l’absence de mécanisme ou d’effet."
       },
       "physiologicalEffects": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Protection dans des modèles animaux de crises partielles/généralisées. Chez l’humain, activité documentée sur les décharges épileptiformes et la réponse photoparoxystique.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse non exhaustive du RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable. Conserver formulation, indication et circonstances décrites ; aucune fréquence universelle de contrôle ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61610687/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-12-11",
+            "locator": "RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable, rubrique 5.1 ; relecture du 14 octobre 2026"
+          }
+        ]
       },
       "therapeuticEffects": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Réduction de fréquence des crises partielles dans les études en association décrites au RCP. Ne pas extrapoler à toute épilepsie.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse non exhaustive du RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable. Conserver formulation, indication et circonstances décrites ; aucune fréquence universelle de contrôle ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61610687/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-12-11",
+            "locator": "RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable, rubrique 5.1 ; relecture du 14 octobre 2026"
+          }
+        ]
       },
       "doseResponse": {
         "status": "missing",
@@ -10018,13 +10123,20 @@
         ]
       },
       "precautions": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Surveiller dépression, idées suicidaires et changements d’humeur/comportement. Prudence si allongement QT, cardiopathie ou troubles électrolytiques.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse non exhaustive du RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable. Conserver formulation, indication et circonstances décrites ; aucune fréquence universelle de contrôle ni prescription individuelle.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61610687/extrait",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": "2025-12-11",
+            "locator": "RCP LEVETIRACETAM BIOGARAN 1000 mg, comprimé pelliculé sécable, rubrique 4.4 ; relecture du 14 octobre 2026"
+          }
+        ]
       },
       "clinicalMonitoring": {
         "status": "available",
@@ -10343,7 +10455,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-2",
+    "contentVersion": "2026.10.14-5",
     "validationStatus": "documentary-summary"
   },
   {

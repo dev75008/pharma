@@ -5,7 +5,8 @@ type Choice=[string,boolean,string];
 function question(id:string,statement:string,refs:Ref[],choices:Choice[],correction:string,type:Question['type']='qrm'):Question{
  const ids=[...new Set(refs.map(([id])=>id))];
  const evidence=refs.flatMap(([id,key])=>{const field=drugs.find(d=>d.id===id)!.fields[key];if(field.status!=='available')throw Error(`Référence absente : ${id}/${key}`);return field.evidence;});
- return {id,type,statement,drugIds:ids,classIds:[...new Set(ids.map(id=>drugs.find(d=>d.id===id)!.classId))],objectiveIds:['safety'],difficulty:3,options:choices.map(([text,correct,explanation],i)=>({id:String.fromCharCode(97+i),text,correct,explanation})),correction,evidence,validationStatus:'demo'};
+ const mechanisms=refs.every(([,key])=>key==='target'||key==='mechanism');
+ return {id,type,statement,drugIds:ids,classIds:[...new Set(ids.map(id=>drugs.find(d=>d.id===id)!.classId))],objectiveIds:[mechanisms?'mechanisms':'safety'],difficulty:mechanisms?1:2,options:choices.map(([text,correct,explanation],i)=>({id:String.fromCharCode(97+i),text,correct,explanation})),correction,evidence,validationStatus:'demo'};
 }
 // Exercices originaux statiques. Relecture documentaire ≠ validation universitaire indépendante.
 export const clinicalReasoningQuestions:Question[]=[

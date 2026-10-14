@@ -1,5 +1,7 @@
 # Extension du 14 octobre 2026
 
+Ce document décrit le premier lot de l’extension (582 champs). Le [complément de surveillance](complement-surveillance.md) ajoute ensuite seize rubriques : état courant 598 champs sur 750, 152 absents.
+
 Deux synthèses partielles ajoutées : apixaban (ELIQUIS 5 mg, CIS 61902218) et spironolactone (SPIRONOLACTONE BIOGARAN 25 mg, CIS 60625921). Elles rejoignent les familles anticoagulants et diurétiques ; comparateur, recherche, filtres et sessions utilisent leurs identifiants stables.
 
 ## Sources effectivement consultées
