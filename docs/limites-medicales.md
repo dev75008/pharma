@@ -1,10 +1,12 @@
 # Limites pédagogiques, médicales et stockage
 
-État du 14 octobre 2026. MEDREVISION sert à l’apprentissage personnel. Les 13 fiches sont des synthèses partielles, pas des monographies complètes ou des référentiels DFASM2 validés. Le public DFASM2 est visé sans certification universitaire. 522 champs sont documentés sur 650 ; 128 restent absents. Les champs manquants ne sont pas remplacés par des suppositions. Les informations peuvent dépendre d’une spécialité, d’une formulation, d’une population ou d’un contexte.
+État du 14 octobre 2026. MEDREVISION sert à l’apprentissage personnel. Les 13 fiches sont des synthèses partielles, pas des monographies complètes ou des référentiels DFASM2 validés. Le public DFASM2 est visé sans certification universitaire. 523 champs sont documentés sur 650 ; 127 restent absents. Les champs manquants ne sont pas remplacés par des suppositions. Les informations peuvent dépendre d’une spécialité, d’une formulation, d’une population ou d’un contexte.
 
 Les champs ont une concordance documentaire avec leurs sources, sans validation médicale indépendante. Une source officielle n’officialise pas la synthèse de l’application. Les 43 exercices et sept dossiers restent des démonstrations non validées pour les examens nationaux. Les patients, symptômes et constantes des dossiers sont fictifs ; aucune prescription ou décision de diagnostic pour une personne réelle n’est proposée. Le dossier transversal relie des restrictions et interactions documentées sans recommander une ordonnance ou une substitution.
 
 Le mécanisme de classe des glucocorticoïdes est une courte synthèse originale référencée au Collège national de pharmacologie médicale, distincte du RCP. Aucun cours, tableau ou image du collège n’est reproduit. Les recommandations anciennes ne sont pas importées. Les pièges de révision sont pédagogiques, pas une liste officielle de pièges d’examen.
+
+Les pages de famille présentent les molécules disponibles séparément ; elles ne permettent pas de généraliser leurs propriétés à tous les membres d’une classe. Le champ de stratégie de la metformine distingue le RCP et le communiqué HAS du 6 juin 2024 effectivement consulté ; il ne constitue ni une recommandation complète, ni une règle universelle de première ligne ou un algorithme de prescription.
 
 Les champs d’indication et de sécurité restent des sélections non exhaustives. Un effet non cité n’est pas absent. Les différences du comparateur sont textuelles, sans conclusion de supériorité ni correction des différences de populations. Le PDF utilise l’impression du navigateur : l’appel et les sources imprimables sont testés, pas tous les pilotes PDF.
 

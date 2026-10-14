@@ -1,0 +1,2 @@
+import {normalize} from './library';
+export function globalSearchRoute(query:string,modules:{title:string;path:string}[],classes:{id:string;label:string}[],matches:{id:string}[]){const text=query.trim(),normal=normalize(text);const module=modules.find(m=>normalize(m.title)===normal);if(module)return module.path;const family=classes.find(c=>normalize(c.label)===normal);if(family)return `/classes/${family.id}`;if(matches.length===1)return `/medicaments/${matches[0].id}`;return `${matches.length?'/bibliotheque':'/catalogue'}?q=${encodeURIComponent(text)}`;}

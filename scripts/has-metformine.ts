@@ -1,0 +1,8 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {parseDrugs} from '../src/domain/validation';
+import type {Drug} from '../src/domain/models';
+// Décision éditoriale datée ; pas de collecte automatique ni de prescription.
+const file='src/data/drugs.json';const drugs=JSON.parse(await readFile(file,'utf8')) as Drug[];parseDrugs(drugs);const drug=drugs.find(d=>d.id==='metformine')!;
+drug.fields.therapeuticStrategy={status:'available',value:'Le RCP consulté prévoit la metformine dans le diabète de type 2 lorsque alimentation et exercice ne suffisent pas. La stratégie HAS 2024 maintient les mesures non médicamenteuses et individualise le choix médicamenteux selon les comorbidités, risques cardiovasculaires/rénaux, besoins et préférences. L’indication du RCP et le choix de stratégie sont deux niveaux documentaires distincts.',verification:'source-checked',scope:'context',context:'Synthèse originale partielle : RCP METFORMINE BGR 500 mg et communiqué HAS du 6 juin 2024. Ne fournit ni algorithme complet, ni prescription individuelle, ni règle universelle de première ligne.',evidence:[...drug.fields.indications.evidence,{sourceId:'has',url:'https://www.has-sante.fr/jcms/p_3520515/fr/diabete-de-type-2-les-therapies-non-medicamenteuses-d-abord',consultedAt:'2026-10-14',sourceUpdatedAt:null,locator:'HAS, communiqué paru le 06/06/2024 : modification des habitudes de vie et prévention des risques cardiovasculaires et rénaux ; date de mise à jour inconnue.'}]};
+drug.contentVersion='2026.10.14-3';parseDrugs(drugs);await writeFile(file,JSON.stringify(drugs,null,2)+'\n');
+console.log('Champ de stratégie metformine documenté avec deux sources distinctes.');

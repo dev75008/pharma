@@ -2,7 +2,7 @@
 
 Plateforme personnelle de révision DFASM2 en français, sans backend obligatoire. Site : https://dev75008.github.io/pharma/ · dépôt : https://github.com/dev75008/pharma.
 
-Version technique du 14 octobre 2026 : **13 fiches / 12 familles, 43 questions, 47 flashcards et 7 dossiers fictifs**. 522 champs documentés sur 650 ; les 128 autres restent « À documenter ». Moteurs opérationnels avec tests unitaires, scénarios navigateur et contrôles automatiques d’accessibilité. Le cahier des charges documentaire et la validation médicale indépendante ne sont pas intégralement achevés. [Bilan des huit phases, tests et limites](docs/livraison.md).
+Version technique du 14 octobre 2026 : **13 fiches / 12 familles, 43 questions, 47 flashcards et 7 dossiers fictifs**. 523 champs documentés sur 650 ; les 127 autres restent « À documenter ». Moteurs opérationnels avec tests unitaires, scénarios navigateur et contrôles automatiques d’accessibilité. Le cahier des charges documentaire et la validation médicale indépendante ne sont pas intégralement achevés. [Bilan des huit phases, tests et limites](docs/livraison.md).
 
 ## Installation et lancement
 
@@ -33,6 +33,7 @@ Sous Linux : `npx playwright install --with-deps chromium firefox webkit`. Les t
 ## Fonctionnalités
 
 - Bibliothèque : recherche par nom, classe, mécanisme, indication et cible ; filtres combinables, favoris, historique, marquage étudié et notes personnelles.
+- Classes : pages de famille avec mécanismes sourcés par molécule, sécurité, objectifs, progression réelle et liens filtrés vers les exercices, dossiers, cartes et comparateur. Recherche globale des familles, sous-classes extensibles et routes inconnues gérées.
 - Fiches : 50 champs, disponibilité, contexte molécule/spécialité, provenance, dates et liens. Comparateur 2–4 molécules et PDF par impression du navigateur.
 - Évaluation : six formats, filtres par classe/spécialité/objectif, mélange optionnel, entraînement corrigé après validation, examens chronométrés, reprise de l’ordre et des réponses, corrections détaillées, résultats et CSV. Banque de démonstration sans validation indépendante.
 - Flashcards : six types, cartes personnelles, quatre évaluations, SM-2 adapté, échéances, rappels et suspension.
@@ -48,6 +49,8 @@ Catalogue et RCP/notices via l’API indépendante Giygas ; propriétés et conf
 Pharmacorama : quiz original sur demande, sans copie des questions ou scores. VIDAL et Thériaque : accès originaux, sans import de leurs bases. DailyMed : lien, CORS bloquant observé. Les autres références sont distinguées dans le registre ; aucun endpoint ou droit d’accès inventé.
 
 [Sources/licences](docs/sources-et-licences.md) · [Enrichissement](docs/enrichissement-documentaire-14-octobre.md) · [OpenFDA](docs/openfda.md) · [API](docs/api-scientifiques.md) · [3D](docs/structures-3d.md) · [RxNorm](docs/phase-7-rxnorm.md) · [Études](docs/phase-7-essais-cliniques.md) · [Pharmacorama](docs/quiz-pharmacorama.md).
+
+Le complément [classes et stratégie](docs/classes-et-strategie.md) décrit la courte synthèse RCP/HAS de la metformine et les règles de navigation ; aucun algorithme clinique ou contenu HAS intégral reproduit.
 
 ## Ajouter des contenus autorisés
 

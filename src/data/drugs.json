@@ -5977,13 +5977,27 @@
         ]
       },
       "therapeuticStrategy": {
-        "status": "missing",
-        "value": null,
-        "verification": "unverified",
-        "scope": "molecule",
-        "context": "",
-        "evidence": [],
-        "reason": "Champ non documenté dans cette version."
+        "status": "available",
+        "value": "Le RCP consulté prévoit la metformine dans le diabète de type 2 lorsque alimentation et exercice ne suffisent pas. La stratégie HAS 2024 maintient les mesures non médicamenteuses et individualise le choix médicamenteux selon les comorbidités, risques cardiovasculaires/rénaux, besoins et préférences. L’indication du RCP et le choix de stratégie sont deux niveaux documentaires distincts.",
+        "verification": "source-checked",
+        "scope": "context",
+        "context": "Synthèse originale partielle : RCP METFORMINE BGR 500 mg et communiqué HAS du 6 juin 2024. Ne fournit ni algorithme complet, ni prescription individuelle, ni règle universelle de première ligne.",
+        "evidence": [
+          {
+            "sourceId": "bdpm",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69916198/extrait",
+            "consultedAt": "2026-10-12",
+            "sourceUpdatedAt": "2025-03-26",
+            "locator": "RCP METFORMINE BGR 500 mg, comprimé pelliculé, rubrique 4.1"
+          },
+          {
+            "sourceId": "has",
+            "url": "https://www.has-sante.fr/jcms/p_3520515/fr/diabete-de-type-2-les-therapies-non-medicamenteuses-d-abord",
+            "consultedAt": "2026-10-14",
+            "sourceUpdatedAt": null,
+            "locator": "HAS, communiqué paru le 06/06/2024 : modification des habitudes de vie et prévention des risques cardiovasculaires et rénaux ; date de mise à jour inconnue."
+          }
+        ]
       },
       "clinicalContexts": {
         "status": "missing",
@@ -6391,7 +6405,7 @@
         "reason": "Contenu pédagogique spécifique à rédiger et relire ; aucune validation d’examen n’est présumée."
       }
     },
-    "contentVersion": "2026.10.14-2",
+    "contentVersion": "2026.10.14-3",
     "validationStatus": "documentary-summary"
   },
   {
